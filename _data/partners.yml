@@ -1,11 +1,11 @@
-- name: Pepco
-  url: http://pepco.com
-- name: Pepco
-  url: http://pepco.com
-- name: Pepco
-  url: http://pepco.com
-- name: Pepco
-  url: http://pepco.com
+- name: Ameren Illinois
+  url: http://www.amerenillinois.com
+- name: Ameren Missouri
+  url: http://www.amerenmissouri.com/
+- name: American Electric Power
+  url: http://www.aep.com
+- name: Austin Energy
+  url: http://www.austinenergy.com
 - name: Pepco
   url: http://pepco.com
 - name: Pepco
