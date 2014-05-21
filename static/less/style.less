@@ -145,17 +145,15 @@ section.home {
     li {
       .make-md-column(3);
       margin-bottom:15px;
-      a {
-        display:block;
-        color:@text-color;
-        .icon {
-          color:#fff;
-        }
-        h3 {
-          color:@brand-primary;
-        }
+      color:@text-color;
+      cursor:pointer;
+      .icon {
+        color:#fff;
       }
-      a:hover {
+      h3 {
+        color:@brand-primary;
+        }
+      &:hover {
         text-decoration:none;
         .icon {
           background:@brand-primary;
