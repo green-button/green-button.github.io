@@ -10,8 +10,33 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/static/css/style.css">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
   {{ content }}
+  <footer role="contentInfo" class="site-footer">
+    <div class="section-container">
+      <div class="section-content">
+        <div class="row">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Supporters</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row">
+          This project is done by many people.
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
