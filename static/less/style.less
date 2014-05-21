@@ -166,7 +166,10 @@ section.home {
     .list-unstyled();
     .make-row();
     li {
-      .make-md-column(3);
+      .make-xs-column(12);
+      @media (min-width: @screen-sm-min) {
+        .make-sm-column(3);
+      }
       margin-bottom:15px;
       color:@text-color;
       cursor:pointer;
