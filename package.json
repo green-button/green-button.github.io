@@ -1,0 +1,20 @@
+{
+  "name": "greenbutton",
+  "version": "0.0.1",
+  "description": "To improve the electric grid, we must empower consumers. Join the effort to give all Americans the information they need to become active participants in their own power usage.",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-watch": "~0.6.1",
+  },
+  "dependencies": {
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-watch": "^0.4.4"
+  }
+}

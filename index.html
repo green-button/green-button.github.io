@@ -1,0 +1,69 @@
+---
+layout: default
+title: Home
+---
+
+<section class="home home-title">
+  <div class="section-container">
+    <div class="section-content">
+      <img src="{{ site.baseurl }}/assets/logo.png" alt="Green Button">
+      <hgroup>
+        <h1>Green Button</h1>
+        <h2>Providing affordable, timely, and secure access to energy usage data</h2>
+      </hgroup>
+      <a class="btn btn-primary btn-lg active" href="#">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<section class="home home-about">
+  <div class="section-container">
+    <div class="section-content">
+      <h2 class="section-title">What is Green Button?</h2>
+      <p class="lede">Green Button is a Lorem ipsum dolor sit amet...</p>
+      <ul class="audiences">
+        <li><a href="/utilities">
+          <div class="icon">
+            <i class="fa fa-bolt"></i>
+          </div>
+          <h3>Utilities</h3>
+          Make consumer metered data available and extend efficiency services.
+        </a></li>
+        <li><a href="/vendors">
+          <div class="icon">
+            <i class="fa fa-building"></i>
+          </div>
+          <h3>Vendors</h3>
+          Provide added value to your customers and integrate with the growing ecosystem of Green Button.
+        </a></li>
+        <li><a href="/consumers">
+          <div class="icon">
+            <i class="fa fa-group"></i>
+          </div>
+          <h3>Consumers</h3>
+          Access to your metered data puts you in control of your resource usage.
+        </a></li>
+        <li><a href="/developers">
+          <div class="icon">
+            <i class="fa fa-code"></i>
+          </div>
+          <h3>Developers</h3>
+          Learn how to structure Green Button data and how to transmit with consumer approval.
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="home home-partners">
+  <div class="section-container">
+    <div class="section-content">
+      <h2 class="section-title">Partner Utilities</h2>
+      <ul class="partner_list">
+        {% for partner in site.data.partners %}
+          <li><a href="{{ partner.url }}">{{ partner.name }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="cta">Don't see your company?<br><a href="#">Join Green Button today.</a></div>
+    </div>
+  </div>
+</section>

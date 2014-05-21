@@ -1,0 +1,119 @@
+@import "bootstrap/bootstrap";
+@import "./../font-awesome/css/font-awesome.min.css";
+
+// General Layout Styling
+
+.section-container {
+  .container();
+}
+.section-content {
+  .make-row();
+}
+.section-title {
+  font-size:48px;
+  font-weight:700;
+  line-height:57.6px;
+}
+
+// Typographic Settings
+.lede {
+  font-weight:400;
+  line-height:36px;
+  font-size:30px;
+  width:50%;
+  margin:0 auto;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+// Homepage Specifics
+section.home {
+  text-align:center;
+  margin-top:0px;
+  padding-top:40px;
+  padding-bottom:40px;
+  margin-bottom:0px;
+}
+
+.home-title {
+  margin-top:40px;
+  color: @brand-primary;
+  h1 {
+    font-size:48px;
+    font-weight:700;
+    line-height:57.6px;
+  }
+  h2 {
+    font-size:24px;
+    line-height:28.8px;
+    margin-bottom:50px;
+    font-weight:700;
+  }
+}
+
+.home-about {
+  width:100%;
+  background:@brand-primary;
+  color:#fff;
+  a {
+    color:#fff;
+  }
+  .audiences {
+    .list-unstyled();
+    .make-row();
+    li {
+      .make-md-column(3);
+      margin-bottom:15px;
+      a {
+        display:block;
+      }
+      a:hover {
+        text-decoration:none;
+        .icon {
+          background:@brand-primary;
+        }
+      }
+    }
+    .icon {
+      @icon-size: 150px;
+      font-size:@icon-size / 2;
+      background:darken(@brand-primary, 20%);
+      width:@icon-size;
+      height:@icon-size;
+      line-height:@icon-size - 10px;
+      margin:0 auto;
+      border-radius:@icon-size;
+      border:5px solid #fff;
+    }
+  }
+}
+.home-partners {
+  background:darken(@brand-primary, 20%);
+  color:#fff;
+  a {
+    color: #fff;
+    font-weight:700;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+  .partner_list {
+    .list-unstyled();
+    .make-row();
+    font-size:18px;
+    margin-top:20px;
+    li {
+      padding-bottom:20px;
+      .make-xs-column(6);
+      @media (min-width: @screen-sm-min) {
+        .make-sm-column(4);
+      }
+      @media (min-width: @screen-md-min) {
+        .make-sm-column(3);
+      }
+    }
+  }
+  .cta {
+    .lede();
+  }
+}
