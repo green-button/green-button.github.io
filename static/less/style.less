@@ -146,7 +146,12 @@ section.home {
     background:rgba(red(@brand-light), green(@brand-light), blue(@brand-light), 0.9);
     color:#fff;
     min-height:80px;
-    line-height:80px;
+    line-height:1.17em;
+    padding-top:10px;
+    padding-bottom:10px;
+    @media (min-width: @screen-sm-min) {
+      line-height:80px;
+    }
     margin:0;
     z-index:5000;
   }
