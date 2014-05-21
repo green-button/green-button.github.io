@@ -87,6 +87,28 @@ header.banner {
   }
 }
 
+// Footer
+footer.site-footer {
+  padding-top:40px;
+  padding-bottom:40px;
+  .credits {
+    font-size:12px;
+  }
+}
+.footer-nav ul {
+  .list-inline();
+  img.logo {
+    width:25px;
+    height:25px;
+  }
+  a {
+    &:hover {
+      text-decoration:none;
+      color:darken(@brand-primary, 10%);
+    }
+  }
+}
+
 // Homepage Specifics
 section.home {
   text-align:center;
