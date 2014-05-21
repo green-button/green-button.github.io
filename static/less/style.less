@@ -1,6 +1,10 @@
 @import "bootstrap/bootstrap";
 @import "./../font-awesome/css/font-awesome.min.css";
 
+
+body, html {
+  height:100%;
+}
 // General Layout Styling
 
 .section-container {
@@ -20,10 +24,67 @@
   font-weight:400;
   line-height:36px;
   font-size:30px;
-  width:50%;
+  width:75%;
   margin:0 auto;
   margin-top:40px;
   margin-bottom:40px;
+}
+
+h1 {
+  font: 48px / 3em;
+  color: @brand-primary;
+  font-weight: 700;
+}
+
+h2 {
+  font: 30px / 1.875em;
+  color: @brand-secondary;
+  font-weight: 700;
+}
+
+.btn,.btn-lg {
+  border-radius:0 !important;
+  border:0;
+}
+
+// Header
+header.banner {
+  width:100%;
+  height:80px;
+  position:fixed;
+  border-bottom:1px solid lighten(#ccc, 10%);
+  .banner-title {
+    .make-sm-column(4);
+    .clearfix();
+    img, h1 {
+      .pull-left();
+    }
+    img {
+      height:80px;
+      margin-top:5px;
+      width: auto;
+    }
+    h1 {
+      font-size:24px;
+      line-height:40px;
+      margin-left:10px;
+      color:@brand-primary;
+    }
+  }
+  .banner-nav {
+    .make-sm-column(8);
+    text-align:right;
+    .main-nav {
+      ul {
+        .list-inline();
+        font-size:16px;
+        line-height:80px;
+        li {
+          padding-left:30px;
+        }
+      }
+    }
+  }
 }
 
 // Homepage Specifics
@@ -36,28 +97,48 @@ section.home {
 }
 
 .home-title {
+  background: url('/assets/home-bg.jpg');
+  background-size:cover;
+  background-position:50% center;
+  height:75%;
   margin-top:40px;
   color: @brand-primary;
   h1 {
-    font-size:48px;
-    font-weight:700;
-    line-height:57.6px;
+    position:relative;
+    .text-hide();
+    background: url('/assets/logo.png');
+    color: #fff;
+    cursor:pointer;
+    opacity:0.7;
+    &:hover {
+      background: url('/assets/logo-hover.png');
+      z-index:10;
+    }
+    width:208px;
+    height:208px;
+    margin:0 auto;
+    margin-top:10%;
+    top: 20px;
+    text-align:center;
+    background-size:contain;
+    z-index:5;
   }
   h2 {
-    font-size:24px;
-    line-height:28.8px;
-    margin-bottom:50px;
-    font-weight:700;
+    background:@brand-light;
+    color:#fff;
+    min-height:80px;
+    line-height:80px;
+    margin:0;
+    z-index:5000;
+  }
+  a.get-started {
+    border-radius:0;
+    margin-top:40px;
   }
 }
 
 .home-about {
   width:100%;
-  background:@brand-primary;
-  color:#fff;
-  a {
-    color:#fff;
-  }
   .audiences {
     .list-unstyled();
     .make-row();
@@ -66,6 +147,13 @@ section.home {
       margin-bottom:15px;
       a {
         display:block;
+        color:@text-color;
+        .icon {
+          color:#fff;
+        }
+        h3 {
+          color:@brand-primary;
+        }
       }
       a:hover {
         text-decoration:none;
@@ -88,8 +176,11 @@ section.home {
   }
 }
 .home-partners {
-  background:darken(@brand-primary, 20%);
+  background:rgba(71, 75, 92, 1.0);
   color:#fff;
+  h2 {
+    color:rgba(74, 255, 167, 1.0);
+  }
   a {
     color: #fff;
     font-weight:700;

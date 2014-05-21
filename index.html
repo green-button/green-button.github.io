@@ -4,19 +4,13 @@ title: Home
 ---
 
 <section class="home home-title">
-  <div class="section-container">
-    <div class="section-content">
-      <img src="{{ site.baseurl }}/assets/logo.png" alt="Green Button">
-      <hgroup>
-        <h1>Green Button</h1>
-        <h2>Providing affordable, timely, and secure access to energy usage data</h2>
-      </hgroup>
-      <a class="btn btn-primary btn-lg active" href="#">Get Started</a>
-    </div>
-  </div>
+  <hgroup>
+    <h1>Green Button</h1>
+    <h2>Providing affordable, timely, and secure access to energy usage data</h2>
+  </hgroup>
 </section>
 
-<section class="home home-about">
+<section class="home home-about" id="#home-about">
   <div class="section-container">
     <div class="section-content">
       <h2 class="section-title">What is Green Button?</h2>
@@ -57,7 +51,8 @@ title: Home
 <section class="home home-partners">
   <div class="section-container">
     <div class="section-content">
-      <h2 class="section-title">Partner Utilities</h2>
+      <h2 class="section-title">Who's using Green Button?</h2>
+      <p class="lede">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <ul class="partner_list">
         {% for partner in site.data.partners %}
           <li><a href="{{ partner.url }}">{{ partner.name }}</a></li>
