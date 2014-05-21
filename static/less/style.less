@@ -109,22 +109,18 @@ section.home {
     background: url('/assets/logo.png');
     color: #fff;
     cursor:pointer;
-    opacity:0.7;
-    &:hover {
-      background: url('/assets/logo-hover.png');
-      z-index:10;
-    }
+    opacity:0.9;
     width:208px;
     height:208px;
     margin:0 auto;
-    margin-top:10%;
-    top: 20px;
+    margin-top:8%;
+    margin-bottom:40px;
     text-align:center;
     background-size:contain;
     z-index:5;
   }
   h2 {
-    background:@brand-light;
+    background:rgba(red(@brand-light), green(@brand-light), blue(@brand-light), 0.9);
     color:#fff;
     min-height:80px;
     line-height:80px;
