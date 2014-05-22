@@ -56,11 +56,22 @@ title: Home
       <p class="lede">Today, 42 million households have access to Green Button, a number that will grow to be 57 million by the end of 2014.</p>
       <ul class="partner_list">
         {% for partner in site.data.partners %}
+        {% if partner.status %}
+        {% else %}
           <li><a href="{{ partner.url }}">{{ partner.name }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
       <div class="lead">Don't see your company?<br><a class="buttonish" href=mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]>Join Green Button Today</a></div>
 <div class="lead">Future commitments<br><a href="#">See who has committed.</a></div>
+      <ul class="partner_list">
+        {% for partner in site.data.partners %}
+        {% if partner.status == "committed" %}
+          <li><a href="{{ partner.url }}">{{ partner.name }}</a></li>
+        {% else %}
+        {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>
