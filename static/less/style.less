@@ -134,6 +134,12 @@ section.home {
   height:75%;
   min-height:450px;
   max-height:625px;
+  @media (min-width: @screen-lg-min) {
+    max-height:800px;
+  }
+  @media (min-width: @screen-xl-min) {
+    max-height:1000px;
+  }
   margin-top:40px;
   color: @brand-primary;
   background-size:cover;
