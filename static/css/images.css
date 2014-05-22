@@ -1,0 +1,9 @@
+---
+---
+.home-title {
+  background: url('{{ site.baseurl }}/assets/congruent_pentagon.png');
+}
+
+.home-title h1 {
+  background: url('{{ site.baseurl }}/assets/logo.png');
+}
