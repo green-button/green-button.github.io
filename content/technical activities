@@ -1,0 +1,43 @@
+
+From: http://www.greenbuttondata.org/TechnicalActivitiesLinks.html
+--
+TECHNICAL ACTIVITIES
+
+The Green Button Initiative technical work is being performed in open communities for standards (NAESB), testing and certification (UCAIug), and sample implementations and collaboration (EnergyOS OpenESPI on GitHub). Below are links that will help you monitor and hopefully participate in the work: Open Source Implementations and tools: EnergyOS OpenESPI Project
+Green Button Developer Sandbox: https://services.greenbuttondata.org
+Green Button Data Sample/DataCustodian: https://services.greenbuttondata.org/DataCustodian
+Green Button Data Sample/ThirdParty: https://services.greenbuttondata.org/ThirdParty
+Green Button Connect My Data Developer Guide: http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/
+Green Button Connect My Data API: http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API/
+Green Button Connect My Data Source Common: https://github.com/energyos/OpenESPI-Common-java
+Green Button Connect My Data Source DataCustodian: https://github.com/energyos/OpenESPI-DataCustodian-java
+Green Button Connect My Data Source ThirdParty: https://github.com/energyos/OpenESPI-ThirdParty-java
+Green Button DMD Test Developer Tools: https://github.com/energyos/OpenESPI-GreenbuttonDataSDK
+Green Button CMD Test Developer Tools: https://github.com/energyos/OpenESPI-GreenButtonCMDTest
+General OpenESPI Developer Virtual Machine Guide: https://github.com/energyos/OpenESPI/wiki/Virtual-Machine-Setup
+Green Button Developer Mail List: http://groups.google.com/group/greenbutton-dev/subscribe?hl=en
+EnergyOS OpenESPI Mail List: http://groups.google.com/group/energyos_espi/subscribe?hl=en
+EnergyOS OpenESPI Meetings: mondays at 12:00 EST - https://www1.gotomeeting.com/join/807543384, +1(213)493-0603;807543384#
+Users Group: Utilities Communications Architecture International Users Group (UCAIug)
+UCAIug OpenADE Task Force Home Page: http://osgug.ucaiug.org/sgsystems/OpenADE/default.aspx
+UCAIug OpenADE Mail List: http://www.smartgridlistserv.org/cgi/wa.exe?A0=OPENSG-OPENADE
+UCAIug OpenADE Meetings: first tuesday of the month at 3:00 EST - Gotomeeting: https://www2.gotomeeting.com/join/844935738, Phone: 415-363-0070;844935738#
+UCAIug OpenADE Green Button Issues List Posting: Select Here To Go To Help Desk
+Green Button Test Plan Artifacts:
+UCAIug OpenADE Test Plan SharePoint Directory: Select Here
+UCAIug OpenADE Green Button Test Plan Document: Select Here To Download or Right Click to Save (As)
+UCAIug OpenADE Green Button Test Cases Spreadsheet: Select Here To Download or Right Click to Save (As)
+Green Button Implementation Agreements Documentation:
+UCAIug OpenADE Green Button Issues List Document: Select Here To Download or Right Click to Save (As)
+UCAIug OpenADE Green Button Connect My Data Authorization Specification: Select Here To Download or Right Click to Save (As)
+UCAIug OpenADE Green Button Green Button Download My Data Atom Linking Best Practices: Select Here To Download or Right Click to Save (As)
+Standards: North American Standards Board (NAESB)
+NAESB PAP10 Task Force Project Page : http://www.naesb.org/smart_grid_pap10.asp
+NAESB ESPI Task Force Project Page : http://www.naesb.org/espi_task_force.asp
+NAESB ESPI and PAP10 email lists: to subscribe contact Denise Rager at NAESB - drager@naesb.org
+NAESB Green Button Portal - http://www.naesb.org/ESPI_Standards.asp
+Smart Grid Interoperability Panel (SGIP)
+SGIP PAP20 Green Button ESPI evolution: http://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonESPIEvolution
+SGIP Green Button Initiative TWiki: https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonInitiative
+User Guide for the NIST Green Button Software Development Kit: https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK
+SGIP Green Button FAQ: https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonFAQ
