@@ -34,7 +34,7 @@ RetailCustomer, allow that data to be shared with a third party.</dd>
 <dd>Any person or enterprise that is authorized to have access to metered data held by a <em>DataCustodian</em>.  A <em>ThirdParty</em>, when authorized, may <em>subscribe</em> to a <em>RetailCustomer's</em> data and provide additional services as desired.</dd>
 </dl>
 
-<img class="img-responsive" src="images/GreenButton_Actors_transparent.png" style="float:right;" width="400"/>
+<img class="img-responsive" src="{{ site.baseurl }}/assets/GreenButton_Actors_transparent.png" />
 
 <h3>Relationships between the Actors</h3>
 <p>The Actors enter into relationships as depicted in the diagram above. The simplest relationship is the one that exists between the DataCustodian (i.e. the Utility) and their customer (the <em>RetailCustomer</em>). This relationship allows the <em>RetailCustomer</em> to download a file that contains their resource usage information. This simple relationship is the basis for the <a href="#download-my-data">Green Button Download My Data</a> operation. 
