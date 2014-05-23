@@ -1,35 +1,35 @@
-- name: Ameren Illinois
-  url: http://www.amerenillinois.com
+- name: "Ameren Illinois"
+  url: "http://www.amerenillinois.com"
   status: committed
-- name: Ameren Missouri
-  url: http://www.amerenmissouri.com/
-- name: American Electric Power
-  url: http://www.aep.com
-- name: Austin Energy
-  url: http://www.austinenergy.com
-- name: Baltimore Gas & Electric
-  url: http://www.bge.com/
-- name: Bangor Hydro Electric Company
-  url: http://www.emeramaine.com/
-- name: CenterPoint Energy
-  url: http://www.centerpointenergy.com/
-- name: Commonwealth Edison
-  url: http://www.comed.com
-- name: Consolidated Edison
-  url: http://www.coned.com/
-- name: Connecticut Light & Power
-  url: http://www.cl-p.com/Home/SaveEnergy/Green_Button/
-- name: JEA
-  url: https://www.jea.com/
-- name: National Grid
-  url: https://www.nationalgridus.com
-- name: NSTAR
-  url: http://www.nstar.com/residential/energy_efficiency/green_button/default.asp
-- name: Oncor
-  url: http://www.oncor.com/
-- name: Pepco
-  url: http://pepco.com
-- name: Pepco
-  url: http://pepco.com
-- name: Pepco
-  url: http://pepco.com
+- name: "Ameren Missouri"
+  url: "http://www.amerenmissouri.com/"
+- name: "American Electric Power"
+  url: "http://www.aep.com"
+- name: "Austin Energy"
+  url: "http://www.austinenergy.com"
+- name: "Baltimore Gas & Electric"
+  url: "http://www.bge.com/"
+- name: "Bangor Hydro Electric Company"
+  url: "http://www.emeramaine.com/"
+- name: "CenterPoint Energy"
+  url: "http://www.centerpointenergy.com/"
+- name: "Commonwealth Edison"
+  url: "http://www.comed.com"
+- name: "Consolidated Edison"
+  url: "http://www.coned.com/"
+- name: "Connecticut Light & Power"
+  url: "http://www.cl-p.com/Home/SaveEnergy/Green_Button/"
+- name: "JEA"
+  url: "https://www.jea.com/"
+- name: "National Grid"
+  url: "https://www.nationalgridus.com"
+- name: "NSTAR"
+  url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
+- name: "Oncor"
+  url: "http://www.oncor.com/"
+- name: "Pepco"
+  url: "http://pepco.com"
+- name: "Pepco"
+  url: "http://pepco.com"
+- name: "Pepco"
+  url: "http://pepco.com"
