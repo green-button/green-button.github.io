@@ -1,6 +1,6 @@
 ---
 title: Developers
-layout: Page
+layout: page
 ---
 
 Welcome to Green Button Developer</h3>
