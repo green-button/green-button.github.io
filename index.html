@@ -56,6 +56,13 @@ title: Home
       <p class="lede">Forty two million households and businesses have access to Green Button, a number that will grow to be 57 million by the end of 2014.</p>
       <ul class="partner_list">
         {% for partner in site.data.partners %}
+        {% if partner.status == "featured" %}
+        <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="partner_list below-fold">
+        {% for partner in site.data.partners %}
         {% if partner.status %}
         {% else %}
           <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
@@ -65,6 +72,27 @@ title: Home
        <div class="lead">Don't see your company?<br><a class="buttonish" href=mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]>Join Green Button Today</a></div>
       
       <div class="lead">Future Commitments</div>
+      
+      <ul class="partner_list commitments">
+        {% for partner in site.data.partners %}
+        {% if partner.status == "committed" %}
+        {% if partner.status == "featured" %}
+        <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="partner_list commitments below-fold">
+        {% for partner in site.data.partners %}
+        {% if partner.status == "committed" %}
+        {% if partner.status == "featured" %}
+        {% endif %}
+          <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      
+      
       <ul class="partner_list commitments">
         {% for partner in site.data.partners %}
         {% if partner.status == "committed" %}

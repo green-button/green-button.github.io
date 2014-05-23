@@ -28,6 +28,7 @@
   url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
 - name: "Oncor"
   url: "http://www.oncor.com/"
+  status: featured
 - name: "PG&E"
   url: "http://www.pge.com"
 - name: "PacifiCorp"
