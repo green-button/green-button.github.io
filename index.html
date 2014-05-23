@@ -91,16 +91,6 @@ title: Home
         {% endif %}
         {% endfor %}
       </ul>
-      
-      
-      <ul class="partner_list commitments">
-        {% for partner in site.data.partners %}
-        {% if partner.status == "committed" %}
-          <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
-        {% else %}
-        {% endif %}
-        {% endfor %}
-      </ul>
     </div>
   </div>
 </section>
