@@ -7,7 +7,7 @@ layout: page
 
 The Green Button API provides flexible access to Energy Usage Information through a set of RESTful interfaces.
 
-<p>Green Button represents energy usage information as a set of resources as defined in the ESPI standard and uses <a href="API">RESTful APIs</a> to provide
+<p>Green Button represents energy usage information as a set of resources as defined in the ESPI standard and uses <a href="http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API">RESTful APIs</a> to provide
 standard access to information for metered resources such as
 electricity, gas, and water. These interfaces may be used to access and
 manage the metered data by using atom+xml based streams of Energy
