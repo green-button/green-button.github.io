@@ -17,11 +17,9 @@
 - name: "CenterPoint Energy"
   url: "http://www.centerpointenergy.com/"
     status: featured
-
 - name: "Commonwealth Edison"
   url: "http://www.comed.com"
     status: featured
-
 - name: "Consolidated Edison"
   url: "http://www.coned.com/"
 - name: "Connecticut Light & Power"
@@ -29,11 +27,9 @@
 - name: "JEA"
   url: "https://www.jea.com/"
     status: featured
-
 - name: "National Grid"
   url: "https://www.nationalgridus.com"
     status: featured
-
 - name: "NSTAR"
   url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
 - name: "Oncor"
@@ -47,6 +43,7 @@
   url: "https://www.pacificpower.net"
 - name: "Pepco Holdings"
   url: "http://www.pepcoholdings.com"
+    status: featured
 - name: "Portland General Electric"
   url: "http://www.portlandgeneral.com"
 - name: "TNMP"
