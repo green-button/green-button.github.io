@@ -1,6 +1,7 @@
 - name: "Ameren Illinois"
   url: "http://www.amerenillinois.com"
   status: committed
+  status: featured
 - name: "Ameren Missouri"
   url: "http://www.amerenmissouri.com/"
 - name: "American Electric Power"
