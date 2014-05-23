@@ -3,11 +3,9 @@ title: Developers
 layout: page
 ---
 
-## Welcome to Green Button Developer
+## Developers
 
-The Green Button API provides flexible access to Energy Usage
-Information through a set of RESTful interfaces. These APIs provide access to
-Green Button resources.
+The Green Button API provides flexible access to Energy Usage Information through a set of RESTful interfaces.
 
 <p>Green Button represents energy usage information as a set of resources as defined in the ESPI standard and uses <a href="API">RESTful APIs</a> to provide
 standard access to information for metered resources such as
