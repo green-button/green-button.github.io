@@ -1,20 +1,11 @@
 ---
-title: Develop
+title: Community
 layout: page
 ---
 
-## Develop
+## Community
 
-**If you are an application developer**: Green Button provides you with a means to analyze your customer's Energy Usage Information and provide your value added insights, recommendations, and controls. Any xml parser can be used to analyze the data structures represented in xml according to the ESPI schemas. Look at the references on this page that show how to analyze Green Button data and present them to users. Of course, your creativity will provide more dramatic results and presentations tuned to customer needs and understanding. [Learn more here](https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonInitiative#Technical_Activities).
-
-### Green Button Data Self Test Facility
-
-Your implementation of Green Button Download My Data can be tested by uploading a file for analysis on the [self-test analysis page](http://www.greenbuttondata.org/greentest.aspx).
-
-### Technical Activities
-The Green Button Initiative technical work is being performed in open communities for standards (NAESB), testing and certification (UCAIug), and sample implementations and collaboration (EnergyOS OpenESPI on GitHub). Below are links that will help you monitor and hopefully participate in the work: 
-
-#### Open Source Implementations and tools: EnergyOS OpenESPI Project
+### Open Source Implementations and tools: EnergyOS OpenESPI Project
 <ul>
 <li><a href="https://services.greenbuttondata.org" target="_blank">Green Button Developer Sandbox</a></li>
 <li><a href="https://services.greenbuttondata.org/DataCustodian" target="_blank">Green Button Data Sample/DataCustodian</a></li>
@@ -33,7 +24,7 @@ The Green Button Initiative technical work is being performed in open communitie
 </ul> 
 
 
-#### Users Group: Utilities Communications Architecture International Users Group (UCAIug) 
+### Users Group: Utilities Communications Architecture International Users Group (UCAIug) 
 <ul>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/default.aspx" target="_blank">UCAIug OpenADE Task Force Home Page</a></li>
 <li><a href="http://www.smartgridlistserv.org/cgi/wa.exe?A0=OPENSG-OPENADE" target="_blank">UCAIug OpenADE Mail List</a></li> 
@@ -41,21 +32,21 @@ The Green Button Initiative technical work is being performed in open communitie
 <li><a href="http://osgug.ucaiug.org/HelpDesk/Lists/servicerequests/GreenButton.aspx" target="_blank">UCAIug OpenADE Green Button Issues List Posting</a></li>
 </ul>
 
-####     Green Button Test Plan Artifacts: 
+###     Green Button Test Plan Artifacts: 
 <ul>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsgsystems%2FOpenADE%2FShared%20Documents%2FTesting%20and%20Certification%2FGreenButtonTestPlan&View=%7b60F72F59%2d7B0F%2d4BA0%2d985C%2dD253868CFCEF%7d" target="_blank">UCAIug OpenADE Test Plan SharePoint Directory</a></li>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestPlan.docx" target="_blank">UCAIug OpenADE Green Button Test Plan Document</a></li>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestCases.xlsm" target="_blank">UCAIug OpenADE Green Button Test Cases Spreadsheet</a></li>
 </ul>
 
-####     Green Button Implementation Agreements Documentation
+###     Green Button Implementation Agreements Documentation
 <ul>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/HelpDeskItems.docx" target="_blank">UCAIug OpenADE Green Button Issues List Document</a></li>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx" target="_blank">UCAIug OpenADE Green Button Connect My Data Authorization Specification</a></li>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAtomLinks.docx" target="_blank">UCAIug OpenADE Green Button Green Button Download My Data Atom Linking Best Practices</a></li>
 </ul> 
 
-#### Standards: North American Standards Board (NAESB)
+### Standards: North American Standards Board (NAESB)
 
 <ul>
 <li><a href="http://www.naesb.org/smart_grid_pap10.asp" target="_blank">NAESB PAP10 Task Force Project Page</a></li> <li><a href="http://www.naesb.org/espi_task_force.asp" target="_blank">NAESB ESPI Task Force Project Page</a></li>
@@ -66,7 +57,7 @@ The Green Button Initiative technical work is being performed in open communitie
 
 
 
-#### Smart Grid Interoperability Panel (SGIP) 
+### Smart Grid Interoperability Panel (SGIP) 
 <ul>
 <li><a href="http://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonESPIEvolution" target="_blank">SGIP PAP20 Green Button ESPI evolution</a></li> 
 <li><a href="https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonInitiative" target="_blank">SGIP Green Button Initiative TWiki</a></li> 
