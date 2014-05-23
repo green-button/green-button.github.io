@@ -71,7 +71,6 @@
 - name: "Wake Electric"
   url: "http://www.wemc.com/"
     status: featured
-
 - name: "Xcel Energy"
   url: "http://www.xcelenergy.com"
 - name: "Central Maine Power"
@@ -80,14 +79,14 @@
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
      status: committed
-- name: "Chattanooga EPB"
-  url: "https://www.epb.net/"
+- name: "Efficiency Vermont"
+  url: "https://www.efficiencyvermont.com"
      status: committed
-- name: "Chattanooga EPB"
-  url: "https://www.epb.net/"
+- name: "Glendale Water and Power"
+  url: "http://www.glendaleca.gov/government/departments/glendale-water-and-power"
      status: committed
-- name: "Chattanooga EPB"
-  url: "https://www.epb.net/"
+- name: "Kootenai Electric Cooperative"
+  url: "http://www.kec.com/"
      status: committed
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
