@@ -7,7 +7,7 @@ layout: page
 
 The Green Button API provides flexible access to Energy Usage Information through a set of RESTful interfaces.
 
-<p>Green Button represents energy usage information as a set of resources as defined in the ESPI standard and uses <a href="API">RESTful APIs</a> to provide
+<p>Green Button represents energy usage information as a set of resources as defined in the ESPI standard and uses <a href="http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API">RESTful APIs</a> to provide
 standard access to information for metered resources such as
 electricity, gas, and water. These interfaces may be used to access and
 manage the metered data by using atom+xml based streams of Energy
@@ -61,8 +61,8 @@ The second thing to note is that in the Atom reprsentation, a feed will always r
   &lt;entry&gt;
     ...
     &lt;content&gt;
-      &lt;espi-resource&gt;
-    &lt;/contents&gt;
+      &lt;espi-resource /&gt;
+    &lt;/content&gt;
   &lt;/entry&gt;
   ...
 &lt;/feed&gt;
@@ -87,10 +87,9 @@ related to a specific <em>UsagePoint</em>.
          xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
  &lt;id&gt;urn:uuid:728B5594-414E-471A-A230-08FCCDAC655C&lt;/id&gt;
- &lt;published&gt;2012-10-24T00:00:00Z&lt;/published&gt;
- &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
  &lt;title&gt;ThirdPartyX Batch Feed&lt;/title&gt;
- &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
+ &lt;ns3:published&gt;2014-01-02T10:00:00Z&lt;/ns3:published&gt;
+ &lt;ns3:updated&gt;2014-01-02T10:00:00Z&lt;/ns3:updated&gt;
  &lt;link rel="self" href="/ThirdParty/83e269c1/Batch"/&gt;
    &lt;entry&gt;
    &lt;id&gt;urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1&lt;/id&gt;
@@ -105,6 +104,8 @@ related to a specific <em>UsagePoint</em>.
      &lt;link rel="related"
            href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/01"/&gt;
      &lt;title&gt;my house&lt;/title&gt;
+     &lt;ns3:published&gt;2014-01-02T10:00:00Z&lt;/ns3:published&gt;
+     &lt;ns3:updated&gt;2014-01-02T10:00:00Z&lt;/ns3:updated&gt;
      &lt;content&gt;
        &lt;UsagePoint xmlns="http://naesb.org/espi"&gt;
          &lt;ServiceCategory&gt;
@@ -149,7 +150,7 @@ related to a specific <em>UsagePoint</em>.
                     &lt;espi:thirdPartyNotifyUri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification&lt;/espi:thirdPartyNotifyUri&gt;
                     &lt;espi:dataCustodianBulkRequestURI&gt;&lt;/espi:dataCustodianBulkRequestURI&gt;
                     &lt;espi:dataCustodianResourceEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource&lt;/espi:dataCustodianResourceEndpoint&gt;
-                    &lt;espi:thirdPartyScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/RetailCustomer/ScopeSelection&lt;/espi:thirdPartyScopeSelectionScreenURI&gt;
+                    &lt;espi:thirdPartyScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/Subscription/ScopeSelection&lt;/espi:thirdPartyScopeSelectionScreenURI&gt;
                     &lt;espi:client_secret&gt;secret&lt;/espi:client_secret&gt;
                     &lt;espi:redirect_uri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack&lt;/espi:redirect_uri&gt;
                     &lt;espi:client_id&gt;third_party&lt;/espi:client_id&gt;
@@ -171,129 +172,368 @@ related to a specific <em>UsagePoint</em>.
   <h3>UsagePoint</h3>
   <div>
     <p>A <em>UsagePoint</em> is where a resource is measured. Typically, it is your Utility Smart Meter, but it could be the outlet on the wall as well. UsagePoints provide the reference for all meter readings that are contained within the Green Button data. UsagePoints have a <em>ServiceCategory</em> that defines what <em>kind</em> of resource, such as electricity, gas, or water measurement is being reported. </p>
-    <pre><code>&lt;entry&gt;
-  &lt;id&gt;urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1&lt;/id&gt;
-  &lt;published&gt;2012-10-24T00:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
-  &lt;link rel="self"
-        href="/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01"/&gt;
-  &lt;link rel="up"
-        href="/espi/1_1/resource/Subscription/9b6c7063/UsagePoint"/&gt;
-  &lt;link rel="related"
-        href="/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01/MeterReading"/&gt;
-  &lt;link rel="related"
-        href="/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/&gt;
-  &lt;link rel="related"
-        href="/espi/1_1/resource/UsagePoint/01/LocalTimeParameters/01"/&gt;
-  &lt;title&gt;my house&lt;/title&gt;
-  &lt;content&gt;
-    &lt;UsagePoint xmlns="http://naesb.org/espi"&gt;
-      &lt;ServiceCategory&gt;
-        &lt;kind&gt;0&lt;/kind&gt;
-      &lt;/ServiceCategory&gt;
-    &lt;/UsagePoint&gt;
-  &lt;/content&gt;
-&lt;/entry&gt;
+    <pre><code>&lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
+      &lt;ns3:id&gt;urn:uuid:af6e8b03-0299-467e-972a-a883ecdcc575&lt;/ns3:id&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="up"/&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/1" rel="self"/&gt;
+      &lt;ns3:title&gt;GreenButtonData.org  DataCustodian Application&lt;/ns3:title&gt;
+      &lt;ns3:content&gt;
+            &lt;espi:ApplicationInformation&gt;
+                  &lt;espi:dataCustodianApplicationStatus&gt;&lt;/espi:dataCustodianApplicationStatus&gt;
+                  &lt;espi:thirdPartyNotifyUri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification&lt;/espi:thirdPartyNotifyUri&gt;
+                  &lt;espi:dataCustodianBulkRequestURI&gt;&lt;/espi:dataCustodianBulkRequestURI&gt;
+                  &lt;espi:dataCustodianResourceEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource&lt;/espi:dataCustodianResourceEndpoint&gt;
+                  &lt;espi:thirdPartyScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/Subscription/ScopeSelection&lt;/espi:thirdPartyScopeSelectionScreenURI&gt;
+                  &lt;espi:client_secret&gt;secret&lt;/espi:client_secret&gt;
+                  &lt;espi:redirect_uri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack&lt;/espi:redirect_uri&gt;
+                  &lt;espi:client_id&gt;third_party&lt;/espi:client_id&gt;
+                  &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=900;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                  &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                  &lt;espi:dataCustodianId&gt;data_custodian&lt;/espi:dataCustodianId&gt;
+                  &lt;espi:thirdPartyApplicationName&gt;Third Party (localhost)&lt;/espi:thirdPartyApplicationName&gt;
+            &lt;/espi:ApplicationInformation&gt;
+      &lt;/ns3:content&gt;
+      &lt;ns3:published&gt;2014-01-02T10:00:00Z&lt;/ns3:published&gt;
+      &lt;ns3:updated&gt;2014-01-02T10:00:00Z&lt;/ns3:updated&gt;
+&lt;/ns3:entry&gt;
     </code></pre>
   </div>
   <h3>ReadingType</h3>
   <div>
     <p>A <em>ReadingType</em> provides detail as to the specifics of the reading data that is being obtained. Green Button follows international standards and has the ability to represent large industrial resources as well as those used in a residence.</p>
-    <pre><code>&lt;entry&gt;
-  &lt;id&gt;urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1&lt;/id&gt;
-  &lt;published&gt;2012-10-24T00:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
-  &lt;link rel="self"
-        href="/espi/1_1/resource/Subscription/9b6c7063/ReadingType/01"/&gt;
-  &lt;link rel="up"
-        href="/espi/1_1/resource/Subscription/9b6c7063/ReadingType"/&gt;
-  &lt;link rel="related"
-        href="/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01/MeterReading"/&gt;
-  &lt;title&gt;my house&lt;/title&gt;
-  &lt;content&gt;
-    &lt;ReadingType xmlns="http://naesb.org/espi"&gt;
-      &lt;accumulationBehaviour&gt;4&lt;/accumulationBehaviour&gt;
-      &lt;commodity&gt;1&lt;/commodity&gt;
-      &lt;currency&gt;840&lt;/currency&gt;
-      &lt;dataQualifier&gt;12&lt;/dataQualifier&gt;
-      &lt;flowDirection&gt;1&lt;/flowDirection&gt;
-      &lt;intervalLength&gt;86400&lt;/intervalLength&gt;
-      &lt;kind&gt;12&lt;/kind&gt;
-      &lt;phase&gt;769&lt;/phase&gt;
-      &lt;powerOfTenMultiplier&gt;0&lt;/powerOfTenMultiplier&gt;
-      &lt;timeAttribute&gt;0&lt;/timeAttribute&gt;
-      &lt;uom&gt;72&lt;/uom&gt;
-    &lt;/ReadingType&gt;
-  &lt;/content&gt;
-&lt;/entry&gt;
+    <pre><code>&lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
+      &lt;ns3:id&gt;urn:uuid:99b292fc-55f7-4f27-a3b9-cddab97cca90&lt;/ns3:id&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType" rel="up"/&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/1" rel="self"/&gt;
+      &lt;ns3:title&gt;Type of Meter Reading Data&lt;/ns3:title&gt;
+      &lt;ns3:content&gt;
+            &lt;espi:ReadingType&gt;
+                  &lt;espi:accumulationBehaviour&gt;4&lt;/espi:accumulationBehaviour&gt;
+                  &lt;espi:commodity&gt;1&lt;/espi:commodity&gt;
+                  &lt;espi:currency&gt;840&lt;/espi:currency&gt;
+                  &lt;espi:dataQualifier&gt;12&lt;/espi:dataQualifier&gt;
+                  &lt;espi:flowDirection&gt;1&lt;/espi:flowDirection&gt;
+                  &lt;espi:intervalLength&gt;86400&lt;/espi:intervalLength&gt;
+                  &lt;espi:kind&gt;12&lt;/espi:kind&gt;
+                  &lt;espi:phase&gt;769&lt;/espi:phase&gt;
+                  &lt;espi:powerOfTenMultiplier&gt;0&lt;/espi:powerOfTenMultiplier&gt;
+                  &lt;espi:timeAttribute&gt;0&lt;/espi:timeAttribute&gt;
+                  &lt;espi:uom&gt;72&lt;/espi:uom&gt;
+            &lt;/espi:ReadingType&gt;
+      &lt;/ns3:content&gt;
+      &lt;ns3:published&gt;2013-09-19T04:00:00Z&lt;/ns3:published&gt;
+      &lt;ns3:updated&gt;2013-09-19T04:00:00Z&lt;/ns3:updated&gt;
+&lt;/ns3:entry&gt;
     </code></pre>
   </div>
   <h3>MeterReading</h3>
   <div>
     <p>A MeterReading is a container for all of the measured <em>IntervalBlocks</em> within the Green Button data captured at a <em>UsagePoint</em>.</p>
-    <pre><code>&lt;MeterReading&gt;
-&lt;\MeterReading&gt;
+    <pre><code>&lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
+      &lt;ns3:id&gt;urn:uuid:4234ae39-fb6d-48ca-8856-ac9f41fb3d34&lt;/ns3:id&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="up"/&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1" rel="self"/&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="related"/&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/1" rel="related"/&gt;
+      &lt;ns3:title&gt;Monthly Electricity Consumption&lt;/ns3:title&gt;
+      &lt;ns3:content&gt;
+            &lt;espi:MeterReading/&gt;
+      &lt;/ns3:content&gt;
+      &lt;ns3:published&gt;2013-09-19T04:00:00Z&lt;/ns3:published&gt;
+      &lt;ns3:updated&gt;2013-09-19T04:00:00Z&lt;/ns3:updated&gt;
+&lt;/ns3:entry&gt;
     </code></pre>
   </div>
   <h3>IntervalBlock</h3>
   <div>
     <p><em>IntervalBlock</em>s are the primary data carrier within the Green Button data. IntervalBlocks may have one or more Intervals, each with a start and duration, as well as the specific <em>IntervalReading</em></p>
 
-    <pre><code>&lt;entry&gt;
-  &lt;id&gt;urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1&lt;/id&gt;
-  &lt;published&gt;2012-10-24T00:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
-  &lt;link rel="self"
-        href="/espi/1_1/resource/Subscription/9b6c7063/IntervalBlock/01"/&gt;
-  &lt;link rel="up"
-        href="/espi/1_1/resource/Subscription/9b6c7063IntervalBlock"/&gt;
-  &lt;link rel="related"
-        href="/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01/MeterReading/01"/&gt;
-  &lt;title&gt;my house&lt;/title&gt;
-  &lt;content&gt;
-    &lt;IntervalBlock xmlns="http://naesb.org/espi"&gt;
-      &lt;interval&gt;
-        &lt;duration&gt;86400&lt;/duration&gt;
-        &lt;start&gt;1330578000&lt;/start&gt;
-        &lt;!-- start date: 3/1/2012 5:00:00 AM --&gt;
-      &lt;/interval&gt;
-      &lt;IntervalReading&gt;
-        &lt;cost&gt;539919&lt;/cost&gt;
-        &lt;timePeriod&gt;
-          &lt;duration&gt;86400&lt;/duration&gt;
-          &lt;start&gt;1330578000&lt;/start&gt;
-          &lt;!-- 3/1/2012 5:00:00 AM  --&gt;
-         &lt;/timePeriod&gt;
-        &lt;value&gt;57751&lt;/value&gt;
-      &lt;/IntervalReading&gt;
-    &lt;/IntervalBlock&gt;
-  &lt;/content&gt;
-&lt;/entry&gt;
+    <pre><code>&lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
+      &lt;ns3:id&gt;urn:uuid:e0383570-16b1-4ab9-8642-fdb7e89660db&lt;/ns3:id&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="up"/&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock/1" rel="self"/&gt;
+      &lt;ns3:title&gt;&lt;/ns3:title&gt;
+      &lt;ns3:content&gt;
+            &lt;espi:IntervalBlock&gt;
+                  &lt;espi:interval&gt;
+                        &lt;espi:duration&gt;2678400&lt;/espi:duration&gt;
+                        &lt;espi:start&gt;1357016400&lt;/espi:start&gt;
+                  &lt;/espi:interval&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357016400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357102800&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357189200&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357275600&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357362000&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357448400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357534800&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357621200&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357707600&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357794000&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357880400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357966800&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358053200&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358139600&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358226000&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358312400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358398800&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358485200&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358571600&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358658000&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358744400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358830800&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1358917200&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359003600&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359090000&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359176400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;203931&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359262800&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;25662&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359349200&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359435600&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359522000&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359608400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+            &lt;/espi:IntervalBlock&gt;
+      &lt;/ns3:content&gt;
+      &lt;ns3:published&gt;2013-02-01T05:00:00Z&lt;/ns3:published&gt;
+      &lt;ns3:updated&gt;2013-02-01T05:00:00Z&lt;/ns3:updated&gt;
+&lt;/ns3:entry&gt;
     </code></pre>
   </div>
   <h3>LocalTimeParameters</h3>
   <div>
     <p>The <em>LocalTimeParameters</em> provide a flexible manner to enable <em>Energy Usage Information (EUI)</em> to be provided with a reference to local time, without including any <em>Personal Identifiable Information</em>.  </p>
-    <pre><code>&lt;entry&gt;
-  &lt;id&gt;urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1&lt;/id&gt;
-  &lt;published&gt;2012-10-24T00:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
-  &lt;link rel="self"
-        href="/espi/1_1/resource/Subscription/9b6c7063/LocalTimeParameters/01"/&gt;
-  &lt;link rel="up"
-        href="/espi/1_1/resource/Subscription/9b6c7063/LocalTimeParameters"/&gt;
-  &lt;link rel="related"
-        href="/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01"/&gt;
-  &lt;title&gt;my house&lt;/title&gt;
-  &lt;content&gt;
-    &lt;LocalTimeParameters xmlns="http://naesb.org/espi"&gt;
-      &lt;dstEndRule&gt;B40E2000&lt;/dstEndRule&gt;
-      &lt;dstOffset&gt;3600&lt;/dstOffset&gt;
-      &lt;dstStartRule&gt;360E2000&lt;/dstStartRule&gt;
-      &lt;tzOffset&gt;-18000&lt;/tzOffset&gt;
-    &lt;/LocalTimeParameters&gt;
-  &lt;/content&gt;
-&lt;/entry&gt;
+    <pre><code>
+&lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
+      &lt;ns3:id&gt;urn:uuid:e30ce77d-ec22-4da5-83c2-991ba34c97d6&lt;/ns3:id&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters" rel="up"/&gt;
+      &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="self"/&gt;
+      &lt;ns3:title&gt;DST For North America&lt;/ns3:title&gt;
+      &lt;ns3:content&gt;
+            &lt;espi:LocalTimeParameters&gt;
+                  &lt;espi:dstEndRule&gt;B40E2000&lt;/espi:dstEndRule&gt;
+                  &lt;espi:dstOffset&gt;3600&lt;/espi:dstOffset&gt;
+                  &lt;espi:dstStartRule&gt;360E2000&lt;/espi:dstStartRule&gt;
+                  &lt;espi:tzOffset&gt;-18000&lt;/espi:tzOffset&gt;
+            &lt;/espi:LocalTimeParameters&gt;
+      &lt;/ns3:content&gt;
+      &lt;ns3:published&gt;2013-09-19T04:00:00Z&lt;/ns3:published&gt;
+      &lt;ns3:updated&gt;2013-09-19T04:00:00Z&lt;/ns3:updated&gt;
+&lt;/ns3:entry&gt;
     </code></pre>
   </div>
   <h3>ElectricPowerUsageSummary</h3>
