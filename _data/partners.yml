@@ -1,35 +1,46 @@
 - name: "Ameren Illinois"
   url: "http://www.amerenillinois.com"
-  status: committed
   status: featured
 - name: "Ameren Missouri"
   url: "http://www.amerenmissouri.com/"
+    status: featured
 - name: "American Electric Power"
   url: "http://www.aep.com"
+    status: featured
 - name: "Austin Energy"
   url: "http://www.austinenergy.com"
+    status: featured
 - name: "Baltimore Gas & Electric"
   url: "http://www.bge.com/"
 - name: "Bangor Hydro Electric Company"
   url: "http://www.emeramaine.com/"
 - name: "CenterPoint Energy"
   url: "http://www.centerpointenergy.com/"
+    status: featured
+
 - name: "Commonwealth Edison"
   url: "http://www.comed.com"
+    status: featured
+
 - name: "Consolidated Edison"
   url: "http://www.coned.com/"
 - name: "Connecticut Light & Power"
   url: "http://www.cl-p.com/Home/SaveEnergy/Green_Button/"
 - name: "JEA"
   url: "https://www.jea.com/"
+    status: featured
+
 - name: "National Grid"
   url: "https://www.nationalgridus.com"
+    status: featured
+
 - name: "NSTAR"
   url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
 - name: "Oncor"
   url: "http://www.oncor.com/"
 - name: "PG&E"
   url: "http://www.pge.com"
+    status: featured
 - name: "PacifiCorp"
   url: "http://www.pacificorp.com"
 - name: "Pacific Power"
@@ -44,6 +55,8 @@
   url: "https://www.psnh.com/"
 - name: "Reliant"
   url: "https://www.reliant.com"
+    status: featured
+
 - name: "Rocky Mountain Power"
   url: "https://www.rockymountainpower.net"
 - name: "SDG&E"
@@ -60,12 +73,52 @@
   url: "https://www.yankeegas.com/For_your_Home/SaveEnergyAndMoney/Green_Button/"
 - name: "Wake Electric"
   url: "http://www.wemc.com/"
+    status: featured
+
 - name: "Xcel Energy"
   url: "http://www.xcelenergy.com"
-- name: "Pepco"
-  url: "http://pepco.com"
-- name: "Pepco"
-  url: "http://pepco.com"
+- name: "Central Maine Power"
+  url: "http://www.cmpco.com/"
+    status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Central Maine Power"
+  url: "http://www.cmpco.com/"
+    status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
+- name: "Chattanooga EPB"
+  url: "https://www.epb.net/"
+     status: committed
 - name: "Pepco"
   url: "http://pepco.com"
 - name: "Pepco"
