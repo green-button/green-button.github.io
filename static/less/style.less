@@ -3,6 +3,8 @@
 @import "images.css";
 
 
+@special-break: 500px;
+
 body, html {
   height:100%;
   font-size:16px;
@@ -59,6 +61,13 @@ h4 {
   border:0;
 }
 
+.fork-me {
+  display:none;
+  @media (min-width: @screen-sm-min) {
+    display:block;
+  }
+}
+
 // Header
 header.banner {
   width:100%;
@@ -69,26 +78,28 @@ header.banner {
   z-index:9000;
   margin-bottom:5px;
   .banner-title {
-    .make-sm-column(4);
+    .make-sm-column(5);
     .clearfix();
     img, h1 {
       .pull-left();
     }
     img {
-      height:60px;
-      margin-top:10px;
+      height:40px;
+      margin-top:20px;
       width: auto;
     }
     h1 {
+      display:block;
       font-size:24px;
       line-height:40px;
       margin-left:10px;
       color:@brand-primary;
+      
     }
   }
   .banner-nav {
-    .make-sm-column(8);
     text-align:right;
+    .make-sm-column(7);
     .main-nav {
       ul {
         .list-inline();
