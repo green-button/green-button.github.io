@@ -88,17 +88,17 @@
 - name: "Kootenai Electric Cooperative"
   url: "http://www.kec.com/"
      status: committed
-- name: "Chattanooga EPB"
-  url: "https://www.epb.net/"
+- name: "PPL Electric Utilities"
+  url: "https://www.pplelectric.com/"
      status: committed
-- name: "Chattanooga EPB"
-  url: "https://www.epb.net/"
+- name: "PECO"
+  url: "https://www.peco.com"
      status: committed
-- name: "Central Maine Power"
-  url: "http://www.cmpco.com/"
+- name: "Sawnee Electric Membership Corporation"
+  url: "http://www.sawnee.com/"
     status: committed
-- name: "Chattanooga EPB"
-  url: "https://www.epb.net/"
+- name: "Virginia Dominion Power"
+  url: "https://www.dom.com/dominion-virginia-power/"
      status: committed
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
