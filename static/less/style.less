@@ -220,7 +220,7 @@ section.home.home-about {
     .icon {
       @icon-size: 150px;
       font-size:@icon-size / 2;
-      background:darken(@brand-primary, 20%);
+      background:@brand-primary;
       width:@icon-size;
       height:@icon-size;
       line-height:@icon-size - 10px;
@@ -282,4 +282,70 @@ section.home.home-about {
   &:hover {
     text-decoration:none;
   }
+}
+
+// Test file
+table.GBDataTable {
+	background:white;
+	border:1px;
+	border-color: rgb(6,134,34);
+	border-style: solid;
+	background-color: #ffffff;
+	float: none;
+}
+
+table.GBDataTable th {
+	clear:both;
+	border:1px solid rgb(6,134,34) rgb(6,134,34) rgb(6,134,34) rgb(6,134,34);
+}
+
+table.GBDataTable td {
+}
+
+table.GBInnerDataTable th {
+	color:black;
+	background:white;
+	border:1px;
+	border-color: rgb(6,134,34) rgb(6,134,34) rgb(6,134,34) rgb(6,134,34);
+	border-style: solid;
+	background-color: #ffffff;
+	font-size:1em;
+}
+
+
+#dropZone
+{
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    width: 250px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin: 15px ;
+}
+
+#dropZone.hover
+{
+    border-color: #aaa;
+    background-color: #ddd;
+}
+
+#dropZone.error
+{
+    border-color: #f00;
+    background-color: #faa;
+}
+
+#dropZone.hide
+{
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    width: 250px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
 }
