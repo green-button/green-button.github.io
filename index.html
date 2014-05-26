@@ -56,15 +56,18 @@ title: Home
       <p class="lede">Today, [XYZ] million households and businesses can use Green Button to access their own energy usage data from their electric utility.</p>
       <ul class="partner_list">
         {% for partner in site.data.partners %}
-        {% if partner.status == "featured" %}
+        {% if partner.type == "utility" %}
+        {% if partner.featured %}
         <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
         {% endif %}
         {% endfor %}
       </ul>
       <ul class="partner_list below-fold">
         {% for partner in site.data.partners %}
-        {% if partner.status %}
-        {% else %}
+        {% if partner.type == "utility" %}
+        {% if partner.featured %}
+        {% endif %}
           <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
         {% endif %}
         {% endfor %}
@@ -72,19 +75,23 @@ title: Home
       <div class="lead">Future Commitments</div>
       <ul class="partner_list commitments">
         {% for partner in site.data.partners %}
+        {% if partner.type == "utility" %}
         {% if partner.status == "committed" %}
-        {% if partner.status == "featured" %}
+        {% if partner.featured %}
         <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
         {% endif %}
         {% endif %}
         {% endfor %}
       </ul>
       <ul class="partner_list commitments below-fold">
         {% for partner in site.data.partners %}
+        {% if partner.type == "utility" %}
         {% if partner.status == "committed" %}
-        {% if partner.status == "featured" %}
+        {% if partner.featured == "true" %}
         {% endif %}
           <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
         {% endif %}
         {% endfor %}
       </ul>
