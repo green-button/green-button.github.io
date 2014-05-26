@@ -37,14 +37,14 @@ RetailCustomer, allow that data to be shared with a third party.</dd>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/GreenButton_Actors_transparent.png" />
 
 <h3>Relationships between the Actors</h3>
-<p>The Actors enter into relationships as depicted in the diagram above. The simplest relationship is the one that exists between the DataCustodian (i.e. the Utility) and their customer (the <em>RetailCustomer</em>). This relationship allows the <em>RetailCustomer</em> to download a file that contains their resource usage information. This simple relationship is the basis for the <a href="#download-my-data">Green Button Download My Data</a> operation. 
+<p>The Actors enter into relationships as depicted in the diagram above. The simplest relationship is the one that exists between the DataCustodian (i.e. the Utility) and their customer (the <em>RetailCustomer</em>). This relationship allows the <em>RetailCustomer</em> to download a file that contains their resource usage information. This simple relationship is the basis for the <a href="#download-my-data">Green Button Download My Data</a> operation.
 
 </div>
 <!-- end .home -->
 
 <div id="concepts">
 <h3>Concepts</h3>
-<p>Green Button uses <a href="http://en.wikipedia.org/wiki/Atom_feed">Atom Publishing Standard</a> to represent structured energy usage information in an XML format that may be exchanged on the internet. Both Google (GData) and Microsoft (OData) independently recognized the power of the Atom Syndication Format to encode complex data for exchange over RESTful web services. Green Button adopted these concepts in the construction of ESPI.</p>
+<p>Green Button uses the <a href="http://en.wikipedia.org/wiki/Atom_feed">Atom Publishing Standard</a> to represent structured energy usage information in an XML format that may be exchanged on the internet. Both Google (GData) and Microsoft (OData) independently recognized the power of the Atom Syndication Format to encode complex data for exchange over RESTful web services. Green Button adopted these concepts in the construction of ESPI.</p>
 
 <p>The resources defined within Green Button, UsagePoints, MeterReadings, etc, are expressed, in XML format, within the Atom feed's <a href="#entry">Entry</a> tags. This results in a uniform way to expose full-featured data APIs that reference a Retail Customer's encapsulated Energy Usage Information.</p>
 
@@ -54,7 +54,7 @@ of the Atom stream. Data records are placed within the
 between tables are represented in the
 <em>&lt;link&gt;</em>tags.</p>
 <p>
-The second thing to note is that in the Atom reprsentation, a feed will always represent a collection of 1 or more Green Button resources:
+The second thing to note is that in the Atom representation, a feed will always represent a collection of 1 or more Green Button resources:
 <pre>
 &lt;feed&gt;
   ...
@@ -74,14 +74,14 @@ The second thing to note is that in the Atom reprsentation, a feed will always r
 
 <p>So all the <a
  href="https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd">espiDerived.xsd</a>
-entities are always contained in a feed and the entry/contents describe the espi entity itself. In
-addtion, you need to construct (during the parse if possible for you:) the associations that need to
-exist between the espi entities.  The <em>&lt;link&gt;</em> tags are quite important for use during
+entities are always contained in a feed and the entry/contents describe the ESPI entity itself. In
+addition, you need to construct (during the parse if possible for you) the associations that need to
+exist between the ESPI entities.  The <em>&lt;link&gt;</em> tags are quite important for use during
 parsing of the Green Button data. These links allow you to know which <em>MeterReading</em>s are
 related to a specific <em>UsagePoint</em>.
 
-<p>Within the
-<em>&lt;entry&gt;</em>'s the <em>"related"</em> links point to a collection, for example:
+<p>Within an
+<em>&lt;entry&gt;</em>, the <em>"related"</em> links point to a collection, for example:
 <pre><code>
 &lt;feed xmlns="http://www.w3.org/2005/Atom"
          xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd"
@@ -116,7 +116,7 @@ related to a specific <em>UsagePoint</em>.
    &lt;/entry&gt;
  &lt;/feed&gt;
     </code></pre>
-    
+
 
   </div>
 </div>
@@ -126,7 +126,7 @@ related to a specific <em>UsagePoint</em>.
 <h3>Green Button Resources</h3>
 <p>A <em>DataCustodian</em> will, when authorized by a <em>RetailCustomer</em>, publish a GreenButton data stream. A <em>ThirdParty</em> may then subscribe to that stream. Green Button uses the <a href="http://oauth.net/"><span style="color:blue;">OAuth 2.0 Authorization Framework</span></a> protocol to provide secure authorization for accessing the published data stream.
 </p>
-<p>Green Button APIs are designed to support data flows that are both large and small. Many Utilities will schedule bulk transfers of hundreds of thousands of 24 hour data as a batch process. In this case, the Green Button APIs must be able to accomodate blocked transfers, recovery, and restarts. Other use-cases are more driven by frequent transmissions of smaller data sets, for example the hourly usage of a single outlet in your home. Green Button is designed to handle both!</p>
+<p>Green Button APIs are designed to support data flows that are both large and small. Many Utilities will schedule bulk transfers of hundreds of thousands of 24-hour data sets as a batch process. In this case, the Green Button APIs must be able to accomodate blocked transfers, recovery, and restarts. Other use-cases are driven more by frequent transmissions of smaller data sets, for example the hourly usage of a single outlet in your home. Green Button is designed to handle both!</p>
 
 <div id="accordion1">
   <h3>ApplicationInformation</h3>
@@ -171,7 +171,7 @@ related to a specific <em>UsagePoint</em>.
 <div id="accordion">
   <h3>UsagePoint</h3>
   <div>
-    <p>A <em>UsagePoint</em> is where a resource is measured. Typically, it is your Utility Smart Meter, but it could be the outlet on the wall as well. UsagePoints provide the reference for all meter readings that are contained within the Green Button data. UsagePoints have a <em>ServiceCategory</em> that defines what <em>kind</em> of resource, such as electricity, gas, or water measurement is being reported. </p>
+    <p>A <em>UsagePoint</em> is where a resource is measured. Typically, it is your Utility Smart Meter, but it could be the outlet on the wall as well. UsagePoints provide the reference for all meter readings that are contained within the Green Button data. UsagePoints have a <em>ServiceCategory</em> that defines what <em>kind</em> of resource &mdash; such as an electricity, gas, or water measurement &mdash; is being reported. </p>
     <pre><code>&lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
       &lt;ns3:id&gt;urn:uuid:af6e8b03-0299-467e-972a-a883ecdcc575&lt;/ns3:id&gt;
       &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="up"/&gt;
@@ -516,7 +516,7 @@ related to a specific <em>UsagePoint</em>.
   </div>
   <h3>LocalTimeParameters</h3>
   <div>
-    <p>The <em>LocalTimeParameters</em> provide a flexible manner to enable <em>Energy Usage Information (EUI)</em> to be provided with a reference to local time, without including any <em>Personal Identifiable Information</em>.  </p>
+    <p>The <em>LocalTimeParameters</em> provide a flexible manner to enable <em>Energy Usage Information (EUI)</em> to be provided with a reference to local time, without including any <em>Personally Identifiable Information</em>.  </p>
     <pre><code>
 &lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
       &lt;ns3:id&gt;urn:uuid:e30ce77d-ec22-4da5-83c2-991ba34c97d6&lt;/ns3:id&gt;
@@ -620,10 +620,10 @@ related to a specific <em>UsagePoint</em>.
 <dl>
   <dt>Download My Data</dt>
   <dd>A RetailCustomer may download an XML file from either a Data
-  Custodian or a Third Party. Restful interfaces are provided to
+  Custodian or a Third Party. RESTful interfaces are provided to
   enable this operation. There are no assumptions made with respect to
   what the RetailCustomer might do with this XML file, although best
-  practices would be to insure the file is viewable by using a minimal
+  practices would be to ensure the file is viewable using a minimal
   stylesheet.
 <ul>
 <li>Examples of <a href="http://services.greenbuttondata.org/sample-data.html">Download My Data files may be found on the Green Button Sandbox</a>.</li>
@@ -635,7 +635,7 @@ related to a specific <em>UsagePoint</em>.
   between two machines, such as from their utility to a company that
   might use the data to estimate the energy efficiency of their
   facility. In this case, <em>Connect My Data</em> would be used to
-  provide machine-2-machine data transfers. Connect My Data may provide
+  provide machine-to-machine data transfers. Connect My Data may provide
   a single transfer of information, or transfers on a predefined
   schedule.
 <ul>
@@ -643,4 +643,4 @@ related to a specific <em>UsagePoint</em>.
 </ul>
 </dd>
 </dl>
-  </div>
+</div>
