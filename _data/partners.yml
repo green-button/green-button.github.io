@@ -166,16 +166,15 @@
   url: "http://pepco.com"
   type: utility
 - name: "Pepco"
-- name: Apogee Interactive, Inc.
+- name: "Apogee Interactive, Inc."
   url: "http://www.Apogee.net"
   type: company
   status: committed
-- name: Belkin
+- name: "Belkin"
   url: "http://www.belkin.com/"
   type: company
   status: committed
-
-name: BuildingIQ
+- name: "BuildingIQ"
 url: ""
 type: company
 status: committed
