@@ -1,175 +1,257 @@
+
 - name: "Ameren Illinois"
   url: "http://www.amerenillinois.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "Ameren Missouri"
   url: "http://www.amerenmissouri.com/"
   type: utility
+  status: implemented
   featured: true
+
 - name: "American Electric Power"
   url: "http://www.aep.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "Austin Energy"
   url: "http://www.austinenergy.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "Baltimore Gas & Electric"
   url: "http://www.bge.com/"
   type: utility
+  status: implemented
+
 - name: "Bangor Hydro Electric Company"
   url: "http://www.emeramaine.com/"
   type: utility
+  status: implemented
+
 - name: "CenterPoint Energy"
   url: "http://www.centerpointenergy.com/"
   type: utility
+  status: implemented
   featured: true
+
 - name: "Commonwealth Edison"
   url: "http://www.comed.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "Consolidated Edison"
   url: "http://www.coned.com/"
   type: utility
+  status: implemented
+
 - name: "Connecticut Light & Power"
   url: "http://www.cl-p.com/Home/SaveEnergy/Green_Button/"
   type: utility
+  status: implemented
+
 - name: "JEA"
   url: "https://www.jea.com/"
   type: utility
+  status: implemented
   featured: true
+
 - name: "National Grid"
   url: "https://www.nationalgridus.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "NSTAR"
   url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
   type: utility
+  status: implemented
+
 - name: "Oncor"
   url: "http://www.oncor.com/"
   type: utility
+  status: implemented
   featured: true
+
 - name: "PG&E"
   url: "http://www.pge.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "PacifiCorp"
   url: "http://www.pacificorp.com"
   type: utility
+  status: implemented
+
 - name: "Pacific Power"
   url: "https://www.pacificpower.net"
   type: utility
+  status: implemented
+
 - name: "Pepco Holdings"
   url: "http://www.pepcoholdings.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "Portland General Electric"
   url: "http://www.portlandgeneral.com"
   type: utility
+  status: implemented
+
 - name: "TNMP"
   url: "http://www.tnmp.com/"
   type: utility
+  status: implemented
+
 - name: "Public Service of New Hampshire"
   url: "https://www.psnh.com/"
   type: utility
+  status: implemented
+
 - name: "Reliant"
   url: "https://www.reliant.com"
   type: utility
+  status: implemented
   featured: true
+
 - name: "Rocky Mountain Power"
   url: "https://www.rockymountainpower.net"
   type: utility
+  status: implemented
+
 - name: "SDG&E"
   url: "http://www.sdge.com/"
   type: utility
+  status: implemented
+
 - name: "Southern California Edison"
   url: "https://www.sce.com"
   type: utility
+  status: implemented
+
 - name: "TXU Energy"
   url: "http://www.txu.com/"
   type: utility
+  status: implemented
+
 - name: "United Illuminating Company"
   url: "https://www.uinet.com"
   type: utility
+  status: implemented
+
 - name: "Western Mass Electric"
   url: "https://www.wmeco.com/"
   type: utility
+  status: implemented
+
 - name: "Yankee Gas"
   url: "https://www.yankeegas.com/For_your_Home/SaveEnergyAndMoney/Green_Button/"
   type: utility
+  status: implemented
+
 - name: "Wake Electric"
   url: "http://www.wemc.com/"
   type: utility
+  status: implemented
+
 - name: "Xcel Energy"
   url: "http://www.xcelenergy.com"
   type: utility
+  status: implemented
+
 - name: "Central Maine Power"
   url: "http://www.cmpco.com/"
   type: utility
   status: committed
+
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
   type: utility
   status: committed
+
 - name: "Efficiency Vermont"
   url: "https://www.efficiencyvermont.com"
   type: utility
   status: committed
+
 - name: "Glendale Water and Power"
   url: "http://www.glendaleca.gov/government/departments/glendale-water-and-power"
   type: utility
   status: committed
+
 - name: "Kootenai Electric Cooperative"
   url: "http://www.kec.com/"
   type: utility
   status: committed
+
 - name: "PPL Electric Utilities"
   url: "https://www.pplelectric.com/"
   type: utility
   status: committed
+
 - name: "PECO"
   url: "https://www.peco.com"
   type: utility
   status: committed
+
 - name: "Sawnee Electric Membership Corporation"
   url: "http://www.sawnee.com/"
   type: utility
   status: committed
+
 - name: "Virginia Dominion Power"
   url: "https://www.dom.com/dominion-virginia-power/"
   type: utility
   status: committed
+
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
   type: utility
   status: committed
+
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
   type: utility
   status: committed
+
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
   type: utility
   status: committed
+
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
   type: utility
   status: committed
+
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
   type: utility
   status: committed
+
 - name: "Pepco"
   url: "http://pepco.com"
   type: utility
+  status: implemented
+
 - name: "Pepco"
   url: "http://pepco.com"
   type: utility
-- name: "Apogee Interactive, Inc."
-  url: "http://www.Apogee.net"
-  type: company
-  status: committed
-- name: "Belkin"
-  url: "http://www.belkin.com/"
-  type: company
-  status: committed
+  status: implemented
+
+- name: "Pepco"
+  url: "http://pepco.com"
+  type: utility
+  status: implemented
+
+- name: "Pepco"
+  url: "http://pepco.com"
+  type: utility
+  status: implemented
