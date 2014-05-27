@@ -1,3 +1,11 @@
+# This file outlines all of the partners listed on the site. Below is an example item:
+  
+# - name: "Name of Partner"
+#   url: "http://partner.com"
+#   type: utility OR company
+#   status: IF committed
+#   featured: true (if item should be featured)
+
 - name: "Ameren Illinois"
   url: "http://www.amerenillinois.com"
   type: utility
