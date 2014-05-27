@@ -216,6 +216,7 @@
   status: committed
 - name: "Simple Energy"
   url: "http://simpleenergy.com"
+  featured: true
   type: company
   status: committed
 - name: "EnergyDataMetrics LLC."
@@ -232,6 +233,7 @@
   status: committed
 - name: "FirstFuel"
   url: "http://www.firstfuel.com/"
+  featured: true
   type: company
   status: committed
 - name: "Honest Buildings"
@@ -260,6 +262,7 @@
   status: committed
 - name: "Oracle"
   url: "http://www.oracle.com/"
+  featured: true
   type: company
   status: committed
 - name: "PlotWatt"
@@ -312,6 +315,7 @@
   status: implemented
 - name: "EnergyAi"
   url: "http://www.energyai.com/"
+  featured: true
   type: company
   status: implemented
 - name: "EnerNOC"
@@ -358,6 +362,7 @@
   url: "http://opower.com/"
   type: company
   status: implemented
+  featured: true
 - name: "Plug-in Electric Vehicle for me"
   url: "http://www.pev4me.com/"
   type: company
@@ -410,3 +415,4 @@
   url: "http://weatherbughome.com/"
   type: company
   status: implemented
+  featured: true
