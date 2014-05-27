@@ -3,48 +3,59 @@
 # - name: "Name of Partner"
 #   url: "http://partner.com"
 #   type: utility OR company
-#   status: IF committed
+#   status: implemented OR committed
 #   featured: true (if item should be featured)
 
 - name: "Ameren Illinois"
   url: "http://www.amerenillinois.com"
   type: utility
+  status: implemented
   featured: true
 - name: "Ameren Missouri"
   url: "http://www.amerenmissouri.com/"
   type: utility
+  status: implemented
   featured: true
 - name: "American Electric Power"
   url: "http://www.aep.com"
   type: utility
+  status: implemented
   featured: true
 - name: "Austin Energy"
   url: "http://www.austinenergy.com"
   type: utility
+  status: implemented
   featured: true
 - name: "Baltimore Gas & Electric"
   url: "http://www.bge.com/"
   type: utility
+  status: implemented
 - name: "Bangor Hydro Electric Company"
   url: "http://www.emeramaine.com/"
   type: utility
+  status: implemented
 - name: "CenterPoint Energy"
   url: "http://www.centerpointenergy.com/"
   type: utility
+  status: implemented
   featured: true
 - name: "Commonwealth Edison"
   url: "http://www.comed.com"
   type: utility
+  status: implemented
   featured: true
 - name: "Consolidated Edison"
   url: "http://www.coned.com/"
   type: utility
+  status: implemented
 - name: "Connecticut Light & Power"
   url: "http://www.cl-p.com/Home/SaveEnergy/Green_Button/"
   type: utility
+  status: implemented
 - name: "JEA"
   url: "https://www.jea.com/"
   type: utility
+  status: implemented
   featured: true
 - name: "National Grid"
   url: "https://www.nationalgridus.com"
