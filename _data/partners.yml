@@ -240,6 +240,7 @@
   url: "https://www.honestbuildings.com/"
   type: company
   status: committed
+  featured: true
 - name: "iControl Networks"
   url: "http://www.icontrol.com/"
   type: company
@@ -315,7 +316,6 @@
   status: implemented
 - name: "EnergyAi"
   url: "http://www.energyai.com/"
-  featured: true
   type: company
   status: implemented
 - name: "EnerNOC"
@@ -362,7 +362,6 @@
   url: "http://opower.com/"
   type: company
   status: implemented
-  featured: true
 - name: "Plug-in Electric Vehicle for me"
   url: "http://www.pev4me.com/"
   type: company
@@ -415,4 +414,4 @@
   url: "http://weatherbughome.com/"
   type: company
   status: implemented
-  featured: true
+
