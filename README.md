@@ -23,4 +23,4 @@ Content and feature suggestions are welcome via GitHub Issues. Code contribution
 
 Thanks
 ---
-Huge thanks to team [@blue-button](https://github.com/blue-button), whose design we forked for this project.
+Huge thanks to team [@blue-button](https://github.com/blue-button), whose design we forked for this project and [@18F](https://github.com/18F).
