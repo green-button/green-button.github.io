@@ -1,6 +1,26 @@
-green-button.github.io
+Green Button
 ======================
+This is the source code for greenbuttondata.org. You can see the design preview: http://green-button.github.io.
 
-You can see the site in process: http://green-button.github.io/
+Mission
+---
+The goal of the site is to help:
+- Consumers understand green button
+- Developers use green button data to make tools and services
+- Utilities and other service providers generate energy data using the green button standard
 
-And its predecessor: http://greenbuttondata.org
+How it works
+---
+GreenButtonData.org is a static HTML/CSS/JS site. The site's pages are maintained in simple Markdown files, which are compiled into HTML by Jekyll.
+
+The lists of utilities and other companies that appear on the homepage are maintained in easy-to-read YAML files (".yml") in the /_data directory.
+
+GitHub is our CMS for this project. Content editors have GitHub accounts, edit the Markdown and YAML files themselves, and preview the results on http://green-button.github.io. Pushes to the live server are, for now, handled by the development team.
+
+Contributing
+---
+Content and feature suggestions are welcome via GitHub Issues. Code contributions are welcome via pull request, although of course we cannot guarantee your changes will be included in the site.
+
+Thanks
+---
+Huge thanks to team @blue-button, whose design we forked for this project.
