@@ -443,7 +443,7 @@
   <div class="section-container">
     <div class="section-content">
       <div class="banner-title">
-        <a href="/">
+        <a href="http://greenbuttondata.org/">
           <img class="logo" src="assets/logo.png" alt="Green Button">
           <h1>
 		  Green Button
@@ -455,7 +455,7 @@
           <ul>
             <li><a href="/developers">Developers</a></li>
             <li><a href="/greentest.aspx">Testing</a></li>
-            <li><a href="mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI�d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]" class="btn btn-primary">Get Started</a></li>
+            <li><a href="mailto:info@greenbuttondata.org?subject=Getting%20started%20href="http://greenbuttondata.org/"reen%20Button&#038;body=Hi!%0A%0AI�d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]" class="btn btn-primary">Get Started</a></li>
           </ul>
         </nav>
       </div>
@@ -584,7 +584,7 @@ Mac: Fire Fox V19.0.2, Safari V6.0.2, Chrome V25.0.1364.160</p>
         <div class="row">
           <nav class="footer-nav">
             <ul>
-              <li><a href="/"><img class="logo" src="/assets/logo.png" alt="Green Button Home"></a></li>
+              <li><a href="http://greenbuttondata.org/"><img class="logo" src="/assets/logo.png" alt="Green Button Home"></a></li>
               <li><a href="/developers">Developers</a></li>
               <li><a href="/community">Community</a></li>
               <li><a href="/greentest.aspx">Testing</a></li>
@@ -594,7 +594,7 @@ Mac: Fire Fox V19.0.2, Safari V6.0.2, Chrome V25.0.1364.160</p>
           </nav>
         </div>
         <div class="row credits">
-          Green Button is an industry-led effort that responds to a White House call-to-action: provide electricity customers with easy access to their energy usage data in a consumer-friendly and computer-friendly format.
+          Green Button is an industry-lehref="http://greenbuttondata.org/" that responds to a White House call-to-action: provide electricity customers with easy access to their energy usage data in a consumer-friendly and computer-friendly format.
 
         </div>
       </div>
