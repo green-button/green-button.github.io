@@ -60,68 +60,88 @@
 - name: "National Grid"
   url: "https://www.nationalgridus.com"
   type: utility
+  status: implemented
   featured: true
 - name: "NSTAR"
   url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
   type: utility
+  status: implemented
 - name: "Oncor"
   url: "http://www.oncor.com/"
   type: utility
+  status: implemented
   featured: true
 - name: "PG&E"
   url: "http://www.pge.com"
   type: utility
+  status: implemented
   featured: true
 - name: "PacifiCorp"
   url: "http://www.pacificorp.com"
   type: utility
+  status: implemented
 - name: "Pacific Power"
   url: "https://www.pacificpower.net"
   type: utility
+  status: implemented
 - name: "Pepco Holdings"
   url: "http://www.pepcoholdings.com"
   type: utility
+  status: implemented
   featured: true
 - name: "Portland General Electric"
   url: "http://www.portlandgeneral.com"
   type: utility
+  status: implemented
 - name: "TNMP"
   url: "http://www.tnmp.com/"
   type: utility
+  status: implemented
 - name: "Public Service of New Hampshire"
   url: "https://www.psnh.com/"
   type: utility
+  status: implemented
 - name: "Reliant"
   url: "https://www.reliant.com"
   type: utility
+  status: implemented
   featured: true
 - name: "Rocky Mountain Power"
   url: "https://www.rockymountainpower.net"
   type: utility
+  status: implemented
 - name: "SDG&E"
   url: "http://www.sdge.com/"
   type: utility
+  status: implemented
 - name: "Southern California Edison"
   url: "https://www.sce.com"
   type: utility
+  status: implemented
 - name: "TXU Energy"
   url: "http://www.txu.com/"
   type: utility
+  status: implemented
 - name: "United Illuminating Company"
   url: "https://www.uinet.com"
   type: utility
+  status: implemented
 - name: "Western Mass Electric"
   url: "https://www.wmeco.com/"
   type: utility
+  status: implemented
 - name: "Yankee Gas"
   url: "https://www.yankeegas.com/For_your_Home/SaveEnergyAndMoney/Green_Button/"
   type: utility
+  status: implemented
 - name: "Wake Electric"
   url: "http://www.wemc.com/"
   type: utility
+  status: implemented
 - name: "Xcel Energy"
   url: "http://www.xcelenergy.com"
   type: utility
+  status: implemented
 - name: "Central Maine Power"
   url: "http://www.cmpco.com/"
   type: utility
@@ -265,96 +285,128 @@
 - name: "Aclara"
   url: "http://www.aclaratech.com/"
   type: company
+  status: implemented
 - name: "Alarm.com"
   url: "http://www.alarm.com"
   type: company
+  status: implemented
 - name: "Autodesk, Inc."
   url: "http://www.autodesk.com"
   type: company
+  status: implemented
 - name: "Building Energy Inc."
   url: "http://www.buildingenergy.com"
   type: company
+  status: implemented
 - name: "BuiltSpace Technologies Corp."
   url: "https://www.builtspace.com/HowItWorks/Pages/Green-Button.aspx"
   type: company
+  status: implemented
 - name: "Candi Controls LLC"
   url: "http://www.candicontrols.com"
   type: company
+  status: implemented
 - name: "Enact Systems Inc."
   url: "http://www.enact-systems.com/"
   type: company
+  status: implemented
 - name: "EnergyAi"
   url: "http://www.energyai.com/"
   type: company
+  status: implemented
 - name: "EnerNOC"
   url: "http://open.enernoc.com/data/"
   type: company
+  status: implemented
 - name: "EnerNex:"
   url: "http://www.enernex.com/"
   type: company
+  status: implemented
 - name: "Gas and Power Technologies"
   url: "http://www.gasandpower.com"
   type: company
+  status: implemented
 - name: "Genability"
   url: "http://www.genability.com"
   type: company
+  status: implemented
 - name: "Green Suite LLC"
   url: "http://mygreensuite.com/products/green-button-provider/"
   type: company
+  status: implemented
 - name: "myMeter"
   url: "http://mymeter.co/"
   type: company
+  status: implemented
 - name: "UnPlug Stuff: High Energy Audits"
   url: "http://www.unplugstuff.com/"
   type: company
+  status: implemented
 - name: "Itron"
   url: "https://www.itron.com"
   type: company
+  status: implemented
 - name: "Lucid"
   url: "http://www.luciddesigngroup.com/"
   type: company
+  status: implemented
 - name: "WegoWise"
   url: "https://www.wegowise.com"
   type: company
+  status: implemented
 - name: "OPower"
   url: "http://opower.com/"
   type: company
+  status: implemented
 - name: "Plug-in Electric Vehicle for me"
   url: "http://www.pev4me.com/"
   type: company
+  status: implemented
 - name: "Planet Ecosystems"
   url: "http://www.PlanetEcosystems.com/"
   type: company
+  status: implemented
 - name: "People Power"
   url: "http://www.peoplepowerco.com/"
   type: company
+  status: implemented
 - name: "Performance Systems Development"
   url: "http://psdconsulting.com/"
   type: company
+  status: implemented
 - name: "Power TakeOff"
   url: "http://powertakeoff.com/services/green-button-energy-data-service"
   type: company
+  status: implemented
 - name: "Retroficiency"
   url: "http://www.retroficiency.com/"
   type: company
+  status: implemented
 - name: "SkyFoundry, LLC"
   url: "http://www.skyfoundry.com/forum/topic/336"
   type: company
+  status: implemented
 - name: "Smart Grid Labs"
   url: "http://www.smartgridlabs.com/"
   type: company
+  status: implemented
 - name: "Smart Utility Systems"
   url: "http://www.smartusys.com"
   type: company
+  status: implemented
 - name: "Snugg Home"
   url: "http://snuggpro.com/"
   type: company
+  status: implemented
 - name: "Tendril"
   url: "http://www.tendrilinc.com/"
   type: company
+  status: implemented
 - name: "Wattvision"
   url: "http://www.wattvision.com/"
   type: company
+  status: implemented
 - name: "WeatherBug"
   url: "http://weatherbughome.com/"
   type: company
+  status: implemented
