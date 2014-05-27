@@ -152,6 +152,7 @@
   status: committed
 - name: "Efficiency Vermont"
   url: "https://www.efficiencyvermont.com"
+  featured: true
   type: utility
   status: committed
 - name: "Glendale Water and Power"
@@ -168,6 +169,7 @@
   status: committed
 - name: "PECO"
   url: "https://www.peco.com"
+  featured: true
   type: utility
   status: committed
 - name: "Sawnee Electric Membership Corporation"
@@ -176,6 +178,7 @@
   status: committed
 - name: "Virginia Dominion Power"
   url: "https://www.dom.com/dominion-virginia-power/"
+  featured: true
   type: utility
   status: committed
 - name: "Apogee Interactive, Inc."
@@ -188,6 +191,7 @@
   status: committed
 - name: "BuildingIQ"
   url: "https://www.buildingiq.com/"
+  featured: true
   type: company
   status: committed
 - name: "Calico Energy Services"
@@ -196,6 +200,7 @@
   status: committed
 - name: "C3"
   url: "http://www.c3energy.com/"
+  featured: true
   type: company
   status: committed
 - name: "ComparePower"
@@ -210,6 +215,7 @@
   url: "http://www.ecova.com/news-media/press-releases/ecova-joins-white-house-inspired-green-button-initiative.aspx"
   type: company
   status: committed
+  featured: true
 - name: "Efergy USA, Inc."
   url: "http://www.efergy.us/"
   type: company
@@ -229,6 +235,7 @@
   status: committed
 - name: "EnergySavvy"
   url: "http://www.energysavvy.com/"
+  featured: true
   type: company
   status: committed
 - name: "FirstFuel"
@@ -251,6 +258,7 @@
   status: committed
 - name: "LinkCycle"
   url: "http://www.linkcycle.com"
+  featured: true
   type: company
   status: committed
 - name: myBenchmarx
