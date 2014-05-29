@@ -52,11 +52,27 @@
   url: "http://www.cl-p.com/Home/SaveEnergy/Green_Button/"
   type: utility
   status: implemented
+- name: "Hawaiian Electric Company"
+  url: "http://www.hawaiianelectric.com/portal/site/heco"
+  type: utility
+  status: committed
+- name: "Hawai'i Electric Light Company"
+  url: "http://www.hawaiielectriclight.com/portal/site/helco/"
+  type: utility
+  status: committed
+- name: "Hawaii Energy"
+  url: "http://www.hawaiienergy.com/"
+  type: efficiency
+  status: committed
 - name: "JEA"
   url: "https://www.jea.com/"
   type: utility
   status: implemented
   featured: true
+- name: "Maui Electric Company"
+  url: "http://www.mauielectric.com/portal/site/meco"
+  type: utility
+  status: committed
 - name: "National Grid"
   url: "https://www.nationalgridus.com"
   type: utility
@@ -112,6 +128,10 @@
   status: implemented
 - name: "SDG&E"
   url: "http://www.sdge.com/"
+  type: utility
+  status: implemented
+- name: "Seattle City Light"
+  url: "http://www.seattle.gov/light"
   type: utility
   status: implemented
 - name: "Southern California Edison"
@@ -285,7 +305,7 @@
 - name: "Schneider-Electric"
   url: "http://www.schneider-electric.com/"
   type: company
-  status: committed
+  status: implemented
 - name: "Silver Spring Networks"
   url: "http://www.silverspringnet.com/"
   type: company
