@@ -10,17 +10,14 @@
   url: "http://www.amerenillinois.com"
   type: utility
   status: implemented
-  featured: true
 - name: "Ameren Missouri"
   url: "http://www.amerenmissouri.com/"
   type: utility
   status: implemented
-  featured: true
 - name: "American Electric Power"
   url: "http://www.aep.com"
   type: utility
   status: implemented
-  featured: true
 - name: "Austin Energy"
   url: "http://www.austinenergy.com"
   type: utility
@@ -38,12 +35,10 @@
   url: "http://www.centerpointenergy.com/"
   type: utility
   status: implemented
-  featured: true
 - name: "Commonwealth Edison"
   url: "http://www.comed.com"
   type: utility
   status: implemented
-  featured: true
 - name: "Consolidated Edison"
   url: "http://www.coned.com/"
   type: utility
@@ -56,16 +51,23 @@
   url: "http://www.hawaiianelectric.com/portal/site/heco"
   type: utility
   status: committed
+  featured: true
 - name: "Hawai'i Electric Light Company"
   url: "http://www.hawaiielectriclight.com/portal/site/helco/"
   type: utility
   status: committed
+  featured: true
 - name: "Hawaii Energy"
   url: "http://www.hawaiienergy.com/"
-  type: efficiency
+  type: utility
   status: committed
+  featured: true
 - name: "JEA"
   url: "https://www.jea.com/"
+  type: utility
+  status: implemented
+- name: "London Hydro"
+  url: "https://www.londonhydro.com"
   type: utility
   status: implemented
   featured: true
@@ -73,6 +75,7 @@
   url: "http://www.mauielectric.com/portal/site/meco"
   type: utility
   status: committed
+  featured: true
 - name: "National Grid"
   url: "https://www.nationalgridus.com"
   type: utility
@@ -134,6 +137,7 @@
   url: "http://www.seattle.gov/light"
   type: utility
   status: implemented
+  featured: true
 - name: "Southern California Edison"
   url: "https://www.sce.com"
   type: utility
@@ -158,6 +162,7 @@
   url: "http://www.wemc.com/"
   type: utility
   status: implemented
+  featured: true
 - name: "Xcel Energy"
   url: "http://www.xcelenergy.com"
   type: utility
@@ -172,7 +177,6 @@
   status: committed
 - name: "Efficiency Vermont"
   url: "https://www.efficiencyvermont.com"
-  featured: true
   type: utility
   status: committed
 - name: "Glendale Water and Power"
@@ -189,7 +193,6 @@
   status: committed
 - name: "PECO"
   url: "https://www.peco.com"
-  featured: true
   type: utility
   status: committed
 - name: "Sawnee Electric Membership Corporation"
@@ -198,7 +201,6 @@
   status: committed
 - name: "Virginia Dominion Power"
   url: "https://www.dom.com/dominion-virginia-power/"
-  featured: true
   type: utility
   status: committed
 - name: "Apogee Interactive, Inc."
@@ -235,14 +237,12 @@
   url: "http://www.ecova.com/news-media/press-releases/ecova-joins-white-house-inspired-green-button-initiative.aspx"
   type: company
   status: committed
-  featured: true
 - name: "Efergy USA, Inc."
   url: "http://www.efergy.us/"
   type: company
   status: committed
 - name: "Simple Energy"
   url: "http://simpleenergy.com"
-  featured: true
   type: company
   status: committed
 - name: "EnergyDataMetrics LLC."
@@ -255,7 +255,6 @@
   status: committed
 - name: "EnergySavvy"
   url: "http://www.energysavvy.com/"
-  featured: true
   type: company
   status: committed
 - name: "FirstFuel"
@@ -267,7 +266,6 @@
   url: "https://www.honestbuildings.com/"
   type: company
   status: committed
-  featured: true
 - name: "iControl Networks"
   url: "http://www.icontrol.com/"
   type: company
@@ -291,7 +289,6 @@
   status: committed
 - name: "Oracle"
   url: "http://www.oracle.com/"
-  featured: true
   type: company
   status: committed
 - name: "PlotWatt"
@@ -306,6 +303,7 @@
   url: "http://www.schneider-electric.com/"
   type: company
   status: implemented
+  featured: true
 - name: "Silver Spring Networks"
   url: "http://www.silverspringnet.com/"
   type: company
@@ -362,6 +360,7 @@
   url: "http://www.genability.com"
   type: company
   status: implemented
+  featured: true
 - name: "Green Suite LLC"
   url: "http://mygreensuite.com/products/green-button-provider/"
   type: company
@@ -382,6 +381,7 @@
   url: "http://www.luciddesigngroup.com/"
   type: company
   status: implemented
+  featured: true
 - name: "WegoWise"
   url: "https://www.wegowise.com"
   type: company
@@ -402,6 +402,7 @@
   url: "http://www.peoplepowerco.com/"
   type: company
   status: implemented
+  featured: true
 - name: "Performance Systems Development"
   url: "http://psdconsulting.com/"
   type: company
@@ -414,6 +415,7 @@
   url: "http://www.retroficiency.com/"
   type: company
   status: implemented
+  featured: true
 - name: "SkyFoundry, LLC"
   url: "http://www.skyfoundry.com/forum/topic/336"
   type: company
@@ -442,4 +444,5 @@
   url: "http://weatherbughome.com/"
   type: company
   status: implemented
+  fetured: true
 
