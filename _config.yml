@@ -1,7 +1,7 @@
 # Site settings
 title: Green Button
 description: "To improve the electric grid, we must empower consumers. Join the effort to give all Americans the information they need to become active participants in their own power usage."
-baseurl: "http://greenbuttondata.org/new"
+baseurl: "http://greenbuttondata.org"
 rooturl: "http://greenbuttondata.org"
 
 # Build settings
