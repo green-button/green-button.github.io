@@ -89,7 +89,6 @@
   url: "http://www.oncor.com/"
   type: utility
   status: implemented
-  featured: true
 - name: "PG&E"
   url: "http://www.pge.com"
   type: utility
@@ -124,7 +123,6 @@
   url: "https://www.reliant.com"
   type: utility
   status: implemented
-  featured: true
 - name: "Rocky Mountain Power"
   url: "https://www.rockymountainpower.net"
   type: utility
