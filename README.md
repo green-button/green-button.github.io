@@ -1,6 +1,9 @@
 Green Button
 ======================
-This is the source code for http://greenbuttondata.org. You can see the design preview: http://green-button.github.io.
+This is the source code for http://greenbuttondata.org. 
+
+<br />You can see the design preview: http://green-button.github.io.
+<hr />
 
 Mission
 ---
