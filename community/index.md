@@ -17,7 +17,7 @@ layout: page
 <li><a href="https://github.com/energyos/OpenESPI-ThirdParty-java" target="_blank">Green Button Connect My Data Source ThirdParty</a></li>
 <li><a href="https://github.com/energyos/OpenESPI-GreenbuttonDataSDK" target="_blank">Green Button DMD Test Developer Tools</a></li>
 <li><a href="https://github.com/energyos/OpenESPI-GreenButtonCMDTest" target="_blank">Green Button CMD Test Developer Tools</a></li>
-<li><a href="https://github.com/energyos/OpenESPI/wiki/Virtual-Machine-Setup" target="_blank">General OpenESPI Developer Virtual Machine Guide</a></li> 
+<li><a href="https://github.com/energyos/OpenESPI-wiki/wiki/Virtual-Machine-Setup" target="_blank">General OpenESPI Developer Virtual Machine Guide</a></li> 
 <li><a href="http://groups.google.com/group/greenbutton-dev/subscribe?hl=en" target="_blank">Green Button Developer Mail List</a></li> 
 <li><a href="http://groups.google.com/group/energyos_espi/subscribe?hl=en" target="_blank">EnergyOS OpenESPI Mail List</a></li> 
 <li>EnergyOS OpenESPI Meetings: mondays at 12:00 EST - <a href="https://www1.gotomeeting.com/join/807543384" target="_blank">https://www1.gotomeeting.com/join/807543384</a>, +1(213)493-0603;807543384#</li> 
