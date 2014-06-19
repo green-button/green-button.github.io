@@ -442,5 +442,8 @@
   url: "http://weatherbughome.com/"
   type: company
   status: implemented
-  fetured: true
-
+  featured: true
+- name: "EnergyHub, Inc."
+  url: "http://www.energyhub.com/news/green-button-support/"
+  type: company
+  status: implemented
