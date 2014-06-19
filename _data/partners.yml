@@ -443,7 +443,7 @@
   type: company
   status: implemented
   featured: true
-- name: "EnergyHub, Inc."
-  url: "http://www.energyhub.com/news/green-button-support/"
+- name: "EnergyHub"
+  url: "http://www.energyhub.com/"
   type: company
   status: implemented
