@@ -1,0 +1,19 @@
+# This file outlines all of the partners listed on the site. Below is an example item:
+  
+# - name: "Name of Agency"
+#   acronym: "NoA"
+#   url: "http://agency.gov"
+#   type: federal OR state OR County OR City OR regional
+#   status: planning OR implemented
+#   featured: true (if item should be featured)
+
+- name: "General Services Administration"
+  acronym: "GSA"
+  url: "http://www.gsa.gov"
+  type: federal
+  status: implemented
+- name: "National Institute of Standards and Technology"
+  acronym" "NIST"
+  url: "http://www.nist.gov"
+  type: federal
+  status: planning
