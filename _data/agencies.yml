@@ -13,7 +13,7 @@
   type: federal
   status: implemented
 - name: "National Institute of Standards and Technology"
-  acronym" "NIST"
+  acronym: "NIST"
   url: "http://www.nist.gov"
   type: federal
   status: planning
