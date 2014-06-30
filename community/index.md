@@ -28,7 +28,7 @@ layout: page
 <ul>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/default.aspx" target="_blank">UCAIug OpenADE Task Force Home Page</a></li>
 <li><a href="http://www.smartgridlistserv.org/cgi/wa.exe?A0=OPENSG-OPENADE" target="_blank">UCAIug OpenADE Mail List</a></li> 
-<li>UCAIug OpenADE Meetings: first tuesday of the month at 3:00 EST - <a href="https://www2.gotomeeting.com/join/844935738" target="_blank">https://www2.gotomeeting.com/join/844935738</a>, Phone: 415-363-0070;844935738#</li> 
+<li>UCAIug OpenADE Meetings: Tuesdays at 3:00 EST - <a href="https://www2.gotomeeting.com/join/844935738" target="_blank">https://www2.gotomeeting.com/join/844935738</a>, Phone: 415-363-0070;844935738#</li> 
 <li><a href="http://osgug.ucaiug.org/HelpDesk/Lists/servicerequests/GreenButton.aspx" target="_blank">UCAIug OpenADE Green Button Issues List Posting</a></li>
 </ul>
 
