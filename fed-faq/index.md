@@ -35,6 +35,25 @@ Don't see your utility?  <a class="buttonish" href="mailto:info@greenbuttondata.
 <dt>How are larger facilities such as campuses or bases to approach the Green Button opportunity</dt>
 <dd>Green Button may be made available from building meters, sub-meters within buildings, area meters, or whole campus meters. It is up to the needs of the energy managers to determine where it is most applicable for a given site.  Green Button provides a means by which facilities energy managers might deploy interoperable energy management platforms. The composition of data received from the various portions of the deployment that may be related to the benchmarking and management needs of that facility, or a portfolio of such facilities opportunity, will define how the meter data is to flow. Green Button provides the means by which these needs might be met.</dd>
 <hr />
+<dt>NASA, like DoD has a number of sites that are master metered at the fence line (the meters inside the gate belong to NASA, not the utility). Therefore, the only Green Button data we can get from the utility is from that master meter. I assume they won’t be able to access and extract the data from the NASA owned meters – is that correct?</dt>
+<dd> That is correct. The NASA owned meters are producing data that must be transformed into Green Button format. This is generally accomplished through an energy management system that receives the raw meter data, may store it locally, and also may provide local facilities or energy management capabilities to the site administrator. In the case of GSA, the Schneider Electric ION EEM product provided that energy management service. The GSA activity demonstrated using the at the fence line master meter data from the Utility AND the GSA owned meters within the buildings in the same way.</dd>
+<hr />
+<dt>Where can you obtain a copy of the data standard?</dt>
+<dd>The data standard may be obtained from the North American Energy Standards Board at the contacts below. The cost is currently $250.
+<ul>
+<li>Use this <a href="http://www.naesb.org/misc/naesb_matl_order_espi_standards.pdf">(order form)</a>  and fill out the "Retail" Version 2.1 row.</li>
+<li>Or call  (713) 356-0060 and request the "ESPI REQ.21" Standard</li>
+</ul>
+</dd>
+<hr />
+<dt>Will Green Button data  currently auto-upload into portfolio manager or is the EPA still working on that feature – if so when would they expect to have it up and running?</dt>
+<dd> EPA is still working on the auto-upload feature. A completion date has not yet been announced.</dd>
+<hr />
+<dt>People in the meeting were eluding to the fact that analyzing the Green Button data might qualify as a EISA Section 432 Audit – is that correct?</dt>
+<dd>There are numerous elements of the EISA Section 432 Audit. Those dealing with energy evaluations and verification of energy and water savings may apply. A formal answer is pending.</dd>
+<hr />
+<dt>What is the current number of utilities in CONUS that currently offer Green Button data to their customers (in terms of percentage, ie 5%, 10%…)?</dt>
+<dd>in terms of % of customers, there are @130M utility customers in CONUS. @49M currently have assess to Green Button Download My Data (so @37% of the retail customers). In terms of % of Utiltities, there are @3200 utilities in CONUS (@200 Investor owned; @900 Rural Cooperatives; @2100 Public) of these @150 have implemented Green button (@35 IOUs; 100 Coops; @15 Public) with a percentage overall of 4.5% of the CONUS utilities.</dd>
 </dl>
 
 
