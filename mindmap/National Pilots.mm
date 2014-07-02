@@ -50,10 +50,11 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="3"/>
-<node TEXT="GreenButton Los Angeles" POSITION="right" ID="ID_1984599817" CREATED="1403661411103" MODIFIED="1403789759772">
+<hook NAME="AutomaticEdgeColor" COUNTER="7"/>
+<node TEXT="GreenButton Los Angeles" POSITION="right" ID="ID_1984599817" CREATED="1403661411103" MODIFIED="1403818744256">
 <edge COLOR="#7c007c"/>
 <cloud COLOR="#f0f0f0" SHAPE="ARC"/>
+<hook URI="images/MindMap_LosAngeles.png" SIZE="0.13448636" NAME="ExternalObject"/>
 <node TEXT="LADWP" ID="ID_16526360" CREATED="1403661421545" MODIFIED="1403661429305">
 <node TEXT="Infrastructure" ID="ID_1107977708" CREATED="1403661430596" MODIFIED="1403712987469">
 <node TEXT="IT - (new - advanced)" ID="ID_1114754319" CREATED="1403713091373" MODIFIED="1403713250939"/>
@@ -73,7 +74,21 @@
 <node TEXT="Gretchen Hardison" ID="ID_1359236294" CREATED="1403709895975" MODIFIED="1403709913334"/>
 <node TEXT="Graig Tranby" ID="ID_430784838" CREATED="1403709913745" MODIFIED="1403709922114"/>
 <node TEXT="Ethelinda Reyes" ID="ID_288221836" CREATED="1403709922414" MODIFIED="1403709934401"/>
-<node TEXT="" ID="ID_1758695016" CREATED="1403709934956" MODIFIED="1403709934956"/>
+<node TEXT="Marcie Edwards" ID="ID_1758695016" CREATED="1403709934956" MODIFIED="1404139147085"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Marcie.edwards@ladwp.com <marcie.edwards ladwp.com="#DEFAULT"/>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 </node>
 <node TEXT="Projects" ID="ID_1178905163" CREATED="1403662019758" MODIFIED="1403662022989"/>
@@ -237,6 +252,7 @@
 </html>
 </richcontent>
 </node>
+<node TEXT="Hilary Firestone" ID="ID_1132381834" CREATED="1403902579649" MODIFIED="1403902762357" LINK="https://www.linkedin.com/pub/hilary-beber-firestone/12/721/a3a"/>
 </node>
 </node>
 </node>
@@ -261,7 +277,7 @@
 </node>
 <node TEXT="" ID="ID_911724371" CREATED="1403789550659" MODIFIED="1403790021231"/>
 <node TEXT="DC Gov.Services" ID="ID_262968138" CREATED="1403710209074" MODIFIED="1403790128346">
-<node TEXT="Catherine Sandoval" ID="ID_1661468765" CREATED="1403710213216" MODIFIED="1403710221475"/>
+<node TEXT="DGS - Energy Datapalooza speaker" ID="ID_1661468765" CREATED="1403710213216" MODIFIED="1403819092070"/>
 <node TEXT="Chris Villirealle" ID="ID_162154120" CREATED="1403710222038" MODIFIED="1403789605169"/>
 <node TEXT="Amy Baker" ID="ID_1476465094" CREATED="1403710226078" MODIFIED="1403710230026"/>
 <node TEXT="decision on data access for aggregate data use cases" ID="ID_1424110672" CREATED="1403789608682" MODIFIED="1403789626067"/>
@@ -420,6 +436,244 @@
 </node>
 <node TEXT="Govermental Services (DCGS)" ID="ID_1300492006" CREATED="1403790506249" MODIFIED="1403790527200"/>
 </node>
+</node>
+<node TEXT="Background" POSITION="right" ID="ID_948064741" CREATED="1404139054500" MODIFIED="1404139058493">
+<edge COLOR="#ff00ff"/>
+<node TEXT="Significant" ID="ID_176007693" CREATED="1283093380553" MODIFIED="1404049328320">
+<node TEXT="Facebook Research - Behaviorial" ID="ID_159904674" CREATED="1404048728826" MODIFIED="1404049039917" LINK="http://www.delhidailynews.com/news/To-show-moods-are-contagious--Facebook-manipulated-users-emotions-1404045862/">
+<edge COLOR="#ff0000"/>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A controversy erupted this weekend after news came out that Facebook and social scientists from the social network as well as Cornell University and the University of California, San Francisco had manipulated news feeds for some 689,000 users without informing them or seeking consent from them. Annie-Rose Strasser of ThinkProgress raised this issue seriously and claimed that the most disturbing aspect of this whole thing is that none of the participants were explicitly notified of their involvement. For the study, Facebook and the team of social scientists used an algorithm to manipulate the news feeds of participant users. The manipulation meant that some of the users received an increase in so-called negative posts and news stories to their page feed while some got more positive stories to their feed. The main aim of the team was to analyze the effect, if any, on a user who sees either more positivity or negativity in their social media experience.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Portland Oregon" ID="ID_544138414" CREATED="1404048733382" MODIFIED="1404063027243">
+<edge COLOR="#0000ff"/>
+<node TEXT="Mayors Office" ID="ID_1705499874" CREATED="1404063027896" MODIFIED="1404063034645">
+<node TEXT="Build Ecodistricts" ID="ID_1541484258" CREATED="1404063089975" MODIFIED="1404063107288">
+<node TEXT="Jobs" ID="ID_1292613186" CREATED="1404063107952" MODIFIED="1404063120950">
+<node TEXT="" ID="ID_1820895451" CREATED="1404063111587" MODIFIED="1404063120948"/>
+</node>
+</node>
+</node>
+<node TEXT="J&amp;M World" ID="ID_1885268767" CREATED="1404063035321" MODIFIED="1404063041711"/>
+<node TEXT="Intel" ID="ID_111248191" CREATED="1404063042229" MODIFIED="1404063043691"/>
+<node TEXT="MicroGridInABox" ID="ID_1173359786" CREATED="1404063044265" MODIFIED="1404063133929">
+<node TEXT="AlwaysOn" ID="ID_1010708302" CREATED="1404063054256" MODIFIED="1404063059418"/>
+<node TEXT="AlwaysUp" ID="ID_93130829" CREATED="1404063060003" MODIFIED="1404063063480"/>
+<node TEXT="Cybersecurity Infrastructure" ID="ID_1406558892" CREATED="1404063064212" MODIFIED="1404063072233"/>
+<node TEXT="Resiliancy" ID="ID_634432341" CREATED="1404063150209" MODIFIED="1404063155271"/>
+</node>
+<node TEXT="OHSU Districtrict" ID="ID_1368857542" CREATED="1404063139578" MODIFIED="1404063239220">
+<node TEXT="Substation" ID="ID_435595022" CREATED="1404063239762" MODIFIED="1404063243540"/>
+<node TEXT="Hospital" ID="ID_7127669" CREATED="1404063243935" MODIFIED="1404063247073"/>
+</node>
+<node TEXT="Facilities" ID="ID_135827569" CREATED="1404063302737" MODIFIED="1404063307228">
+<node TEXT="ZGF Building" ID="ID_457445246" CREATED="1404063307578" MODIFIED="1404063312201"/>
+<node TEXT="GluMac Building" ID="ID_1090536123" CREATED="1404063312652" MODIFIED="1404063320166"/>
+<node TEXT="Edith Green Federal Building" ID="ID_1697034968" CREATED="1404063321708" MODIFIED="1404063331180"/>
+<node TEXT="OHSU/PUS Innovation District (Shared Resource Center)" ID="ID_852106707" CREATED="1404063332239" MODIFIED="1404063362726"/>
+</node>
+</node>
+<node TEXT="Seattle" ID="ID_1833852641" CREATED="1404063443796" MODIFIED="1404063445719">
+<edge COLOR="#00ffff"/>
+<node TEXT="Seattle 2030" ID="ID_1237662855" CREATED="1404063446507" MODIFIED="1404063450545"/>
+<node TEXT="Seattle City Light" ID="ID_784230705" CREATED="1404063451379" MODIFIED="1404063466656"/>
+<node TEXT="City Building" ID="ID_1896632418" CREATED="1404063467163" MODIFIED="1404063497223"/>
+<node TEXT="Team" ID="ID_1245132213" CREATED="1404063498563" MODIFIED="1404063502443">
+<node TEXT="Bill Cambell" ID="ID_1073289038" CREATED="1404063502848" MODIFIED="1404063511308"/>
+<node TEXT="" ID="ID_557257679" CREATED="1404063511917" MODIFIED="1404063511917"/>
+</node>
+</node>
+<node TEXT="Climate" ID="ID_1011152319" CREATED="1404049041324" MODIFIED="1404049052969">
+<edge COLOR="#00ff00"/>
+<node TEXT="" ID="ID_762683000" CREATED="1404049053666" MODIFIED="1404049312131" LINK="http://www.washingtonpost.com/politics/supreme-court-limits-epas-ability-to-regulate-greenhouse-gas-emissions/2014/06/23/c56fc194-f1b1-11e3-914c-1fbd0614e2d4_story.html"/>
+<node TEXT="" ID="ID_1915139519" CREATED="1404049194262" MODIFIED="1404049343641" HGAP="152" VSHIFT="84">
+<hook URI="../Desktop/Screen%20Shot%202014-06-29%20at%207.37.54%20AM.png" SIZE="0.68728524" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="" ID="ID_1970658679" CREATED="1404063561665" MODIFIED="1404063561666">
+<edge COLOR="#ffff00"/>
+</node>
+<node TEXT="Ecodistricts" ID="ID_1375618544" CREATED="1404063569293" MODIFIED="1404063575243">
+<edge COLOR="#7c0000"/>
+<node TEXT="Jon Fink" ID="ID_34376351" CREATED="1404063576099" MODIFIED="1404063579924"/>
+<node TEXT="EcoDistrict Summit" ID="ID_1542984910" CREATED="1404063580408" MODIFIED="1404063585222"/>
+<node TEXT="" ID="ID_987131706" CREATED="1404063587158" MODIFIED="1404063587158"/>
+</node>
+<node TEXT="Meetings" ID="ID_1140436461" CREATED="1404063589791" MODIFIED="1404063592951">
+<edge COLOR="#00007c"/>
+<node TEXT="PDX" ID="ID_915610878" CREATED="1404063593684" MODIFIED="1404063614135">
+<node TEXT="Jon Fink" ID="ID_1606998002" CREATED="1404063625162" MODIFIED="1404063640956"/>
+<node TEXT="Ken Mottler" ID="ID_1766165402" CREATED="1404063641531" MODIFIED="1404063644826"/>
+<node TEXT="" ID="ID_1558003583" CREATED="1404063646054" MODIFIED="1404063646054"/>
+</node>
+<node TEXT="LA" ID="ID_453907464" CREATED="1404063615373" MODIFIED="1404063620053"/>
+</node>
+</node>
+</node>
+<node TEXT="Hawaii" POSITION="left" ID="ID_679276492" CREATED="1404139204107" MODIFIED="1404139211232">
+<edge COLOR="#00ffff"/>
+<node TEXT="Hawaii Energy" ID="ID_1211300149" CREATED="1404139212182" MODIFIED="1404139223874">
+<node TEXT="Michael Chang" ID="ID_1298269879" CREATED="1404139232143" MODIFIED="1404139328333"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      MICHAEL.J.CHANG@leidos.com Deputy Program Director
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="    Ray Starling" ID="ID_1709625474" CREATED="1404139262184" MODIFIED="1404139344509"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Program Manager HAYWOOD.R.STARLING@leidos.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Hoi Shan Wirt" ID="ID_566454545" CREATED="1404139269537" MODIFIED="1404139306776"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Director of Communications and Risk Management HAYWOOD.R.STARLING@leidos.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Hawaii Electric Industries" ID="ID_1958830262" CREATED="1404139365355" MODIFIED="1404139372748">
+<node TEXT="Alan Oshima" ID="ID_1992611790" CREATED="1404139376105" MODIFIED="1404139635541"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Hawaiian Electric Industries aoshima@hei.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Dan Giovanni" ID="ID_29572525" CREATED="1404139385038" MODIFIED="1404139608393"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Senior Vice President, Operations, dan.giovanni@hawaiianelectric.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Shelee Kimura" ID="ID_289962970" CREATED="1404139395703" MODIFIED="1404139583555"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Vice President, Corporate Planning and Business Development shelee.kimura@hawaiianelectric.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Lynne Unemori" ID="ID_1489179150" CREATED="1404139418201" MODIFIED="1404139566474"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Vice President Corporate Relations lynne.unemori@hawaiianelectric.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Darren Ishimura" ID="ID_422044721" CREATED="1404139427135" MODIFIED="1404139542553"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Director of Distributed Technologies darren.ishimura@hawaiianelectric.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Dora Nakafuji" ID="ID_10685190" CREATED="1404139488166" MODIFIED="1404139525214"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Director Renewable Energy Planning dora.nakafuji@hawaiianelectric.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Operating Companies" ID="ID_891419628" CREATED="1404139651099" MODIFIED="1404139659153">
+<node TEXT="Hawaii Elctric Company" ID="ID_436857283" CREATED="1404139660115" MODIFIED="1404139669942"/>
+<node TEXT="Maui Electric Company" ID="ID_1669144361" CREATED="1404139670392" MODIFIED="1404139675542"/>
+<node TEXT="Hawa&apos;ii Electric Light Company" ID="ID_35124672" CREATED="1404139676015" MODIFIED="1404139689475"/>
+</node>
+</node>
+<node TEXT="Public Utility Commission" ID="ID_538524625" CREATED="1404139712896" MODIFIED="1404139718616"/>
+</node>
+<node TEXT="Seattle" POSITION="right" ID="ID_375605653" CREATED="1404141089965" MODIFIED="1404141093535">
+<edge COLOR="#ffff00"/>
+</node>
+<node TEXT="Portalnd Oregon" POSITION="right" ID="ID_710707127" CREATED="1404141094271" MODIFIED="1404141099354">
+<edge COLOR="#7c0000"/>
 </node>
 </node>
 </map>
