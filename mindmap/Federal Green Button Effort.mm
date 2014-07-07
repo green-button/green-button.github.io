@@ -50,7 +50,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="12"/>
 <node TEXT="Facilities" POSITION="right" ID="ID_627507414" CREATED="1404158210668" MODIFIED="1404158217708">
 <edge COLOR="#ff0000"/>
 <node TEXT="Facility List" ID="ID_546344470" CREATED="1404158226381" MODIFIED="1404158260487" LINK="https://docs.google.com/spreadsheets/d/1lUy1ho-ZDHk0-OLEQ2wEUZlyX6HB7sH11f4CdQCn964/edit#gid=2104336357"/>
@@ -410,6 +410,131 @@
     </p>
     <p>
       Pete
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="EPA" POSITION="left" ID="ID_1966512435" CREATED="1404398406388" MODIFIED="1404398408866">
+<edge COLOR="#7c7c00"/>
+<node TEXT="Dan Amon" ID="ID_275477195" CREATED="1404398410664" MODIFIED="1404398555503"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Dan,
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Thank you for your attention to the Green Button initiative. As presented at the recent GreenGov session sponsored by the Council on Environmental Quality, using Green Button data flows within your energy management processes shows great potential for helping to achieve improved operational efficiencies across your agency facility portfolio.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      EPA has a number of Green Button activities/reviews underway. It may be useful to insure your operational view supportive. Also, EPA is involved in the Partnership for Sustainable Communities initiative with DOT and HUD. Do&#160;&#160;you have facilities under management that fall within the context of the Partnership projects? It may be, if the local utility supports Green Button, that we can quickly replicate what was achieved within GSA.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      We at NIST look forward to having follow-up discussions with you on Green Button and identifying ways in which we may be able to support EPA's efforts with respect to Green Button. This includes helping to identify initial deployments that would, without excessive effort, support furthering your understanding of the potential of bringing standard, interoperable, metered data into your management processes.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Again, thank you for considering how Green Button might apply to your agency's activities,
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      John Teeter
+    </p>
+    <p>
+      -----
+    </p>
+    <p>
+      Office: 301-975-4743
+    </p>
+    <p>
+      Mobile: 301-325-7608
+    </p>
+    <p>
+      Computer Scientist - NIST
+    </p>
+    <p>
+      Presidential Innovation Fellow Alumni
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Contact Log" ID="ID_750463914" CREATED="1404398433729" MODIFIED="1404398436873">
+<node TEXT="03Jul2014" ID="ID_1435165846" CREATED="1404398440056" MODIFIED="1404398498673"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Dan,
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Thank you for your attention to the Green Button initiative. As presented at the recent GreenGov session sponsored by the Council on Environmental Quality, using Green Button data flows within your energy management processes shows great potential for helping to achieve improved operational efficiencies across your agency facility portfolio.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      EPA has a number of Green Button activities/reviews underway. It may be useful to insure your operational view supportive. Also, EPA is involved in the Partnership for Sustainable Communities initiative with DOT and HUD. Do&#160;&#160;you have facilities under management that fall within the context of the Partnership projects? It may be, if the local utility supports Green Button, that we can quickly replicate what was achieved within GSA.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      We at NIST look forward to having follow-up discussions with you on Green Button and identifying ways in which we may be able to support EPA's efforts with respect to Green Button. This includes helping to identify initial deployments that would, without excessive effort, support furthering your understanding of the potential of bringing standard, interoperable, metered data into your management processes.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Again, thank you for considering how Green Button might apply to your agency's activities,
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      John Teeter
+    </p>
+    <p>
+      -----
+    </p>
+    <p>
+      Office: 301-975-4743
+    </p>
+    <p>
+      Mobile: 301-325-7608
+    </p>
+    <p>
+      Computer Scientist - NIST
+    </p>
+    <p>
+      Presidential Innovation Fellow Alumni
     </p>
   </body>
 </html>

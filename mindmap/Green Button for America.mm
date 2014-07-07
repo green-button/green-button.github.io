@@ -2,7 +2,7 @@
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="Green Button for America" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1389643601482">
 <icon BUILTIN="button_ok"/>
-<hook NAME="MapStyle">
+<hook NAME="MapStyle" zoom="0.75">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
 <map_styles>
@@ -78,7 +78,7 @@
 <hook URI="../MarComm/Graphics/favicon.png" SIZE="1.0" NAME="ExternalObject"/>
 <hook NAME="FreeNode"/>
 </node>
-<node TEXT="Climate Action Plan" POSITION="left" ID="ID_533827488" CREATED="1379355438220" MODIFIED="1380293399231">
+<node TEXT="Climate Action Plan" LOCALIZED_STYLE_REF="styles.topic" POSITION="left" ID="ID_533827488" CREATED="1379355438220" MODIFIED="1404757056030">
 <edge COLOR="#00ffff"/>
 <node TEXT="GSA" ID="ID_129755355" CREATED="1379355463062" MODIFIED="1379355466540">
 <node TEXT="#1:End2EndProcess" ID="ID_1754942358" CREATED="1379363331418" MODIFIED="1379688935707"/>
@@ -131,11 +131,17 @@
 <node TEXT="Hospitality" ID="ID_519949103" CREATED="1374940958567" MODIFIED="1374940971079"/>
 </node>
 <node TEXT="Affiliations" ID="ID_402125183" CREATED="1374941059519" MODIFIED="1374941067134">
+<node TEXT="Demographic" ID="ID_1342787225" CREATED="1404757185236" MODIFIED="1404757189673">
 <node TEXT="AARP" ID="ID_18034906" CREATED="1374941068825" MODIFIED="1374941076651"/>
+</node>
+<node TEXT="Professional" ID="ID_1082332712" CREATED="1404757190110" MODIFIED="1404757193346">
 <node TEXT="ASHREA" ID="ID_1629500234" CREATED="1374941081569" MODIFIED="1374941086872"/>
-<node TEXT=" Boy Scouts" ID="ID_1743589288" CREATED="1374941087583" MODIFIED="1374941094811"/>
+</node>
+<node TEXT="Social" ID="ID_1230773455" CREATED="1404757193831" MODIFIED="1404757197197">
+<node TEXT="4-H" ID="ID_1850842833" CREATED="1374941100505" MODIFIED="1404757205289"/>
 <node TEXT="Girl Scouts" ID="ID_1944030040" CREATED="1374941095467" MODIFIED="1374941099907"/>
-<node TEXT="4-H" ID="ID_1850842833" CREATED="1374941100505" MODIFIED="1374941104297"/>
+<node TEXT=" Boy Scouts" ID="ID_1743589288" CREATED="1374941087583" MODIFIED="1374941094811"/>
+</node>
 </node>
 <node TEXT="Behavioral Efficiency" ID="ID_653772821" CREATED="1403715085548" MODIFIED="1403715097971">
 <node TEXT="PNNL Study" ID="ID_485877293" CREATED="1403715100209" MODIFIED="1403715195304"><richcontent TYPE="NOTE">
@@ -185,7 +191,7 @@
 
 </richcontent>
 <node TEXT="Slide 1" ID="ID_1151531562" CREATED="1403715935371" MODIFIED="1403716080173">
-<hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.59.57%20PM.png" SIZE="0.63626724" NAME="ExternalObject"/>
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.59.57%20PM.png" SIZE="0.6378455" NAME="ExternalObject"/>
 <richcontent TYPE="NOTE">
 
 <html>
@@ -202,10 +208,25 @@
 
 </richcontent>
 </node>
+<node TEXT="" ID="ID_1642493033" CREATED="1404757295467" MODIFIED="1404757578351">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.56.24%20PM.png" SIZE="0.63161105" NAME="ExternalObject"/>
+</node>
+<node TEXT="" ID="ID_1585670697" CREATED="1404757595871" MODIFIED="1404757616379">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.55.54%20PM.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="" ID="ID_59874697" CREATED="1404757649203" MODIFIED="1404757669176">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.56.06%20PM.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="" ID="ID_120168313" CREATED="1404757694645" MODIFIED="1404757770375">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.56.40%20PM.png" SIZE="0.6116208" NAME="ExternalObject"/>
+</node>
+<node TEXT="" ID="ID_1512723994" CREATED="1404757777963" MODIFIED="1404757802687">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.56.53%20PM.png" SIZE="0.62827224" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
-<node TEXT="Energy Conglomorate Universe" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="right" ID="ID_561521170" CREATED="1379689542938" MODIFIED="1403663555570" HGAP="53" VSHIFT="91">
+</node>
+<node TEXT="Energy Conglomorate Universe" LOCALIZED_STYLE_REF="styles.topic" POSITION="right" ID="ID_561521170" CREATED="1379689542938" MODIFIED="1404758555230" HGAP="53" VSHIFT="91">
 <hook NAME="FreeNode"/>
 <node TEXT="MidAmerican Energy Holdings Company" ID="ID_1790103225" CREATED="1379689568347" MODIFIED="1379689872967" LINK="http://www.midamerican.com/">
 <node TEXT="PacifiCorp" ID="ID_1192426092" CREATED="1379689724753" MODIFIED="1379690664297" LINK="http://www.pacificorp.com/car/op.html">
@@ -262,7 +283,7 @@
 <node TEXT="AVA - Avista Corp" ID="ID_1913498843" CREATED="1393534513019" MODIFIED="1393534522465"/>
 <node TEXT="BHK - Black Hills Corp" ID="ID_371869775" CREATED="1393534523023" MODIFIED="1393534530612"/>
 <node TEXT="BHK.A - Berkshire Hathaway Inc." ID="ID_1593082709" CREATED="1393534536839" MODIFIED="1393534549427"/>
-<node TEXT="CDQ - Cassie de depot et placement du Qubec" ID="ID_1241212021" CREATED="1393534549977" MODIFIED="1393534577412"/>
+<node TEXT="CDQ - Cassie de depot et placement du Qubec" ID="ID_1241212021" CREATED="1393534549977" MODIFIED="1404758515519"/>
 <node TEXT="CMS - CMS Energy Corp" ID="ID_778048095" CREATED="1393534577892" MODIFIED="1393534585972"/>
 <node TEXT="CNL - Cleco Corp." ID="ID_760104117" CREATED="1393534586266" MODIFIED="1393534604523"/>
 <node TEXT="CNP - Centerpoint Energy Corp" ID="ID_1265486125" CREATED="1393534605181" MODIFIED="1393534615969"/>
@@ -283,7 +304,7 @@
 <edge COLOR="#0000ff"/>
 <node TEXT="Services Revenue (Monthly/Qarterly/Annual)" ID="ID_1624223691" CREATED="1403389795607" MODIFIED="1403663643804"/>
 <node TEXT="Analytic Derivative Informaiton" ID="ID_1765071880" CREATED="1403389829348" MODIFIED="1403389862115"/>
-<node TEXT="Infrastruction Management" ID="ID_194393348" CREATED="1403389863148" MODIFIED="1403389878686"/>
+<node TEXT="Infrastructure Management" ID="ID_194393348" CREATED="1403389863148" MODIFIED="1404757973836"/>
 </node>
 <node TEXT="Testing &amp; Certification" POSITION="right" ID="ID_1222161090" CREATED="1374937266294" MODIFIED="1380293443564">
 <edge COLOR="#00ff00"/>
@@ -328,28 +349,157 @@
 <node TEXT="Services" ID="ID_1035825165" CREATED="1403474527957" MODIFIED="1403474539569">
 <node TEXT="Yelp" ID="ID_900547885" CREATED="1403474540977" MODIFIED="1403474544252"/>
 <node TEXT="Craig&apos;s List" ID="ID_1199780666" CREATED="1403474550657" MODIFIED="1403474561059"/>
+<node TEXT="Zillo" ID="ID_1612311354" CREATED="1404757999602" MODIFIED="1404758002955"/>
 </node>
 <node TEXT="Multiple Listing Service (MLS)" ID="ID_786035975" CREATED="1403662581424" MODIFIED="1403662596643">
 <node TEXT="Partners" ID="ID_1017164513" CREATED="1403662597358" MODIFIED="1403662603557">
 <node TEXT="Intermountain MLS - Greg/Boise" ID="ID_598249290" CREATED="1403662616855" MODIFIED="1403662632315"/>
-<node TEXT="Reno MLS (Shelly)" ID="ID_1218634798" CREATED="1403662720909" MODIFIED="1403662727102"/>
-<node TEXT="Austin MLS (need notes)" ID="ID_560536934" CREATED="1403662728207" MODIFIED="1403662738091"/>
-<node TEXT="Boulder MLS (need notes" ID="ID_195671431" CREATED="1403662738615" MODIFIED="1403662751868"/>
+<node TEXT="Reno MLS (Shelly)" ID="ID_1218634798" CREATED="1403662720909" MODIFIED="1404740583330"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Contact Info for Shelly (Reno);
+    </p>
+    <p>
+      Shelley Specchio, CEO
+    </p>
+    <p>
+      Northern Nevada Regional MLS
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      775-772-3779 cell
+    </p>
+    <p>
+      775-823-8838 ofc
+    </p>
+    <p>
+      775-284-8230 dir
+    </p>
+    <p>
+      Shelley@NNRMLS.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Austin MLS (need notes)" ID="ID_560536934" CREATED="1403662728207" MODIFIED="1404740609161"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Beth Gatlin
+    </p>
+    <p>
+      Austin Board of Realtors &#8211; ACTRIS MLS
+    </p>
+    <p>
+      www.linkedin.com/pub/beth-gatlin/5/792/9b1
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Boulder MLS (need notes" ID="ID_195671431" CREATED="1403662738615" MODIFIED="1404740629019"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;Lauren Hansen
+    </p>
+    <p>
+      CEO
+    </p>
+    <p>
+      1-800-596-4901
+    </p>
+    <p>
+      Lauren@IRES-net.com
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 <node TEXT="DC MLS" ID="ID_875628598" CREATED="1403662754750" MODIFIED="1403662763539">
 <node TEXT="Jonathan (Grant)" ID="ID_1691542124" CREATED="1403662764088" MODIFIED="1403662773207"/>
 </node>
-<node TEXT="CoreLogic" ID="ID_338585295" CREATED="1403662783518" MODIFIED="1403662793934">
+<node TEXT="CoreLogic" ID="ID_338585295" CREATED="1403662783518" MODIFIED="1404740696994">
 <node TEXT="Skip" ID="ID_656239054" CREATED="1403662794411" MODIFIED="1403662795849"/>
 <node TEXT="Alan" ID="ID_1106786145" CREATED="1403662796656" MODIFIED="1403662798785"/>
+<node TEXT="Matthew McGuire - RESO API Contributor" ID="ID_384270958" CREATED="1404740697411" MODIFIED="1404740712080"/>
 </node>
 <node TEXT="Idaho Power" ID="ID_1845468437" CREATED="1403662635397" MODIFIED="1403662638285"/>
-<node TEXT="Idaho Falls Electric" ID="ID_1926732675" CREATED="1403662638728" MODIFIED="1403662645965"/>
+<node TEXT="Idaho Falls Electric" ID="ID_1926732675" CREATED="1403662638728" MODIFIED="1403662645965">
+<node TEXT="Only if they go with London Hydro solution" ID="ID_195832519" CREATED="1404758063901" MODIFIED="1404758073269"/>
+</node>
 <node TEXT="NV Energy" ID="ID_258274385" CREATED="1403662646644" MODIFIED="1403662654170"/>
 <node TEXT="Austin Energy" ID="ID_616743282" CREATED="1403662654940" MODIFIED="1403662663130"/>
 <node TEXT="Boulder Public Utility (or Excel?)" ID="ID_1375838984" CREATED="1403662663596" MODIFIED="1403662675658"/>
 <node TEXT="Seattle" ID="ID_718806676" CREATED="1403662677919" MODIFIED="1403662688776">
 <node TEXT="Seattle City Light" ID="ID_397620002" CREATED="1403662689441" MODIFIED="1403662694013"/>
-<node TEXT="City Energy Manager(s)" ID="ID_1927221933" CREATED="1403662695096" MODIFIED="1403662704855"/>
+<node TEXT="City Energy Manager(s)" ID="ID_1927221933" CREATED="1403662695096" MODIFIED="1404758493507">
+<edge STYLE="hide_edge"/>
+<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
+</node>
+</node>
+<node TEXT="Los Algeles" ID="ID_1242478716" CREATED="1404739097420" MODIFIED="1404739107427">
+<node TEXT="Rob Larson - CIO California Regional MLS" ID="ID_1320765647" CREATED="1404739112605" MODIFIED="1404739232668"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Rob Larson
+    </p>
+    <p>
+      Chief Information Officer
+    </p>
+    <p>
+      Rob@crmls.org
+    </p>
+    <p>
+      Office (909) 859-2055
+    </p>
+    <p>
+      Mobile (909) 263-1263
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      California Regional MLS
+    </p>
+    <p>
+      180 Via Verde, Suite 200
+    </p>
+    <p>
+      San Dimas, CA 91773
+    </p>
+    <p>
+      (909) 859-2040 | www.crmls.org
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 </node>
 <node TEXT="Pilots" ID="ID_1057102392" CREATED="1403388162805" MODIFIED="1403662872837">
@@ -365,10 +515,88 @@
 <node TEXT="f2f with Seattle City Light re: CMD" ID="ID_1210101310" CREATED="1403662926971" MODIFIED="1403662940199"/>
 <node TEXT="Timeframe 3Q/4Q 2014" ID="ID_406396655" CREATED="1403662942766" MODIFIED="1403662963925"/>
 </node>
-<node TEXT="Boise" ID="ID_1780340169" CREATED="1403388203289" MODIFIED="1403388206744">
-<node TEXT="Intermountain MLS - Greg Manship" ID="ID_1419044989" CREATED="1403388290629" MODIFIED="1403474343002"/>
+<node TEXT="Boise" ID="ID_1780340169" CREATED="1403388203289" MODIFIED="1404423027768"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Link To Contact Log: <a href="">in mindmap</a>
+    </p>
+    <p>
+      Link To Presentation: <a href=" http://green-button.github.io/MLS/GreenButtonMLS_Jul2014.pdf">on Github (PDF)</a>&#160;<a href=" http://green-button.github.io/MLS/GreenButtonMLS_Jul2014.pptx">on Github (.pptx)</a>
+    </p>
+    <p>
+      Link to Goals: <a href="">on Github</a>&#160;<a href="">oin mindmap</a>
+    </p>
+    <p>
+      Link to Timeline: <a href="">in mindmap</a>&#160;<a href="">on Github</a>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Intermountain MLS - Greg Manship" ID="ID_1419044989" CREATED="1403388290629" MODIFIED="1404422521322" LINK="http://intermountainmls.com/"/>
 <node TEXT="Idaho Power" ID="ID_1243020011" CREATED="1403388295873" MODIFIED="1403474504059"/>
-<node TEXT="Idaho Falls Electric" ID="ID_189183673" CREATED="1403474506942" MODIFIED="1403474513061"/>
+<node TEXT="Boise State University" ID="ID_189183673" CREATED="1403474506942" MODIFIED="1404739987998"/>
+<node TEXT="Contact Log" ID="ID_322710484" CREATED="1404423074152" MODIFIED="1404423078620">
+<node TEXT="02July2014 Greg F2F session" ID="ID_1983219370" CREATED="1404422524546" MODIFIED="1404740060077"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Initial F2F meeting with Greg. General agreement on support. Items outlined:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      1 - willing to discuss with Joe Eaton (Legislative and PUC contact)
+    </p>
+    <p>
+      2 - willing to take the message to Idaho Power
+    </p>
+    <p>
+      3 - Coverage area does not include Idaho Falls
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      see initial slide deck.
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Status" ID="ID_160879887" CREATED="1404423054874" MODIFIED="1404740033741"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      30Jun - Initial Email
+    </p>
+    <p>
+      02Jul - Initial Face at Greg's Office
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="Boulder" ID="ID_1517500029" CREATED="1403388207262" MODIFIED="1403388211493">
 <node TEXT="New Municipal" ID="ID_487125781" CREATED="1403474353330" MODIFIED="1403474358518"/>
@@ -382,9 +610,17 @@
 <node TEXT="CoreLogic" ID="ID_556629133" CREATED="1403474468410" MODIFIED="1403474472552"/>
 </node>
 </node>
+<node TEXT="RestFul API" ID="ID_942169579" CREATED="1404739656657" MODIFIED="1404739679169" LINK="https://reso.memberclicks.net/assets/Members_only/Transport/retswebapiv1.0_r3.pdf">
+<node TEXT="Version 1.0" ID="ID_55287030" CREATED="1404739683397" MODIFIED="1404739690725">
+<node TEXT="https://reso.memberclicks.net/assets/Members_only/Transport/retswebapiv1.0_r3.pdf" ID="ID_1990478187" CREATED="1404739691919" MODIFIED="1404739695519"/>
+</node>
+<node TEXT="OData Derivative" ID="ID_1255893029" CREATED="1404739700803" MODIFIED="1404739719113"/>
+<node TEXT="Includes GeoSpacial" ID="ID_200483879" CREATED="1404739747785" MODIFIED="1404739752979"/>
+<node TEXT="Opportunity to Set Security Perspective!" ID="ID_1662147798" CREATED="1404739935819" MODIFIED="1404739955767"/>
 </node>
 </node>
-<node TEXT="Federal Facilities Management" ID="ID_30726846" CREATED="1374938932466" MODIFIED="1403474620118">
+</node>
+<node TEXT="Federal Facilities Management" ID="ID_30726846" CREATED="1374938932466" MODIFIED="1404153949780" LINK="https://docs.google.com/spreadsheets/d/1lUy1ho-ZDHk0-OLEQ2wEUZlyX6HB7sH11f4CdQCn964/edit?usp=sharing">
 <node TEXT="GSA" ID="ID_1681049085" CREATED="1403389508822" MODIFIED="1403389513681">
 <node TEXT="DC Pilot" ID="ID_658371369" CREATED="1403531047285" MODIFIED="1403531053216">
 <node TEXT="Partners" ID="ID_22337631" CREATED="1403531064173" MODIFIED="1403531069467">
@@ -495,6 +731,7 @@
 <node TEXT="Markets" ID="ID_197597173" CREATED="1403475794760" MODIFIED="1403475803645"/>
 <node TEXT="Green Button" ID="ID_1229558304" CREATED="1403475804069" MODIFIED="1403475814108"/>
 </node>
+<node TEXT="WattTime" ID="ID_1254178032" CREATED="1404741447583" MODIFIED="1404741472818"/>
 </node>
 </node>
 <node TEXT="Ecosystem (size targets by customer#)" POSITION="left" ID="ID_697712307" CREATED="1374937827475" MODIFIED="1403663342999">
@@ -556,6 +793,97 @@
 <attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
 <attribute NAME="CustomerCount" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0"/>
 <attribute NAME="script1" VALUE="def startValue = 0&#xa;node[&apos;CustomerCount&apos;] = node.children.sum(startValue){ it[&apos;CustomerCount&apos;].to.num0 }&#xa;// @ExecutionModes({ON_SELECTED_NODE})"/>
+<node TEXT="American Electric Power (AEP)" ID="ID_473355070" CREATED="1403794119838" MODIFIED="1403794130817">
+<node TEXT="Team" ID="ID_932192147" CREATED="1403794182130" MODIFIED="1403794187090">
+<node TEXT="Suzanne L Snider" ID="ID_1414246774" CREATED="1403794187607" MODIFIED="1403795194889"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:slsnider@aep.com">EMail</a>
+    </p>
+    <pre>Suzanne Snider
+Business Systems Analyst
+Customer Operations Projects
+Direct Dial: 614-716-3672
+Audinet:  200-3672</pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Phaneendra Rampalli" ID="ID_296448282" CREATED="1403794243060" MODIFIED="1403794289095"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:prampalli@aep.com">EMail</a>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Frank Willhoit" ID="ID_311687726" CREATED="1403794733265" MODIFIED="1403794788095"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:fewilhoit@aep.com">EMail</a>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Development Team??" ID="ID_1138761206" CREATED="1403799965424" MODIFIED="1403799984690"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      
+    </p>
+    <pre>Jeffrey A Newman <janewman aep.com="#DEFAULT"/>;                                                                                                                       
+Krista D Tillman <kdtillman aep.com="#DEFAULT"/>;                                                                                                                      
+ Chris Rowsell <crowsell aep.com="#DEFAULT"/>;                                                                                                                         
+Sean T McClen <stmcclen aep.com="#DEFAULT"/>;                                                                                                                          
+Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Connect My Data" ID="ID_824963531" CREATED="1403794297078" MODIFIED="1403794301780"/>
+<node TEXT="Download My Data" ID="ID_150383849" CREATED="1403794302274" MODIFIED="1403794305615"/>
+<node TEXT="Roadmap" ID="ID_750208251" CREATED="1403800006430" MODIFIED="1403800151413"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <img src="./images/AEP_Roadmap.png" width="40px"/>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="Verified" ID="ID_1865458380" CREATED="1374941183505" MODIFIED="1380293425284">
 <attribute NAME="CustomerCount" VALUE="1698201" OBJECT="org.freeplane.features.format.FormattedNumber|1698201|#0.####"/>
@@ -617,8 +945,8 @@
 <node TEXT="OPower" ID="ID_866788039" CREATED="1376066564722" MODIFIED="1376066567864"/>
 <node TEXT="Schneider" ID="ID_63363682" CREATED="1376066573072" MODIFIED="1376066582577">
 <node TEXT="Products" ID="ID_1136644268" CREATED="1379688878185" MODIFIED="1379688888747">
-<node TEXT="Utility Portal" ID="ID_504659851" CREATED="1380293140614" MODIFIED="1380293149244"/>
-<node TEXT="Energy Manager Portal" ID="ID_1450359841" CREATED="1380293151534" MODIFIED="1380293169168"/>
+<node TEXT="Energy Profiler Online (EPO) Utility Portal" ID="ID_504659851" CREATED="1380293140614" MODIFIED="1404758184671"/>
+<node TEXT="ION EEM system - Energy Manager Portal" ID="ID_1450359841" CREATED="1380293151534" MODIFIED="1404758199669"/>
 </node>
 </node>
 <node TEXT="FirstFuel" ID="ID_105319219" CREATED="1376066588960" MODIFIED="1376066591648"/>
@@ -636,9 +964,9 @@
 <node TEXT="Committed" ID="ID_1231315276" CREATED="1403475696188" MODIFIED="1403475705099"/>
 <node TEXT="Deployed" ID="ID_1412936481" CREATED="1403475708416" MODIFIED="1403475711654"/>
 </node>
-<node TEXT="GreenButton Los Angeles" POSITION="right" ID="ID_1984599817" CREATED="1403661411103" MODIFIED="1403789759772">
+<node TEXT="GreenButton Los Angeles" POSITION="right" ID="ID_1984599817" CREATED="1403661411103" MODIFIED="1404758441767">
 <edge COLOR="#7c007c"/>
-<cloud COLOR="#f0f0f0" SHAPE="ARC"/>
+<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
 <node TEXT="LADWP" ID="ID_16526360" CREATED="1403661421545" MODIFIED="1403661429305">
 <node TEXT="Infrastructure" ID="ID_1107977708" CREATED="1403661430596" MODIFIED="1403712987469">
 <node TEXT="IT - (new - advanced)" ID="ID_1114754319" CREATED="1403713091373" MODIFIED="1403713250939"/>

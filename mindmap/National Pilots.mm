@@ -50,11 +50,16 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="7"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
+<node TEXT="Federal Initiatives" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="right" ID="ID_535973028" CREATED="1404141615918" MODIFIED="1404141639109" HGAP="-182" VSHIFT="-816">
+<hook NAME="FreeNode"/>
+<node TEXT="HUD Sustainable Housing Initiative" ID="ID_1238110749" CREATED="1404141640646" MODIFIED="1404141666637" LINK="http://portal.hud.gov/hudportal/HUD?src=/program_offices/economic_resilience/sustainable_housing_initiative"/>
+<node TEXT="Partnership for Sustainable Communities" ID="ID_870323130" CREATED="1404141785807" MODIFIED="1404141803648" LINK="http://www.sustainablecommunities.gov/"/>
+</node>
 <node TEXT="GreenButton Los Angeles" POSITION="right" ID="ID_1984599817" CREATED="1403661411103" MODIFIED="1403818744256">
 <edge COLOR="#7c007c"/>
 <cloud COLOR="#f0f0f0" SHAPE="ARC"/>
-<hook URI="images/MindMap_LosAngeles.png" SIZE="0.13448636" NAME="ExternalObject"/>
+<hook URI="images/MindMap_LosAngeles.png" SIZE="0.14369316" NAME="ExternalObject"/>
 <node TEXT="LADWP" ID="ID_16526360" CREATED="1403661421545" MODIFIED="1403661429305">
 <node TEXT="Infrastructure" ID="ID_1107977708" CREATED="1403661430596" MODIFIED="1403712987469">
 <node TEXT="IT - (new - advanced)" ID="ID_1114754319" CREATED="1403713091373" MODIFIED="1403713250939"/>
@@ -69,7 +74,36 @@
 <node TEXT="Tarrifs" ID="ID_1075695582" CREATED="1403661453270" MODIFIED="1403713060066"/>
 <node TEXT="Team" ID="ID_1742188688" CREATED="1403661458545" MODIFIED="1403661464981">
 <node TEXT="GoToMeeting Session Roster" ID="ID_1741021732" CREATED="1403661470420" MODIFIED="1403661476600">
-<node TEXT="David Jacot" ID="ID_1926146573" CREATED="1403709882311" MODIFIED="1403709891642"/>
+<node TEXT="David Jacot" ID="ID_1926146573" CREATED="1403709882311" MODIFIED="1404396820356"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Jacot, David &lt;David.Jacot@ladwp.com&gt;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Director of Efficiency Solutions
+    </p>
+    <p>
+      Los Angeles Department of Water &amp; Power
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      LADWP's Efficiency Solutions - Helping LA Save Water and Energy
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 <node TEXT="George Duddles" ID="ID_841790215" CREATED="1403709891996" MODIFIED="1403709895574"/>
 <node TEXT="Gretchen Hardison" ID="ID_1359236294" CREATED="1403709895975" MODIFIED="1403709913334"/>
 <node TEXT="Graig Tranby" ID="ID_430784838" CREATED="1403709913745" MODIFIED="1403709922114"/>
@@ -103,7 +137,7 @@
 <node TEXT="Facilities/Buildings" ID="ID_1762288974" CREATED="1403789640852" MODIFIED="1403789650296">
 <node TEXT="Federal Facilities" ID="ID_6056552" CREATED="1403661530199" MODIFIED="1403661537661"/>
 <node TEXT="City Facilities" ID="ID_462160" CREATED="1403661538297" MODIFIED="1403661544271"/>
-<node TEXT="UC Facilities" ID="ID_198416132" CREATED="1403661544882" MODIFIED="1403711003638">
+<node TEXT="UC Facilities" ID="ID_198416132" CREATED="1403661544882" MODIFIED="1404149771242">
 <node TEXT="Kimon Onuma  - Tied into Visual BIM - Great Demo" ID="ID_411844326" CREATED="1403710257546" MODIFIED="1403711018698" LINK="http://www.onuma.com"/>
 </node>
 </node>
@@ -255,10 +289,59 @@
 <node TEXT="Hilary Firestone" ID="ID_1132381834" CREATED="1403902579649" MODIFIED="1403902762357" LINK="https://www.linkedin.com/pub/hilary-beber-firestone/12/721/a3a"/>
 </node>
 </node>
+<node TEXT="Contact Log" ID="ID_373044199" CREATED="1404397315733" MODIFIED="1404397319043">
+<node TEXT="30Jun" ID="ID_1459913482" CREATED="1404397319765" MODIFIED="1404397328242"/>
+<node TEXT="03July" ID="ID_185962304" CREATED="1404397334953" MODIFIED="1404397360399"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      EMAIL
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I would like to introduce to Monisha Shah of the Department of Energy. Monisha is heading up the Energy Data Accelerator program that is focused on &quot;&#8230; &#8230;&quot; - (part of the overall Better Buildings Accelerator effort).
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Monisha, David is Director of Efficiency Solutions at the Los Angeles Department of Water and Power. David and his team joined our call last Friday. A deeper understanding of the Energy Data Accelerator may be helpful.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      In addition, because HUD was a topic of discussion during the call, contact with the HUD, DOT, EPA&#160;&#160;Partnership for Sustainable Communities initiative may be helpful if you might know them.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Thx and hope all is well as we approach this 4th of July. It was 106df in the shade out here yesterday:)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      John
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
-<node TEXT="GreenButton Washington DC" POSITION="left" ID="ID_885157680" CREATED="1403661411103" MODIFIED="1403789997612">
+</node>
+</node>
+<node TEXT="GreenButton Washington DC" POSITION="left" ID="ID_885157680" CREATED="1403661411103" MODIFIED="1404143061119">
 <edge COLOR="#7c007c"/>
 <cloud COLOR="#f0f0f0" SHAPE="ARC"/>
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-30%20at%2011.43.42%20AM.png" SIZE="0.17828421" NAME="ExternalObject"/>
 <node TEXT="Pepco Holdings" ID="ID_1596843929" CREATED="1403661421545" MODIFIED="1403790012205">
 <node TEXT="Infrastructure" ID="ID_1513504537" CREATED="1403661430596" MODIFIED="1403712987469">
 <node TEXT="Oracle + Schneider EPO" ID="ID_766214480" CREATED="1403713091373" MODIFIED="1403790081664"/>
@@ -456,34 +539,6 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Portland Oregon" ID="ID_544138414" CREATED="1404048733382" MODIFIED="1404063027243">
-<edge COLOR="#0000ff"/>
-<node TEXT="Mayors Office" ID="ID_1705499874" CREATED="1404063027896" MODIFIED="1404063034645">
-<node TEXT="Build Ecodistricts" ID="ID_1541484258" CREATED="1404063089975" MODIFIED="1404063107288">
-<node TEXT="Jobs" ID="ID_1292613186" CREATED="1404063107952" MODIFIED="1404063120950">
-<node TEXT="" ID="ID_1820895451" CREATED="1404063111587" MODIFIED="1404063120948"/>
-</node>
-</node>
-</node>
-<node TEXT="J&amp;M World" ID="ID_1885268767" CREATED="1404063035321" MODIFIED="1404063041711"/>
-<node TEXT="Intel" ID="ID_111248191" CREATED="1404063042229" MODIFIED="1404063043691"/>
-<node TEXT="MicroGridInABox" ID="ID_1173359786" CREATED="1404063044265" MODIFIED="1404063133929">
-<node TEXT="AlwaysOn" ID="ID_1010708302" CREATED="1404063054256" MODIFIED="1404063059418"/>
-<node TEXT="AlwaysUp" ID="ID_93130829" CREATED="1404063060003" MODIFIED="1404063063480"/>
-<node TEXT="Cybersecurity Infrastructure" ID="ID_1406558892" CREATED="1404063064212" MODIFIED="1404063072233"/>
-<node TEXT="Resiliancy" ID="ID_634432341" CREATED="1404063150209" MODIFIED="1404063155271"/>
-</node>
-<node TEXT="OHSU Districtrict" ID="ID_1368857542" CREATED="1404063139578" MODIFIED="1404063239220">
-<node TEXT="Substation" ID="ID_435595022" CREATED="1404063239762" MODIFIED="1404063243540"/>
-<node TEXT="Hospital" ID="ID_7127669" CREATED="1404063243935" MODIFIED="1404063247073"/>
-</node>
-<node TEXT="Facilities" ID="ID_135827569" CREATED="1404063302737" MODIFIED="1404063307228">
-<node TEXT="ZGF Building" ID="ID_457445246" CREATED="1404063307578" MODIFIED="1404063312201"/>
-<node TEXT="GluMac Building" ID="ID_1090536123" CREATED="1404063312652" MODIFIED="1404063320166"/>
-<node TEXT="Edith Green Federal Building" ID="ID_1697034968" CREATED="1404063321708" MODIFIED="1404063331180"/>
-<node TEXT="OHSU/PUS Innovation District (Shared Resource Center)" ID="ID_852106707" CREATED="1404063332239" MODIFIED="1404063362726"/>
-</node>
-</node>
 <node TEXT="Seattle" ID="ID_1833852641" CREATED="1404063443796" MODIFIED="1404063445719">
 <edge COLOR="#00ffff"/>
 <node TEXT="Seattle 2030" ID="ID_1237662855" CREATED="1404063446507" MODIFIED="1404063450545"/>
@@ -671,9 +726,140 @@
 </node>
 <node TEXT="Seattle" POSITION="right" ID="ID_375605653" CREATED="1404141089965" MODIFIED="1404141093535">
 <edge COLOR="#ffff00"/>
+<node TEXT="Seattle City Light" ID="ID_1312750282" CREATED="1404150186518" MODIFIED="1404150193266"/>
+<node TEXT="Seattle 2030" ID="ID_679050415" CREATED="1404150194950" MODIFIED="1404150200445"/>
+<node TEXT="Facilities" ID="ID_1787908244" CREATED="1404150201458" MODIFIED="1404150222261">
+<node TEXT="City" ID="ID_1666973262" CREATED="1404150222490" MODIFIED="1404150225086"/>
+<node TEXT="University of Washington" ID="ID_958341513" CREATED="1404150225635" MODIFIED="1404150244834"/>
+<node TEXT="Bullitt Center" ID="ID_979260009" CREATED="1404150245626" MODIFIED="1404150258565">
+<node TEXT="" ID="ID_300511617" CREATED="1404151869518" MODIFIED="1404151908140">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-30%20at%202.11.02%20PM.png" SIZE="1.0046833" NAME="ExternalObject"/>
 </node>
-<node TEXT="Portalnd Oregon" POSITION="right" ID="ID_710707127" CREATED="1404141094271" MODIFIED="1404141099354">
-<edge COLOR="#7c0000"/>
+<node TEXT="Energy Data" ID="ID_1272971822" CREATED="1404151930944" MODIFIED="1404151936817">
+<node TEXT="" ID="ID_417002796" CREATED="1404151940077" MODIFIED="1404151940077"/>
+<node TEXT="" ID="ID_1047247604" CREATED="1404151972086" MODIFIED="1404151991294">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-30%20at%202.12.39%20PM.png" SIZE="0.95087683" NAME="ExternalObject"/>
+</node>
+<node TEXT="" ID="ID_902364934" CREATED="1404152095324" MODIFIED="1404152131252">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-30%20at%202.14.42%20PM.png" SIZE="1.14673" NAME="ExternalObject"/>
+</node>
+<node TEXT="" ID="ID_321729837" CREATED="1404152107394" MODIFIED="1404152107394"/>
+</node>
+</node>
+<node TEXT="Federal" ID="ID_1288210576" CREATED="1404150322735" MODIFIED="1404150341819">
+<node TEXT="US.Army Corp of Engineers" ID="ID_515829077" CREATED="1404150342377" MODIFIED="1404150878281"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="http://www.seattlepi.com/realestate/article/Army-Corps-gets-new-ultra-green-Seattle-home-3940251.php">News</a>
+    </p>
+    <hr/>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Seattle Headquarters" ID="ID_1720851645" CREATED="1404150407121" MODIFIED="1404151540308"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="http://www.nws.usace.army.mil/Locations.aspx">Building Location</a><br/><a href="http://www.nws.usace.army.mil">US Army Core of Engineers NWS Seattle District</a><br/><a href="https://www.google.com/search?q=Army+Corp+of+Engineers+building+Seattle&amp;espv=2&amp;tbm=isch&amp;imgil=c2yfVWxrvFo9CM%253A%253Bhttps%253A%252F%252Fencrypted-tbn3.gstatic.com%252Fimages%253Fq%253Dtbn%253AANd9GcSogpOJkj4bfFJ6w3eaeNkzZC8nkYfrAg1uMaxTwM6tWUwhbmEe%253B728%253B450%253BA_tnKmOiw9nFqM%253Bhttp%25253A%25252F%25252Finhabitat.com%25252Fus-army-corps-of-engineers-unveils-new-leed-gold-headquarters-in-seattle%25252F&amp;source=iu&amp;usg=__E_dKPZklmZVuwiamErhy_QLDM5c%3D&amp;sa=X&amp;ei=Y6KxU8XuGdKzyATFz4DoAg&amp;ved=0CGEQ9QEwCA&amp;biw=1554&amp;bih=865&amp;dpr=0.9#facrc=_&amp;imgdii=_&amp;imgrc=c2yfVWxrvFo9CM%253A%3BA_tnKmOiw9nFqM%3Bhttp%253A%252F%252Fassets.inhabitat.com%252Fwp-content%252Fblogs.dir%252F1%252Ffiles%252F2012%252F11%252FUSACE-Seattle-HW-ZGF-Architects-4.jpg%3Bhttp%253A%252F%252Finhabitat.com%252Fus-army-corps-of-engineers-unveils-new-leed-gold-headquarters-in-seattle%252F%3B728%3B450">Link to Building</a>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-30%20at%201.49.34%20PM.png" SIZE="0.5297927" NAME="ExternalObject"/>
+<node TEXT="News" ID="ID_1301646629" CREATED="1404150905505" MODIFIED="1404150911451">
+<node TEXT="http://www.seattlepi.com/realestate/article/Army-Corps-gets-new-ultra-green-Seattle-home-3940251.php" ID="ID_252191835" CREATED="1404150916030" MODIFIED="1404150916030" LINK="http://www.seattlepi.com/realestate/article/Army-Corps-gets-new-ultra-green-Seattle-home-3940251.php"/>
+</node>
+<node TEXT="Images" ID="ID_571578799" CREATED="1404150925750" MODIFIED="1404150929776">
+<node TEXT="google" ID="ID_865007842" CREATED="1404150947531" MODIFIED="1404150970528" LINK="https://www.google.com/search?q=Army+Corp+of+Engineers+building+Seattle&amp;sa=X&amp;espv=2&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;ei=5qOxU-2NF8iHyATv6YIY&amp;ved=0CFwQsAQ&amp;biw=1554&amp;bih=865&amp;dpr=0.9"/>
+<node TEXT="" ID="ID_1351863714" CREATED="1404151734055" MODIFIED="1404151756179">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-30%20at%202.08.26%20PM.png" SIZE="1.007986" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="" ID="ID_824432354" CREATED="1404151190011" MODIFIED="1404151211375">
+<hook URI="../../../Desktop/Screen%20Shot%202014-06-30%20at%201.59.29%20PM.png" SIZE="0.47458974" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Team Members" ID="ID_291430859" CREATED="1404150272591" MODIFIED="1404150275996">
+<node TEXT="First Fuel" ID="ID_110169536" CREATED="1404150276546" MODIFIED="1404150279518"/>
+<node TEXT="Seattle City Light" ID="ID_85338237" CREATED="1404150281020" MODIFIED="1404150285870"/>
+<node TEXT="ZFG Architects" ID="ID_1658650108" CREATED="1404150287062" MODIFIED="1404150295678"/>
+<node TEXT="GluMac" ID="ID_1456003236" CREATED="1404150296207" MODIFIED="1404150304840"/>
+<node TEXT="McKinstry??" ID="ID_1082605410" CREATED="1404150305333" MODIFIED="1404150311014"/>
+<node TEXT="GSA" ID="ID_533167780" CREATED="1404150314514" MODIFIED="1404150318916"/>
+<node TEXT="Bill Cambel" ID="ID_49186389" CREATED="1404153335781" MODIFIED="1404153341203"/>
+</node>
+</node>
+<node TEXT="Austin Texas" POSITION="right" ID="ID_74542365" CREATED="1404141265420" MODIFIED="1404141273109">
+<edge COLOR="#00007c"/>
+</node>
+<node TEXT="Boston" POSITION="right" ID="ID_1334683755" CREATED="1404141273728" MODIFIED="1404141277764">
+<edge COLOR="#007c00"/>
+</node>
+<node TEXT="Cambridge" POSITION="right" ID="ID_1875582442" CREATED="1404141278985" MODIFIED="1404141281865">
+<edge COLOR="#7c007c"/>
+</node>
+<node TEXT="Portland Oregon" POSITION="left" ID="ID_544138414" CREATED="1404048733382" MODIFIED="1404063027243">
+<edge COLOR="#0000ff"/>
+<node TEXT="Mayors Office" ID="ID_1705499874" CREATED="1404063027896" MODIFIED="1404063034645">
+<node TEXT="Build Ecodistricts" ID="ID_1541484258" CREATED="1404063089975" MODIFIED="1404063107288">
+<node TEXT="Jobs" ID="ID_1292613186" CREATED="1404063107952" MODIFIED="1404063120950">
+<node TEXT="" ID="ID_1820895451" CREATED="1404063111587" MODIFIED="1404063120948"/>
+</node>
+</node>
+</node>
+<node TEXT="J&amp;M World" ID="ID_1885268767" CREATED="1404063035321" MODIFIED="1404063041711">
+<node TEXT="Stan Curtis" ID="ID_629420490" CREATED="1404149885312" MODIFIED="1404149889529"/>
+<node TEXT="Ethan Seltzer" ID="ID_212622685" CREATED="1404149889961" MODIFIED="1404149893576"/>
+<node TEXT="Tim Smith" ID="ID_1359716939" CREATED="1404149894107" MODIFIED="1404149899112"/>
+<node TEXT="Joe Cortright" ID="ID_607813892" CREATED="1404149899700" MODIFIED="1404149906893"/>
+<node TEXT="John Thompson" ID="ID_922349160" CREATED="1404149907518" MODIFIED="1404149911666"/>
+<node TEXT="Charles Kelly" ID="ID_1712263629" CREATED="1404149912873" MODIFIED="1404149920405"/>
+<node TEXT="Cynthia Close" ID="ID_1025500478" CREATED="1404149921442" MODIFIED="1404149938952"/>
+<node TEXT="Wilf Pinfold" ID="ID_10308205" CREATED="1404149939695" MODIFIED="1404149943221"/>
+<node TEXT="GuestList" ID="ID_1411681154" CREATED="1404149944116" MODIFIED="1404149955334">
+<node TEXT="Colin Harrison" ID="ID_604139579" CREATED="1404149955942" MODIFIED="1404149970719"/>
+<node TEXT="Ron Ambrosio" ID="ID_1975405298" CREATED="1404149971371" MODIFIED="1404149975528"/>
+<node TEXT="Stuart Cohen" ID="ID_1505281096" CREATED="1404149976217" MODIFIED="1404149984295"/>
+<node TEXT="Carol Carolatta" ID="ID_1189736791" CREATED="1404149984847" MODIFIED="1404150007544"/>
+<node TEXT="Skp Kemmerer" ID="ID_642508044" CREATED="1404150008483" MODIFIED="1404150073163"/>
+<node TEXT="Stuart Cowen" ID="ID_968062145" CREATED="1404150074216" MODIFIED="1404150084597"/>
+<node TEXT="John Teeter" ID="ID_1098352861" CREATED="1404150085334" MODIFIED="1404150102043"/>
+</node>
+</node>
+<node TEXT="Intel" ID="ID_111248191" CREATED="1404063042229" MODIFIED="1404063043691"/>
+<node TEXT="MicroGridInABox" ID="ID_1173359786" CREATED="1404063044265" MODIFIED="1404063133929">
+<node TEXT="AlwaysOn" ID="ID_1010708302" CREATED="1404063054256" MODIFIED="1404063059418"/>
+<node TEXT="AlwaysUp" ID="ID_93130829" CREATED="1404063060003" MODIFIED="1404063063480"/>
+<node TEXT="Cybersecurity Infrastructure" ID="ID_1406558892" CREATED="1404063064212" MODIFIED="1404063072233"/>
+<node TEXT="Resiliancy" ID="ID_634432341" CREATED="1404063150209" MODIFIED="1404063155271"/>
+</node>
+<node TEXT="OHSU Districtrict" ID="ID_1368857542" CREATED="1404063139578" MODIFIED="1404063239220">
+<node TEXT="Substation" ID="ID_435595022" CREATED="1404063239762" MODIFIED="1404063243540"/>
+<node TEXT="Hospital" ID="ID_7127669" CREATED="1404063243935" MODIFIED="1404063247073"/>
+</node>
+<node TEXT="Facilities" ID="ID_135827569" CREATED="1404063302737" MODIFIED="1404063307228">
+<node TEXT="ZGF Building" ID="ID_457445246" CREATED="1404063307578" MODIFIED="1404063312201"/>
+<node TEXT="GluMac Building" ID="ID_1090536123" CREATED="1404063312652" MODIFIED="1404063320166"/>
+<node TEXT="Edith Green Federal Building" ID="ID_1697034968" CREATED="1404063321708" MODIFIED="1404063331180"/>
+<node TEXT="OHSU/PUS Innovation District (Shared Resource Center)" ID="ID_852106707" CREATED="1404063332239" MODIFIED="1404063362726"/>
+</node>
+</node>
+<node TEXT="Atlanta" POSITION="left" ID="ID_1018546877" CREATED="1404153283941" MODIFIED="1404153287767">
+<edge COLOR="#007c7c"/>
 </node>
 </node>
 </map>
