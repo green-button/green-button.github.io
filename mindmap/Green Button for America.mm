@@ -74,7 +74,7 @@
 </richcontent>
 <font SIZE="16"/>
 <edge STYLE="bezier"/>
-<node TEXT="" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="right" ID="ID_922252819" CREATED="1380292870968" MODIFIED="1403662055511" HGAP="113" VSHIFT="-96">
+<node TEXT="" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="right" ID="ID_922252819" CREATED="1380292870968" MODIFIED="1404670546962" HGAP="-67" VSHIFT="-226">
 <hook URI="../MarComm/Graphics/favicon.png" SIZE="1.0" NAME="ExternalObject"/>
 <hook NAME="FreeNode"/>
 </node>
@@ -188,7 +188,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Slide 1" ID="ID_1151531562" CREATED="1403715935371" MODIFIED="1403716080173">
 <hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.59.57%20PM.png" SIZE="0.6378455" NAME="ExternalObject"/>
@@ -205,7 +204,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="" ID="ID_1642493033" CREATED="1404757295467" MODIFIED="1404757578351">
@@ -1047,7 +1045,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Nick Sinai" ID="ID_1343066753" CREATED="1403788606169" MODIFIED="1403788956558"><richcontent TYPE="DETAILS" HIDDEN="true">
@@ -1062,7 +1059,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 <richcontent TYPE="NOTE">
 
@@ -1076,7 +1072,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Aneesh Chapra" ID="ID_192743177" CREATED="1403788612290" MODIFIED="1403788899528"><richcontent TYPE="NOTE">
@@ -1091,7 +1086,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Brian Ford" ID="ID_1642023032" CREATED="1403788618759" MODIFIED="1403789123322"><richcontent TYPE="NOTE">
@@ -1106,7 +1100,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Kristina Hagen" ID="ID_135614573" CREATED="1403788645424" MODIFIED="1403789286341"><richcontent TYPE="NOTE">
@@ -1121,7 +1114,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="John Teeter" ID="ID_8879550" CREATED="1403789298717" MODIFIED="1403789302358"/>
@@ -1140,7 +1132,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
