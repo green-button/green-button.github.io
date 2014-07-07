@@ -53,9 +53,17 @@
 <hook NAME="AutomaticEdgeColor" COUNTER="10"/>
 <node TEXT="Hawaii" POSITION="right" ID="ID_90262307" CREATED="1403388108860" MODIFIED="1403388117328">
 <edge COLOR="#ff0000"/>
+<node TEXT="NewYears 2015" ID="ID_1508399145" CREATED="1404228670402" MODIFIED="1404228687709">
+<node TEXT="GET Pilot Fleet" ID="ID_1683249535" CREATED="1404228689457" MODIFIED="1404228704645"/>
+<node TEXT="Federal Green Button Pilot" ID="ID_462486083" CREATED="1404228705826" MODIFIED="1404228732765"/>
+<node TEXT="HALE Energy Efficiency Pilot" ID="ID_1583176424" CREATED="1404228733545" MODIFIED="1404228751186"/>
+<node TEXT="Download My Data" ID="ID_1108043244" CREATED="1404228751927" MODIFIED="1404228767333"/>
+<node TEXT="Connect My Data" ID="ID_495271008" CREATED="1404228768073" MODIFIED="1404228771165"/>
+</node>
 </node>
 <node TEXT="Austin" POSITION="right" ID="ID_645821508" CREATED="1403388118179" MODIFIED="1403388122160">
 <edge COLOR="#0000ff"/>
+<node TEXT="MLS Pilot" ID="ID_1404834609" CREATED="1404228787497" MODIFIED="1404228795949"/>
 </node>
 <node TEXT="Chattanooga" POSITION="right" ID="ID_1722259474" CREATED="1403388122739" MODIFIED="1403389423834">
 <edge COLOR="#00ff00"/>
@@ -65,9 +73,11 @@
 </node>
 <node TEXT="Japan" POSITION="left" ID="ID_540848794" CREATED="1403392867363" MODIFIED="1403392873783">
 <edge COLOR="#00ffff"/>
+<node TEXT="ZGF Projects" ID="ID_1931485872" CREATED="1404228811688" MODIFIED="1404228836684"/>
 </node>
 <node TEXT="Korea" POSITION="left" ID="ID_89656377" CREATED="1403392874251" MODIFIED="1403392876535">
 <edge COLOR="#ffff00"/>
+<node TEXT="ZGF Projects" ID="ID_553018783" CREATED="1404228839608" MODIFIED="1404228858139"/>
 </node>
 <node TEXT="" POSITION="left" ID="ID_98228236" CREATED="1403392877259" MODIFIED="1403392877260">
 <edge COLOR="#7c0000"/>
@@ -110,8 +120,184 @@
 <node TEXT="Healthy Homes and Lead Technical Studies Pre-Application Notice" ID="ID_1919403907" CREATED="1404219077767" MODIFIED="1404219125106"/>
 </node>
 </node>
-<node TEXT="Los Angeles" POSITION="right" ID="ID_1673748883" CREATED="1404072310514" MODIFIED="1404072314820">
+<node TEXT="Los Angeles" POSITION="right" ID="ID_1673748883" CREATED="1404072310514" MODIFIED="1404232112605">
 <edge COLOR="#007c00"/>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Jun 28 Session Notes:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Notes:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Hilary Firestone - Mayors Office
+    </p>
+    <p>
+      George Duddles - DWP Web Content Side
+    </p>
+    <p>
+      David Jacot - DWP
+    </p>
+    <p>
+      Gretchen Hardesten- DWP
+    </p>
+    <p>
+      Craig -
+    </p>
+    <p>
+      Aneesh Chopra - Open
+    </p>
+    <p>
+      John Teeter - NIST
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ================================================================
+    </p>
+    <p>
+      Hilary - Introductions
+    </p>
+    <p>
+      Aneesh - DWP Announcement re: Green Button
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Dept. Coles team - ?? How to realize the commitment to
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Green Button
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Hilary mentioned sustainability around multi-tenanant
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;buildings
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Base-Line the roadmap/synergies of the announcements
+    </p>
+    <p>
+      David - baselining
+    </p>
+    <p>
+      Syscon System -
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Do DWP customers today, have a user-name &amp; password to be able to look
+    </p>
+    <p>
+      at the usage data? yes
+    </p>
+    <p>
+      What kinds of data?&#160;&#160;All residential by-monthly read
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Some interval is seen now with a
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;portal coming for real-time view
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Commercial (15 min intervals)
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      Are there any metered buildings that are in the category of
+    </p>
+    <p>
+      multi-tenant housing units?
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      (possibly some but can't say for sure) HUD has a clear mandage for HUD
+    </p>
+    <p>
+      financed buildings. GSA Buildings - other agency buildings
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      [jat] Research Action: find the intersection of 15 min data buildings -&gt;
+    </p>
+    <p>
+      agencies.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Q: What is the richness of the data?
+    </p>
+    <p>
+      A: visible on next day.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Q: Is smart meter web site different?
+    </p>
+    <p>
+      A: What is the vendor for the MDM -&gt; Customer site.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Q: Multi-Tenant Housing Units (Benchmarking and Disclosure Policies)
+    </p>
+    <p>
+      A: Commercial NV Web to view their usage
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;(---&gt; download: if we choose to move forward we can)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Consider the effort (I'll do inventory and Itron reachout if needed).
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Itron - contract is expiring and they will not be supporting this
+    </p>
+    <p>
+      version of the SW.&#160;
+    </p>
+    <p>
+      &#160;
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
 <node TEXT="EcoDistrict Partner Projects" POSITION="left" ID="ID_828900155" CREATED="1404073527042" MODIFIED="1404073539309">
 <edge COLOR="#7c007c"/>
