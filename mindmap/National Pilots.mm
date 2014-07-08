@@ -73,7 +73,7 @@
 </node>
 <node TEXT="Tarrifs" ID="ID_1075695582" CREATED="1403661453270" MODIFIED="1403713060066"/>
 <node TEXT="Team" ID="ID_1742188688" CREATED="1403661458545" MODIFIED="1403661464981">
-<node TEXT="GoToMeeting Session Roster" ID="ID_1741021732" CREATED="1403661470420" MODIFIED="1403661476600">
+<node TEXT="Edwards, Marcie &lt;Marcie.Edwards@ladwp.com&gt;" ID="ID_1993960808" CREATED="1404830123582" MODIFIED="1404830127965"/>
 <node TEXT="David Jacot" ID="ID_1926146573" CREATED="1403709882311" MODIFIED="1404396820356"><richcontent TYPE="NOTE">
 
 <html>
@@ -107,7 +107,6 @@
 <node TEXT="George Duddles" ID="ID_841790215" CREATED="1403709891996" MODIFIED="1403709895574"/>
 <node TEXT="Gretchen Hardison" ID="ID_1359236294" CREATED="1403709895975" MODIFIED="1403709913334"/>
 <node TEXT="Graig Tranby" ID="ID_430784838" CREATED="1403709913745" MODIFIED="1403709922114"/>
-<node TEXT="Ethelinda Reyes" ID="ID_288221836" CREATED="1403709922414" MODIFIED="1403709934401"/>
 <node TEXT="Marcie Edwards" ID="ID_1758695016" CREATED="1403709934956" MODIFIED="1404139147085"><richcontent TYPE="NOTE">
 
 <html>
@@ -123,7 +122,8 @@
 
 </richcontent>
 </node>
-</node>
+<node TEXT="Ethelinda Reyes" ID="ID_288221836" CREATED="1403709922414" MODIFIED="1403709934401"/>
+<node TEXT="Zerrudo, Lourdes &lt;Lourdes.Zerrudo@ladwp.com&gt;" ID="ID_1914137484" CREATED="1404830164455" MODIFIED="1404830167822"/>
 </node>
 <node TEXT="Projects" ID="ID_1178905163" CREATED="1403662019758" MODIFIED="1403662022989"/>
 </node>
@@ -287,6 +287,25 @@
 </richcontent>
 </node>
 <node TEXT="Hilary Firestone" ID="ID_1132381834" CREATED="1403902579649" MODIFIED="1403902762357" LINK="https://www.linkedin.com/pub/hilary-beber-firestone/12/721/a3a"/>
+<node TEXT="Michele Garakain" ID="ID_15933426" CREATED="1404829985209" MODIFIED="1404830032740"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Michelle Garakian &lt;michelle.garakian@lacity.org&gt;
+    </p>
+    <p>
+      Office of Economic Development
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="abigail.marquez@lacity.org &lt;abigail.marquez@lacity.org&gt;" ID="ID_1168792607" CREATED="1404830135246" MODIFIED="1404830145197"/>
+<node TEXT="guy.lipa@lacity.org &lt;guy.lipa@lacity.org&gt;" ID="ID_1320409055" CREATED="1404830152152" MODIFIED="1404830163852"/>
 </node>
 </node>
 <node TEXT="Contact Log" ID="ID_373044199" CREATED="1404397315733" MODIFIED="1404397319043">
