@@ -74,7 +74,7 @@
 </richcontent>
 <font SIZE="16"/>
 <edge STYLE="bezier"/>
-<node TEXT="" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="right" ID="ID_922252819" CREATED="1380292870968" MODIFIED="1403662055511" HGAP="113" VSHIFT="-96">
+<node TEXT="" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="right" ID="ID_922252819" CREATED="1380292870968" MODIFIED="1404670546962" HGAP="-67" VSHIFT="-226">
 <hook URI="../MarComm/Graphics/favicon.png" SIZE="1.0" NAME="ExternalObject"/>
 <hook NAME="FreeNode"/>
 </node>
@@ -188,7 +188,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Slide 1" ID="ID_1151531562" CREATED="1403715935371" MODIFIED="1403716080173">
 <hook URI="../../../Desktop/Screen%20Shot%202014-06-25%20at%2012.59.57%20PM.png" SIZE="0.6378455" NAME="ExternalObject"/>
@@ -205,7 +204,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="" ID="ID_1642493033" CREATED="1404757295467" MODIFIED="1404757578351">
@@ -964,5 +962,183 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
 <node TEXT="Committed" ID="ID_1231315276" CREATED="1403475696188" MODIFIED="1403475705099"/>
 <node TEXT="Deployed" ID="ID_1412936481" CREATED="1403475708416" MODIFIED="1403475711654"/>
 </node>
+<<<<<<< HEAD
+=======
+<node TEXT="GreenButton Los Angeles" POSITION="right" ID="ID_1984599817" CREATED="1403661411103" MODIFIED="1404758441767">
+<edge COLOR="#7c007c"/>
+<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
+<node TEXT="LADWP" ID="ID_16526360" CREATED="1403661421545" MODIFIED="1403661429305">
+<node TEXT="Infrastructure" ID="ID_1107977708" CREATED="1403661430596" MODIFIED="1403712987469">
+<node TEXT="IT - (new - advanced)" ID="ID_1114754319" CREATED="1403713091373" MODIFIED="1403713250939"/>
+</node>
+<node TEXT="Electricity" ID="ID_870323249" CREATED="1403712988178" MODIFIED="1403713001771">
+<node TEXT="AMI Meters (56k pilot underway)" ID="ID_1445867104" CREATED="1403713073663" MODIFIED="1403713088309"/>
+</node>
+<node TEXT="Water" ID="ID_1804166225" CREATED="1403713002213" MODIFIED="1403713009822">
+<node TEXT="Significant Management/Efficiency Focus" ID="ID_1940427656" CREATED="1403713279945" MODIFIED="1403713314461"/>
+<node TEXT="Primarily Manual Read (opportunity to do AMI/Water Pilot)" ID="ID_1694108484" CREATED="1403713281999" MODIFIED="1403713301126"/>
+</node>
+<node TEXT="Tarrifs" ID="ID_1075695582" CREATED="1403661453270" MODIFIED="1403713060066"/>
+<node TEXT="Team" ID="ID_1742188688" CREATED="1403661458545" MODIFIED="1403661464981">
+<node TEXT="GoToMeeting Session Roster" ID="ID_1741021732" CREATED="1403661470420" MODIFIED="1403661476600">
+<node TEXT="David Jacot" ID="ID_1926146573" CREATED="1403709882311" MODIFIED="1403709891642"/>
+<node TEXT="George Duddles" ID="ID_841790215" CREATED="1403709891996" MODIFIED="1403709895574"/>
+<node TEXT="Gretchen Hardison" ID="ID_1359236294" CREATED="1403709895975" MODIFIED="1403709913334"/>
+<node TEXT="Graig Tranby" ID="ID_430784838" CREATED="1403709913745" MODIFIED="1403709922114"/>
+<node TEXT="Ethelinda Reyes" ID="ID_288221836" CREATED="1403709922414" MODIFIED="1403709934401"/>
+<node TEXT="" ID="ID_1758695016" CREATED="1403709934956" MODIFIED="1403709934956"/>
+</node>
+</node>
+<node TEXT="Projects" ID="ID_1178905163" CREATED="1403662019758" MODIFIED="1403662022989"/>
+</node>
+<node TEXT="Souther California Gas (SoCalGas)" ID="ID_1435745837" CREATED="1403789550659" MODIFIED="1403789566751"/>
+<node TEXT="CPUC" ID="ID_1756740822" CREATED="1403710209074" MODIFIED="1403710212477">
+<node TEXT="Catherine Sandoval" ID="ID_831413596" CREATED="1403710213216" MODIFIED="1403710221475"/>
+<node TEXT="Chris Villirealle" ID="ID_1928831723" CREATED="1403710222038" MODIFIED="1403789605169"/>
+<node TEXT="Amy Baker" ID="ID_73968115" CREATED="1403710226078" MODIFIED="1403710230026"/>
+<node TEXT="decision on data access for aggregate data use cases" ID="ID_835394920" CREATED="1403789608682" MODIFIED="1403789626067"/>
+</node>
+<node TEXT="Facilities/Buildings" ID="ID_1762288974" CREATED="1403789640852" MODIFIED="1403789650296">
+<node TEXT="Federal Facilities" ID="ID_6056552" CREATED="1403661530199" MODIFIED="1403661537661"/>
+<node TEXT="City Facilities" ID="ID_462160" CREATED="1403661538297" MODIFIED="1403661544271"/>
+<node TEXT="UC Facilities" ID="ID_198416132" CREATED="1403661544882" MODIFIED="1403711003638">
+<node TEXT="Kimon Onuma  - Tied into Visual BIM - Great Demo" ID="ID_411844326" CREATED="1403710257546" MODIFIED="1403711018698" LINK="http://www.onuma.com"/>
+</node>
+</node>
+<node TEXT="Private Portfolios" ID="ID_915337736" CREATED="1403661873710" MODIFIED="1403661880019">
+<node TEXT="Glumac" ID="ID_1005775948" CREATED="1403661881612" MODIFIED="1403661898166">
+<node TEXT="Lawrence" ID="ID_1196186962" CREATED="1403710495120" MODIFIED="1403710510159"/>
+</node>
+<node TEXT="Gelsler (sp?)" ID="ID_1849867447" CREATED="1403661899843" MODIFIED="1403661909570"/>
+<node TEXT="LA Public Schools" ID="ID_738480279" CREATED="1403661891293" MODIFIED="1403661916076"/>
+<node TEXT="Hostpital (or collection of clinics?)" ID="ID_722908093" CREATED="1403661920455" MODIFIED="1403661947017"/>
+</node>
+<node TEXT="Building Accellerator Facilties" ID="ID_1455417981" CREATED="1403661955649" MODIFIED="1403661964955"/>
+<node TEXT="Better Buildings" ID="ID_1554803384" CREATED="1403789464978" MODIFIED="1403789536933" LINK="http://www1.eere.energy.gov/buildings/betterbuildings/accelerators/energy.html">
+<node TEXT="Energy Data Accelerator" ID="ID_65424900" CREATED="1403789473558" MODIFIED="1403789484278">
+<node TEXT="Goal: Help Building Owners get access to Energy Data" ID="ID_924095476" CREATED="1403789495240" MODIFIED="1403789510909"/>
+</node>
+</node>
+<node TEXT="Port of Los Angeles" ID="ID_1023848053" CREATED="1403661997373" MODIFIED="1403662002932"/>
+<node TEXT="Pilots" ID="ID_1904789495" CREATED="1403711990182" MODIFIED="1403712009627">
+<node TEXT="UCLA Campus" ID="ID_1182569472" CREATED="1403712030830" MODIFIED="1403712034867"/>
+<node TEXT="USC Campus" ID="ID_646760702" CREATED="1403712035550" MODIFIED="1403712041234"/>
+<node TEXT="LADWP Building" ID="ID_47252408" CREATED="1403712042247" MODIFIED="1403712058328"/>
+</node>
+<node TEXT="Partners" ID="ID_1355264896" CREATED="1403712296960" MODIFIED="1403712300465">
+<node TEXT="NexTek Power(??)" ID="ID_446537843" CREATED="1403712301811" MODIFIED="1403712310938"/>
+<node TEXT="Onuma" ID="ID_1393238278" CREATED="1403712311397" MODIFIED="1403712316373"/>
+<node TEXT="Schneider" ID="ID_1206940816" CREATED="1403712316869" MODIFIED="1403712330073"/>
+<node TEXT="LADWP" ID="ID_750811914" CREATED="1403712332854" MODIFIED="1403712381528"/>
+<node TEXT="Johnson(??)" ID="ID_283465120" CREATED="1403712382832" MODIFIED="1403712399460"/>
+<node TEXT="Tata(??)" ID="ID_38528486" CREATED="1403712517882" MODIFIED="1403712523251"/>
+<node TEXT="HUD" ID="ID_402588396" CREATED="1403789429459" MODIFIED="1403789457469"/>
+</node>
+<node TEXT="Team" ID="ID_845626904" CREATED="1403788595583" MODIFIED="1403788597640">
+<node TEXT="Monisha Shah" ID="ID_112443980" CREATED="1403788598889" MODIFIED="1403789028309"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:&lt;Monisha.Shah@nrel.gov">email</a>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Nick Sinai" ID="ID_1343066753" CREATED="1403788606169" MODIFIED="1403788956558"><richcontent TYPE="DETAILS" HIDDEN="true">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:Brian_J_Forde@ostp.eop.gov">EMail</a>&#160;<a href="mailto:"> </a>
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:Nicholas_S_Sinai@ostp.eop.gov">email</a>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Aneesh Chapra" ID="ID_192743177" CREATED="1403788612290" MODIFIED="1403788899528"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:apchopra@gmail.com">email</a>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Brian Ford" ID="ID_1642023032" CREATED="1403788618759" MODIFIED="1403789123322"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:Brian_J_Forde@ostp.eop.gov">email</a>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Kristina Hagen" ID="ID_135614573" CREATED="1403788645424" MODIFIED="1403789286341"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:'admin@oifoundry.com">oifoundary admin email</a>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="John Teeter" ID="ID_8879550" CREATED="1403789298717" MODIFIED="1403789302358"/>
+</node>
+<node TEXT="City of Los Angeles" ID="ID_880401895" CREATED="1403789378994" MODIFIED="1403789401234">
+<node TEXT="Team" ID="ID_965049615" CREATED="1403789321465" MODIFIED="1403789376300">
+<node TEXT="Peter Marx" ID="ID_1780002572" CREATED="1403788632982" MODIFIED="1403789203703"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <a href="mailto:peter.marx@lacity.org">email</a>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+>>>>>>> FETCH_HEAD
 </node>
 </map>
