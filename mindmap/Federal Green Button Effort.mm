@@ -54,6 +54,10 @@
 <node TEXT="Facilities" POSITION="right" ID="ID_627507414" CREATED="1404158210668" MODIFIED="1404158217708">
 <edge COLOR="#ff0000"/>
 <node TEXT="Facility List" ID="ID_546344470" CREATED="1404158226381" MODIFIED="1404158260487" LINK="https://docs.google.com/spreadsheets/d/1lUy1ho-ZDHk0-OLEQ2wEUZlyX6HB7sH11f4CdQCn964/edit#gid=2104336357"/>
+<node TEXT="Site Profiles" ID="ID_1156629917" CREATED="1404915177240" MODIFIED="1404915189454">
+<node TEXT="Building Size" ID="ID_116471412" CREATED="1404915190081" MODIFIED="1404915197430"/>
+<node TEXT="Campus" ID="ID_458621029" CREATED="1404915198092" MODIFIED="1404915210460"/>
+</node>
 </node>
 <node TEXT="GSA - General Services Administration" POSITION="left" ID="ID_1552338647" CREATED="1404158270644" MODIFIED="1404858773124">
 <edge COLOR="#0000ff"/>
@@ -745,6 +749,33 @@
 </html>
 </richcontent>
 </node>
+<node TEXT="09Ju2014" ID="ID_940652171" CREATED="1404909537335" MODIFIED="1404909552210"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      John,
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      Thank you for answering my questions &#8211; sorry it took a while to get back to you I&#8217;ve been swamped. One of my programs at NASA HQ is the Post Occupancy Evaluation Program and N232 (&#8220;Sustainability Base&#8221;) is one of the buildings that I conducted a POE on, so I&#8217;m very familiar with the building, but I&#8217;m not involved with any of the research being done on the building.
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      Pete
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 </node>
 <node TEXT="USPS - US Postal Service" POSITION="left" ID="ID_1950622591" CREATED="1404842693062" MODIFIED="1404842700931">
@@ -1211,13 +1242,139 @@
 <node TEXT="Mary Heying mary_heying@ios.doi.gov DOI Office of Acquisition and Property Management" ID="ID_1252394759" CREATED="1404843737094" MODIFIED="1404843745374"/>
 </node>
 <node TEXT="Contact Log" ID="ID_846398102" CREATED="1404843768850" MODIFIED="1404849423695">
-<node TEXT="08Jul2014" ID="ID_1610378529" CREATED="1404843772253" MODIFIED="1404843855034"><richcontent TYPE="NOTE">
+<node TEXT="08Jul2014" ID="ID_1610378529" CREATED="1404843772253" MODIFIED="1404862011347"><richcontent TYPE="NOTE">
 
 <html>
   <head>
     
   </head>
   <body>
+    <p>
+      Mary,
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      This is an excellent overview of DOI's breadth. There are a number of ideas that come to mind,&#160;&#160;the first and foremost is to look at the rural Coops and see if we can help move forward. A significant number (@700) of the coop's are provided IT infrastructure by the National Information Solutions Cooperative (NISC). NISC currently has Green Button Download My Data in their service suite and we are working with NISC to provide Green Button Connect My Data when their members call for it.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      There are currently @80 coops using Green Button and that number is expected to rise to @400 by the end of this year. Would you mind if I shared the spreadsheet you provided with the NISC group and discuss with them your needs? Maybe we can move them all forward together:)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Other of the utilities you highlighted are low hanging fruit that we should target as your processes allow. For example SDG&amp;E and SCE will both be ready by end of year with Connect My Data implementations.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Do you have in mind any particular facilities and/or processes that you think might be especially available to showcase moving forward?
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      John
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      From: &lt;Heying&gt;, Mary &lt;mary_heying@ios.doi.gov&gt;
+    </p>
+    <p>
+      Date: Tuesday, July 8, 2014 3:02 PM
+    </p>
+    <p>
+      To: John Teeter &lt;john.teeter@nist.gov&gt;
+    </p>
+    <p>
+      Cc: &quot;Call, Alesia&quot; &lt;Alesia_M_Call@ceq.eop.gov&gt;, Saralyn Bunch &lt;Saralyn.Bunch@ee.doe.gov&gt;
+    </p>
+    <p>
+      Subject: Re: Green Button GreenGov Follow-On
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Hi John -
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      After the workshop, I pulled a listing of DOI bureau facility utility providers from our Management System to see which ones currently offer Green Button capability.&#160;&#160;I've attached the list for your information.&#160; From the list, we have over 900 utility providers with thousands of utility accounts.&#160;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      DOI bureaus with facilities consist of: Bureau of Indian Affairs; Bureau of Land Management; Bureau of Reclamation; Fish and Wildlife Service; National Park Service, and US Geological Survey.&#160;&#160;DOI has over 43,000 buildings with the majority (91%) of our buildings less than 5,000 gsf.&#160; We have 47 buildings over 100,000 gsf.&#160;&#160;We are located in some of the remotest areas in the US.&#160;&#160;Utilities are often provided by small rural cooperatives.&#160;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      DOI bureaus pay for their utility bills at the site level. Bureau personnel currently enter energy consumption and cost into our newly integrated Management System.&#160;&#160;My hope for Green Button is to have the energy consumption and costs for each site to be automatically uploaded monthly into our Management System thus eliminating a tremendous resource drain.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Let me know if you have any questions regarding DOI facilities.&#160;&#160;I would be happy to participate in follow-on discussions.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Regards,
+    </p>
+    <p>
+      Mary
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Mary Heying
+    </p>
+    <p>
+      U.S. Department of the Interior
+    </p>
+    <p>
+      Office of Acquisition and Property Management
+    </p>
+    <p>
+      Facilities and Property Management
+    </p>
+    <p>
+      1849 C Street, NW
+    </p>
+    <p>
+      MS-4246 MIB
+    </p>
+    <p>
+      Washington, DC 20240
+    </p>
+    <p>
+      202-513-0722
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ===
+    </p>
     <p>
       Mary,
     </p>
@@ -1262,6 +1419,66 @@
     </p>
     <p>
       Green Button for America
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      =======
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="09Jul2014" ID="ID_780464118" CREATED="1404909132283" MODIFIED="1404909167631"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      John -
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I don't mind if you share the list of utilities.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      A couple of facilities come to my mind but I would need to go out to my bureaus first.&#160;&#160;Are there any parameters that we should focus on at this point - building size; number of buildings on a site; building function (data center, laboratory, office, etc.); facility serviced by cooperative or large public utility?&#160;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I have a monthly online meeting (4th Thursday of the month - July 24, Aug 28, Sep 25; 1:30 - 3:30 pm EDT ) with my bureau energy managers; would you or someone on your team be interested in presenting at one of our upcoming meetings?&#160;&#160;I provided a very high level &quot;presentation&quot; on the Green Button at our June meeting to give the bureau energy managers a heads up.&#160;&#160;So a follow-on more in-depth discussion would be timely.&#160; Let me know if you're interested.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I'm particularly interested in how Green Button data will interface with DOI's current management system.&#160;&#160;Hopefully, all Green Button utilities format their electronic data the exact same way to standardize the interface or upload process into existing system.&#160;&#160;If you are presenting at a future DOI meeting I would have folks who develop our management system online as well.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Thanks for your help.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Mary
+    </p>
+    <p>
+      
     </p>
   </body>
 </html>

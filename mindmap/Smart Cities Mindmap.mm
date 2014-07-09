@@ -1,4 +1,4 @@
-<map version="freeplane 1.2.0">
+<map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="Smart Cities Mindmap" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1404170826452"><hook NAME="MapStyle">
     <properties show_note_icons="true"/>
@@ -50,34 +50,36 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="10"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
 <node TEXT="Hawaii" POSITION="right" ID="ID_90262307" CREATED="1403388108860" MODIFIED="1403388117328">
 <edge COLOR="#ff0000"/>
-<node TEXT="NewYears 2015" ID="ID_1508399145" CREATED="1404228670402" MODIFIED="1404228687709">
-<node TEXT="GET Pilot Fleet" ID="ID_1683249535" CREATED="1404228689457" MODIFIED="1404228704645"/>
-<node TEXT="Federal Green Button Pilot" ID="ID_462486083" CREATED="1404228705826" MODIFIED="1404228732765"/>
-<node TEXT="HALE Energy Efficiency Pilot" ID="ID_1583176424" CREATED="1404228733545" MODIFIED="1404228751186"/>
-<node TEXT="Download My Data" ID="ID_1108043244" CREATED="1404228751927" MODIFIED="1404228767333"/>
-<node TEXT="Connect My Data" ID="ID_495271008" CREATED="1404228768073" MODIFIED="1404228771165"/>
-</node>
 </node>
 <node TEXT="Austin" POSITION="right" ID="ID_645821508" CREATED="1403388118179" MODIFIED="1403388122160">
 <edge COLOR="#0000ff"/>
-<node TEXT="MLS Pilot" ID="ID_1404834609" CREATED="1404228787497" MODIFIED="1404228795949"/>
+<node TEXT="Team" ID="ID_749149280" CREATED="1404922803510" MODIFIED="1404922811495"/>
+<node TEXT="Utility" ID="ID_156925054" CREATED="1404922813877" MODIFIED="1404922818157">
+<node TEXT="Austin Energy" ID="ID_3634312" CREATED="1404922818519" MODIFIED="1404922821834"/>
+</node>
 </node>
 <node TEXT="Chattanooga" POSITION="right" ID="ID_1722259474" CREATED="1403388122739" MODIFIED="1403389423834">
 <edge COLOR="#00ff00"/>
+<node TEXT="Team" ID="ID_208443133" CREATED="1404922728917" MODIFIED="1404922732250"/>
+<node TEXT="Utility" ID="ID_277056840" CREATED="1404922733077" MODIFIED="1404922735366">
+<node TEXT="ELectric - EPB" ID="ID_47408881" CREATED="1404922736886" MODIFIED="1404922756312"/>
+<node TEXT="Water - ??" ID="ID_1720312939" CREATED="1404922756864" MODIFIED="1404922761108"/>
+<node TEXT="Comm - EPB" ID="ID_446328764" CREATED="1404922761730" MODIFIED="1404922767250"/>
+<node TEXT="Team" ID="ID_181503161" CREATED="1404922768707" MODIFIED="1404922785588"/>
 </node>
-<node TEXT="Seattle" POSITION="right" ID="ID_155734284" CREATED="1403389424766" MODIFIED="1403389431610">
+<node TEXT="Contact Log" ID="ID_1265523449" CREATED="1404922791544" MODIFIED="1404922794689"/>
+</node>
+<node TEXT="Seattle" POSITION="right" ID="ID_155734284" CREATED="1403389424766" MODIFIED="1404922918430" LINK="National%20Pilots.mm">
 <edge COLOR="#ff00ff"/>
 </node>
 <node TEXT="Japan" POSITION="left" ID="ID_540848794" CREATED="1403392867363" MODIFIED="1403392873783">
 <edge COLOR="#00ffff"/>
-<node TEXT="ZGF Projects" ID="ID_1931485872" CREATED="1404228811688" MODIFIED="1404228836684"/>
 </node>
 <node TEXT="Korea" POSITION="left" ID="ID_89656377" CREATED="1403392874251" MODIFIED="1403392876535">
 <edge COLOR="#ffff00"/>
-<node TEXT="ZGF Projects" ID="ID_553018783" CREATED="1404228839608" MODIFIED="1404228858139"/>
 </node>
 <node TEXT="" POSITION="left" ID="ID_98228236" CREATED="1403392877259" MODIFIED="1403392877260">
 <edge COLOR="#7c0000"/>
@@ -120,9 +122,10 @@
 <node TEXT="Healthy Homes and Lead Technical Studies Pre-Application Notice" ID="ID_1919403907" CREATED="1404219077767" MODIFIED="1404219125106"/>
 </node>
 </node>
-<node TEXT="Los Angeles" POSITION="right" ID="ID_1673748883" CREATED="1404072310514" MODIFIED="1404232112605">
-<edge COLOR="#007c00"/>
-<richcontent TYPE="NOTE">
+<node TEXT="Better Buildings Energy Data Accelerator" POSITION="left" ID="ID_656625442" CREATED="1404921909108" MODIFIED="1404922212284">
+<edge COLOR="#007c7c"/>
+<node TEXT="Team" ID="ID_1661458349" CREATED="1404921924222" MODIFIED="1404921928485">
+<node TEXT="Field, Kristin &lt;Kristin.Field@nrel.gov&gt;" ID="ID_952204479" CREATED="1404922064316" MODIFIED="1404922085970"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -130,174 +133,356 @@
   </head>
   <body>
     <p>
-      Jun 28 Session Notes:
+      Kristin M. Field
     </p>
     <p>
-      
+      Mechanical Engineer
     </p>
     <p>
-      Notes:
+      Buildings and Thermal Systems Center
     </p>
     <p>
-      
+      National Renewable Energy Laboratory
     </p>
     <p>
-      Hilary Firestone - Mayors Office
+      15013 Denver West Pkwy., MS RSF 202
     </p>
     <p>
-      George Duddles - DWP Web Content Side
+      Golden, CO&#160;&#160;80401
     </p>
     <p>
-      David Jacot - DWP
+      303.384.7376 office
     </p>
     <p>
-      Gretchen Hardesten- DWP
+      303.854.8756 cell
     </p>
     <p>
-      Craig -
-    </p>
-    <p>
-      Aneesh Chopra - Open
-    </p>
-    <p>
-      John Teeter - NIST
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      ================================================================
-    </p>
-    <p>
-      Hilary - Introductions
-    </p>
-    <p>
-      Aneesh - DWP Announcement re: Green Button
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Dept. Coles team - ?? How to realize the commitment to
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Green Button
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Hilary mentioned sustainability around multi-tenanant
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;buildings
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Base-Line the roadmap/synergies of the announcements
-    </p>
-    <p>
-      David - baselining
-    </p>
-    <p>
-      Syscon System -
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Do DWP customers today, have a user-name &amp; password to be able to look
-    </p>
-    <p>
-      at the usage data? yes
-    </p>
-    <p>
-      What kinds of data?&#160;&#160;All residential by-monthly read
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Some interval is seen now with a
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;portal coming for real-time view
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Commercial (15 min intervals)
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-    </p>
-    <p>
-      Are there any metered buildings that are in the category of
-    </p>
-    <p>
-      multi-tenant housing units?
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      (possibly some but can't say for sure) HUD has a clear mandage for HUD
-    </p>
-    <p>
-      financed buildings. GSA Buildings - other agency buildings
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      [jat] Research Action: find the intersection of 15 min data buildings -&gt;
-    </p>
-    <p>
-      agencies.
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Q: What is the richness of the data?
-    </p>
-    <p>
-      A: visible on next day.
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Q: Is smart meter web site different?
-    </p>
-    <p>
-      A: What is the vendor for the MDM -&gt; Customer site.
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Q: Multi-Tenant Housing Units (Benchmarking and Disclosure Policies)
-    </p>
-    <p>
-      A: Commercial NV Web to view their usage
-    </p>
-    <p>
-      &#160;&#160;&#160;&#160;(---&gt; download: if we choose to move forward we can)
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Consider the effort (I'll do inventory and Itron reachout if needed).
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      Itron - contract is expiring and they will not be supporting this
-    </p>
-    <p>
-      version of the SW.&#160;
-    </p>
-    <p>
-      &#160;
+      303.630.2055 fax
     </p>
   </body>
 </html>
 
 </richcontent>
+</node>
+<node TEXT="Shah, Monisha &lt;Monisha.Shah@nrel.gov&gt;" ID="ID_1923378615" CREATED="1404922087872" MODIFIED="1404922101967"/>
+</node>
+<node TEXT="Partners" ID="ID_725382617" CREATED="1404921929956" MODIFIED="1404921935672">
+<node TEXT="" ID="ID_792267995" CREATED="1404922212813" MODIFIED="1404922482307">
+<node TEXT="Atlanta, GA" ID="ID_88082299" CREATED="1404922223436" MODIFIED="1404922494819">
+<node TEXT="Atlanta Gas Light Company" ID="ID_742872128" CREATED="1404922223463" MODIFIED="1404922223463"/>
+</node>
+<node TEXT="Austin, TX" ID="ID_694514686" CREATED="1404922223438" MODIFIED="1404922511918">
+<node TEXT="Austin Energy" ID="ID_649833685" CREATED="1404922223465" MODIFIED="1404922223465"/>
+</node>
+<node TEXT="Boston" ID="ID_1192778467" CREATED="1404922223440" MODIFIED="1404922487601">
+<node TEXT="NSTAR/Northeast Utilities" ID="ID_871830887" CREATED="1404922223466" MODIFIED="1404922223466"/>
+</node>
+<node TEXT="Cambridge, MA" ID="ID_1298102106" CREATED="1404922449864" MODIFIED="1404922455922">
+<node TEXT="NSTAR/Northeast Utilities" ID="ID_1075334348" CREATED="1404922461148" MODIFIED="1404922468552"/>
+</node>
+<node TEXT="City of Chicago, IL" ID="ID_794864654" CREATED="1404922223442" MODIFIED="1404922223442">
+<node TEXT="Commonwealth Edison" ID="ID_1372106925" CREATED="1404922223468" MODIFIED="1404922223468"/>
+</node>
+<node TEXT="Columbus, OH" ID="ID_530054805" CREATED="1404922223443" MODIFIED="1404922526761">
+<node TEXT="AEP Ohio" ID="ID_929600475" CREATED="1404922223469" MODIFIED="1404922223469"/>
+</node>
+<node TEXT="District of Columbia" ID="ID_110082981" CREATED="1404922223445" MODIFIED="1404922223445">
+<node TEXT="PEPCO Holdings, Inc." ID="ID_158584382" CREATED="1404922223470" MODIFIED="1404922223470"/>
+</node>
+<node TEXT="Houston, TX" ID="ID_1772116694" CREATED="1404922223447" MODIFIED="1404922533646">
+<node TEXT="Reliant (an NRG Company)" ID="ID_31171199" CREATED="1404922223471" MODIFIED="1404922223471"/>
+</node>
+<node TEXT="Kansas City, MO" ID="ID_911598178" CREATED="1404922223448" MODIFIED="1404922540440">
+<node TEXT="Kansas City Power &amp; Light Company" ID="ID_1349080817" CREATED="1404922223472" MODIFIED="1404922223472"/>
+</node>
+<node TEXT="Los Angeles, CA" ID="ID_1526097543" CREATED="1404922223450" MODIFIED="1404922551545">
+<node TEXT="Los Angeles Department of Water" ID="ID_866566960" CREATED="1404922223474" MODIFIED="1404922399066"/>
+<node TEXT="Southern California Gas Company" ID="ID_260583598" CREATED="1404922372526" MODIFIED="1404922389160"/>
+</node>
+<node TEXT="Minneapolis, MN" ID="ID_351553539" CREATED="1404922223451" MODIFIED="1404922557303">
+<node TEXT="Xcel Energy Inc." ID="ID_1292609444" CREATED="1404922223475" MODIFIED="1404922223475"/>
+</node>
+<node TEXT="New York, NY" ID="ID_245268832" CREATED="1404922223452" MODIFIED="1404922565678">
+<node TEXT="National Grid" ID="ID_230745102" CREATED="1404922223476" MODIFIED="1404922223476"/>
+</node>
+<node TEXT="Philadelphia, PA" ID="ID_41637596" CREATED="1404922223454" MODIFIED="1404922570945">
+<node TEXT="PECO Energy Company" ID="ID_483725690" CREATED="1404922223477" MODIFIED="1404922223477"/>
+</node>
+<node TEXT="Cities of San Diego and Chula Vista, CA" ID="ID_775750560" CREATED="1404922223455" MODIFIED="1404922223455">
+<node TEXT="San Diego Gas &amp; Electric Company" ID="ID_461153604" CREATED="1404922223478" MODIFIED="1404922223478"/>
+</node>
+<node TEXT="Salt Lake City, UT" ID="ID_1890659279" CREATED="1404922223456" MODIFIED="1404922576103">
+<node TEXT="Rocky Mountain Power" ID="ID_1110679983" CREATED="1404922223479" MODIFIED="1404922223479"/>
+</node>
+<node TEXT="San Francisco, CA" ID="ID_1367922529" CREATED="1404922223457" MODIFIED="1404922583189">
+<node TEXT="Pacific Gas &amp; Electric Company" ID="ID_855628525" CREATED="1404922223481" MODIFIED="1404922223481"/>
+</node>
+<node TEXT="Santa Monica, CA" ID="ID_1484174468" CREATED="1404922223458" MODIFIED="1404922591404">
+<node TEXT="Southern California Edison" ID="ID_1070734463" CREATED="1404922223482" MODIFIED="1404922223482"/>
+</node>
+<node TEXT="Seattle, WA" ID="ID_659545698" CREATED="1404922223460" MODIFIED="1404922602340">
+<node TEXT="Puget Sound Energy" ID="ID_144329286" CREATED="1404922223483" MODIFIED="1404922223483"/>
+<node TEXT="Seattle City Light" ID="ID_879866368" CREATED="1404922609809" MODIFIED="1404922615122"/>
+</node>
+</node>
+</node>
+<node TEXT="Contact Log" ID="ID_840429527" CREATED="1404921937789" MODIFIED="1404922212283">
+<node TEXT="09Jul2014" ID="ID_248884241" CREATED="1404921942692" MODIFIED="1404921962794"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      for the introduction, too.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Monisha is currently on maternity leave, and I'm running the Energy Data Accelerator program until she returns.&#160;&#160;Greg and all, I'd be interested in talking about this further - the afternoon of July 17 would work great for me.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I look forward to hearing from you, and thanks for reaching out.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Best,
+    </p>
+    <p>
+      Kristin
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ***********************************************************************
+    </p>
+    <p>
+      Kristin M. Field
+    </p>
+    <p>
+      Mechanical Engineer
+    </p>
+    <p>
+      Buildings and Thermal Systems Center
+    </p>
+    <p>
+      National Renewable Energy Laboratory
+    </p>
+    <p>
+      15013 Denver West Pkwy., MS RSF 202
+    </p>
+    <p>
+      Golden, CO&#160;&#160;80401
+    </p>
+    <p>
+      303.384.7376 office
+    </p>
+    <p>
+      303.854.8756 cell
+    </p>
+    <p>
+      303.630.2055 fax
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      -----Original Message-----
+    </p>
+    <p>
+      From: Greg.Thompson@schneider-electric.com [mailto:Greg.Thompson@schneider-electric.com]
+    </p>
+    <p>
+      Sent: Wednesday, July 09, 2014 9:16 AM
+    </p>
+    <p>
+      To: Teeter, John
+    </p>
+    <p>
+      Cc: Wollman, David A.; Field, Kristin; Shah, Monisha
+    </p>
+    <p>
+      Subject: Re: GB CMD opportunities
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Thank you John for the introduction.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Monisha/Kristein, I would certainly be interested in having a discussion of how our solution we have deployed for Pepco/GSA could support the Accelerator efforts.&#160;&#160;In our cloud-based model, designed for utilities and their commercial &amp; industrial customers, we could quickly replicate the Pepco model in support of the Energy Data Accelerator.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I would also like to discuss with you our other project we have with Pepco, focused on building benchmarking utilizing Portfolio Manager and our Resource Advisor solution to satisfy the requirements for the city of DC.&#160;&#160;I believe this would also support the Energy Data Accelerator program.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      My first availability would be the morning of Wednesday, July 16th.&#160; Otherwise, I could have a call the afternoon of July 17th.&#160;&#160;Would any of those dates/times work for you?
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I look forward to our discussion.
+    </p>
+    <p>
+      _____________________________________________________________________________________
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Greg Thompson&#160;&#160;|&#160;&#160;Schneider Electric&#160;&#160;&#160;|&#160;&#160;Cloud Services&#160;&#160;|&#160;&#160;&#160;General Manager, Utility DSM
+    </p>
+    <p>
+      Solutions
+    </p>
+    <p>
+      Office: +1-615-844-8764&#160;&#160;|&#160;&#160;&#160;Mobile: +1-615-556-0742
+    </p>
+    <p>
+      Email: greg.thompson@schneider-electric.com&#160;&#160;|&#160;&#160;&#160;Site: www.schneider-electric.com&#160;&#160;|&#160;&#160;&#160;Address:
+    </p>
+    <p>
+      295 Tech Park Dr., LaVergne, TN, 37086 USA
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      View Greg Thompson's profile on LinkedIn http://www.linkedin.com/in/gregoryathompson/
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;From:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;Teeter, John&quot; &lt;john.teeter@nist.gov&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;To:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;Shah, Monisha&quot; &lt;Monisha.Shah@nrel.gov&gt;, &quot;Greg.Thompson@schneider-electric.com&quot; &lt;Greg.Thompson@schneider-electric.com&gt;,&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;Cc:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;kristin.field@nrel.gov&quot; &lt;kristin.field@nrel.gov&gt;, &quot;Wollman, David A.&quot; &lt;david.wollman@nist.gov&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;Date:&#160;&#160;&#160;&#160;&#160;&#160;&#160;07/08/2014 09:29 AM&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;Subject:&#160;&#160;&#160;&#160;GB CMD opportunities&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Monisha/Kristein,
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      I would like (via this email) to introduce you to Greg Thompson of Schneider Electric. Greg's team provided the Energy Profiler Online (EPO) Green Button Connect My Data solution to Pepco in support of the recent GSA Green Button Pilot.&#160;&#160;Greg, Monish and Kristin are responsible for the DoE Better Building Initiative Energy Data Accelerator program that has formed partnerships across the country to engage municipalities and their utilities in efforts to leverage energy data for benchmarking and operational efficiencies.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      It is possible to achieve rapid deployment of the GSA solution using the Green Button Certified EPO product. I would be happy to help explore these possibilities with you.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      John Teeter
+    </p>
+    <p>
+      -----
+    </p>
+    <p>
+      Office: 301-975-4743
+    </p>
+    <p>
+      Mobile: 301-325-7608
+    </p>
+    <p>
+      Computer Scientist - NIST
+    </p>
+    <p>
+      Green Button for America
+    </p>
+    <p>
+      Presidential Innovation Fellow Alumni
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Vendors" ID="ID_891271401" CREATED="1404921974957" MODIFIED="1404921977097">
+<node TEXT="Schneider Electric" ID="ID_665133707" CREATED="1404921977891" MODIFIED="1404921983169">
+<node TEXT="Team" ID="ID_997677835" CREATED="1404921985804" MODIFIED="1404921993575"/>
+<node TEXT="Products" ID="ID_758853215" CREATED="1404921995811" MODIFIED="1404921997602">
+<node TEXT="ION EEM" ID="ID_1545735930" CREATED="1404921998170" MODIFIED="1404922004003"/>
+<node TEXT="EPO - Energy Profiler On-Line" ID="ID_1912595805" CREATED="1404922004513" MODIFIED="1404922015063"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Los Angeles" POSITION="right" ID="ID_1673748883" CREATED="1404072310514" MODIFIED="1404922894539" LINK="National%20Pilots.mm">
+<edge COLOR="#007c00"/>
 </node>
 <node TEXT="EcoDistrict Partner Projects" POSITION="left" ID="ID_828900155" CREATED="1404073527042" MODIFIED="1404073539309">
 <edge COLOR="#7c007c"/>

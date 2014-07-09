@@ -1,6 +1,6 @@
-<map version="freeplane 1.2.0">
+<map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Green Button for America" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1389643601482">
+<node TEXT="Green Button for America" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1404923668178">
 <icon BUILTIN="button_ok"/>
 <hook NAME="MapStyle" zoom="0.75">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
@@ -52,7 +52,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="12"/>
 <richcontent TYPE="NOTE">
 
 <html>
@@ -74,10 +74,6 @@
 </richcontent>
 <font SIZE="16"/>
 <edge STYLE="bezier"/>
-<node TEXT="" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="right" ID="ID_922252819" CREATED="1380292870968" MODIFIED="1404670546962" HGAP="-67" VSHIFT="-226">
-<hook URI="../MarComm/Graphics/favicon.png" SIZE="1.0" NAME="ExternalObject"/>
-<hook NAME="FreeNode"/>
-</node>
 <node TEXT="Climate Action Plan" LOCALIZED_STYLE_REF="styles.topic" POSITION="left" ID="ID_533827488" CREATED="1379355438220" MODIFIED="1404757056030">
 <edge COLOR="#00ffff"/>
 <node TEXT="GSA" ID="ID_129755355" CREATED="1379355463062" MODIFIED="1379355466540">
@@ -108,7 +104,6 @@
 </node>
 <node TEXT="Educational Threads" POSITION="right" ID="ID_559536520" CREATED="1374937238820" MODIFIED="1403663446213">
 <edge COLOR="#ff0000"/>
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" DASH="7 7" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_559536520" STARTINCLINATION="11;1;" ENDINCLINATION="11;1;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <node TEXT="Social Group" ID="ID_1533181614" CREATED="1374937396345" MODIFIED="1374937513676">
 <node TEXT="Family" ID="ID_340702531" CREATED="1374937599767" MODIFIED="1374940985814"/>
 <node TEXT="Communities of Interest" ID="ID_1418773199" CREATED="1374937623032" MODIFIED="1374937630211"/>
@@ -304,43 +299,6 @@
 <node TEXT="Analytic Derivative Informaiton" ID="ID_1765071880" CREATED="1403389829348" MODIFIED="1403389862115"/>
 <node TEXT="Infrastructure Management" ID="ID_194393348" CREATED="1403389863148" MODIFIED="1404757973836"/>
 </node>
-<node TEXT="Testing &amp; Certification" POSITION="right" ID="ID_1222161090" CREATED="1374937266294" MODIFIED="1380293443564">
-<edge COLOR="#00ff00"/>
-<node TEXT="Download My Data" ID="ID_963836877" CREATED="1374937803730" MODIFIED="1374937813332">
-<node TEXT="Testing &amp; Certification Authorities" ID="ID_928795991" CREATED="1374938707737" MODIFIED="1403662416013">
-<node TEXT="UCAIug" ID="ID_616697946" CREATED="1403662302249" MODIFIED="1403662306937"/>
-<node TEXT="ANSII" ID="ID_1750411079" CREATED="1403662418071" MODIFIED="1403662421854"/>
-</node>
-<node TEXT="Test Labs" ID="ID_1795648443" CREATED="1374938736034" MODIFIED="1374938749459">
-<node TEXT="Underwriters Labs (UL)" ID="ID_1415005275" CREATED="1374938850418" MODIFIED="1374938863885"/>
-</node>
-<node TEXT="Tested Implementations" ID="ID_517498005" CREATED="1374938750201" MODIFIED="1374938757197">
-<node TEXT="Schneider-Electric EPO" ID="ID_228061556" CREATED="1374938882607" MODIFIED="1403662367139"/>
-<node TEXT="Pepco Holdings" ID="ID_1963715863" CREATED="1374938894392" MODIFIED="1403662377944"/>
-<node TEXT="NISC/Wake Electric" ID="ID_1057077086" CREATED="1379363488671" MODIFIED="1403662392851"/>
-</node>
-<node TEXT="Interoperability Testing and Certification (ITCA)" ID="ID_957272283" CREATED="1374938758590" MODIFIED="1374938810727"/>
-</node>
-<node TEXT="Connect My Data" ID="ID_1400652575" CREATED="1374937815547" MODIFIED="1374937822514">
-<node TEXT="Testing &amp; Certification Authority" ID="ID_1516885538" CREATED="1374938707737" MODIFIED="1374938714565">
-<node TEXT="UCAIug" ID="ID_275078276" CREATED="1403662429663" MODIFIED="1403662434291"/>
-<node TEXT="ANSII" ID="ID_1442294093" CREATED="1403662442295" MODIFIED="1403662444341"/>
-</node>
-<node TEXT="Underwriters Labs (UL)" ID="ID_1675069677" CREATED="1374938736034" MODIFIED="1403662456768">
-<node TEXT="" ID="ID_394240783" CREATED="1403662446445" MODIFIED="1403662446445"/>
-</node>
-<node TEXT="Tested Implementations" ID="ID_212515273" CREATED="1374938750201" MODIFIED="1374938757197">
-<node TEXT="Schneider Electric EPO" ID="ID_1509125625" CREATED="1403662459972" MODIFIED="1403662474008"/>
-<node TEXT="Scheider Electric ION EEM" ID="ID_1158239175" CREATED="1403662474571" MODIFIED="1403662485019"/>
-<node TEXT="C3" ID="ID_21236049" CREATED="1403662485552" MODIFIED="1403662492418"/>
-<node TEXT="Souther California Edison (SCE)" ID="ID_1152167709" CREATED="1403662493129" MODIFIED="1403662506046"/>
-<node TEXT="Pacific Gas &amp; Electric (PG&amp;E)" ID="ID_420393770" CREATED="1403662506674" MODIFIED="1403662516934"/>
-<node TEXT="San Diego Gas &amp; Electric (SDG&amp;E)" ID="ID_38116448" CREATED="1403662517575" MODIFIED="1403662542673"/>
-<node TEXT="London Hydro" ID="ID_650303331" CREATED="1403662543707" MODIFIED="1403662549274"/>
-</node>
-<node TEXT="Interoperability Testing and Certification (ITCA)" ID="ID_589422744" CREATED="1374938758590" MODIFIED="1374938810727"/>
-</node>
-</node>
 <node TEXT="Application Domains" POSITION="right" ID="ID_1365344149" CREATED="1374937288521" MODIFIED="1380293445920">
 <edge COLOR="#ff00ff"/>
 <node TEXT="Real Estate" ID="ID_889246951" CREATED="1374938916773" MODIFIED="1374938929513" HGAP="10">
@@ -385,7 +343,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Austin MLS (need notes)" ID="ID_560536934" CREATED="1403662728207" MODIFIED="1404740609161"><richcontent TYPE="NOTE">
@@ -406,7 +363,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Boulder MLS (need notes" ID="ID_195671431" CREATED="1403662738615" MODIFIED="1404740629019"><richcontent TYPE="NOTE">
@@ -430,7 +386,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="DC MLS" ID="ID_875628598" CREATED="1403662754750" MODIFIED="1403662763539">
@@ -495,7 +450,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -534,7 +488,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Intermountain MLS - Greg Manship" ID="ID_1419044989" CREATED="1403388290629" MODIFIED="1404422521322" LINK="http://intermountainmls.com/"/>
 <node TEXT="Idaho Power" ID="ID_1243020011" CREATED="1403388295873" MODIFIED="1403474504059"/>
@@ -573,7 +526,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -592,7 +544,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -711,12 +662,15 @@
 <node TEXT="EPA Portfolio Manager" ID="ID_922223650" CREATED="1403531116102" MODIFIED="1403531128401"/>
 </node>
 <node TEXT="Outage Management" ID="ID_911325696" CREATED="1374938939760" MODIFIED="1403663021869">
-<node TEXT="Seattle City Light" ID="ID_1295132297" CREATED="1403663022979" MODIFIED="1403663027136"/>
+<node TEXT="Seattle City Light" ID="ID_1295132297" CREATED="1403663022979" MODIFIED="1403663027136">
+<node TEXT="" ID="ID_464054441" CREATED="1404923213445" MODIFIED="1404923213445"/>
+</node>
 <node TEXT="NISC Wake Electric" ID="ID_934779475" CREATED="1403663027635" MODIFIED="1403663038683"/>
 <node TEXT="SDG&amp;E" ID="ID_1428816824" CREATED="1403663039442" MODIFIED="1403663050823"/>
 <node TEXT="SCE" ID="ID_1675004589" CREATED="1403663051600" MODIFIED="1403663055947"/>
 <node TEXT="PG&amp;E" ID="ID_1853034442" CREATED="1403663056415" MODIFIED="1403663058527"/>
 <node TEXT="Maryland ?? Pepco or ???" ID="ID_1584398123" CREATED="1403663060121" MODIFIED="1403663077023"/>
+<node TEXT="Github Repo" ID="ID_348442119" CREATED="1404923024848" MODIFIED="1404923177653" LINK="https://github.com/ifactor/open-power-status"/>
 </node>
 <node TEXT="Residential Energy Efficiency" ID="ID_859913533" CREATED="1374938967237" MODIFIED="1374938991794">
 <node TEXT="Sempra" ID="ID_71044858" CREATED="1403389536643" MODIFIED="1403389541528"/>
@@ -732,9 +686,9 @@
 <node TEXT="WattTime" ID="ID_1254178032" CREATED="1404741447583" MODIFIED="1404741472818"/>
 </node>
 </node>
-<node TEXT="Ecosystem (size targets by customer#)" POSITION="left" ID="ID_697712307" CREATED="1374937827475" MODIFIED="1403663342999">
+<node TEXT="Ecosystem (size targets by customer#)" POSITION="left" ID="ID_697712307" CREATED="1374937827475" MODIFIED="1404924033648">
 <edge COLOR="#007c7c"/>
-<attribute_layout NAME_WIDTH="73" VALUE_WIDTH="73"/>
+<attribute_layout NAME_WIDTH="72" VALUE_WIDTH="72"/>
 <attribute NAME="CustomerCount" VALUE="16298201" OBJECT="org.freeplane.features.format.FormattedNumber|16298201|#0.####"/>
 <attribute NAME="script1" VALUE="def startValue = 0&#xa;node[&apos;CustomerCount&apos;] = node.children.sum(startValue){ it[&apos;CustomerCount&apos;].to.num0 }&#xa;// @ExecutionModes({ON_SELECTED_NODE})"/>
 <node TEXT="Targeted" ID="ID_1280136714" CREATED="1374937841409" MODIFIED="1380293410656">
@@ -770,15 +724,12 @@
 <attribute NAME="CustomerCount" VALUE="2000000" OBJECT="org.freeplane.features.format.FormattedNumber|2000000|#0.####"/>
 </node>
 </node>
-<node TEXT="Coops (Member Owned Utilities)" ID="ID_1547157224" CREATED="1374938145033" MODIFIED="1374942605185">
+<node TEXT="Member Owned Utilities - Cooperatives" ID="ID_1547157224" CREATED="1374938145033" MODIFIED="1404923258781">
 <attribute NAME="CustomerCount" VALUE="6100000" OBJECT="org.freeplane.features.format.FormattedNumber|6100000|#0.####"/>
 <attribute NAME="script1" VALUE="def startValue = 0&#xa;node[&apos;CustomerCount&apos;] = node.children.sum(startValue){ it[&apos;CustomerCount&apos;].to.num0 }&#xa;// @ExecutionModes({ON_SELECTED_NODE})"/>
 <node TEXT="NRECA/CRN (National Rural Electric Cooperative Association/Cooperative Research Network)" ID="ID_477644734" CREATED="1374938358998" MODIFIED="1403663282962">
 <attribute_layout NAME_WIDTH="74" VALUE_WIDTH="74"/>
 <attribute NAME="CustomerCount" VALUE="100000" OBJECT="org.freeplane.features.format.FormattedNumber|100000|#0.####"/>
-</node>
-<node TEXT="NISC (National Information Solutions Cooperative)" ID="ID_935381329" CREATED="1374938372186" MODIFIED="1374940678100">
-<attribute NAME="CustomerCount" VALUE="6000000" OBJECT="org.freeplane.features.format.FormattedNumber|6000000"/>
 </node>
 </node>
 </node>
@@ -810,7 +761,6 @@ Direct Dial: 614-716-3672
 Audinet:  200-3672</pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Phaneendra Rampalli" ID="ID_296448282" CREATED="1403794243060" MODIFIED="1403794289095"><richcontent TYPE="NOTE">
@@ -825,7 +775,6 @@ Audinet:  200-3672</pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Frank Willhoit" ID="ID_311687726" CREATED="1403794733265" MODIFIED="1403794788095"><richcontent TYPE="NOTE">
@@ -840,7 +789,6 @@ Audinet:  200-3672</pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Development Team??" ID="ID_1138761206" CREATED="1403799965424" MODIFIED="1403799984690"><richcontent TYPE="NOTE">
@@ -860,7 +808,6 @@ Sean T McClen <stmcclen aep.com="#DEFAULT"/>;
 Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -878,7 +825,6 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -949,6 +895,9 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
 </node>
 <node TEXT="FirstFuel" ID="ID_105319219" CREATED="1376066588960" MODIFIED="1376066591648"/>
 <node TEXT="C3" ID="ID_461111632" CREATED="1380293188300" MODIFIED="1380293190214"/>
+<node TEXT="NISC (National Information Solutions Cooperative)" ID="ID_935381329" CREATED="1374938372186" MODIFIED="1374940678100">
+<attribute NAME="CustomerCount" VALUE="6000000" OBJECT="org.freeplane.features.format.FormattedNumber|6000000"/>
+</node>
 </node>
 <node TEXT="Technology" POSITION="left" ID="ID_1833279867" CREATED="1403390596884" MODIFIED="1403390608916">
 <edge COLOR="#7c0000"/>
@@ -962,183 +911,42 @@ Syed J Hashmi <sjhashmi aep.com="#DEFAULT"/></pre>
 <node TEXT="Committed" ID="ID_1231315276" CREATED="1403475696188" MODIFIED="1403475705099"/>
 <node TEXT="Deployed" ID="ID_1412936481" CREATED="1403475708416" MODIFIED="1403475711654"/>
 </node>
-<<<<<<< HEAD
-=======
-<node TEXT="GreenButton Los Angeles" POSITION="right" ID="ID_1984599817" CREATED="1403661411103" MODIFIED="1404758441767">
-<edge COLOR="#7c007c"/>
-<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
-<node TEXT="LADWP" ID="ID_16526360" CREATED="1403661421545" MODIFIED="1403661429305">
-<node TEXT="Infrastructure" ID="ID_1107977708" CREATED="1403661430596" MODIFIED="1403712987469">
-<node TEXT="IT - (new - advanced)" ID="ID_1114754319" CREATED="1403713091373" MODIFIED="1403713250939"/>
+<node TEXT="Testing &amp; Certification" POSITION="right" ID="ID_1222161090" CREATED="1374937266294" MODIFIED="1404923972727">
+<edge COLOR="#7c7c00"/>
+<node TEXT="Download My Data" ID="ID_963836877" CREATED="1374937803730" MODIFIED="1374937813332">
+<node TEXT="Testing &amp; Certification Authorities" ID="ID_928795991" CREATED="1374938707737" MODIFIED="1403662416013">
+<node TEXT="UCAIug" ID="ID_616697946" CREATED="1403662302249" MODIFIED="1403662306937"/>
+<node TEXT="ANSII" ID="ID_1750411079" CREATED="1403662418071" MODIFIED="1403662421854"/>
 </node>
-<node TEXT="Electricity" ID="ID_870323249" CREATED="1403712988178" MODIFIED="1403713001771">
-<node TEXT="AMI Meters (56k pilot underway)" ID="ID_1445867104" CREATED="1403713073663" MODIFIED="1403713088309"/>
+<node TEXT="Test Labs" ID="ID_1795648443" CREATED="1374938736034" MODIFIED="1374938749459">
+<node TEXT="Underwriters Labs (UL)" ID="ID_1415005275" CREATED="1374938850418" MODIFIED="1374938863885"/>
 </node>
-<node TEXT="Water" ID="ID_1804166225" CREATED="1403713002213" MODIFIED="1403713009822">
-<node TEXT="Significant Management/Efficiency Focus" ID="ID_1940427656" CREATED="1403713279945" MODIFIED="1403713314461"/>
-<node TEXT="Primarily Manual Read (opportunity to do AMI/Water Pilot)" ID="ID_1694108484" CREATED="1403713281999" MODIFIED="1403713301126"/>
+<node TEXT="Tested Implementations" ID="ID_517498005" CREATED="1374938750201" MODIFIED="1374938757197">
+<node TEXT="Schneider-Electric EPO" ID="ID_228061556" CREATED="1374938882607" MODIFIED="1403662367139"/>
+<node TEXT="Pepco Holdings" ID="ID_1963715863" CREATED="1374938894392" MODIFIED="1403662377944"/>
+<node TEXT="NISC/Wake Electric" ID="ID_1057077086" CREATED="1379363488671" MODIFIED="1403662392851"/>
 </node>
-<node TEXT="Tarrifs" ID="ID_1075695582" CREATED="1403661453270" MODIFIED="1403713060066"/>
-<node TEXT="Team" ID="ID_1742188688" CREATED="1403661458545" MODIFIED="1403661464981">
-<node TEXT="GoToMeeting Session Roster" ID="ID_1741021732" CREATED="1403661470420" MODIFIED="1403661476600">
-<node TEXT="David Jacot" ID="ID_1926146573" CREATED="1403709882311" MODIFIED="1403709891642"/>
-<node TEXT="George Duddles" ID="ID_841790215" CREATED="1403709891996" MODIFIED="1403709895574"/>
-<node TEXT="Gretchen Hardison" ID="ID_1359236294" CREATED="1403709895975" MODIFIED="1403709913334"/>
-<node TEXT="Graig Tranby" ID="ID_430784838" CREATED="1403709913745" MODIFIED="1403709922114"/>
-<node TEXT="Ethelinda Reyes" ID="ID_288221836" CREATED="1403709922414" MODIFIED="1403709934401"/>
-<node TEXT="" ID="ID_1758695016" CREATED="1403709934956" MODIFIED="1403709934956"/>
+<node TEXT="Interoperability Testing and Certification (ITCA)" ID="ID_957272283" CREATED="1374938758590" MODIFIED="1374938810727"/>
 </node>
+<node TEXT="Connect My Data" ID="ID_1400652575" CREATED="1374937815547" MODIFIED="1374937822514">
+<node TEXT="Testing &amp; Certification Authority" ID="ID_1516885538" CREATED="1374938707737" MODIFIED="1374938714565">
+<node TEXT="UCAIug" ID="ID_275078276" CREATED="1403662429663" MODIFIED="1403662434291"/>
+<node TEXT="ANSII" ID="ID_1442294093" CREATED="1403662442295" MODIFIED="1403662444341"/>
 </node>
-<node TEXT="Projects" ID="ID_1178905163" CREATED="1403662019758" MODIFIED="1403662022989"/>
+<node TEXT="Underwriters Labs (UL)" ID="ID_1675069677" CREATED="1374938736034" MODIFIED="1403662456768">
+<node TEXT="" ID="ID_394240783" CREATED="1403662446445" MODIFIED="1403662446445"/>
 </node>
-<node TEXT="Souther California Gas (SoCalGas)" ID="ID_1435745837" CREATED="1403789550659" MODIFIED="1403789566751"/>
-<node TEXT="CPUC" ID="ID_1756740822" CREATED="1403710209074" MODIFIED="1403710212477">
-<node TEXT="Catherine Sandoval" ID="ID_831413596" CREATED="1403710213216" MODIFIED="1403710221475"/>
-<node TEXT="Chris Villirealle" ID="ID_1928831723" CREATED="1403710222038" MODIFIED="1403789605169"/>
-<node TEXT="Amy Baker" ID="ID_73968115" CREATED="1403710226078" MODIFIED="1403710230026"/>
-<node TEXT="decision on data access for aggregate data use cases" ID="ID_835394920" CREATED="1403789608682" MODIFIED="1403789626067"/>
+<node TEXT="Tested Implementations" ID="ID_212515273" CREATED="1374938750201" MODIFIED="1374938757197">
+<node TEXT="Schneider Electric EPO" ID="ID_1509125625" CREATED="1403662459972" MODIFIED="1403662474008"/>
+<node TEXT="Scheider Electric ION EEM" ID="ID_1158239175" CREATED="1403662474571" MODIFIED="1403662485019"/>
+<node TEXT="C3" ID="ID_21236049" CREATED="1403662485552" MODIFIED="1403662492418"/>
+<node TEXT="Souther California Edison (SCE)" ID="ID_1152167709" CREATED="1403662493129" MODIFIED="1403662506046"/>
+<node TEXT="Pacific Gas &amp; Electric (PG&amp;E)" ID="ID_420393770" CREATED="1403662506674" MODIFIED="1403662516934"/>
+<node TEXT="San Diego Gas &amp; Electric (SDG&amp;E)" ID="ID_38116448" CREATED="1403662517575" MODIFIED="1403662542673"/>
+<node TEXT="London Hydro" ID="ID_650303331" CREATED="1403662543707" MODIFIED="1403662549274"/>
 </node>
-<node TEXT="Facilities/Buildings" ID="ID_1762288974" CREATED="1403789640852" MODIFIED="1403789650296">
-<node TEXT="Federal Facilities" ID="ID_6056552" CREATED="1403661530199" MODIFIED="1403661537661"/>
-<node TEXT="City Facilities" ID="ID_462160" CREATED="1403661538297" MODIFIED="1403661544271"/>
-<node TEXT="UC Facilities" ID="ID_198416132" CREATED="1403661544882" MODIFIED="1403711003638">
-<node TEXT="Kimon Onuma  - Tied into Visual BIM - Great Demo" ID="ID_411844326" CREATED="1403710257546" MODIFIED="1403711018698" LINK="http://www.onuma.com"/>
+<node TEXT="Interoperability Testing and Certification (ITCA)" ID="ID_589422744" CREATED="1374938758590" MODIFIED="1374938810727"/>
 </node>
 </node>
-<node TEXT="Private Portfolios" ID="ID_915337736" CREATED="1403661873710" MODIFIED="1403661880019">
-<node TEXT="Glumac" ID="ID_1005775948" CREATED="1403661881612" MODIFIED="1403661898166">
-<node TEXT="Lawrence" ID="ID_1196186962" CREATED="1403710495120" MODIFIED="1403710510159"/>
-</node>
-<node TEXT="Gelsler (sp?)" ID="ID_1849867447" CREATED="1403661899843" MODIFIED="1403661909570"/>
-<node TEXT="LA Public Schools" ID="ID_738480279" CREATED="1403661891293" MODIFIED="1403661916076"/>
-<node TEXT="Hostpital (or collection of clinics?)" ID="ID_722908093" CREATED="1403661920455" MODIFIED="1403661947017"/>
-</node>
-<node TEXT="Building Accellerator Facilties" ID="ID_1455417981" CREATED="1403661955649" MODIFIED="1403661964955"/>
-<node TEXT="Better Buildings" ID="ID_1554803384" CREATED="1403789464978" MODIFIED="1403789536933" LINK="http://www1.eere.energy.gov/buildings/betterbuildings/accelerators/energy.html">
-<node TEXT="Energy Data Accelerator" ID="ID_65424900" CREATED="1403789473558" MODIFIED="1403789484278">
-<node TEXT="Goal: Help Building Owners get access to Energy Data" ID="ID_924095476" CREATED="1403789495240" MODIFIED="1403789510909"/>
-</node>
-</node>
-<node TEXT="Port of Los Angeles" ID="ID_1023848053" CREATED="1403661997373" MODIFIED="1403662002932"/>
-<node TEXT="Pilots" ID="ID_1904789495" CREATED="1403711990182" MODIFIED="1403712009627">
-<node TEXT="UCLA Campus" ID="ID_1182569472" CREATED="1403712030830" MODIFIED="1403712034867"/>
-<node TEXT="USC Campus" ID="ID_646760702" CREATED="1403712035550" MODIFIED="1403712041234"/>
-<node TEXT="LADWP Building" ID="ID_47252408" CREATED="1403712042247" MODIFIED="1403712058328"/>
-</node>
-<node TEXT="Partners" ID="ID_1355264896" CREATED="1403712296960" MODIFIED="1403712300465">
-<node TEXT="NexTek Power(??)" ID="ID_446537843" CREATED="1403712301811" MODIFIED="1403712310938"/>
-<node TEXT="Onuma" ID="ID_1393238278" CREATED="1403712311397" MODIFIED="1403712316373"/>
-<node TEXT="Schneider" ID="ID_1206940816" CREATED="1403712316869" MODIFIED="1403712330073"/>
-<node TEXT="LADWP" ID="ID_750811914" CREATED="1403712332854" MODIFIED="1403712381528"/>
-<node TEXT="Johnson(??)" ID="ID_283465120" CREATED="1403712382832" MODIFIED="1403712399460"/>
-<node TEXT="Tata(??)" ID="ID_38528486" CREATED="1403712517882" MODIFIED="1403712523251"/>
-<node TEXT="HUD" ID="ID_402588396" CREATED="1403789429459" MODIFIED="1403789457469"/>
-</node>
-<node TEXT="Team" ID="ID_845626904" CREATED="1403788595583" MODIFIED="1403788597640">
-<node TEXT="Monisha Shah" ID="ID_112443980" CREATED="1403788598889" MODIFIED="1403789028309"><richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <a href="mailto:&lt;Monisha.Shah@nrel.gov">email</a>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Nick Sinai" ID="ID_1343066753" CREATED="1403788606169" MODIFIED="1403788956558"><richcontent TYPE="DETAILS" HIDDEN="true">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <a href="mailto:Brian_J_Forde@ostp.eop.gov">EMail</a>&#160;<a href="mailto:"> </a>
-    </p>
-  </body>
-</html>
-</richcontent>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <a href="mailto:Nicholas_S_Sinai@ostp.eop.gov">email</a>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Aneesh Chapra" ID="ID_192743177" CREATED="1403788612290" MODIFIED="1403788899528"><richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <a href="mailto:apchopra@gmail.com">email</a>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Brian Ford" ID="ID_1642023032" CREATED="1403788618759" MODIFIED="1403789123322"><richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <a href="mailto:Brian_J_Forde@ostp.eop.gov">email</a>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Kristina Hagen" ID="ID_135614573" CREATED="1403788645424" MODIFIED="1403789286341"><richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <a href="mailto:'admin@oifoundry.com">oifoundary admin email</a>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="John Teeter" ID="ID_8879550" CREATED="1403789298717" MODIFIED="1403789302358"/>
-</node>
-<node TEXT="City of Los Angeles" ID="ID_880401895" CREATED="1403789378994" MODIFIED="1403789401234">
-<node TEXT="Team" ID="ID_965049615" CREATED="1403789321465" MODIFIED="1403789376300">
-<node TEXT="Peter Marx" ID="ID_1780002572" CREATED="1403788632982" MODIFIED="1403789203703"><richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <a href="mailto:peter.marx@lacity.org">email</a>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-</node>
-</node>
->>>>>>> FETCH_HEAD
 </node>
 </map>
