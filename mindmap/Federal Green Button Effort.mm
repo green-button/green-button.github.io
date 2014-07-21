@@ -1,6 +1,6 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Federal Green Button Effort" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1404841558457"><hook NAME="MapStyle">
+<node TEXT="Federal Green Button Effort" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1404841558457"><hook NAME="MapStyle" zoom="1.1927513">
     <properties show_note_icons="true"/>
 
 <map_styles>
@@ -50,10 +50,18 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="1"/>
 <node TEXT="Facilities" POSITION="right" ID="ID_627507414" CREATED="1404158210668" MODIFIED="1404158217708">
 <edge COLOR="#ff0000"/>
-<node TEXT="Facility List" ID="ID_546344470" CREATED="1404158226381" MODIFIED="1404158260487" LINK="https://docs.google.com/spreadsheets/d/1lUy1ho-ZDHk0-OLEQ2wEUZlyX6HB7sH11f4CdQCn964/edit#gid=2104336357"/>
+<node TEXT="Facility List" ID="ID_546344470" CREATED="1404158226381" MODIFIED="1404158260487" LINK="https://docs.google.com/spreadsheets/d/1lUy1ho-ZDHk0-OLEQ2wEUZlyX6HB7sH11f4CdQCn964/edit#gid=2104336357">
+<node TEXT="Henry M. Jackson Building - Seattle" ID="ID_830970764" CREATED="1405011817707" MODIFIED="1405011837118" LINK="http://www.gsa.gov/portal/ext/html/site/hb/category/25431/actionParameter/exploreByBuilding/buildingId/1286">
+<node TEXT="Occupants" ID="ID_1288647349" CREATED="1405011877886" MODIFIED="1405011882612">
+<node TEXT="U.S. Treasury Department" ID="ID_1101909269" CREATED="1405011882935" MODIFIED="1405011891613"/>
+<node TEXT="U.S. Department of Veterans Affairs" ID="ID_1932957837" CREATED="1405011892690" MODIFIED="1405011903972"/>
+<node TEXT="Thirteenth U.S. Coast Guard District." ID="ID_817652956" CREATED="1405011905427" MODIFIED="1405011912376"/>
+</node>
+</node>
+</node>
 <node TEXT="Site Profiles" ID="ID_1156629917" CREATED="1404915177240" MODIFIED="1404915189454">
 <node TEXT="Building Size" ID="ID_116471412" CREATED="1404915190081" MODIFIED="1404915197430"/>
 <node TEXT="Campus" ID="ID_458621029" CREATED="1404915198092" MODIFIED="1404915210460"/>
@@ -2090,11 +2098,101 @@
 
 </richcontent>
 </node>
+<node TEXT="17July2014" ID="ID_544272446" CREATED="1405619054171" MODIFIED="1405619069120"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      John,
+    </p>
+    <p>
+      Thanks for reaching out to me. Yes, I found the session extremely beneficial. Right now, my immediate portfolio for this activity consists of some of the buildings that have been leased by FAA and where we pay for utilities separately from the rent. This way, we are now responsible for not only paying the utilities but also to see if there is anyway we can reduce the consumption, although that would mean looking into our lease arrangements etc.
+    </p>
+    <p>
+      Some time during this activity, I would have to look into the actual consumption information for these buildings and probably the Green Button would be the&#160;&#160;best place to start.
+    </p>
+    <p>
+      Since these buildings are not owned but leased by FAA, there would be a totally different way to look at consumption reduction since we do not directly control the environment at those buildings.
+    </p>
+    <p>
+      With all this, I am still researching my portfolio and would reach out to you once I figure out the best way to proceed. Let me know how we can work together given the circumstances and I will involve my management as well.
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      Thanks again for your support.
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      Abhijit Adhikari
+    </p>
+    <p>
+      High Performance Sustainable Buildings/ ARCHIBUS
+    </p>
+    <p>
+      ARC/ ALO-200
+    </p>
+    <p>
+      (202) 267 7541
+    </p>
+    <p>
+      It is not an illusion, it just looks like one!
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="Team" ID="ID_310825921" CREATED="1404847617824" MODIFIED="1404847620766">
 <node TEXT="Abhijit Adhikari Abhijit.Adhikari@faa.gov" ID="ID_1628741920" CREATED="1404839225716" MODIFIED="1404839245141"/>
 </node>
-<node TEXT="Facilities" ID="ID_337292259" CREATED="1404847694783" MODIFIED="1404847701536">
+<node TEXT="Facilities" ID="ID_337292259" CREATED="1404847694783" MODIFIED="1405619256927"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Portfolio Characteristics:
+    </p>
+    <ul>
+      <li>
+        some of the buildings that have been leased by FAA and where we pay for utilities separately from the rent.&#160;\
+      </li>
+      <li>
+        look into the actual consumption information for these buildings and probably the Green Button would be the&#160;&#160;best place to start.
+      </li>
+      <li>
+        not owned but leased by FAA
+      </li>
+      <li>
+        different way to look at consumption reduction since we do not directly control the environment at those buildings.
+      </li>
+    </ul>
+    <p>
+      
+    </p>
+    <p>
+      Goal:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      This way, we are now responsible for not only paying the utilities but also to see if there is anyway we can reduce the consumption, although that would mean looking into our lease arrangements
+    </p>
+  </body>
+</html>
+
+</richcontent>
 <node TEXT="FAA Building Renton WA." ID="ID_716387677" CREATED="1404848371309" MODIFIED="1404848472014">
 <node TEXT="1601 Lind Ave SW  Renton WA 98055 United States" ID="ID_733435074" CREATED="1404847712013" MODIFIED="1404847894192"/>
 <node TEXT="http://www.usgbc.org/projects/faa-building" ID="ID_90614392" CREATED="1404847701938" MODIFIED="1404847706687"/>
@@ -2537,6 +2635,129 @@
 <node TEXT="Energy Managers" POSITION="right" ID="ID_718932108" CREATED="1404158300036" MODIFIED="1404158304730">
 <edge COLOR="#00ff00"/>
 <node TEXT="GreenGov List" ID="ID_1759592469" CREATED="1404158306281" MODIFIED="1404223551148" LINK="https://docs.google.com/spreadsheets/d/1ZpJnzJvkzsYLX2X4CSrm26XE6l8xKlNZqrr-AkfuMPo/edit#gid=1079894516"/>
+</node>
+<node TEXT="Background Notes" POSITION="right" ID="ID_10178059" CREATED="1405606777962" MODIFIED="1405606784604">
+<edge COLOR="#7c7c00"/>
+<node TEXT="" ID="ID_889957160" CREATED="1405606785439" MODIFIED="1405606809714"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Phoenix, AZ
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Contact: Richard Proctor, Energy Manager (richard.proctor@phoenix.gov)
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Utilities: Arizona Public Service, Salt River Project, Southwest Gas
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The city is looking to lead by example with its data collection and tacking efforts. Currently, Phoenix is in the process of submitting an RFP for a software platform that will include entering, tracking and sorting utility bills and energy usage to provide for citywide automated utility account management. GB has the potential to improve the functionality of this tool via the Connect My Data model. One issue Phoenix has run up against with APS (their major utility) is a $5/meter charge for PM Web Services which is not feasible for the city.
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      Knoxville, TN
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Contact: Jake Tisinger, Project Manager, Office of Sustainability (jtisinger@cityofknoxville.org)
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Utility: Knoxville Utility Board
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Knoxville&#8217;s close relationship with their municipal utility lead to the creation of a consolidated billing format that is directly uploaded to their tracking tool, Facility Dude Utility Trac. Connect My Data would improve the interface between the utility and the tracking tool.
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      Fort Worth, TX
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Contact: Sam Steele, Administrator of Sustainability Programs (Sam.Steele@fortworthtexas.gov)
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Utilities: Oncur, Atmos Energy
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The city is currently working with Facility Dude to organize its asset inventory in Utility Trac, but does not yet know how it will consistently populate the tool with data. Oncur has recently installed significant AMI in Fort Worth facilities, increasing the feasibility of Connect My Data.
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      State of Maryland
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Contact: Giti Dengle, Office of Energy Performance and Conservation (giti.dengle@dgs.state.md.us)
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Utilities: Allegheny Power, Baltimore Gas &amp; Electric, Choptank Electric Cooperative, Champion Energy, Pepco Holdings (PEPCO, Delmarva Power),Southern Maryland Electric Cooperative, Northeast Utilities, Washington Gas
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The state holds a large contract with Bith Energy for all of its data collection and tracking efforts. Bith uploads usage data into EnergyCAP software via manual entry and consolidated billing. With both Pepco and BGE Green Button committed, Connect My Data would greatly expedite the data entry process.
+    </p>
+    <p>
+      &#160;
+    </p>
+    <p>
+      State of Rhode Island
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Contact: Rachel Sholly, Office of Energy Resources, Chief Program Development (Rachel.Sholly@energy.ri.gov)
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Utility: National Grid
+    </p>
+    <p>
+      &#183;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The state is currently in the process of putting together a full inventory of all public sector energy using assets. They are working closely with National Grid who has agreed to export usage data to Portfolio Manager via PM Web Services once all the accounts have been set up.
+    </p>
+    <p>
+      &#160;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Phoenix, AZ" ID="ID_752139515" CREATED="1405606798762" MODIFIED="1405606798762">
+<node TEXT="&#xb7;         Contact: Richard Proctor, Energy Manager (richard.proctor@phoenix.gov)" ID="ID_310943658" CREATED="1405606798764" MODIFIED="1405606798764" LINK="mailto:richard.proctor@phoenix.gov"/>
+<node TEXT="&#xb7;         Utilities: Arizona Public Service, Salt River Project, Southwest Gas" ID="ID_456481919" CREATED="1405606798767" MODIFIED="1405606798767"/>
+<node TEXT="&#xb7;         The city is looking to lead by example with its data collection and tacking efforts. Currently, Phoenix is in the process of submitting an RFP for a software platform that will include entering, tracking and sorting utility bills and energy usage to provide for citywide automated utility account management. GB has the potential to improve the functionality of this tool via the Connect My Data model. One issue Phoenix has run up against with APS (their major utility) is a $5/meter charge for PM Web Services which is not feasible for the city." ID="ID_681668893" CREATED="1405606798769" MODIFIED="1405606798769"/>
+</node>
+<node TEXT="Knoxville, TN" ID="ID_1643647886" CREATED="1405606798770" MODIFIED="1405606798770">
+<node TEXT="&#xb7;         Contact: Jake Tisinger, Project Manager, Office of Sustainability (jtisinger@cityofknoxville.org)" ID="ID_151549258" CREATED="1405606798777" MODIFIED="1405606798777" LINK="mailto:jtisinger@cityofknoxville.org"/>
+<node TEXT="&#xb7;         Utility: Knoxville Utility Board" ID="ID_1881171956" CREATED="1405606798779" MODIFIED="1405606798779"/>
+<node TEXT="&#xb7;         Knoxville&#x2019;s close relationship with their municipal utility lead to the creation of a consolidated billing format that is directly uploaded to their tracking tool, Facility Dude Utility Trac. Connect My Data would improve the interface between the utility and the tracking tool." ID="ID_617996895" CREATED="1405606798780" MODIFIED="1405606798780"/>
+</node>
+<node TEXT="Fort Worth, TX" ID="ID_353633689" CREATED="1405606798781" MODIFIED="1405606798781">
+<node TEXT="&#xb7;         Contact: Sam Steele, Administrator of Sustainability Programs (Sam.Steele@fortworthtexas.gov)" ID="ID_1015813531" CREATED="1405606798785" MODIFIED="1405606798785" LINK="mailto:Sam.Steele@fortworthtexas.gov"/>
+<node TEXT="&#xb7;         Utilities: Oncur, Atmos Energy" ID="ID_1749771918" CREATED="1405606798786" MODIFIED="1405606798786"/>
+<node TEXT="&#xb7;         The city is currently working with Facility Dude to organize its asset inventory in Utility Trac, but does not yet know how it will consistently populate the tool with data. Oncur has recently installed significant AMI in Fort Worth facilities, increasing the feasibility of Connect My Data." ID="ID_1684799427" CREATED="1405606798788" MODIFIED="1405606798788"/>
+</node>
+<node TEXT="State of Maryland" ID="ID_1291168388" CREATED="1405606798789" MODIFIED="1405606798789">
+<node TEXT="&#xb7;         Contact: Giti Dengle, Office of Energy Performance and Conservation (giti.dengle@dgs.state.md.us)" ID="ID_1929339928" CREATED="1405606798791" MODIFIED="1405606798791" LINK="mailto:giti.dengle@dgs.state.md.us"/>
+<node TEXT="Maryland - Dan Sigleman MEA  - Maryland" ID="ID_695607039" CREATED="1405609711746" MODIFIED="1405611262925"/>
+<node TEXT="&#xb7;         Utilities: Allegheny Power, Baltimore Gas &amp; Electric, Choptank Electric Cooperative, Champion Energy, Pepco Holdings (PEPCO, Delmarva Power),Southern Maryland Electric Cooperative, Northeast Utilities, Washington Gas" ID="ID_1131961840" CREATED="1405606798792" MODIFIED="1405606798792"/>
+<node TEXT="&#xb7;         The state holds a large contract with Bith Energy for all of its data collection and tracking efforts. Bith uploads usage data into EnergyCAP software via manual entry and consolidated billing. With both Pepco and BGE Green Button committed, Connect My Data would greatly expedite the data entry process." ID="ID_435665646" CREATED="1405606798793" MODIFIED="1405606798793"/>
+</node>
+<node TEXT="State of Rhode Island" ID="ID_93310056" CREATED="1405606798796" MODIFIED="1405606798796">
+<node TEXT="&#xb7;         Contact: Rachel Sholly, Office of Energy Resources, Chief Program Development (Rachel.Sholly@energy.ri.gov)" ID="ID_1667244649" CREATED="1405606798799" MODIFIED="1405606798799" LINK="mailto:Rachel.Sholly@energy.ri.gov"/>
+<node TEXT="&#xb7;         Utility: National Grid" ID="ID_1460898697" CREATED="1405606798800" MODIFIED="1405606798800"/>
+<node TEXT="&#xb7;         The state is currently in the process of putting together a full inventory of all public sector energy using assets. They are working closely with National Grid who has agreed to export usage data to Portfolio Manager via PM Web Services once all the accounts have been set up." ID="ID_472032682" CREATED="1405606798801" MODIFIED="1405606798801"/>
+</node>
+</node>
+<node TEXT="Chicago" ID="ID_614885635" CREATED="1405606947526" MODIFIED="1405606961843">
+<node TEXT="In Chicago, we worked with:&#xa; &#xa;Chris Wheat&#xa;christopher.wheat@cityofchicago.org&#xa;Office of the Mayor&#xa;City of Chicago&#xa;Phone: (312) 744-3840" ID="ID_1824098691" CREATED="1405606963541" MODIFIED="1405606969211"/>
+</node>
+</node>
+<node TEXT="Schedule" POSITION="right" ID="ID_627566536" CREATED="1405697814467" MODIFIED="1405697833376">
+<edge COLOR="#ff0000"/>
+<node TEXT="Sept 3-13 time-frame" ID="ID_1646788668" CREATED="1405697833989" MODIFIED="1405697849584"/>
 </node>
 </node>
 </map>

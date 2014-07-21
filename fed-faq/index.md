@@ -2,6 +2,8 @@
 title: fed-faq
 layout: page
 ---
+<em>Note: Any reference to specific products and services provided below is presented only as factual information and in no way implies vendor support</em>
+
 <h2>Federal Agency - Frequently Asked Questions</h2>
 The following are frequently asked questions regarding Green Button use within Federal Agencies. If you do not see our question below, please:
 <a class="buttonish" href="mailto:info@greenbuttondata.org?subject=Federal%20FAQ%20Request&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20an%20answer%20to%20the%20following%20Green%20Button%20question.%20Please%20send%20me%02%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]%0[Enter%20Your%20Question%20Here.]">Send us your question.</a>
@@ -45,12 +47,18 @@ Don't see your utility?  <a class="buttonish" href="mailto:info@greenbuttondata.
 <li>Or call  (713) 356-0060 and request the "ESPI REQ.21" Standard</li>
 </ul>
 </dd>
+<dt>What are the current Best Practices for the Standard</dt>
+<dd>Current best practices to work from the basic standard and achieve a fully interoperable solution is to follow the development community in their implementation agreements. The primary information needed in this "current state of the world" is in the following archive: <a href=""></a></dd>
+<hr />
+</dd>
+<dt></dt>
+<dd></dd>
 <hr />
 <dt>Will Green Button data  currently auto-upload into portfolio manager or is the EPA still working on that feature – if so when would they expect to have it up and running?</dt>
 <dd> EPA is still working on the auto-upload feature. A completion date has not yet been announced.</dd>
 <hr />
 <dt>People in the meeting were eluding to the fact that analyzing the Green Button data might qualify as a EISA Section 432 Audit – is that correct?</dt>
-<dd>There are numerous elements of the EISA Section 432 Audit. Those dealing with energy evaluations and verification of energy and water savings may apply. A formal answer is pending.</dd>
+<dd>There are numerous elements of the EISA Section 432 Audit. Those dealing with energy evaluations and verification of energy and water savings may apply. A answer is pending.</dd>
 <hr />
 <dt>What is the current number of utilities in CONUS that currently offer Green Button data to their customers (in terms of percentage, ie 5%, 10%…)?</dt>
 <dd>in terms of % of customers, there are @130M utility customers in CONUS. @49M currently have assess to Green Button Download My Data (so @37% of the retail customers). In terms of % of Utiltities, there are @3200 utilities in CONUS (@200 Investor owned; @900 Rural Cooperatives; @2100 Public) of these @150 have implemented Green button (@35 IOUs; 100 Coops; @15 Public) with a percentage overall of 4.5% of the CONUS utilities.</dd>
