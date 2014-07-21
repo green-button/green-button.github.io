@@ -5,7 +5,7 @@ layout: page
 
 <div>
 <h1>Function Blocks for Green Button Connect My Data</h1>
-<h4>Ref: 1<a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx">Authorization.docx: Appendix C</a>; <a href="https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd">espiDerived.xsd</h4>
+<h4>Ref: 1<a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx">Authorization.docx: Appendix C</a> and  <a href="https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd">espiDerived.xsd</a></h4>
 <p>The table below summarizes the Function Blocks for Green Button Connect My Data. They form the basis of PICS statements and individual testing and certification requirements for this application. The check marks in the “Min” column indicate
 function blocks required of all implementations.<u></u><u></u>
 (ref: <a href="">Authorization.docx</a>)</p>
