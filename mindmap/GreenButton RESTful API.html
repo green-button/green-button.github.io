@@ -1,0 +1,1132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Green Button RESTful API</title>
+<style type="text/css">
+    body {}
+li { list-style: none;  margin: 0; }
+p { margin: 0; }
+
+span.foldopened, span.foldclosed  {
+    font-size: xx-small;
+    border-width: 1;
+    font-family: monospace;
+    padding: 0em 0.25em 0em 0.25em;
+    background: #e0e0e0;
+    cursor:pointer;
+}
+span.foldopened  {
+    color: white;
+    VISIBILITY: visible;
+}
+span.foldclosed {
+    color: #666666;
+    VISIBILITY: hidden;
+}
+span.foldspecial {
+    color: #666666;
+    font-size: xx-small;
+    border-style: none solid solid none;
+    border-color: #CCCCCC;
+    border-width: 1;
+    font-family: sans-serif;
+    padding: 0em 0.1em 0em 0.1em;
+    background: #e0e0e0;
+    cursor:pointer;
+}
+span.l { color: red; font-weight: bold; }
+
+a.mapnode:link,
+a.mapnode:visited,
+a.mapnode:active,
+a.mapnode:hover {
+    text-decoration: none; color: black;
+}
+a.mapnode:hover { background: #eeeee0; }
+
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+<script type="text/javascript">
+// Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+// Mozilla 0.9.6.
+
+if (document.layers) {
+    //Netscape 4 specific code
+    pre = 'document.';
+    post = ''; }
+if (document.getElementById) {
+    //Netscape 6 specific code
+    pre = 'document.getElementById("';
+    post = '").style'; }
+if (document.all) {
+    //IE4+ specific code
+    pre = 'document.all.';
+    post = '.style'; }
+
+function layer_exists(layer) {
+    try {
+	eval(pre + layer + post);
+	return true; }
+    catch (error) {
+	return false; }}
+
+function show_layer(layer) {
+    eval(pre + layer + post).position = 'relative'; 
+    eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+    eval(pre + layer + post).visibility = 'hidden';
+    eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder)
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	hide_folding_layer(folder+'_'+i); }
+
+    hide_layer('hide'+folder);
+    hide_layer('show'+folder);
+    hide_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+    var i;
+    var folder = '1';
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+    var i;
+    var folder = '1';
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+	show_folder_completely(folder+'_'+i); }
+}
+
+</script>
+<SPAN class="foldspecial" onclick="fold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="unfold_document()">All -</SPAN>
+<p>Green Button RESTful API</span>
+<ul><li>FB_01 Valid NAESB Standard</span>
+
+</li>
+<li><span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> <span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+FB_03 Core Green Button Connect My Data</span>
+<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #00b439; font-size: 14pt; ">DataCustodianOriginates.Notification</span>
+<ul><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification" target="_blank"><span class=l>~</span>&nbsp;<span style="font-size: 6pt; ">https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification</span>
+</a>
+
+</li>
+<li>AccessTokens</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian</span>
+<ul><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadServiceStatus" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadServiceStatus</span>
+</a>
+
+</li>
+<li><span id="show1_1_1" class="foldclosed" onClick="show_folder('1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_1_1" class="foldopened" onClick="hide_folder('1_1_1')">-</span>
+AccessTokens</span>
+<ul id="fold1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>datacustodian_access_token</span>
+
+</li>
+<li>client_access_token</span>
+
+</li>
+<li>upload_access_token</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.Batch</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/{SubscriptionID}</span>
+</a>
+<p><span id="show1_1_2" class="foldclosed" onClick="show_folder('1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_1_2" class="foldopened" onClick="hide_folder('1_1_2')">-</span>
+AccessTokens</span>
+<ul id="fold1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>datacustodian_access_token</span>
+
+</li>
+<li>access_token</span>
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.Authorization</span>
+<ul><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/{AuthorizationID}</span>
+</a>
+
+</li>
+<li>DC</span>
+
+</li>
+<li><span id="show1_1_3" class="foldclosed" onClick="show_folder('1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_1_3" class="foldopened" onClick="hide_folder('1_1_3')">-</span>
+AccessTokens</span>
+<ul id="fold1_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>datacustodian_access_token</span>
+
+</li>
+<li>client_access_token</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.Authorization</span>
+<ul><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization</span>
+</a>
+
+</li>
+<li>DC</span>
+
+</li>
+<li><span id="show1_1_4" class="foldclosed" onClick="show_folder('1_1_4')" style="POSITION: absolute">+</span> <span id="hide1_1_4" class="foldopened" onClick="hide_folder('1_1_4')">-</span>
+AccessTokens</span>
+<ul id="fold1_1_4" style="POSITION: relative; VISIBILITY: visible;"><li>datacustodian_access_token</span>
+
+</li>
+<li>client_access_token</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.ApplicationInformation</span>
+<ul><li><table class="MsoNormalTable" cellspacing="0" width="100%" cellpadding="0" border="0">
+  <tr style="height: 12.75pt">
+    <td style="padding-top: 0in; padding-bottom: 0in; width: 5.76%; padding-left: 5.4pt; padding-right: 5.4pt; height: 12.75pt" width="5%" valign="bottom" nowrap="nowrap">
+      <p class="MsoNormal" style="text-align: center" align="center">
+        <span style="font-size: 8.0pt; color: black; font-family: Arial"><font color="black" size="8.0pt" face="Arial">GET</font></span>
+      </p>
+    </td>
+  </tr>
+</table></span>
+<a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/" target="_blank"><span class=l>~</span>&nbsp;<table class="MsoNormalTable" cellspacing="0" width="100%" cellpadding="0" border="0">
+  <tr style="height: 12.75pt">
+    <td style="padding-top: 0in; padding-bottom: 0in; width: 58.92%; padding-left: 5.4pt; padding-right: 5.4pt; height: 12.75pt" width="58%" valign="bottom" nowrap="nowrap">
+      <p class="MsoNormal">
+        <span style="font-size: 10.0pt; color: black; font-family: Arial"><font color="black" size="10.0pt" face="Arial">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/{ApplicationInformationID}</font></span>
+      </p>
+    </td>
+  </tr>
+</table></span>
+</a>
+<table class="MsoNormalTable" cellspacing="0" width="100%" cellpadding="0" border="0">
+  <tr style="height: 12.75pt">
+    <td style="padding-top: 0in; padding-bottom: 0in; width: 4.74%; padding-right: 5.4pt; padding-left: 5.4pt; height: 12.75pt" width="4%" valign="bottom">
+      <p class="MsoNormal" style="margin-right: -4.5pt">
+        <span style="font-size: 10.0pt; color: black; font-family: Arial"><font color="black" size="10.0pt" face="Arial">DR</font></span>
+      </p>
+    </td>
+  </tr>
+</table></span>
+<p><span id="show1_1_5" class="foldclosed" onClick="show_folder('1_1_5')" style="POSITION: absolute">+</span> <span id="hide1_1_5" class="foldopened" onClick="hide_folder('1_1_5')">-</span>
+AccessTokens</span>
+<ul id="fold1_1_5" style="POSITION: relative; VISIBILITY: visible;"><li>datacustodian_access_token</span>
+
+</li>
+<li>registration_access_token</span>
+
+</li>
+
+</ul></li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li>FB_04</span>
+
+</li>
+<li>FB_05</span>
+
+</li>
+<li>FB_08</span>
+
+</li>
+<li>FB_13</span>
+
+</li>
+<li>FB_14</span>
+
+</li>
+<li>FB_15</span>
+
+</li>
+<li>FB_18</span>
+
+</li>
+<li>FB_19</span>
+
+</li>
+<li>FB_31</span>
+
+</li>
+<li><span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> <span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+FB_32 Resource Level REST</span>
+<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerQualitySummary</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerQualitySummary</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary/{ElectricPowerQualitySummaryID}</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerUsageSummary</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerUsageSummary</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary/{ElectricPowerUsageSummaryID}</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock/{IntervalBlockID}</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.LocalTimeParameters</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/{LocalTimeParametersID}</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.ReadingType</span>
+<ul><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType</span>
+</a>
+
+</li>
+<li>DA</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.ReadingType</span>
+<ul><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/{ReadingTypeID}</span>
+</a>
+
+</li>
+<li>DA</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.LocalTimeParameters</span>
+<ul><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters</span>
+</a>
+
+</li>
+<li>DA</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #00b439; font-size: 14pt; ">DataCustodian.Batch</span>
+<ul><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/{SubscriptionID}/UsagePoint/{UsagePointId}</span>
+</a>
+<p>DA</span>
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> <span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+FB_33 Management REST Services</span>
+<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_3_1" class="foldclosed" onClick="show_folder('1_3_1')" style="POSITION: absolute">+</span> <span id="hide1_3_1" class="foldopened" onClick="hide_folder('1_3_1')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ReadingType</span>
+<ul id="fold1_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_2" class="foldclosed" onClick="show_folder('1_3_2')" style="POSITION: absolute">+</span> <span id="hide1_3_2" class="foldopened" onClick="hide_folder('1_3_2')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>DEL</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/{MeterReadingID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_3" class="foldclosed" onClick="show_folder('1_3_3')" style="POSITION: absolute">+</span> <span id="hide1_3_3" class="foldopened" onClick="hide_folder('1_3_3')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_3" style="POSITION: relative; VISIBILITY: visible;"><li>PUT</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/{MeterReadingID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_4" class="foldclosed" onClick="show_folder('1_3_4')" style="POSITION: absolute">+</span> <span id="hide1_3_4" class="foldopened" onClick="hide_folder('1_3_4')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_4" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/{MeterReadingID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_5" class="foldclosed" onClick="show_folder('1_3_5')" style="POSITION: absolute">+</span> <span id="hide1_3_5" class="foldopened" onClick="hide_folder('1_3_5')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ReadingType</span>
+<ul id="fold1_3_5" style="POSITION: relative; VISIBILITY: visible;"><li>PUT</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/{ReadingTypeID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_6" class="foldclosed" onClick="show_folder('1_3_6')" style="POSITION: absolute">+</span> <span id="hide1_3_6" class="foldopened" onClick="hide_folder('1_3_6')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ReadingType</span>
+<ul id="fold1_3_6" style="POSITION: relative; VISIBILITY: visible;"><li>DEL</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/{ReadingTypeID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_7" class="foldclosed" onClick="show_folder('1_3_7')" style="POSITION: absolute">+</span> <span id="hide1_3_7" class="foldopened" onClick="hide_folder('1_3_7')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_7" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_8" class="foldclosed" onClick="show_folder('1_3_8')" style="POSITION: absolute">+</span> <span id="hide1_3_8" class="foldopened" onClick="hide_folder('1_3_8')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_8" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_9" class="foldclosed" onClick="show_folder('1_3_9')" style="POSITION: absolute">+</span> <span id="hide1_3_9" class="foldopened" onClick="hide_folder('1_3_9')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_9" style="POSITION: relative; VISIBILITY: visible;"><li><p>POST</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_10" class="foldclosed" onClick="show_folder('1_3_10')" style="POSITION: absolute">+</span> <span id="hide1_3_10" class="foldopened" onClick="hide_folder('1_3_10')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_10" style="POSITION: relative; VISIBILITY: visible;"><li><p>DEL</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_11" class="foldclosed" onClick="show_folder('1_3_11')" style="POSITION: absolute">+</span> <span id="hide1_3_11" class="foldopened" onClick="hide_folder('1_3_11')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_11" style="POSITION: relative; VISIBILITY: visible;"><li><p>PUT</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}.</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_12" class="foldclosed" onClick="show_folder('1_3_12')" style="POSITION: absolute">+</span> <span id="hide1_3_12" class="foldopened" onClick="hide_folder('1_3_12')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerQualitySummary</span>
+<ul id="fold1_3_12" style="POSITION: relative; VISIBILITY: visible;"><li><p>POST</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_13" class="foldclosed" onClick="show_folder('1_3_13')" style="POSITION: absolute">+</span> <span id="hide1_3_13" class="foldopened" onClick="hide_folder('1_3_13')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerQualitySummary</span>
+<ul id="fold1_3_13" style="POSITION: relative; VISIBILITY: visible;"><li><p>PUT</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary/{ElectricPowerQualitySummaryID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_14" class="foldclosed" onClick="show_folder('1_3_14')" style="POSITION: absolute">+</span> <span id="hide1_3_14" class="foldopened" onClick="hide_folder('1_3_14')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerQualitySummary</span>
+<ul id="fold1_3_14" style="POSITION: relative; VISIBILITY: visible;"><li><p>DEL</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary/{ElectricPowerQualitySummaryID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_15" class="foldclosed" onClick="show_folder('1_3_15')" style="POSITION: absolute">+</span> <span id="hide1_3_15" class="foldopened" onClick="hide_folder('1_3_15')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerUsageSummary</span>
+<ul id="fold1_3_15" style="POSITION: relative; VISIBILITY: visible;"><li><p>POST</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_16" class="foldclosed" onClick="show_folder('1_3_16')" style="POSITION: absolute">+</span> <span id="hide1_3_16" class="foldopened" onClick="hide_folder('1_3_16')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerUsageSummary</span>
+<ul id="fold1_3_16" style="POSITION: relative; VISIBILITY: visible;"><li><p>PUT</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary/{ElectricPowerUsageSummaryID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_17" class="foldclosed" onClick="show_folder('1_3_17')" style="POSITION: absolute">+</span> <span id="hide1_3_17" class="foldopened" onClick="hide_folder('1_3_17')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ElectricPowerUsageSummary</span>
+<ul id="fold1_3_17" style="POSITION: relative; VISIBILITY: visible;"><li><p>DEL</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary/{ElectricPowerUsageSummaryID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_18" class="foldclosed" onClick="show_folder('1_3_18')" style="POSITION: absolute">+</span> <span id="hide1_3_18" class="foldopened" onClick="hide_folder('1_3_18')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_18" style="POSITION: relative; VISIBILITY: visible;"><li><p>PUT</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_19" class="foldclosed" onClick="show_folder('1_3_19')" style="POSITION: absolute">+</span> <span id="hide1_3_19" class="foldopened" onClick="hide_folder('1_3_19')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_19" style="POSITION: relative; VISIBILITY: visible;"><li><p>DEL</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_20" class="foldclosed" onClick="show_folder('1_3_20')" style="POSITION: absolute">+</span> <span id="hide1_3_20" class="foldopened" onClick="hide_folder('1_3_20')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.LocalTimeParameters</span>
+<ul id="fold1_3_20" style="POSITION: relative; VISIBILITY: visible;"><li><p>PUT</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/{LocalTimeParametersID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_21" class="foldclosed" onClick="show_folder('1_3_21')" style="POSITION: absolute">+</span> <span id="hide1_3_21" class="foldopened" onClick="hide_folder('1_3_21')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.LocalTimeParameters</span>
+<ul id="fold1_3_21" style="POSITION: relative; VISIBILITY: visible;"><li><p>DEL</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/{LocalTimeParametersID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_22" class="foldclosed" onClick="show_folder('1_3_22')" style="POSITION: absolute">+</span> <span id="hide1_3_22" class="foldopened" onClick="hide_folder('1_3_22')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_22" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_23" class="foldclosed" onClick="show_folder('1_3_23')" style="POSITION: absolute">+</span> <span id="hide1_3_23" class="foldopened" onClick="hide_folder('1_3_23')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_23" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_24" class="foldclosed" onClick="show_folder('1_3_24')" style="POSITION: absolute">+</span> <span id="hide1_3_24" class="foldopened" onClick="hide_folder('1_3_24')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_24" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/{IntervalBlockID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_25" class="foldclosed" onClick="show_folder('1_3_25')" style="POSITION: absolute">+</span> <span id="hide1_3_25" class="foldopened" onClick="hide_folder('1_3_25')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_25" style="POSITION: relative; VISIBILITY: visible;"><li>PUT</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/{IntervalBlockID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_26" class="foldclosed" onClick="show_folder('1_3_26')" style="POSITION: absolute">+</span> <span id="hide1_3_26" class="foldopened" onClick="hide_folder('1_3_26')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_26" style="POSITION: relative; VISIBILITY: visible;"><li>DEL</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/{IntervalBlockID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_27" class="foldclosed" onClick="show_folder('1_3_27')" style="POSITION: absolute">+</span> <span id="hide1_3_27" class="foldopened" onClick="hide_folder('1_3_27')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.MeterReading</span>
+<ul id="fold1_3_27" style="POSITION: relative; VISIBILITY: visible;"><li><p>POST</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_28" class="foldclosed" onClick="show_folder('1_3_28')" style="POSITION: absolute">+</span> <span id="hide1_3_28" class="foldopened" onClick="hide_folder('1_3_28')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_28" style="POSITION: relative; VISIBILITY: visible;"><li><p>POST</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_29" class="foldclosed" onClick="show_folder('1_3_29')" style="POSITION: absolute">+</span> <span id="hide1_3_29" class="foldopened" onClick="hide_folder('1_3_29')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_29" style="POSITION: relative; VISIBILITY: visible;"><li><p>PUT</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock/{IntervalBlockID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_30" class="foldclosed" onClick="show_folder('1_3_30')" style="POSITION: absolute">+</span> <span id="hide1_3_30" class="foldopened" onClick="hide_folder('1_3_30')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.LocalTimeParameters</span>
+<ul id="fold1_3_30" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_31" class="foldclosed" onClick="show_folder('1_3_31')" style="POSITION: absolute">+</span> <span id="hide1_3_31" class="foldopened" onClick="hide_folder('1_3_31')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.IntervalBlock</span>
+<ul id="fold1_3_31" style="POSITION: relative; VISIBILITY: visible;"><li><p>DEL</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock/{IntervalBlockID}</span>
+</a>
+<p>D</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_32" class="foldclosed" onClick="show_folder('1_3_32')" style="POSITION: absolute">+</span> <span id="hide1_3_32" class="foldopened" onClick="hide_folder('1_3_32')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_32" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_33" class="foldclosed" onClick="show_folder('1_3_33')" style="POSITION: absolute">+</span> <span id="hide1_3_33" class="foldopened" onClick="hide_folder('1_3_33')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_33" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_34" class="foldclosed" onClick="show_folder('1_3_34')" style="POSITION: absolute">+</span> <span id="hide1_3_34" class="foldopened" onClick="hide_folder('1_3_34')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_34" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/{UsagePointID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_35" class="foldclosed" onClick="show_folder('1_3_35')" style="POSITION: absolute">+</span> <span id="hide1_3_35" class="foldopened" onClick="hide_folder('1_3_35')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_35" style="POSITION: relative; VISIBILITY: visible;"><li>PUT</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/{UsagePointID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_36" class="foldclosed" onClick="show_folder('1_3_36')" style="POSITION: absolute">+</span> <span id="hide1_3_36" class="foldopened" onClick="hide_folder('1_3_36')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.UsagePoint</span>
+<ul id="fold1_3_36" style="POSITION: relative; VISIBILITY: visible;"><li>DEL</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/{UsagePointID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_37" class="foldclosed" onClick="show_folder('1_3_37')" style="POSITION: absolute">+</span> <span id="hide1_3_37" class="foldopened" onClick="hide_folder('1_3_37')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Batch</span>
+<ul id="fold1_3_37" style="POSITION: relative; VISIBILITY: visible;"><li><p>GET</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/{RetailCustomerID}/UsagePoint</span>
+</a>
+<p>DU</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_38" class="foldclosed" onClick="show_folder('1_3_38')" style="POSITION: absolute">+</span> <span id="hide1_3_38" class="foldopened" onClick="hide_folder('1_3_38')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Batch</span>
+<ul id="fold1_3_38" style="POSITION: relative; VISIBILITY: visible;"><li><p>POST</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/{RetailCustomerID}/UsagePoint</span>
+</a>
+<p>DU</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_3_39" class="foldclosed" onClick="show_folder('1_3_39')" style="POSITION: absolute">+</span> <span id="hide1_3_39" class="foldopened" onClick="hide_folder('1_3_39')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ApplicationInformation</span>
+<ul id="fold1_3_39" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3_40" class="foldclosed" onClick="show_folder('1_3_40')" style="POSITION: absolute">+</span> <span id="hide1_3_40" class="foldopened" onClick="hide_folder('1_3_40')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ApplicationInformation</span>
+<ul id="fold1_3_40" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> <span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+FB_34 SFTP for Bulk</span>
+<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_4_1" class="foldclosed" onClick="show_folder('1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_4_1" class="foldopened" onClick="hide_folder('1_4_1')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Bulk</span>
+<ul id="fold1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li>GETALL</span>
+
+</li>
+<li><a href="ftp://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/" target="_blank"><span class=l>~</span>&nbsp;sftp://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/{BulkID}</span>
+</a>
+
+</li>
+<li>DC</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5" class="foldclosed" onClick="show_folder('1_5')" style="POSITION: absolute">+</span> <span id="hide1_5" class="foldopened" onClick="hide_folder('1_5')">-</span>
+FB_35 Rest for Bulk</span>
+<ul id="fold1_5" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_5_1" class="foldclosed" onClick="show_folder('1_5_1')" style="POSITION: absolute">+</span> <span id="hide1_5_1" class="foldopened" onClick="hide_folder('1_5_1')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Batch</span>
+<ul id="fold1_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/{BulkID}</span>
+</a>
+
+</li>
+<li>DC</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>FB_37</span>
+
+</li>
+<li>FB_38</span>
+
+</li>
+<li>FB_39</span>
+
+</li>
+<li>FB_40</span>
+
+</li>
+<li><span id="show1_6" class="foldclosed" onClick="show_folder('1_6')" style="POSITION: absolute">+</span> <span id="hide1_6" class="foldopened" onClick="hide_folder('1_6')">-</span>
+FB_41 - Manage ApplicationInformation</span>
+<ul id="fold1_6" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_6_1" class="foldclosed" onClick="show_folder('1_6_1')" style="POSITION: absolute">+</span> <span id="hide1_6_1" class="foldopened" onClick="hide_folder('1_6_1')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ApplicationInformation</span>
+<ul id="fold1_6_1" style="POSITION: relative; VISIBILITY: visible;"><li><p>DEL</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/{ApplicationInformationID}</span>
+</a>
+<p>DR</span>
+</li>
+</ul>
+</li>
+<li><span id="show1_6_2" class="foldclosed" onClick="show_folder('1_6_2')" style="POSITION: absolute">+</span> <span id="hide1_6_2" class="foldopened" onClick="hide_folder('1_6_2')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.ApplicationInformation</span>
+<ul id="fold1_6_2" style="POSITION: relative; VISIBILITY: visible;"><li><p>PUT</span>
+<p><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/{ApplicationInformationID}</span>
+</a>
+<p>DR</span>
+</li>
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_7" class="foldclosed" onClick="show_folder('1_7')" style="POSITION: absolute">+</span> <span id="hide1_7" class="foldopened" onClick="hide_folder('1_7')">-</span>
+FB_42 ThirdParty Core Rest Services</span>
+<ul id="fold1_7" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_7_1" class="foldclosed" onClick="show_folder('1_7_1')" style="POSITION: absolute">+</span> <span id="hide1_7_1" class="foldopened" onClick="hide_folder('1_7_1')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">ThirdParty.Authorization</span>
+<ul id="fold1_7_1" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification</span>
+</a>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8" class="foldclosed" onClick="show_folder('1_8')" style="POSITION: absolute">+</span> <span id="hide1_8" class="foldopened" onClick="hide_folder('1_8')">-</span>
+FB_44 Manage Authorization</span>
+<ul id="fold1_8" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_8_1" class="foldclosed" onClick="show_folder('1_8_1')" style="POSITION: absolute">+</span> <span id="hide1_8_1" class="foldopened" onClick="hide_folder('1_8_1')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Authorization</span>
+<ul id="fold1_8_1" style="POSITION: relative; VISIBILITY: visible;"><li>DEL</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/{AuthorizationID}</span>
+</a>
+
+</li>
+<li>DC</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_2" class="foldclosed" onClick="show_folder('1_8_2')" style="POSITION: absolute">+</span> <span id="hide1_8_2" class="foldopened" onClick="hide_folder('1_8_2')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Authorization</span>
+<ul id="fold1_8_2" style="POSITION: relative; VISIBILITY: visible;"><li>PUT</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/{AuthorizationID}</span>
+</a>
+
+</li>
+<li>DC</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9" class="foldclosed" onClick="show_folder('1_9')" style="POSITION: absolute">+</span> <span id="hide1_9" class="foldopened" onClick="hide_folder('1_9')">-</span>
+FB_99 Future Proposed Features</span>
+<ul id="fold1_9" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_9_1" class="foldclosed" onClick="show_folder('1_9_1')" style="POSITION: absolute">+</span> <span id="hide1_9_1" class="foldopened" onClick="hide_folder('1_9_1')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Bulk</span>
+<ul id="fold1_9_1" style="POSITION: relative; VISIBILITY: visible;"><li>GET</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Bulk" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Bulk</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9_2" class="foldclosed" onClick="show_folder('1_9_2')" style="POSITION: absolute">+</span> <span id="hide1_9_2" class="foldopened" onClick="hide_folder('1_9_2')">-</span>
+<span style="color: #00b439; font-size: 14pt; ">DataCustodian.Batch</span>
+<ul id="fold1_9_2" style="POSITION: relative; VISIBILITY: visible;"><li>POST</span>
+
+</li>
+<li><a href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/" target="_blank"><span class=l>~</span>&nbsp;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/{BulkID}</span>
+</a>
+
+</li>
+<li>D</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul><SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+</body>
+</html>
