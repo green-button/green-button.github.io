@@ -1,0 +1,1422 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Function Blocks and Green Button RESTful API//mm2html.xsl FreeplaneVersion:freeplane 1.3.0</title><style>
+                body{
+                font-size:10pt;
+                color:rgb(0,0,0);
+                backgound-color:rgb(255,255,255);
+                font-family:sans-serif;
+                }
+                p.info{
+                font-size:8pt;
+                text-align:right;
+                color:rgb(127,127,127);
+                }
+                </style></head><body><p>
+
+<ul><li><a name="ID_1723255651"></a><span style="color:#000000;font-family:sansserif;font-size:10;">Function Blocks and Green Button RESTful API</span>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul><li><a name="ID_46921121"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_01 Valid NAESB Standard</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1099005008"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_03 Core Green Button Connect My Data (API)</span>
+
+
+
+
+<ul><li><a name="ID_876544617"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodianOriginates.Notification</span>
+
+
+<ul><li><a name="ID_613611151"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1354892398"></a><span style="color:#000000;font-family:sansserif;font-size:6;">https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1152384735"></a><span style="color:#000000;font-family:sansserif;font-size:10;">AccessTokens</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1839509847"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ReadServiceStatus.GET</span>
+
+
+<ul><li><a name="ID_772034510"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_498623358"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadServiceStatus</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1206664701"></a><span style="color:#000000;font-family:sansserif;font-size:10;">AccessTokens</span>
+
+
+<ul><li><a name="ID_132341923"></a><span style="color:#000000;font-family:sansserif;font-size:10;">datacustodian_access_token</span>
+
+
+</li></ul>
+<ul><li><a name="ID_47243540"></a><span style="color:#000000;font-family:sansserif;font-size:10;">client_access_token</span>
+
+
+</li></ul>
+<ul><li><a name="ID_348984544"></a><span style="color:#000000;font-family:sansserif;font-size:10;">upload_access_token</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_152582318"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Batch.Subscription.Member.GET</span>
+
+
+<ul><li><a name="ID_1494128958"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_598264488"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/{SubscriptionID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1821651234"></a><span style="color:#000000;font-family:sansserif;font-size:10;">AccessTokens</span>
+
+
+<ul><li><a name="ID_630009136"></a><span style="color:#000000;font-family:sansserif;font-size:10;">datacustodian_access_token</span>
+
+
+</li></ul>
+<ul><li><a name="ID_418963432"></a><span style="color:#000000;font-family:sansserif;font-size:10;">access_token</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_523215838"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Authorization.Member.GET</span>
+
+
+<ul><li><a name="ID_207334840"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1622468758"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/{AuthorizationID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1933278578"></a><span style="color:#000000;font-family:sansserif;font-size:10;">AccessTokens</span>
+
+
+<ul><li><a name="ID_1243963039"></a><span style="color:#000000;font-family:sansserif;font-size:10;">datacustodian_access_token</span>
+
+
+</li></ul>
+<ul><li><a name="ID_375504571"></a><span style="color:#000000;font-family:sansserif;font-size:10;">client_access_token</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_461001915"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Authorization.GET</span>
+
+
+<ul><li><a name="ID_506478897"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_529294210"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1929477778"></a><span style="color:#000000;font-family:sansserif;font-size:10;">AccessTokens</span>
+
+
+<ul><li><a name="ID_889990829"></a><span style="color:#000000;font-family:sansserif;font-size:10;">datacustodian_access_token</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1374581478"></a><span style="color:#000000;font-family:sansserif;font-size:10;">client_access_token</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_485538735"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ApplicationInformation.Member.GET</span>
+
+
+<ul><li><a name="ID_1999064534"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1001197856"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/{ApplicationInformationID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_893359185"></a><span style="color:#000000;font-family:sansserif;font-size:10;">AccessTokens</span>
+
+
+<ul><li><a name="ID_169235549"></a><span style="color:#000000;font-family:sansserif;font-size:10;">datacustodian_access_token</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1531897900"></a><span style="color:#000000;font-family:sansserif;font-size:10;">registration_access_token</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1452778873"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_04 Interval Metering</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1491802016"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_05 Interval Electric Metering</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_542921629"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_06 Demand Electric Metering</span>
+
+
+</li></ul>
+<ul><li><a name="ID_549807828"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_07 Net Metering</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1154260089"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_08 Forward and Reverse Metering</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1356189451"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_09 Register Values</span>
+
+
+</li></ul>
+<ul><li><a name="ID_95469561"></a><span style="color:#000000;font-family:sansserif;font-size:10;">:FB_10 Gas</span>
+
+
+</li></ul>
+<ul><li><a name="ID_69651224"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_11 Water</span>
+
+
+</li></ul>
+<ul><li><a name="ID_735788809"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_12 Cost of Interval Data</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1847526179"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_13</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1760141768"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_14</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_207496652"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_15 Usage Summary</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_135182400"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_16 Usage Summary with Cost</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1237603420"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_17 Power Quality Summary</span>
+
+
+</li></ul>
+<ul><li><a name="ID_864842222"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_18</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1521802430"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_19</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_990472937"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_27 Usage Summary with Demand and Previous Day Attributes</span>
+
+
+</li></ul>
+<ul><li><a name="ID_409337352"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_28 Usage Summary Costs for Currnet Billing Period</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1506403688"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_29 Temperature Metering</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1129876725"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_31</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1605920244"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_32 Resource Level REST (API)</span>
+
+
+
+<ul><li><a name="ID_1557552499"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.BatchMember</span>
+
+
+<ul><li><a name="ID_112571491"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_914066558"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/{SubscriptionID}/UsagePoint/{UsagePointId}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_588155952"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_979813133"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerQualitySummary</span>
+
+
+<ul><li><a name="ID_780286810"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1770489"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary</span>
+
+
+</li></ul>
+<ul><li><a name="ID_747700557"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1092124315"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerQualitySummaryMember</span>
+
+
+<ul><li><a name="ID_172248560"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1560840510"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary/{ElectricPowerQualitySummaryID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_32999063"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1119165452"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerUsageSummary</span>
+
+
+<ul><li><a name="ID_1194972893"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_232570578"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1984999804"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_378678931"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerUsageSummaryMember</span>
+
+
+<ul><li><a name="ID_1207398677"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_664669385"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary/{ElectricPowerUsageSummaryID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_292043930"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_973983916"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock</span>
+
+
+<ul><li><a name="ID_1328831705"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_294950650"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1105210550"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_564357665"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlockMember</span>
+
+
+<ul><li><a name="ID_661674812"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1055812166"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock/{IntervalBlockID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_511043144"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_753493336"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.LocalTimeParameters</span>
+
+
+<ul><li><a name="ID_1538883045"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_643670410"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters</span>
+
+
+</li></ul>
+<ul><li><a name="ID_740060078"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1076301380"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.LocalTimeParametersMember</span>
+
+
+<ul><li><a name="ID_882773212"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1075931406"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/{LocalTimeParametersID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1999478928"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1271835184"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading</span>
+
+
+<ul><li><a name="ID_396859956"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_742703882"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading</span>
+
+
+</li></ul>
+<ul><li><a name="ID_987522817"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_269798018"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReadingMember</span>
+
+
+<ul><li><a name="ID_71451595"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_389060484"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_656467971"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1904034970"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ReadingType</span>
+
+
+<ul><li><a name="ID_539770868"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_371391437"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType</span>
+
+
+</li></ul>
+<ul><li><a name="ID_545542353"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1078900300"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ReadingTypeMember</span>
+
+
+<ul><li><a name="ID_725535650"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_459329396"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/{ReadingTypeID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1359425801"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1073542933"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint</span>
+
+
+<ul><li><a name="ID_226297638"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1953952529"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint</span>
+
+
+</li></ul>
+<ul><li><a name="ID_531791368"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1517823048"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePointMember</span>
+
+
+<ul><li><a name="ID_518468243"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_555707146"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_529038897"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DA</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1760319645"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_33 Management REST Services (API)</span>
+
+
+
+<ul><li><a name="ID_1813437888"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Batch.RetailCustomer.Member.UsagePoint.POST</span>
+
+
+<ul><li><a name="ID_1028896190"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1463737933"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/{RetailCustomerID}/UsagePoint</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1233226415"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DU</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1341102629"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Batch.RetailCustomer.UsagePoint.GET</span>
+
+
+<ul><li><a name="ID_1304443195"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1287183807"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/{RetailCustomerID}/UsagePoint</span>
+
+
+</li></ul>
+<ul><li><a name="ID_978014363"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DU</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_755398344"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.POST</span>
+
+
+<ul><li><a name="ID_1784247452"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_669714380"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint</span>
+
+
+</li></ul>
+<ul><li><a name="ID_795316366"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_585601070"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.DEL</span>
+
+
+<ul><li><a name="ID_1946045525"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1004223967"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_358593077"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1612316310"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.Member.PUT</span>
+
+
+<ul><li><a name="ID_163773066"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1445838750"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}.</span>
+
+
+</li></ul>
+<ul><li><a name="ID_242528645"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1486539837"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerQualitySummary.POST</span>
+
+
+<ul><li><a name="ID_1542930577"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_326157979"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1468042351"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_422648245"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerQualitySummary.Member.PUT</span>
+
+
+<ul><li><a name="ID_339063419"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_702034072"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary/{ElectricPowerQualitySummaryID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1155596956"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1050397897"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerQualitySummary.Member.DEL</span>
+
+
+<ul><li><a name="ID_1623465533"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_182213452"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerQualitySummary/{ElectricPowerQualitySummaryID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1527105570"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1378212973"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerUsageSummary.POST</span>
+
+
+<ul><li><a name="ID_1466595032"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_452649946"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary</span>
+
+
+</li></ul>
+<ul><li><a name="ID_632981481"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1459865738"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerUsageSummary.Member.PUT</span>
+
+
+<ul><li><a name="ID_666328075"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_866424090"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary/{ElectricPowerUsageSummaryID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1094047548"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1211700433"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ElectricPowerUsageSummary.Member.DEL</span>
+
+
+<ul><li><a name="ID_1002480970"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_329793860"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/ElectricPowerUsageSumary/{ElectricPowerUsageSummaryID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1549566569"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1259857504"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.GET</span>
+
+
+<ul><li><a name="ID_590476350"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1459399854"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock</span>
+
+
+</li></ul>
+<ul><li><a name="ID_347902203"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_43907640"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.POST</span>
+
+
+<ul><li><a name="ID_1611002924"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1226203326"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1587536214"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1717258893"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.GET</span>
+
+
+<ul><li><a name="ID_51854407"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1094461796"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/{IntervalBlockID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1999348152"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_145107820"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.Member.PUT</span>
+
+
+<ul><li><a name="ID_470531464"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_54638570"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/{IntervalBlockID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1701325199"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_190727544"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.Member.DEL</span>
+
+
+<ul><li><a name="ID_313129775"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1063882602"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/IntervalBlock/{IntervalBlockID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_777916135"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_523067979"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.POST</span>
+
+
+<ul><li><a name="ID_1608255612"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_933744572"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1668361858"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1090898470"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.Member.PUT</span>
+
+
+<ul><li><a name="ID_446908093"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1038303537"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock/{IntervalBlockID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1227733317"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_404694120"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.IntervalBlock.Member.DEL</span>
+
+
+<ul><li><a name="ID_1410126524"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1639551494"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}/IntervalBlock/{IntervalBlockID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_785508307"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_915609495"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.LocalTimeParameters.POST</span>
+
+
+<ul><li><a name="ID_475857824"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1065900267"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1871620151"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_134910428"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.LocalTimeParameters.Member.PUT</span>
+
+
+<ul><li><a name="ID_848535530"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1825440118"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/{LocalTimeParametersID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1942349373"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_868497735"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.LocalTimeParameters.Member.DEL</span>
+
+
+<ul><li><a name="ID_1934720812"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_219408305"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/{LocalTimeParametersID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_189092127"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1112435056"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.GET</span>
+
+
+<ul><li><a name="ID_375459440"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_217036390"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading</span>
+
+
+</li></ul>
+<ul><li><a name="ID_196735978"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1641029230"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.POST</span>
+
+
+<ul><li><a name="ID_1356207483"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1741209861"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading</span>
+
+
+</li></ul>
+<ul><li><a name="ID_525047990"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_682885206"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.POST</span>
+
+
+<ul><li><a name="ID_1509927545"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_802318701"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1761592176"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1511097732"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.Member.GET</span>
+
+
+<ul><li><a name="ID_1828608751"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_695870693"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/{MeterReadingID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1956010975"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1343795985"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.Member.PUT</span>
+
+
+<ul><li><a name="ID_1960290657"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1673477076"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1032132227"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_727783818"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.Member.PUT</span>
+
+
+<ul><li><a name="ID_1077022909"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_964293190"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/{MeterReadingID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_983420625"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_164407863"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.Member.DEL</span>
+
+
+<ul><li><a name="ID_570351155"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_822983101"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/{SubscriptionID}/UsagePoint/{UsagePointID}/MeterReading/{MeterReadingID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1787740722"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1984260459"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.MeterReading.Member.DEL</span>
+
+
+<ul><li><a name="ID_209677035"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1960063771"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/MeterReading/{MeterReadingID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_768943157"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_22784787"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ReadingType</span>
+
+
+<ul><li><a name="ID_1766563135"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1469578808"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType</span>
+
+
+</li></ul>
+<ul><li><a name="ID_444775857"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_784554947"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ReadingType.Member.PUT</span>
+
+
+<ul><li><a name="ID_588243677"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_296470733"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/{ReadingTypeID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_344871777"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_887539555"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ReadingType.MemberDEL</span>
+
+
+<ul><li><a name="ID_1413576538"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_495665905"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/{ReadingTypeID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_922139528"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1073672192"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.GET</span>
+
+
+<ul><li><a name="ID_573279436"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1881504234"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1766281723"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_563680751"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.POST</span>
+
+
+<ul><li><a name="ID_579824606"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1241566465"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1551356800"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1679002002"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.Member.GET</span>
+
+
+<ul><li><a name="ID_1537305211"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_280000653"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/{UsagePointID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_95288141"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1279431989"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.Member.PUT</span>
+
+
+<ul><li><a name="ID_1874470123"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_83837525"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/{UsagePointID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1564708559"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_547078156"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.UsagePoint.Member.DEL</span>
+
+
+<ul><li><a name="ID_671579272"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_103315023"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/UsagePoint/{UsagePointID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_983205450"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1593656187"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ApplicationInformation.GET</span>
+
+
+<ul><li><a name="ID_866318384"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_723056983"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation</span>
+
+
+</li></ul>
+<ul><li><a name="ID_611950290"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_810532792"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ApplicationInformation.POST</span>
+
+
+<ul><li><a name="ID_1997397033"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1377353317"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1387921725"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1117943251"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_34 SFTP for Bulk (API)</span>
+
+
+
+
+
+<ul><li><a name="ID_678242063"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Batch.Bulk.Member (SFTP)</span>
+
+
+<ul><li><a name="ID_1524238105"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GETALL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_908511769"></a><span style="color:#000000;font-family:sansserif;font-size:10;">sftp://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/{BulkID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_2095644"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DC</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_226330636"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_35 Rest for Bulk (API)</span>
+
+
+
+<ul><li><a name="ID_994579663"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Batch.Bulk.Member</span>
+
+
+<ul><li><a name="ID_770596957"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_541165295"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/{BulkID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_32167356"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DC</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1332376785"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_37</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1615940576"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_38</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1324655851"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_39</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_964077248"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_40</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1082896928"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_41 - Manage ApplicationInformation (API)</span>
+
+
+
+<ul><li><a name="ID_1648930760"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ApplicationInformation</span>
+
+
+<ul><li><a name="ID_1398619588"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_250463770"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/{ApplicationInformationID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1528174942"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DR</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1082884425"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.ApplicationInformation.Member</span>
+
+
+<ul><li><a name="ID_1953635502"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_151281612"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/{ApplicationInformationID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_296547049"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DR</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_419229822"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_42 ThirdParty Core Rest Services (API)</span>
+
+
+
+<ul><li><a name="ID_389836332"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">ThirdParty.Authorization</span>
+
+
+<ul><li><a name="ID_920193209"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_594996977"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_242370078"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_44 Manage Authorization (API)</span>
+
+
+
+<ul><li><a name="ID_1070700203"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Authorization</span>
+
+
+<ul><li><a name="ID_1072112408"></a><span style="color:#000000;font-family:sansserif;font-size:10;">PUT</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1263658722"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/{AuthorizationID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_990261917"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DC</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_12567543"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Authorization.Member</span>
+
+
+<ul><li><a name="ID_372388427"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DEL</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1986082427"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/{AuthorizationID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1156774026"></a><span style="color:#000000;font-family:sansserif;font-size:10;">DC</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_1077887512"></a><span style="color:#000000;font-family:sansserif;font-size:10;">RESTful API Functions</span>
+
+
+
+</li></ul>
+<ul><li><a name="ID_1013491849"></a><span style="color:#000000;font-family:sansserif;font-size:10;">FB_99 Future Proposed Features</span>
+
+
+<ul><li><a name="ID_848634637"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Bulk</span>
+
+
+<ul><li><a name="ID_11543331"></a><span style="color:#000000;font-family:sansserif;font-size:10;">GET</span>
+
+
+</li></ul>
+<ul><li><a name="ID_957118905"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Bulk</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1372717818"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+<ul><li><a name="ID_662784557"></a><span style="color:#00b439;font-family:sansserif;font-size:14;">DataCustodian.Batch</span>
+
+
+<ul><li><a name="ID_1569620004"></a><span style="color:#000000;font-family:sansserif;font-size:10;">POST</span>
+
+
+</li></ul>
+<ul><li><a name="ID_1145049907"></a><span style="color:#000000;font-family:sansserif;font-size:10;">https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Bulk/{BulkID}</span>
+
+
+</li></ul>
+<ul><li><a name="ID_230502912"></a><span style="color:#000000;font-family:sansserif;font-size:10;">D</span>
+
+
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</p><p class="info">Function Blocks and Green Button RESTful API//mm2html.xsl FreeplaneVersion:freeplane 1.3.0</p></body></html>
