@@ -9,6 +9,7 @@ layout: page
 <ul>
 <li><a href="Green_Button_Overview.pdf">Green Button Initiative Overview (PDF: 4.7MB)</a> - A high level overview of the the Green Button Initiative providing background and current status</li>
 <li><a href="Green_Button_Overview.pdf">Green Button Technical Overview(PDF: 3.5MB)</a> - Technical overview of the technology supporting Green Button</li>
+<li><a href="Green_Button_ThirdParty.pdf">Green Button Third Party Overview - Aug 2014  (PDF: 4MB)</a> - A overview of how ThirdParties receive data from Utilities (DataCustodians) </li>
 <li><a href="Green_Button_Overview.pdf">Green Gov Jun 2014  (PDF: 8.8MB)</a> - A overview of how the U.S. Federal Government is using Green Button </li>
 </ul>
 <h3>Design and Implementation Guides</h3>
