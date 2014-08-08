@@ -129,7 +129,47 @@ related to a specific <em>UsagePoint</em>.
 <p>Green Button APIs are designed to support data flows that are both large and small. Many Utilities will schedule bulk transfers of hundreds of thousands of 24-hour data sets as a batch process. In this case, the Green Button APIs must be able to accomodate blocked transfers, recovery, and restarts. Other use-cases are driven more by frequent transmissions of smaller data sets, for example the hourly usage of a single outlet in your home. Green Button is designed to handle both!</p>
 
 <div id="accordion1">
-  <h3>ApplicationInformation</h3>
+  <h3><a href="/espi/application_information/">ApplicationInformation</a></h3>
+  <div>
+    <p></p>
+    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="/GreenButtonDataStyleSheet.xslt"?&gt;
+&lt;feed xmlns="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;id&gt;urn:uuid:f30946a0-0955-466b-901a-366feb2a8424&lt;/id&gt;
+  &lt;title&gt;Green Button Usage Feed&lt;/title&gt;
+  &lt;updated&gt;2014-05-22T17:45:50Z&lt;/updated&gt;
+  &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="self"/&gt;
+  &lt;ns3:entry xmlns:espi="http://naesb.org/espi" xmlns:ns3="http://www.w3.org/2005/Atom"&gt;
+        &lt;ns3:id&gt;urn:uuid:af6e8b03-0299-467e-972a-a883ecdcc575&lt;/ns3:id&gt;
+        &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="up"/&gt;
+        &lt;ns3:link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/1" rel="self"/&gt;
+        &lt;ns3:title&gt;GreenButtonData.org  DataCustodian Application&lt;/ns3:title&gt;
+        &lt;ns3:content&gt;
+              &lt;espi:ApplicationInformation&gt;
+                    &lt;espi:dataCustodianApplicationStatus&gt;&lt;/espi:dataCustodianApplicationStatus&gt;
+                    &lt;espi:thirdPartyNotifyUri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification&lt;/espi:thirdPartyNotifyUri&gt;
+                    &lt;espi:dataCustodianBulkRequestURI&gt;&lt;/espi:dataCustodianBulkRequestURI&gt;
+                    &lt;espi:dataCustodianResourceEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource&lt;/espi:dataCustodianResourceEndpoint&gt;
+                    &lt;espi:thirdPartyScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/Subscription/ScopeSelection&lt;/espi:thirdPartyScopeSelectionScreenURI&gt;
+                    &lt;espi:client_secret&gt;secret&lt;/espi:client_secret&gt;
+                    &lt;espi:redirect_uri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack&lt;/espi:redirect_uri&gt;
+                    &lt;espi:client_id&gt;third_party&lt;/espi:client_id&gt;
+                    &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=900;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                    &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                    &lt;espi:dataCustodianId&gt;data_custodian&lt;/espi:dataCustodianId&gt;
+                    &lt;espi:thirdPartyApplicationName&gt;Third Party (localhost)&lt;/espi:thirdPartyApplicationName&gt;
+              &lt;/espi:ApplicationInformation&gt;
+        &lt;/ns3:content&gt;
+        &lt;ns3:published&gt;2014-01-02T10:00:00Z&lt;/ns3:published&gt;
+        &lt;ns3:updated&gt;2014-01-02T10:00:00Z&lt;/ns3:updated&gt;
+  &lt;/ns3:entry&gt;
+&lt;/feed&gt;
+    </code></pre>
+    </div>
+  </div>
+
+<div id="accordion">
+  <h3><a href="/espi/authorization/">Authorization</a></h3>
   <div>
     <p></p>
     <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
