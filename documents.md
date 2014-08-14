@@ -16,12 +16,19 @@ XF</ul>
 <ul>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx">
        GreenButton Implementation Agreement</a> - Details of interoperabilty implementation agreements for those deploying Connect My Data</li>
+<ul>
+<ul>
+<li><a href="/espi/access_tokens/">Access Tokens used in Green Button Connect My Data</a></li>
+<li><a href="/espi/application_information/">The ApplicationInformation Resource</a></li>
+<li><a href="/espi/authorization_scope/">The Authorization Scope</a></li>
+</ul>
+
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAtomLinks.docx">
       GreenButton Atom Links</a> - Best Practices for ESPI resource URL design</li>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/OpenADE_2014_Notes/GBCMD_APIS_FBS.xlsx">
       Green Button CMD API Spreadsheet</a></br></li>
 </ul>
-<h3>Testing and Certification</h3>
+<h3>Testing and Certification - <a href="/espi/certification">(documents archive></a></h3>
 <ul>
 <li><a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestPlan.docx">
       Green Button Test Plan</a> - Download My Data (completed) and Connect My Data (Under Construction)</li>
