@@ -1,6 +1,6 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Function Blocks and Green Button RESTful API" LOCALIZED_STYLE_REF="default" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1406908688543" TEXT_SHORTENED="true" BACKGROUND_COLOR="#66ff66"><hook NAME="MapStyle">
+<node TEXT="Function Blocks and Green Button RESTful API" LOCALIZED_STYLE_REF="default" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1406908688543" TEXT_SHORTENED="true" BACKGROUND_COLOR="#66ff66"><hook NAME="MapStyle" zoom="0.7567887">
     <properties show_note_icons="true" show_icon_for_attributes="true"/>
 
 <map_styles>

@@ -9,6 +9,9 @@ The following are frequently asked questions regarding Green Button use within F
 <a class="buttonish" href="mailto:info@greenbuttondata.org?subject=Federal%20FAQ%20Request&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20an%20answer%20to%20the%20following%20Green%20Button%20question.%20Please%20send%20me%02%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]%0[Enter%20Your%20Question%20Here.]">Send us your question.</a>
 <hr />
 <dl>
+<dt> </dt>
+<dd>
+
 <dt>How do I find out if my utility supports Green Button Connect My Data?</dt>
 <dd>A list of utilities that currently support Green Button may be <a href="http://www.greenbuttondata.org/">found here.</a><br />
 Don't see your utility?  <a class="buttonish" href="mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]">Request Utility Green Button Information.</a> </dd>
