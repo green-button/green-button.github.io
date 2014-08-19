@@ -40,3 +40,8 @@ The following OAuth2 access_tokens are defined for use within the interoperable 
 </ul>
 </dd>
 </dl>
+<h3>References</h3>
+<ul>
+<ul>
+<li><a href="https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server/wiki/Architecture">OpenID-Connect Wiki</a></li>
+</ul>
