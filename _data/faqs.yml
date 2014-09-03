@@ -1,0 +1,21 @@
+# This file contains FAQ entries
+
+# - name: "faq name"
+#   question: "a question"
+#   category: [initiative | detail | ecosystem]
+#   audience: [fed | consumer | developer | datacustodian | thirdparty]
+#   answer: "an answer"
+#   background-url: "http://agency.gov"
+
+- question: "How do I find out if my utility supports Green Button?"
+  type: initiative
+  audience: fed
+  url: "http://agency.gov"
+  answer: "A list of utilities that currently support Green Button may be <a href=\"http://www.greenbuttondata.org\">found here.</a><br /> Don't see your utility?  <a class=\"buttonish\" href=\"mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]\">Request Utility Green Button Information.</a>"
+- question: "If a third party offers multiple applications that require on-going data, is it important for the data custodian to be able to distinguish which application the data is being transmitted for?"
+  category: detail
+  audience: {thirdparty, datacustodian}
+  url: "http://agency.gov"
+  answer: "In general, the thirdParty is the registered entity and any applications it provides through accessing the data may use the EUI delivered through an authorization.  It is important to note that in the cases where the ThirdParty does not support single sign-on behaviors (i.e. each application may have a different user authentication mechanism) care must be taken to insure the appropriately authenticated user provided the opportunity to approve the authorization."
+
+
