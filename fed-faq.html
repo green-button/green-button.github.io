@@ -1,0 +1,17 @@
+---
+title: Federal Agency Frequently Asked Questions
+layout: page
+---
+
+<h2>Federal Agency Frequently Asked Questions</h2>
+<dl>
+{% for faq in site.data.faqs %}
+  {% if faq.audience == "fed" %}
+  <hr />
+  <dt>{{faq.question}}</dt>
+  <dd>{{faq.answer}}</dd>
+  {% endif %}
+{% endfor %}
+</dl>
+
+

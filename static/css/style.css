@@ -594,7 +594,8 @@ dt{
 }
 
 dd{
-	margin-left:0
+	margin-left:15px;
+        margin-bottom: 10px
 }
 
 @media (min-width:768px){

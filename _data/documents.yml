@@ -1,0 +1,52 @@
+# This file contains the presentations library for Green Button
+  
+# - name: "the title string of the presentation"
+#   description: "a discription"  
+#   category: ["developemnt" | "espi" | "certification"]
+#   pdf: "presentation .pdf location url"
+#   doc: "presentation .ppt(x) location url"
+#   html: "html location url"    
+#   slideshare: "url of a slideshare posting (if any)"
+#   embedded: "embeded html (if any)"
+#   featured: true (if item should be featured)
+
+- name: "Green Button Data Exchange Schema (XML XSD)"
+  description: "The current working XML schema definition that represents the ESPI Resources used in Green Button data representation."
+  category: development
+  doc: "https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd"
+- name: "GreenButton Implementation Agreement"
+  description: "Details of interoperabilty implementation agreements for those deploying Connect My Data"
+  category: development
+  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx"
+- name: "OAuth2 Access Tokens Used in CMD"
+  description: "Definition of the access tokens used for the varioius CMD RESTful APIs"
+  category: development
+  html: "http://www.greenbuttondata.org/espi/access_tokens/"
+- name: "The ApplicationInformation Resource"
+  description: "The details of the ESPI ApplicationInformation Resource. This resource describes the relationship between a DataCustodian and it's registered ThirdParty service providers"
+  category: development
+  html: "http://www.greenbuttondata.org/espi/application_information/"
+- name: "The Authorization Scope"
+  description: "The scope string used during the OAuth2 authorization process is detailed here in BNF form. The scope string allows for determination of the services provided, duration of the authorization, and many additional details of the data exchanged authorized by the retail customer"
+  category: development
+  html: "http://www.greenbuttondata.org/espi/authorization_scope/"
+- name: "Green Button Atom Links"
+  description: "Best Practices for ESPI resource URL design"
+  category: development
+  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAtomLinks.docx"
+- name: "Green Button Connect My Data API Spreadsheet"
+  description: "A summary of the RESTful APIs available in Green Button Connect My Data"
+  category: development
+  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/OpenADE_2014_Notes/GBCMD_APIS_FBS.xlsx"
+- name: "Green Button DMD Test Plan"
+  description: "The test plan document describing all the details of Download My Data Testing and Certification"
+  category: certification
+  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestPlan.docx"
+- name: "Green Button Test Data Sheet"
+  description: "Derived from the Test Plan, this contains the actual certification test steps"
+  category: certification
+  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestDataSheet.docx"
+- name: "Green Button Certification Function Blocks"
+  description: "Detail of the features and facilities of Green Button categorized by Function Block containers"
+  category: certification
+  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonConformanceBlocks.xlsx"

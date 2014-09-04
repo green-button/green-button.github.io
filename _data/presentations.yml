@@ -1,29 +1,28 @@
 # This file contains the presentations library for Green Button
   
 # - name: "the title string of the presentation"
+#   description: "a description"
+#   category: [overview | technical | testing]
 #   pdf: "presentation .pdf location url"
 #   ppt: "presentation .ppt(x) location url"
 #   slideshare: "url of a slideshare posting (if any)"
 #   embedded: "embeded html (if any)"
 #   featured: true (if item should be featured)
-- name: "Green Button Intiative Overview"
-  pdf: ""
-  ppt: ""
-  slideshare: ""
-  embedded: ""
-- name: "Green Button Technical Overview"
-  pdf: ""
-  ppt: ""
-  slideshare: ""
-  embedded: ""
-- name: "June 5, 2014 - GreenGov Presentation"
-  pdf: ""
-  ppt: ""
-  slideshare: ""
-  embedded: ""
-- name: "July 27, 2014 - California Third Party webinar"
-  pdf: ""
-  ppt: ""
-  slideshare: ""
-  embedded: ""
 
+- name: "Green Button Intiative Overview"
+  description: "A high level overview of the the Green Button Initiative providing background and current status"
+  category: overview
+  pdf: "https://services_greenbuttondata_org/library/presentations/Green_Button_Overview_Sept2014.pdf"
+  ppt: "https://services_greenbuttondata_org/library/presentations/Green_Button_Overview_Sept2014.pptx"
+- name: "Green Button Technical Overview"
+  description: " Technical overview of the technology behind Green Button"
+  category: technical
+  pdf: "Green_Button_Technical_Jul2014.pdf"
+- name: "June 5, 2014 - GreenGov Presentation"
+  description: "A overview of how the U.S. Federal Government is using Green Button"
+  category: overview
+  pdf: "https://services_greenbuttondata_org/library/presentations/GreenGov_June_2014.pdf"
+- name: "July 27, 2014 - California Third Party webinar"
+  description: "A presentation covering the details of how ThirdParties receive data from Utilities (DataCustodians)"
+  category: technical
+  pdf: "https://services_greenbuttondata_org/library/presentations/Green_Button_ThirdParty.pdf"

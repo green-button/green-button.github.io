@@ -1,0 +1,71 @@
+---
+title: Green Button Documents Library
+layout: page
+---
+<h2>Green Button Documents Library</h2>
+<p>The following documents provide background on the Green Button intitiative as well as providing Important reference documents for Green Button Implementers</p>
+<section>
+
+<h3>Technical Development Library</h3>
+<dl>
+{% for document in site.data.documents %}
+
+  {% if document.category == "development" %}
+  <dt>
+    {% if document.html %}
+    <a href="{{document.html}}" >
+    {{document.name}} (Web Page)</a>
+    {% endif %}
+
+    {% if document.doc %}
+    <a href="{{document.doc}}" >
+    {{document.name}} (Document) </a>
+    {% endif %}
+
+    {% if document.pdf %}
+    <a href="{{document.pdf}}" >
+    {{document.name}} (.pdf) </a>
+    {% endif %}
+
+  </dt>
+
+
+  <dd>{{document.description}}</dd>
+
+{% endif %}
+{% endfor %}
+</dl>
+
+<h3>Testing &amp; Certification Library</h3>
+<dl>
+{% for document in site.data.documents %}
+
+  {% if document.category == "certification" %}
+  <dt>
+    {% if document.html %}
+    <a href="{{document.html}}" >
+    {{document.name}} (Web Page)</a>
+    {% endif %}
+
+    {% if document.doc %}
+    <a href="{{document.doc}}" >
+    {{document.name}} (Document) </a>
+    {% endif %}
+
+    {% if document.pdf %}
+    <a href="{{document.pdf}}" >
+    {{document.name}} (.pdf) </a>
+    {% endif %}
+
+  </dt>
+
+
+  <dd>{{document.description}}</dd>
+
+{% endif %}
+{% endfor %}
+</dl>
+
+
+
+  
