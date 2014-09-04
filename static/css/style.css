@@ -6100,12 +6100,12 @@ button.close{
 
 }
 
-.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after,.form-horizontal .form-group:before,.form-horizontal .form-group:after,.btn-toolbar:before,.btn-toolbar:after,.btn-group-vertical>.btn-group:before,.btn-group-vertical>.btn-group:after,.nav:before,.nav:after,.navbar:before,.navbar:after,.navbar-header:before,.navbar-header:after,.navbar-collapse:before,.navbar-collapse:after,.pager:before,.pager:after,.panel-body:before,.panel-body:after,.modal-footer:before,.modal-footer:after,.section-container:before,.section-container:after,.section-content:before,.section-content:after,section.home.home-about .audiences:before,section.home.home-about .audiences:after,.home-partners .partner_list:before,.home-partners .partner_list:after{
+.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after,.form-horizontal .form-group:before,.form-horizontal .form-group:after,.btn-toolbar:before,.btn-toolbar:after,.btn-group-vertical>.btn-group:before,.btn-group-vertical>.btn-group:after,.nav:before,.nav:after,.navbar:before,.navbar:after,.navbar-header:before,.navbar-header:after,.navbar-collapse:before,.navbar-collapse:after,.pager:before,.pager:after,.panel-body:before,.panel-body:after,.modal-footer:before,.modal-footer:after,.section-container:before,.section-container:after,.section-content:before,.section-content:after,section.home.home-about .audiences:before .gb-list:before,section.home.home-about .audiences:after .gb-list:after,.home-partners .partner_list:before,.home-partners .partner_list:after{
 	content:" ";
 	display:table
 }
 
-.clearfix:after,.container:after,.container-fluid:after,.row:after,.form-horizontal .form-group:after,.btn-toolbar:after,.btn-group-vertical>.btn-group:after,.nav:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after,.modal-footer:after,.section-container:after,.section-content:after,section.home.home-about .audiences:after,.home-partners .partner_list:after{
+.clearfix:after,.container:after,.container-fluid:after,.row:after,.form-horizontal .form-group:after,.btn-toolbar:after,.btn-group-vertical>.btn-group:after,.nav:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after,.modal-footer:after,.section-container:after,.section-content:after,section.home.home-about .audiences:after .gb-list:after,.home-partners .partner_list:after{
 	clear:both
 }
 
@@ -6605,6 +6605,8 @@ section.home{
 section.home.home-about{
 	width:100%;
 	margin-top:50px
+        display:inline-block;
+
 }
 
 section.home.home-about .lead{
@@ -6615,8 +6617,6 @@ section.home.home-about .lead{
 section.home.home-about .audiences{
 	padding-left:0;
 	list-style:none;
-	margin-left:-15px;
-	margin-right:-15px
 }
 
 section.home.home-about .audiences li{
@@ -6642,8 +6642,9 @@ section.home.home-about .audiences li{
 
 @media (min-width:768px) and (min-width:768px){
 	section.home.home-about .audiences li{
-		float:left;
-		width:25%
+
+        float:left;
+	width:20%
 	}
 
 }
@@ -6657,13 +6658,72 @@ section.home.home-about .audiences li h3{
 }
 
 section.home.home-about .audiences .icon{
-	font-size:75px;
+	font-size:60px;
 	background:#4cba6f;
 	width:150px;
 	height:150px;
-	line-height:140px;
+	line-height:120px;
 	margin:0 auto;
-	border-radius:150px;
+	border-radius:120px;
+	border:5px solid #fff
+}
+
+section.home.home-about .gb-list{
+    	text-align:left;
+	padding-left:0;
+	list-style:none;
+}
+
+section.home.home-about .gb-list li{
+	position:relative;
+	*float:left;
+	width:100%;
+	min-height:1px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-bottom:15px;
+	color:#454441
+}
+
+@media (min-width:768px){
+	section.home.home-about .gb-list li{
+		*position:relative;
+		width:100%
+		min-height:1px;
+		padding-left:15px;
+		padding-right:15px
+	}
+
+}
+
+@media (min-width:768px) and (min-width:768px){
+	section.home.home-about .gb-list li{
+        float:left;
+	width:100%
+	}
+
+}
+
+section.home.home-about .gb-list li .icon{
+    	text-align:center;
+	color:#fff
+}
+
+section.home.home-about .gb-list li h3{
+        display:block;
+        *float:left;
+	color:#4cba6f
+}
+
+section.home.home-about .gb-list .icon{
+	float:left;
+	font-size:20px;
+	background:#4cba6f;
+	width:50px;
+	height:50px;
+	line-height:40px;
+	margin:0 auto;
+	border-radius:40px;
 	border:5px solid #fff
 }
 
