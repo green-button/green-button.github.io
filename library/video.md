@@ -6,17 +6,13 @@ layout: page
 <h2>Green Button Videos</h2>
 
 {% for video in site.data.videos %}
-<hr size="4"/>
-<div>
-<div style="float:right">
-{{video.embedded}}
-</div>
+<div style="width:470px; display:block'">
 <dl>
 	 <dt><a href="{{video.url}}" />{{video.name}}</a></dt>
 	 <dd>{{video.description}}</dd>
 </dl>
+{{video.embedded}}
 </div>
 {% endfor %}
-
 
 

@@ -7,6 +7,20 @@
 
 - name: "Green Button Initiative - An Overview (on services.greenbuttondata.org 1200x900 at webLow production quality)"
   url:  "https://services.greenbuttondata.org/library/video/GreenButtonInitiativeOverview1200x900_webLow.mp4"
+  description: "An overview of the Green Button Initiative - inspired by the White House and led by Industry - providing resource usage information to consumers across the land"
 - name: "Green Button Initiative - An Overview (on vimeo.com)"
-  url: ""
-  embedded: '<iframe style="float:right" src="http://player.vimeo.com/video/105082253" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/105082253">Green Button Initiative Overview</a></p> <p>An overview of the Green Button Initiative - inspired by the White House and led by Industry - providing resource usage information to consumers across the land</p>'
+  url: "http://vimeo.com/105082253"
+  description: "Inspired by the White House and led by Industry - providing resource usage information to consumers across the land"
+  embedded: '<iframe src="http://player.vimeo.com/video/105082253" width="450" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+- name: "Green Button Vision - by David Wollman of NIST(Part 1)"
+  description: "A presentation describing the early vision and potential of Green Button"
+  url: "http://www.youtube.com/watch?v=HG9e37XLd_8"
+  embedded: "<iframe width=\"450\" height=\"240\" src=\"http://www.youtube.com/embed/HG9e37XLd_8\" frameborder=\"0\" allowfullscreen></iframe>"
+- name: "Green Button Policy - by David Wollman of NIST(Part 2)"
+  description: "How Green Button leads to New Policy Initiatives"
+  url: "http://www.youtube.com/watch?v=XRsbqJHlV4Q"
+  embedded: "<iframe width=\"450\" height=\"240\" src=\"http://www.youtube.com/embed/XRsbqJHlV4Q\" frameborder=\"0\" allowfullscreen></iframe>"
+- name: "Green Button Technology - by David Wollman of NIST(Part 3)"
+  description: "The Details of Green Button Technology"
+  url: "http://www.youtube.com/watch?v=sWlZIt9RzXw"
+  embedded: "<iframe width=\"450\" height=\"240\" src=\"http://www.youtube.com/embed/sWlZIt9RzXw\" frameborder=\"0\" allowfullscreen></iframe>"
