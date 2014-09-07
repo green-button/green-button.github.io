@@ -38,6 +38,10 @@
   description: "A summary of the RESTful APIs available in Green Button Connect My Data"
   category: development
   doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/OpenADE_2014_Notes/GBCMD_APIS_FBS.xlsx"
+- name: "Green Button SDK Users Guide"
+  description: "The Users guide to the SDK Took Kit - for analyzing and creating Green Button Data Files"
+  category: development
+  html: "https://collaborate.nist.gov/twiki-sggrid/bin/view/SmartGrid/GreenButtonSDK"
 - name: "Green Button DMD Test Plan"
   description: "The test plan document describing all the details of Download My Data Testing and Certification"
   category: certification
@@ -50,3 +54,7 @@
   description: "Detail of the features and facilities of Green Button categorized by Function Block containers"
   category: certification
   doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonConformanceBlocks.xlsx"
+- name: "Green Button On-Line Validator"
+  description: "A web accessable tool to allow you to validate Green Button data files you may have received from your Utility."
+  category: development
+  html: "http://www.greenbuttondata.org/greentest.aspx"
