@@ -5,13 +5,14 @@
 #   embedded: "embeded html"
 #   featured: true (if item should be featured)
 
-- name: "Green Button Initiative - An Overview (on services.greenbuttondata.org 1200x900 at webLow production quality)"
-  url:  "https://services.greenbuttondata.org/library/video/GreenButtonInitiativeOverview1200x900_webLow.mp4"
-  description: "An overview of the Green Button Initiative - inspired by the White House and led by Industry - providing resource usage information to consumers across the land"
 - name: "Green Button Initiative - An Overview (on vimeo.com)"
   url: "http://vimeo.com/105082253"
   description: "Inspired by the White House and led by Industry - providing resource usage information to consumers across the land"
   embedded: '<iframe src="http://player.vimeo.com/video/105082253" width="450" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+- name: "Working with Green Button Time Parameters"
+  url: "https://services.greenbuttondata.org/library/videos/HowtoTestGreenButtonTimeStamps.mp4"
+  description: "A short walk through of the tools available to help you get Green Button time parameters correct"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/HowtoTestGreenButtonTimeStamps_cover.png" width="450px" />'
 - name: "Green Button Vision - by David Wollman of NIST(Part 1)"
   description: "A presentation describing the early vision and potential of Green Button"
   url: "http://www.youtube.com/watch?v=HG9e37XLd_8"
