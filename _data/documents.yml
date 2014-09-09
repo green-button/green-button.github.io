@@ -2,7 +2,7 @@
   
 # - name: "the title string of the presentation"
 #   description: "a discription"  
-#   category: ["developemnt" | "espi" | "certification"]
+#   category: ["development" | "espi" | "certification"]
 #   pdf: "presentation .pdf location url"
 #   doc: "presentation .ppt(x) location url"
 #   html: "html location url"    
@@ -66,12 +66,12 @@
   description: "Useful recipes for working with git and GitHub."
   category: espi
   html: "http://www.greenbuttondata.org/espi/githints"
-- name: "Download the OpenESPI Virtual Machine
+- name: "Download the OpenESPI Virtual Machine"
   description: "How to retrieve and get virtual machine running"
   category: espi
-  html: "http://www.greenbuttondata.org/espi/VM
-- name: "Working with the OpenESPI Virtual Machine
+  html: "http://www.greenbuttondata.org/espi/VM"
+- name: "Working with the OpenESPI Virtual Machine"
   description: "How work with the OpenESPI VM" 
   category: espi
-  html: "http://www.greenbuttondata.org/espi/openespiVM
+  html: "http://www.greenbuttondata.org/espi/openespiVM"
   
