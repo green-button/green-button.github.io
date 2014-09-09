@@ -1,3 +1,7 @@
+---
+layout: default
+title: Page/Post Title
+---
 # Github development with OpenESPI
 
 **OpenESPI is assembled with three distinct projects:**

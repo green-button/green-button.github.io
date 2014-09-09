@@ -1,3 +1,7 @@
+---
+layout: default
+title: Page/Post Title
+---
 # Git stuff
 
 ### Git sync Fork with Main line

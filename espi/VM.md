@@ -1,3 +1,8 @@
+---
+layout: default
+title: Page/Post Title
+---
+
 The OpenESPI Development Virtual Machine is a Linux Ubuntu desktop environment that may be used to jumpstart your OpenESPI development efforts. 
 
 The following instructions should be followed to configure the Spring Tool Suite development IDE

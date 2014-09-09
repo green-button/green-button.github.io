@@ -1,3 +1,8 @@
+---
+layout: default
+title: Page/Post Title
+---
+
 # Working with the Tomcat 7 Server
 ## Starting and Stopping the server
 

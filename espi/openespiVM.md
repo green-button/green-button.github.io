@@ -1,3 +1,7 @@
+---
+layout: default
+title: Page/Post Title
+---
 # Working with OpenESPI VM
 
 ## **Build VM**
