@@ -58,3 +58,20 @@
   description: "A web accessable tool to allow you to validate Green Button data files you may have received from your Utility."
   category: development
   html: "http://www.greenbuttondata.org/greentest.aspx"
+- name: "OpenESPI Development Environment"
+  description: "Notes on how to set up an OpenESPI development environment."
+  category: espi
+  html: "http://www.greenbuttondata.org/espi/developmentEnvironment"
+- name: "GitHub and Git Hints"
+  description: "Useful recipes for working with git and GitHub."
+  category: espi
+  html: "http://www.greenbuttondata.org/espi/githints"
+- name: "Download the OpenESPI Virtual Machine
+  description: "How to retrieve and get virtual machine running"
+  category: espi
+  html: "http://www.greenbuttondata.org/espi/VM
+- name: "Working with the OpenESPI Virtual Machine
+  description: "How work with the OpenESPI VM" 
+  category: espi
+  html: "http://www.greenbuttondata.org/espi/openespiVM
+  
