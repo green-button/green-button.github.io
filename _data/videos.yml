@@ -9,6 +9,46 @@
   url: "http://vimeo.com/105082253"
   description: "Inspired by the White House and led by Industry - providing resource usage information to consumers across the land"
   embedded: '<iframe src="http://player.vimeo.com/video/105082253" width="450" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+- name: "Green Button Tools: Introduction (Part 1/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part1-GreenButtonTools_Introduction.mp4"
+  description: "Green Button Technical Demonstration: Introduction - Part 1/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part01Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 2/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part2-GreenButtonServices.mp4"
+  description: "Green Button Technical Demonstration: https://services.greenbuttondata.org - Part 2/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part02Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 3/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part3-GreenButtonTools_OAuth2.mp4"
+  description: "Green Button Technical Demonstration: Connect My Data OAuth2 Demonstration - Part 3/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part03Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 4/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part4-GreenButtonAPI.mp4"
+  description: "Green Button Technical Demonstration: Green Button CMD API Sandbox - Part 4/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part04Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 5/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part5-GreenButtonToolsVM.mp4"
+  description: "Green Button Technical Demonstration: The Ubuntu Virtual Machine Deployment - Part 5/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part05Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 6/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part6-GreenButtonSDK.mp4"
+  description: "Green Button Technical Demonstration: Green Button SDK - Part 6/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part06Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 7/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part7-GreenButtonSOAPui.mp4"
+  description: "Green Button Technical Demonstration: Testing Green Button with SOAPui - Part 7/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part07Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 8/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part8-GreenButtonSOAPDetails.mp4"
+  description: "Green Button Technical Demonstration: SOAPui Details - Part 8/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part08Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 9/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part9-GreenButtonSOAPuiFunctionBlockTesting.mp4"
+  description: "Green Button Technical Demonstration: Using SOAPui to test Green Button conformance Function Blocks - Part 9/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part09Flash.png" width="450px" />'
+- name: "Green Button Tools: Introduction (Part 10/10)"
+  url: "https://services.greenbuttondata.org/library/videos/TechnicalDemo-Part10-GreenButtonWrapUp.mp4"
+  description: "Green Button Technical Demonstration: Summary and wrap-up - Part 10/10"
+  embedded: '<img src="https://services.greenbuttondata.org/library/videos/Part10Flash.png" width="450px" />'
 - name: "Working with Green Button Time Parameters"
   url: "https://services.greenbuttondata.org/library/videos/HowtoTestGreenButtonTimeStamps.mp4"
   description: "A short walk through of the tools available to help you get Green Button time parameters correct"
