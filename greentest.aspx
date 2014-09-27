@@ -523,7 +523,7 @@
 <br />
 <input type="checkbox" id="KeepFile" name="KeepFile" onclick="KeepFileChanged();" /> Allow file to be saved on website<br />
 <br />
-5) Enable download of test results after test execustion:<br />
+5) Enable download of test results after test execution:<br />
 <br />
 <input type="checkbox" id="DownloadResults" name="DownloadResults" onclick="DownloadResultsChanged();" /> Download test results<br />
 <br />
