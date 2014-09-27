@@ -9,10 +9,20 @@ layout: page
 <hr />
 <div style="width:470px; display:block'">
 <dl>
-	 <dt><a href="{{video.url}}" />{{video.name}}</a></dt>
-	 <dd>{{video.description}}</dd>
+	<dt>{{video.name}}</dt>
+	<dd>{{video.description}}</dd>
+	
+    {% if video.type == 'use_embedded' %}
+	{{video.embedded}}
+    {% endif %}
+	
+    {% if video.type == 'mp4' %}
+	<video width="450" height="240" controls preload="none">
+		<source src="{{video.url}}" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+    {% endif %}
 </dl>
-{{video.embedded}}
 </div>
 {% endfor %}
 
