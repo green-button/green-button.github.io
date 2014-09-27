@@ -12,8 +12,8 @@
 - name: "Green Button Intiative Overview"
   description: "A high level overview of the the Green Button Initiative providing background and current status"
   category: overview
-  pdf: "https://services_greenbuttondata_org/library/presentations/Green_Button_Overview_Sept2014.pdf"
-  ppt: "https://services_greenbuttondata_org/library/presentations/Green_Button_Overview_Sept2014.pptx"
+  pdf: "https://services.greenbuttondata.org/library/presentations/Green_Button_Overview_Sept2014.pdf"
+  ppt: "https://services.greenbuttondata.org/library/presentations/Green_Button_Overview_Sept2014.pptx"
 - name: "Green Button Technical Overview"
   description: " Technical overview of the technology behind Green Button"
   category: technical
@@ -21,12 +21,12 @@
 - name: "June 5, 2014 - GreenGov Presentation"
   description: "A overview of how the U.S. Federal Government is using Green Button"
   category: overview
-  pdf: "https://services_greenbuttondata_org/library/presentations/GreenGov_June_2014.pdf"
+  pdf: "https://services.greenbuttondata.org/library/presentations/GreenGov_June_2014.pdf"
 - name: "July 27, 2014 - California Third Party webinar"
   description: "A presentation covering the details of how ThirdParties receive data from Utilities (DataCustodians)"
   category: technical
-  pdf: "https://services_greenbuttondata_org/library/presentations/Green_Button_ThirdParty.pdf"
+  pdf: "https://services.greenbuttondata.org/library/presentations/Green_Button_ThirdParty.pdf"
 - name: "September 9, 2014 - OpenADE Green Button Technical Tools Review and Demonstration"
   description: "A presentation covering the details of Technical Tools and resources for implementing Green Button"
   category: technical
-  pdf: "https://services_greenbuttondata_org/library/presentations/OpenADEGreenButtonTechnicalToolsReviewAndDemonstration_Sept2014.pdf"
+  pdf: "https://services.greenbuttondata.org/library/presentations/OpenADEGreenButtonTechnicalToolsReviewAndDemonstration_Sept2014.pdf"
