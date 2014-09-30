@@ -17,7 +17,7 @@ layout: page
     {% endif %}
 	
     {% if video.type == 'mp4' %}
-	<video width="450" height="240" controls preload="none">
+	<video width="450" height="240" controls preload="none" poster="{{video.embedded}}">
 		<source src="{{video.url}}" type="video/mp4">
 		Your browser does not support HTML5 video.
 	</video>
