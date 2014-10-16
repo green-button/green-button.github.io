@@ -447,3 +447,9 @@
   url: "http://www.energyhub.com/"
   type: company
   status: implemented
+- name: "Village Power Finance"
+  url: "http://www.villagepower.com/"
+  type: company
+  status: committed
+  featured: true
+  
