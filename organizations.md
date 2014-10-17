@@ -37,21 +37,27 @@ The following organizations have deployed Green Button for their customers
 <tr>
 <td style="vertical-align:top;">
 <h2>Committed Utilities</h2>
+<ul>
 {% for organization in site.data.partners %}
-  {% if organization.status != "implemented" %}
-  {% if organization.type == "utility" %}
-  <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
-  {% endif %}
-  {% endif %} 
+  {% if organization.status == "committed" %}
+    {% if organization.type == "utility" %}
+	  <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
+    {% endif %}
+  {% endif %}	  
+{% endfor %}
+</ul>
 </td>
 <td style="vertical-align:top;">
-<h2>Committed Utilities</h2>
+<h2>Green Button Vendors</h2>
+<ul>
 {% for organization in site.data.partners %}
-  {% if organization.status != "implemented" %}
-  {% if organization.type == "company" %}
-  <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
-  {% endif %}
-  {% endif %} 
+  {% if organization.status == "implemented" %}
+    {% if organization.type == "company" %}
+      <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
+    {% endif %}
+  {% endif %}  
+{% endfor %}
+</ul>
 </td>
 </tr>
 </table>
