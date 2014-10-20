@@ -447,3 +447,7 @@
   url: "http://www.energyhub.com/"
   type: company
   status: implemented
+- name: "City of Tallahassee Utilities"
+  url: "http://www.talgov.com/you/yourownutilitieshome.aspx/"
+  type: utility
+  status: implemented
