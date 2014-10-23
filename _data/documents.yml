@@ -30,6 +30,10 @@
   description: "The scope string used during the OAuth2 authorization process is detailed here in BNF form. The scope string allows for determination of the services provided, duration of the authorization, and many additional details of the data exchanged authorized by the retail customer"
   category: development
   html: "http://www.greenbuttondata.org/espi/authorization_scope/"
+- name: "Building UUIDs"
+  description: "Green Button resources each have globally unique identifiers, or UUIDs. This document provides guidance on how to create these UUIDs."
+  category: development
+  html: "http://www.greenbuttondata.org/espi/uuid_guidance/"
 - name: "Green Button Atom Links"
   description: "Best Practices for ESPI resource URL design"
   category: development
