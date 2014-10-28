@@ -115,12 +115,6 @@ Use this procedure to configure STS once the source code from github in on your 
 
 ### Run under STS
 
-To Run the program on the VM under STS you need to disable the bitnami apache server instance running in the VM which uses port 80:
-
-	sudo /opt/bitnami/ctlscript.sh stop apache
-
-Then 
-
 1. 	Right click on DataCustodian and select Run/Run on Server
 1. 	Click next on the dialog and add ThirdParty to Configured resources
 1. 	Click finish
