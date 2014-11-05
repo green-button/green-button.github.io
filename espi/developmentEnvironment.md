@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Page/Post Title
 ---
 # Github development with OpenESPI
@@ -102,28 +102,18 @@ Instructions here are for use within the Ubuntu VM. Similar steps would need to 
 
 Use this procedure to configure STS once the source code from github in on your development machine:
 
-1. Open terminal window on Desktop and enter the following steps:
-
-    	sudo su
-    	./STS
- 
+1. Run STS by clicking icon on desktop
 1. When asked,  open workspace in clean directory
-1. Turn off tool tips (unless you love them)
+1. Turn off tool tips in lower right hand corner when it pops up (unless you love them)
 1. Close opening page
-1. Select menu projects/Build Automatically and make sure it is unchecked.
 1. In project browser on left, right click and select import/Maven/Existing Maven Projects
 1. Navigate to the git/energyos folder and select
 1. Import all projects into workspace.
+1. Select menu projects/Build Automatically and make sure it is unchecked.
 1. Select Project/BuildAll
 
 
 ### Run under STS
-
-To Run the program on the VM under STS you need to disable the bitnami apache server instance running in the VM which uses port 80:
-
-	sudo /opt/bitnami/ctlscript.sh stop apache
-
-Then 
 
 1. 	Right click on DataCustodian and select Run/Run on Server
 1. 	Click next on the dialog and add ThirdParty to Configured resources
