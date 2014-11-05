@@ -15,7 +15,7 @@ The following organizations have deployed Green Button for their customers
 {% for organization in site.data.partners %}
   {% if organization.status == "implemented" %}
     {% if organization.type == "utility" %}
-	  <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
+	  <li><a href="{{organization.url}}" />{{organization.name}}</a></li>
     {% endif %}
   {% endif %}	  
 {% endfor %}
@@ -27,7 +27,7 @@ The following organizations have deployed Green Button for their customers
 {% for organization in site.data.partners %}
   {% if organization.status == "implemented" %}
   {% if organization.type == "company" %}
-  <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
+  <li><a href="{{organization.url}}" />{{organization.name}}</a></li>
   {% endif %}
   {% endif %}  
 {% endfor %}
@@ -41,7 +41,7 @@ The following organizations have deployed Green Button for their customers
 {% for organization in site.data.partners %}
   {% if organization.status == "committed" %}
     {% if organization.type == "utility" %}
-	  <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
+	  <li><a href="{{organization.url}}" />{{organization.name}}</a></li>
     {% endif %}
   {% endif %}	  
 {% endfor %}
@@ -53,7 +53,7 @@ The following organizations have deployed Green Button for their customers
 {% for organization in site.data.partners %}
   {% if organization.status == "implemented" %}
     {% if organization.type == "company" %}
-      <li><a href="{{organiation.url}}" />{{organization.name}}</a></li>
+      <li><a href="{{organization.url}}" />{{organization.name}}</a></li>
     {% endif %}
   {% endif %}  
 {% endfor %}
