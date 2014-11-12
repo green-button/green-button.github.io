@@ -50,7 +50,7 @@
   description: "The test plan document describing all the details of Download My Data Testing and Certification"
   category: certification
   doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestPlan.docx"
-- name: "Green Button Test Data Sheet"
+- name: "Green Button DownloadMyDataTest Data Sheet"
   description: "Derived from the Test Plan, this contains the actual certification test steps"
   category: certification
   doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestDataSheet.docx"
@@ -58,6 +58,10 @@
   description: "Detail of the features and facilities of Green Button categorized by Function Block containers"
   category: certification
   doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonConformanceBlocks.xlsx"
+- name: "Green Button Connect My Data Certification Test Steps Spreadsheet"
+  description: "The detailed specification of CMD test steps that will be used in CMD Certification"
+  category: certification
+  doc: "https://github.com/energyos/OpenESPI-GreenbuttonDataSDK/blob/master/GreenButtonTestingRequirements/GreenButtonTestCases.xlsm?raw=true"
 - name: "Green Button On-Line Validator"
   description: "A web accessable tool to allow you to validate Green Button data files you may have received from your Utility."
   category: development
