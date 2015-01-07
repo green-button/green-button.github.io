@@ -1,7 +1,7 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Function Blocks and Green Button RESTful API" LOCALIZED_STYLE_REF="default" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1406908688543" TEXT_SHORTENED="true" BACKGROUND_COLOR="#66ff66"><hook NAME="MapStyle" zoom="0.7567887">
-    <properties show_note_icons="true" show_icon_for_attributes="true"/>
+<node TEXT="Function Blocks and Green Button RESTful API" LOCALIZED_STYLE_REF="default" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1420659174194" TEXT_SHORTENED="true" BACKGROUND_COLOR="#66ff66"><hook NAME="MapStyle" zoom="0.7567887">
+    <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node">
@@ -56,9 +56,10 @@
 <edge COLOR="#339900"/>
 <attribute NAME="SupportedBy" VALUE="PG&amp;E; OpenCommons; Seattle City Light; SCE; SDG&amp;E"/>
 </node>
-<node TEXT="FB_03 Core Green Button Connect My Data (API)" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1099005008" CREATED="1406734867534" MODIFIED="1406908688528" TEXT_SHORTENED="true" BACKGROUND_COLOR="#66ff66" LINK="http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API/#!/DataCustodian.Batch">
+<node TEXT="FB_03 Core Green Button Connect My Data (API)" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1099005008" CREATED="1406734867534" MODIFIED="1420659575867" TEXT_SHORTENED="true" BACKGROUND_COLOR="#66ff66" LINK="http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API/#!/DataCustodian.Batch">
 <edge COLOR="#339900"/>
 <attribute NAME="SupportedBy" VALUE="PG&amp;E; SDG&amp;E; SCE; LondonHydro"/>
+<attribute NAME="TestsAvailable" VALUE="01Jan2015"/>
 <hook NAME="FirstGroupNode"/>
 <node TEXT="DataCustodianOriginates.Notification" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_876544617" CREATED="1406730826201" MODIFIED="1406906591648" LINK="http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API/#!/DataCustodian.Batch">
 <node TEXT="POST" LOCALIZED_STYLE_REF="default" ID="ID_613611151" CREATED="1406730826206" MODIFIED="1406738328380"/>
@@ -109,13 +110,28 @@
 </node>
 </node>
 </node>
-<node TEXT="FB_04 Interval Metering" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1452778873" CREATED="1406736139057" MODIFIED="1406908688529" TEXT_SHORTENED="true">
+<node TEXT="FB_04 Interval Metering" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1452778873" CREATED="1406736139057" MODIFIED="1420659479340" TEXT_SHORTENED="true">
 <attribute NAME="SupportedBy" VALUE="SCE; SDG&amp;E; PG&amp;E"/>
+<attribute NAME="SupportedBy" VALUE="LondonHydro; PG&amp;E; SDG&amp;E; SCE"/>
 <edge COLOR="#339900"/>
 </node>
-<node TEXT="FB_05 Interval Electric Metering" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1491802016" CREATED="1406736145129" MODIFIED="1406908688530" TEXT_SHORTENED="true">
+<node TEXT="FB_05 Interval Electric Metering" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1491802016" CREATED="1406736145129" MODIFIED="1420659527902" TEXT_SHORTENED="true">
 <attribute NAME="SupportedBy" VALUE="SDG&amp;E; SCE; PG&amp;E"/>
+<attribute NAME="SupportedBy" VALUE="LondonHydro; PG&amp;E; SDG&amp;E; SCE"/>
 <edge COLOR="#339900"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  
+
+  <head>
+
+  </head>
+  <body>
+  </body>
+</html>
+
+</richcontent>
 </node>
 <node TEXT="FB_06 Demand Electric Metering" POSITION="right" ID="ID_542921629" CREATED="1406904811942" MODIFIED="1406908688530">
 <edge COLOR="#339900"/>
@@ -139,16 +155,20 @@
 <node TEXT="FB_12 Cost of Interval Data" POSITION="right" ID="ID_735788809" CREATED="1406905106716" MODIFIED="1406908688533">
 <edge COLOR="#339900"/>
 </node>
-<node TEXT="FB_13" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1847526179" CREATED="1406736160351" MODIFIED="1406908688534" TEXT_SHORTENED="true">
+<node TEXT="FB_13" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1847526179" CREATED="1406736160351" MODIFIED="1420659434904" TEXT_SHORTENED="true">
 <attribute NAME="SupportedBy" VALUE="SCE; SDG&amp;E; PG&amp;E"/>
+<attribute NAME="TestsAvailable" VALUE="01Nov 2014"/>
+<attribute NAME="SupportedBy" VALUE="LondonHydro; PG&amp;E; SDG&amp;E; SCE"/>
 <edge COLOR="#339900"/>
 </node>
-<node TEXT="FB_14" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1760141768" CREATED="1406736177074" MODIFIED="1406908688534" TEXT_SHORTENED="true">
+<node TEXT="FB_14" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_1760141768" CREATED="1406736177074" MODIFIED="1420659369070" TEXT_SHORTENED="true">
 <attribute NAME="SupportedBy" VALUE="SDG&amp;E; PG&amp;E"/>
+<attribute NAME="SupportedBy" VALUE="LondonHydro; PG&amp;E; SDG&amp;E; SCE"/>
 <edge COLOR="#339900"/>
 </node>
-<node TEXT="FB_15 Usage Summary" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_207496652" CREATED="1406736182867" MODIFIED="1406908688535" TEXT_SHORTENED="true">
+<node TEXT="FB_15 Usage Summary" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_207496652" CREATED="1406736182867" MODIFIED="1420659290775" TEXT_SHORTENED="true">
 <attribute NAME="SupportedBy" VALUE="PG&amp;E"/>
+<attribute NAME="SupportedBy" VALUE="LondonHydro; PG&amp;E; SDG&amp;E; SCE"/>
 <edge COLOR="#339900"/>
 </node>
 <node TEXT="FB_16 Usage Summary with Cost" POSITION="right" ID="ID_135182400" CREATED="1406905140628" MODIFIED="1406908688535">
