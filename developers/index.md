@@ -74,7 +74,7 @@ The second thing to note is that in the Atom representation, a feed will always 
 
 <p>So all the <a
  href="https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd">espiDerived.xsd</a>
-entities are always contained in a feed and the entry/contents describe the ESPI entity itself. In
+entities may be contained in a feed and the entry/contents describe the ESPI entity itself. In
 addition, you need to construct (during the parse if possible for you) the associations that need to
 exist between the ESPI entities.  The <em>&lt;link&gt;</em> tags are quite important for use during
 parsing of the Green Button data. These links allow you to know which <em>MeterReading</em>s are
@@ -82,41 +82,26 @@ related to a specific <em>UsagePoint</em>.
 
 <p>Within an
 <em>&lt;entry&gt;</em>, the <em>"related"</em> links point to a collection, for example:
-<pre><code>
-&lt;feed xmlns="http://www.w3.org/2005/Atom"
-         xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
- &lt;id&gt;urn:uuid:728B5594-414E-471A-A230-08FCCDAC655C&lt;/id&gt;
- &lt;title&gt;ThirdPartyX Batch Feed&lt;/title&gt;
- &lt;ns3:published&gt;2014-01-02T10:00:00Z&lt;/ns3:published&gt;
- &lt;ns3:updated&gt;2014-01-02T10:00:00Z&lt;/ns3:updated&gt;
- &lt;link rel="self" href="/ThirdParty/83e269c1/Batch"/&gt;
-   &lt;entry&gt;
-   &lt;id&gt;urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1&lt;/id&gt;
-     &lt;link rel="self"
-           href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01"/&gt;
-     &lt;link rel="up"
-           href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/9b6c7063/UsagePoint"/&gt;
-     &lt;link rel="related"
-           href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01/MeterReading"/&gt;
-     &lt;link rel="related"
-           href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/&gt;
-     &lt;link rel="related"
-           href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/01"/&gt;
-     &lt;title&gt;my house&lt;/title&gt;
-     &lt;ns3:published&gt;2014-01-02T10:00:00Z&lt;/ns3:published&gt;
-     &lt;ns3:updated&gt;2014-01-02T10:00:00Z&lt;/ns3:updated&gt;
-     &lt;content&gt;
-       &lt;UsagePoint xmlns="http://naesb.org/espi"&gt;
-         &lt;ServiceCategory&gt;
-           &lt;kind&gt;0&lt;/kind&gt;
-         &lt;/ServiceCategory&gt;
-       &lt;/UsagePoint&gt;
-     &lt;/content&gt;
-   &lt;/entry&gt;
- &lt;/feed&gt;
-    </code></pre>
+<pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:c8c34b3a-d175-447b-bd00-176f60194de0&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1" rel="self"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="related"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/ElectricPowerUsageSummary" rel="related"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="related"/&gt;
+      &lt;title&gt;Green Button Sample Data File&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:UsagePoint&gt;
+                  &lt;espi:ServiceCategory&gt;
+                        &lt;espi:kind&gt;0&lt;/espi:kind&gt;
+                  &lt;/espi:ServiceCategory&gt;
+            &lt;/espi:UsagePoint&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
+&lt;/entry&gt;
 
+    </code></pre>
 
   </div>
 </div>
@@ -132,56 +117,34 @@ related to a specific <em>UsagePoint</em>.
   <h3><a href="/espi/application_information/">ApplicationInformation</a></h3>
   <div>
     <p></p>
-    <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;entry xml:lang=&quot;en-us&quot; xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot;&gt;
-  &lt;id&gt;urn:uuid:AF6E8B03-0299-467E-972A-A883ECDCC575&lt;/id&gt;
-  &lt;link rel=&quot;self&quot; href=&quot;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/DataCustodian/ApplicationInformation/1&quot;/&gt;
-  &lt;link rel=&quot;up&quot; href=&quot;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/DataCustodian/ApplicationInformation&quot;/&gt;
-  &lt;title&gt;GreenButtonData.org  DataCustodian Application&lt;/title&gt;
-  &lt;published&gt;2014-01-02T05:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2014-01-02T05:00:00Z&lt;/updated&gt;
-  &lt;content&gt;
-    &lt;ApplicationInformation xmlns=&quot;http://naesb.org/espi&quot;&gt;
-      &lt;dataCustodianId&gt;ConEdison&lt;/dataCustodianId&gt;
-      &lt;dataCustodianApplicationStatus&gt;2&lt;/dataCustodianApplicationStatus&gt;
-      &lt;thirdPartyApplicationDescription&gt;Energyos Green Button Third Party Sample Application Description&lt;/thirdPartyApplicationDescription&gt;
-      &lt;thirdPartyApplicationStatus&gt;1&lt;/thirdPartyApplicationStatus&gt;
-      &lt;thirdPartyApplicationType&gt;1&lt;/thirdPartyApplicationType&gt;
-      &lt;thirdPartyApplicationUse&gt;1&lt;/thirdPartyApplicationUse&gt;
-      &lt;thirdPartyPhone&gt;+1 800 673-6377&lt;/thirdPartyPhone&gt;
-      &lt;authorizationServerUri&gt;https://services.greenbuttondata.org/DataCustodian&lt;/authorizationServerUri&gt;
-      &lt;thirdPartyNotifyUri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification&lt;/thirdPartyNotifyUri&gt;
-      &lt;authorizationServerAuthorizationEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/oauth/authorize&lt;/authorizationServerAuthorizationEndpoint&gt;
-      &lt;authorizationServerRegistrationEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/register&lt;/authorizationServerRegistrationEndpoint&gt;
-      &lt;authorizationServerTokenEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/oauth/token&lt;/authorizationServerTokenEndpoint&gt;
-      &lt;dataCustodianBulkRequestURI&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Bulk/{BulkID}&lt;/dataCustodianBulkRequestURI&gt;
-      &lt;dataCustodianResourceEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource&lt;/dataCustodianResourceEndpoint&gt;
-      &lt;thirdPartyScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/RetailCustomer/ScopeSelection&lt;/thirdPartyScopeSelectionScreenURI&gt;
-      &lt;thirdPartyUserPortalScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/RetailCustomer/home&lt;/thirdPartyUserPortalScreenURI&gt;
-      &lt;client_secret&gt;third_party_client_secret&lt;/client_secret&gt;
-      &lt;logo_uri&gt;http://services.greenbuttondata.org/ThirdParty/favicon.png&lt;/logo_uri&gt;
-      &lt;client_name&gt;EnergyOS Green Button ThirdParty&lt;/client_name&gt;
-      &lt;client_uri&gt;https://services.greenbuttondata.org/ThirdParty&lt;/client_uri&gt;
-      &lt;redirect_uri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack&lt;/redirect_uri&gt;
-      &lt;client_id&gt;third_party&lt;/client_id&gt;
-      &lt;tos_uri&gt;http://services.greenbuttondata.org/ThirdParty/TermsOfService&lt;/tos_uri&gt;
-      &lt;policy_uri&gt;http://services.greenbuttondata.org/ThirdParty/UsagePolicy&lt;/policy_uri&gt;
-      &lt;software_id&gt;1.00.00&lt;/software_id&gt;
-      &lt;software_version&gt;version 001&lt;/software_version&gt;
-      &lt;client_id_issued_at&gt;2147483647&lt;/client_id_issued_at&gt;
-      &lt;client_secret_expires_at&gt;2147483647&lt;/client_secret_expires_at&gt;
-      &lt;contacts&gt;support@energyos.org&lt;/contacts&gt;
-      &lt;token_endpoint_auth_method&gt;client_secret_basic&lt;/token_endpoint_auth_method&gt;
-      &lt;scope&gt;FB=1_2_4_5_12_15_16;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/scope&gt;
-      &lt;grant_types&gt;authorization_code&lt;/grant_types&gt;
-      &lt;grant_types&gt;client_credentials&lt;/grant_types&gt;
-      &lt;grant_types&gt;refresh_token&lt;/grant_types&gt;
-      &lt;response_types&gt;code&lt;/response_types&gt;
-      &lt;registration_client_uri&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/{ApplicationInformationID}/&lt;/registration_client_uri&gt;
-      &lt;registration_access_token&gt;3abbc0c4-8dba-45c4-a54b-042737c39dc9&lt;/registration_access_token&gt;
-      &lt;dataCustodianScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/DataCustodian/RetailCustomer/ScopeSelection&lt;/dataCustodianScopeSelectionScreenURI&gt;
-    &lt;/ApplicationInformation&gt;
-  &lt;/content&gt;
+    <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:af6e8b03-0299-467e-972a-a883ecdcc575&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/2" rel="self"/&gt;
+      &lt;title&gt;GreenButtonData.org  ThirdParty Application&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:ApplicationInformation&gt;
+                  &lt;espi:dataCustodianId&gt;data_custodian&lt;/espi:dataCustodianId&gt;
+                  &lt;espi:dataCustodianApplicationStatus&gt;1&lt;/espi:dataCustodianApplicationStatus&gt;
+                  &lt;espi:thirdPartyNotifyUri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification&lt;/espi:thirdPartyNotifyUri&gt;
+                  &lt;espi:dataCustodianBulkRequestURI&gt;&lt;/espi:dataCustodianBulkRequestURI&gt;
+                  &lt;espi:dataCustodianResourceEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource&lt;/espi:dataCustodianResourceEndpoint&gt;
+                  &lt;espi:thirdPartyScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/RetailCustomer/ScopeSelection&lt;/espi:thirdPartyScopeSelectionScreenURI&gt;
+                  &lt;espi:client_secret&gt;secret&lt;/espi:client_secret&gt;
+                  &lt;espi:redirect_uri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack&lt;/espi:redirect_uri&gt;
+                  &lt;espi:client_id&gt;third_party&lt;/espi:client_id&gt;
+                  &lt;espi:contacts&gt;john.teeter@nist.gov,martin.burns@nist.gov,donald.coffin@reminetworks.com&lt;/espi:contacts&gt;
+                  &lt;espi:token_endpoint_auth_method&gt;client_secret_basic&lt;/espi:token_endpoint_auth_method&gt;
+                  &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=900;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                  &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                  &lt;espi:scope&gt;FB=4_5_12_15_16;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                  &lt;espi:grant_types&gt;refresh_token&lt;/espi:grant_types&gt;
+                  &lt;espi:grant_types&gt;authorization_code&lt;/espi:grant_types&gt;
+                  &lt;espi:dataCustodianScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/DataCustodian/RetailCustomer/ScopeSelectionList&lt;/espi:dataCustodianScopeSelectionScreenURI&gt;
+            &lt;/espi:ApplicationInformation&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2014-01-02T10:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2014-01-02T10:00:00Z&lt;/updated&gt;
 &lt;/entry&gt;
 
     </code></pre>
@@ -192,38 +155,30 @@ related to a specific <em>UsagePoint</em>.
   <h3><a href="/espi/authorization/">Authorization</a></h3>
   <div>
     <p></p>
-    <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;entry xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
-  &lt;id&gt;urn:uuid:A84C74DE-B08D-4F86-8E58-F6FC6EF41CFF&lt;/id&gt;
-  &lt;link rel=&quot;self&quot; href=&quot;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/01&quot;/&gt;
-  &lt;link rel=&quot;up&quot; href=&quot;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization&quot;/&gt;
-  &lt;title&gt;Sample Authorization&lt;/title&gt;
-  &lt;published&gt;2013-10-24T04:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2013-10-24T04:00:00Z&lt;/updated&gt;
-  &lt;content&gt;
-    &lt;Authorization xmlns=&quot;http://naesb.org/espi&quot;&gt;
-      &lt;authorizedPeriod&gt;
-        &lt;duration&gt;31536000&lt;/duration&gt;
-        &lt;start&gt;1333252800&lt;/start&gt;
-      &lt;/authorizedPeriod&gt;
-      &lt;publishedPeriod&gt;
-        &lt;duration&gt;31536000&lt;/duration&gt;
-        &lt;start&gt;1333252800&lt;/start&gt;
-      &lt;/publishedPeriod&gt;
-      &lt;access_token&gt;AA886A7A-078D-4307-A3D9-AA036796DBC3&lt;/access_token&gt;
-      &lt;status&gt;1&lt;/status&gt;
-      &lt;expires_at&gt;86400&lt;/expires_at&gt;
-      &lt;grant_type&gt;authorization_code&lt;/grant_type&gt;
-      &lt;refresh_token&gt;AA886A7A-078D-4307-A3D9-AA036796DBC4&lt;/refresh_token&gt;
-      &lt;scope&gt;FB=4_5_15;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/scope&gt;
-      &lt;token_type&gt;bearer&lt;/token_type&gt;
-      &lt;error&gt;server_error&lt;/error&gt;
-      &lt;error_description&gt;No service&lt;/error_description&gt;
-      &lt;error_uri&gt;na&lt;/error_uri&gt;
-      &lt;resourceURI&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1&lt;/resourceURI&gt;
-      &lt;authorizationURI&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/1&lt;/authorizationURI&gt;
-    &lt;/Authorization&gt;
-  &lt;/content&gt;
+    <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:bdcb34c0-7afd-4812-b30c-0d90fbeab936&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/5" rel="self"/&gt;
+      &lt;content&gt;
+            &lt;espi:Authorization&gt;
+                  &lt;espi:authorizedPeriod&gt;
+                        &lt;espi:duration&gt;0&lt;/espi:duration&gt;
+                        &lt;espi:start&gt;0&lt;/espi:start&gt;
+                  &lt;/espi:authorizedPeriod&gt;
+                  &lt;espi:publishedPeriod&gt;
+                        &lt;espi:duration&gt;0&lt;/espi:duration&gt;
+                        &lt;espi:start&gt;0&lt;/espi:start&gt;
+                  &lt;/espi:publishedPeriod&gt;
+                  &lt;espi:status&gt;1&lt;/espi:status&gt;
+                  &lt;espi:expires_at&gt;31535999&lt;/espi:expires_at&gt;
+                  &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=900;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
+                  &lt;espi:token_type&gt;Bearer&lt;/espi:token_type&gt;
+                  &lt;espi:resourceURI&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/5&lt;/espi:resourceURI&gt;
+                  &lt;espi:authorizationURI&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/5&lt;/espi:authorizationURI&gt;
+            &lt;/espi:Authorization&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2014-09-03T06:39:45Z&lt;/published&gt;
+      &lt;updated&gt;2014-09-03T06:39:45Z&lt;/updated&gt;
 &lt;/entry&gt;
 
     </code></pre>
@@ -234,192 +189,182 @@ related to a specific <em>UsagePoint</em>.
   <h3>UsagePoint</h3>
   <div>
     <p>A <em>UsagePoint</em> is where a resource is measured. Typically, it is your Utility Smart Meter, but it could be the outlet on the wall as well. UsagePoints provide the reference for all meter readings that are contained within the Green Button data. UsagePoints have a <em>ServiceCategory</em> that defines what <em>kind</em> of resource &mdash; such as an electricity, gas, or water measurement &mdash; is being reported. </p>
-    <pre><code>&lt;entry xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
-  &lt;id&gt;urn:uuid:40BE6242-F7E6-4B51-828E-59B5FC0C35F0&lt;/id&gt;
-  &lt;link rel=&quot;self&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F&quot;/&gt;
-  &lt;link rel=&quot;up&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint&quot;/&gt;
-  &lt;link rel=&quot;related&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F/MeterReading&quot;/&gt;
-  &lt;link rel=&quot;related&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F/ElectricPowerUsageSummary&quot;/&gt;
-  &lt;link rel=&quot;related&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/LocalTimeParameters/01&quot;/&gt;
-  &lt;title&gt;a galaxy far, far away&lt;/title&gt;
-  &lt;content&gt;
-    &lt;UsagePoint xmlns=&quot;http://naesb.org/espi&quot;&gt;
-      &lt;ServiceCategory&gt;
-        &lt;kind&gt;0&lt;/kind&gt;
-      &lt;/ServiceCategory&gt;
-    &lt;/UsagePoint&gt;
-  &lt;/content&gt;
-  &lt;published&gt;2012-05-03T04:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-05-03T04:00:00Z&lt;/updated&gt;
+    <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:c8c34b3a-d175-447b-bd00-176f60194de0&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1" rel="self"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="related"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/ElectricPowerUsageSummary" rel="related"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="related"/&gt;
+      &lt;title&gt;Green Button Sample Data File&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:UsagePoint&gt;
+                  &lt;espi:ServiceCategory&gt;
+                        &lt;espi:kind&gt;0&lt;/espi:kind&gt;
+                  &lt;/espi:ServiceCategory&gt;
+            &lt;/espi:UsagePoint&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
 &lt;/entry&gt;
-    </code></pre>
-  </div>
-  <h3>ReadingType</h3>
-  <div>
-    <p>A <em>ReadingType</em> provides detail as to the specifics of the reading data that is being obtained. Green Button follows international standards and has the ability to represent large industrial resources as well as those used in a residence.</p>
-     <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;entry xml:lang=&quot;en-us&quot; xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot;&gt;
-  &lt;id&gt;urn:uuid:07003628-BC5B-4807-8A55-F53602835161&lt;/id&gt;
-  &lt;link rel=&quot;self&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/ReadingType/07&quot;/&gt;
-  &lt;link rel=&quot;up&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/ReadingType&quot;/&gt;
-  &lt;title&gt;Type of Meter Reading Data&lt;/title&gt;
-  &lt;content&gt;
-    &lt;ReadingType xmlns=&quot;http://naesb.org/espi&quot;&gt;
-      &lt;accumulationBehaviour&gt;4&lt;/accumulationBehaviour&gt;
-      &lt;commodity&gt;1&lt;/commodity&gt;
-      &lt;currency&gt;840&lt;/currency&gt;
-      &lt;dataQualifier&gt;12&lt;/dataQualifier&gt;
-      &lt;flowDirection&gt;1&lt;/flowDirection&gt;
-      &lt;intervalLength&gt;3600&lt;/intervalLength&gt;
-      &lt;kind&gt;12&lt;/kind&gt;
-      &lt;phase&gt;769&lt;/phase&gt;
-      &lt;powerOfTenMultiplier&gt;0&lt;/powerOfTenMultiplier&gt;
-      &lt;timeAttribute&gt;0&lt;/timeAttribute&gt;
-      &lt;uom&gt;72&lt;/uom&gt;
-    &lt;/ReadingType&gt;
-  &lt;/content&gt;
-  &lt;published&gt;2012-05-03T04:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-05-03T04:00:00Z&lt;/updated&gt;
-  &lt;/entry&gt;
-&lt;/entry&gt;
+
     </code></pre>
   </div>
   <h3>MeterReading</h3>
   <div>
     <p>A MeterReading is a container for all of the measured <em>IntervalBlocks</em> within the Green Button data captured at a <em>UsagePoint</em>.</p>
-    <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;entry xml:lang=&quot;en-us&quot; xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot;&gt;
-  &lt;id&gt;urn:uuid:CFB85086-A9BF-418B-AB77-8602A2D08C7F&lt;/id&gt;
-  &lt;link rel=&quot;self&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F/MeterReading/01&quot;/&gt;
-  &lt;link rel=&quot;up&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F/MeterReading&quot;/&gt;
-  &lt;link rel=&quot;related&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F/MeterReading/01/IntervalBlock&quot;/&gt;
-  &lt;link rel=&quot;related&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/ReadingType/07&quot;/&gt;
-  &lt;title&gt;Hourly Electricity Consumption&lt;/title&gt;
-  &lt;content&gt;
-    &lt;MeterReading xmlns=&quot;http://naesb.org/espi&quot;/&gt;
-  &lt;/content&gt;
-  &lt;published&gt;2012-05-03T04:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-05-03T04:00:00Z&lt;/updated&gt;
- &lt;/entry&gt;
+    <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:4234ae39-fb6d-48ca-8856-ac9f41fb3d34&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1" rel="self"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="related"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/1" rel="related"/&gt;
+      &lt;title&gt;Monthly Electricity Consumption&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:MeterReading/&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
+&lt;/entry&gt;
+
+    </code></pre>
+  </div>
+  <h3>ReadingType</h3>
+  <div>
+    <p>A <em>ReadingType</em> provides detail as to the specifics of the reading data that is being obtained. Green Button follows international standards and has the ability to represent large industrial resources as well as those used in a residence.</p>
+     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:99b292fc-55f7-4f27-a3b9-cddab97cca90&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/1" rel="self"/&gt;
+      &lt;title&gt;Type of Meter Reading Data&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:ReadingType&gt;
+                  &lt;espi:accumulationBehaviour&gt;4&lt;/espi:accumulationBehaviour&gt;
+                  &lt;espi:commodity&gt;1&lt;/espi:commodity&gt;
+                  &lt;espi:currency&gt;840&lt;/espi:currency&gt;
+                  &lt;espi:dataQualifier&gt;12&lt;/espi:dataQualifier&gt;
+                  &lt;espi:flowDirection&gt;1&lt;/espi:flowDirection&gt;
+                  &lt;espi:intervalLength&gt;86400&lt;/espi:intervalLength&gt;
+                  &lt;espi:kind&gt;12&lt;/espi:kind&gt;
+                  &lt;espi:phase&gt;769&lt;/espi:phase&gt;
+                  &lt;espi:powerOfTenMultiplier&gt;0&lt;/espi:powerOfTenMultiplier&gt;
+                  &lt;espi:timeAttribute&gt;0&lt;/espi:timeAttribute&gt;
+                  &lt;espi:uom&gt;72&lt;/espi:uom&gt;
+            &lt;/espi:ReadingType&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
+&lt;/entry&gt;
+
     </code></pre>
   </div>
   <h3>IntervalBlock</h3>
   <div>
     <p><em>IntervalBlock</em>s are the primary data carrier within the Green Button data. IntervalBlocks may have one or more Intervals, each with a start and duration, as well as the specific <em>IntervalReading</em></p>
 
-    <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;entry xml:lang=&quot;en-us&quot; xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot;&gt;
-  &lt;id&gt;urn:uuid:774ECE75-908F-4CF8-9157-347183C3040F&lt;/id&gt;
-  &lt;link rel=&quot;self&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F/MeterReading/01/IntervalBlock/173&quot;/&gt;
-  &lt;link rel=&quot;up&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/RetailCustomer/9B6C7065/UsagePoint/5446AF3F/MeterReading/01/IntervalBlock&quot;/&gt;
-  &lt;title/&gt;
-  &lt;content&gt;
-    &lt;IntervalBlock xmlns=&quot;http://naesb.org/espi&quot;&gt;
-      &lt;interval&gt;
-        &lt;duration&gt;86400&lt;/duration&gt;
-        &lt;start&gt;1333252800&lt;/start&gt;
-        &lt;!-- start date: 4/1/2012 4:00:00 AM --&gt;
-      &lt;/interval&gt;
-      &lt;IntervalReading&gt;
-        &lt;cost&gt;8254&lt;/cost&gt;
-        &lt;timePeriod&gt;
-          &lt;duration&gt;3600&lt;/duration&gt;
-          &lt;start&gt;1333252800&lt;/start&gt;
-          &lt;!-- 4/1/2012 4:00:00 AM  --&gt;
-        &lt;/timePeriod&gt;
-        &lt;value&gt;2751&lt;/value&gt;
-      &lt;/IntervalReading&gt;
-      &lt;IntervalReading&gt;
-        &lt;cost&gt;2881&lt;/cost&gt;
-        &lt;timePeriod&gt;
-          &lt;duration&gt;3600&lt;/duration&gt;
-          &lt;start&gt;1333256400&lt;/start&gt;
-          &lt;!-- 4/1/2012 5:00:00 AM  --&gt;
-        &lt;/timePeriod&gt;
-        &lt;value&gt;960&lt;/value&gt;
-      &lt;/IntervalReading&gt;
-
-      ...
-
-      &lt;IntervalReading&gt;
-        &lt;cost&gt;16445&lt;/cost&gt;
-        &lt;timePeriod&gt;
-          &lt;duration&gt;3600&lt;/duration&gt;
-          &lt;start&gt;1333335600&lt;/start&gt;
-          &lt;!-- 4/2/2012 3:00:00 AM  --&gt;
-        &lt;/timePeriod&gt;
-        &lt;value&gt;2740&lt;/value&gt;
-      &lt;/IntervalReading&gt;
-    &lt;/IntervalBlock&gt;
-  &lt;/content&gt;
-  &lt;published&gt;2012-04-02T04:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-04-02T04:00:00Z&lt;/updated&gt;
+    <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:e0383570-16b1-4ab9-8642-fdb7e89660db&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock/1" rel="self"/&gt;
+      &lt;title&gt;&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:IntervalBlock&gt;
+                  &lt;espi:interval&gt;
+                        &lt;espi:duration&gt;2678400&lt;/espi:duration&gt;
+                        &lt;espi:start&gt;1357016400&lt;/espi:start&gt;
+                  &lt;/espi:interval&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357016400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1357102800&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+                  ...
+                  &lt;espi:IntervalReading&gt;
+                        &lt;espi:cost&gt;256347&lt;/espi:cost&gt;
+                        &lt;espi:timePeriod&gt;
+                              &lt;espi:duration&gt;86400&lt;/espi:duration&gt;
+                              &lt;espi:start&gt;1359608400&lt;/espi:start&gt;
+                        &lt;/espi:timePeriod&gt;
+                        &lt;espi:value&gt;21021&lt;/espi:value&gt;
+                  &lt;/espi:IntervalReading&gt;
+            &lt;/espi:IntervalBlock&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2013-02-01T05:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2013-02-01T05:00:00Z&lt;/updated&gt;
 &lt;/entry&gt;
 
-&lt;/entry&gt;
     </code></pre>
   </div>
   <h3>LocalTimeParameters</h3>
   <div>
     <p>The <em>LocalTimeParameters</em> provide a flexible manner to enable <em>Energy Usage Information (EUI)</em> to be provided with a reference to local time, without including any <em>Personally Identifiable Information</em>.  </p>
-    <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;entry xml:lang=&quot;en-us&quot; xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot;&gt;
-  &lt;id&gt;urn:uuid:2D4F0AE3-5561-4CFC-AF0A-F4BCD474E803&lt;/id&gt;
-  &lt;link rel=&quot;self&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/LocalTimeParameters/01&quot;/&gt;
-  &lt;link rel=&quot;up&quot; href=&quot;https://localhost:8080/DataCustodian/espi/1_1/resource/LocalTimeParameters&quot;/&gt;
-  &lt;title&gt;DST For North America&lt;/title&gt;
-  &lt;content&gt;
-  &lt;LocalTimeParameters xmlns=&quot;http://naesb.org/espi&quot;&gt;
-        &lt;dstEndRule&gt;B40E2000&lt;/dstEndRule&gt;
-        &lt;dstOffset&gt;3600&lt;/dstOffset&gt;
-        &lt;dstStartRule&gt;360E2000&lt;/dstStartRule&gt;
-        &lt;tzOffset&gt;-18000&lt;/tzOffset&gt;
-  &lt;/LocalTimeParameters&gt;
-  &lt;/content&gt;
-  &lt;published&gt;2012-05-03T04:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-05-03T04:00:00Z&lt;/updated&gt;
- &lt;/entry&gt;
+    <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:e30ce77d-ec22-4da5-83c2-991ba34c97d6&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="self"/&gt;
+      &lt;title&gt;DST For North America&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:LocalTimeParameters&gt;
+                  &lt;espi:dstEndRule&gt;B40E2000&lt;/espi:dstEndRule&gt;
+                  &lt;espi:dstOffset&gt;3600&lt;/espi:dstOffset&gt;
+                  &lt;espi:dstStartRule&gt;360E2000&lt;/espi:dstStartRule&gt;
+                  &lt;espi:tzOffset&gt;-18000&lt;/espi:tzOffset&gt;
+            &lt;/espi:LocalTimeParameters&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
+&lt;/entry&gt;
+
     </code></pre>
   </div>
-  <h3>ElectricPowerUsageSummary</h3>
+  <h3>UsageSummary</h3>
   <div>
     <p></p>
-    <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;entry xml:lang=&quot;en-us&quot; xsi:schemaLocation=&quot;http://naesb.org/espi espiDerived.xsd&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:espi=&quot;http://naesb.org/espi&quot;&gt;
-  &lt;id&gt;urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1&lt;/id&gt;
-  &lt;published&gt;2012-10-24T00:00:00Z&lt;/published&gt;
-  &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
-  &lt;link rel="self"
-        href="/espi/1_1/resource/Subscription/9b6c7063/ElectricPowerUsageSummary/01"/&gt;
-  &lt;link rel="up"
-        href="/espi/1_1/resource/Subscription/9b6c7063/ElectricPowerUsageSummary"/&gt;
-  &lt;title&gt;my house&lt;/title&gt;
-  &lt;content&gt;
-    &lt;ElectricPowerUsageSummary xmlns="http://naesb.org/espi"&gt;
-      &lt;billingPeriod&gt;
-        &lt;duration&gt;2588400&lt;/duration&gt;
-        &lt;start&gt;1330578000&lt;/start&gt;
-      &lt;/billingPeriod&gt;
-      &lt;billLastPeriod&gt;20810000&lt;/billLastPeriod&gt;
-      &lt;billToDate&gt;8145000&lt;/billToDate&gt;
-      &lt;costAdditionalLastPeriod&gt;4525000&lt;/costAdditionalLastPeriod&gt;
-      &lt;currency&gt;840&lt;/currency&gt;
-      &lt;overallConsumptionLastPeriod&gt;
-        &lt;powerOfTenMultiplier&gt;0&lt;/powerOfTenMultiplier&gt;
-        &lt;uom&gt;72&lt;/uom&gt;
-        &lt;value&gt;1951364&lt;/value&gt;
-      &lt;/overallConsumptionLastPeriod&gt;
-      &lt;currentBillingPeriodOverAllConsumption&gt;
-        &lt;powerOfTenMultiplier&gt;0&lt;/powerOfTenMultiplier&gt;
-        &lt;timeStamp&gt;1334462400&lt;/timeStamp&gt;
-        &lt;uom&gt;72&lt;/uom&gt;
-        &lt;value&gt;1006640&lt;/value&gt;
-      &lt;/currentBillingPeriodOverAllConsumption&gt;
-      &lt;qualityOfReading&gt;14&lt;/qualityOfReading&gt;
-      &lt;statusTimeStamp&gt;1334462400&lt;/statusTimeStamp&gt;
-    &lt;/ElectricPowerUsageSummary&gt;
-  &lt;/content&gt;
+    <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
+      &lt;id&gt;urn:uuid:923a7143-263e-421b-bea2-e41b7e240013&lt;/id&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/UsageSummary" rel="up"/&gt;
+      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/UsageSummary/1" rel="self"/&gt;
+      &lt;title&gt;Usage Summary&lt;/title&gt;
+      &lt;content&gt;
+            &lt;espi:UsageSummary&gt;
+                  &lt;espi:billingPeriod&gt;
+                        &lt;espi:duration&gt;2419200&lt;/espi:duration&gt;
+                        &lt;espi:start&gt;1391230800&lt;/espi:start&gt;
+                  &lt;/espi:billingPeriod&gt;
+                  &lt;espi:billLastPeriod&gt;6752000&lt;/espi:billLastPeriod&gt;
+                  &lt;espi:billToDate&gt;4807000&lt;/espi:billToDate&gt;
+                  &lt;espi:costAdditionalLastPeriod&gt;0&lt;/espi:costAdditionalLastPeriod&gt;
+                  &lt;espi:currency&gt;840&lt;/espi:currency&gt;
+                  &lt;espi:overallConsumptionLastPeriod&gt;
+                        &lt;espi:powerOfTenMultiplier&gt;0&lt;/espi:powerOfTenMultiplier&gt;
+                        &lt;espi:uom&gt;72&lt;/espi:uom&gt;
+                        &lt;espi:value&gt;625716&lt;/espi:value&gt;
+                  &lt;/espi:overallConsumptionLastPeriod&gt;
+                  &lt;espi:currentBillingPeriodOverAllConsumption&gt;
+                        &lt;espi:powerOfTenMultiplier&gt;0&lt;/espi:powerOfTenMultiplier&gt;
+                        &lt;espi:timeStamp&gt;1395374400&lt;/espi:timeStamp&gt;
+                        &lt;espi:uom&gt;72&lt;/espi:uom&gt;
+                        &lt;espi:value&gt;447993&lt;/espi:value&gt;
+                  &lt;/espi:currentBillingPeriodOverAllConsumption&gt;
+                  &lt;espi:qualityOfReading&gt;14&lt;/espi:qualityOfReading&gt;
+                  &lt;espi:statusTimeStamp&gt;1395374400&lt;/espi:statusTimeStamp&gt;
+            &lt;/espi:UsageSummary&gt;
+      &lt;/content&gt;
+      &lt;published&gt;2014-03-01T05:00:00Z&lt;/published&gt;
+      &lt;updated&gt;2014-03-01T05:00:00Z&lt;/updated&gt;
 &lt;/entry&gt;
+
     </code></pre>
   </div>
   <h3>ElectricPowerQualitySummary</h3>
