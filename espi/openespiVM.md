@@ -243,7 +243,11 @@ Enter the following commands to configure Wireshark for non-root user access:
 	sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap        
 
 ***
+**Install curl**
+Enter the following command to install curl:
 
+    sudo apt-get install nautilus-open-terminal
+    
 **Install SOAPUI**
 
 Download **SOAPUI 5.0.0**

@@ -44,7 +44,7 @@ RetailCustomer, allow that data to be shared with a third party.</dd>
 
 <div id="concepts">
 <h3>Concepts</h3>
-<p>Green Button uses the <a href="http://en.wikipedia.org/wiki/Atom_feed">Atom Publishing Standard</a> to represent structured energy usage information in an XML format that may be exchanged on the internet. Both Google (GData) and Microsoft (OData) independently recognized the power of the Atom Syndication Format to encode complex data for exchange over RESTful web services. Green Button adopted these concepts in the construction of ESPI.</p>
+<p>Green Button uses the <a href="http://tools.ietf.org/html/rfc4287">Atom Syndication Format Standard</a> to represent structured energy usage information in an XML format that may be exchanged on the internet. Both Google (GData) and Microsoft (OData) independently recognized the power of the Atom Syndication Format to encode complex data for exchange over RESTful web services. Green Button adopted these concepts in the construction of ESPI.</p>
 
 <p>The resources defined within Green Button, UsagePoints, MeterReadings, etc, are expressed, in XML format, within the Atom feed's <a href="#entry">Entry</a> tags. This results in a uniform way to expose full-featured data APIs that reference a Retail Customer's encapsulated Energy Usage Information.</p>
 
