@@ -9,7 +9,7 @@
 #   embedded: "embeded html (if any)"
 #   featured: true (if item should be featured)
 
-- name: "Green Button Intiative Overview"
+- name: "Green Button Initiative Overview"
   description: "A high level overview of the the Green Button Initiative providing background and current status"
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/Green_Button_Overview_Sept2014.pdf"
