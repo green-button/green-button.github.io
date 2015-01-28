@@ -4,8 +4,8 @@ description: "To improve the electric grid, we must empower consumers. Join the 
 #baseurl: "http://www.greenbuttondata.org"
 #rooturl: "http://www.greenbuttondata.org"
 
-baseurl: "file:///Users/jat1/git/green-button.github.io/_site"
-rooturl: "file:///Users/jat1/git/green-button.github.io/_site"
+baseurl: "http://green-button.github.io/_site"
+rooturl: "http://green-button.github.io/_site"
 
 #baseurl: "http://green-button.github.io/"
 #rooturl: "http://green-button.github.io/"
