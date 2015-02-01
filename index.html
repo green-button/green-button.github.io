@@ -39,7 +39,7 @@ title: Home
             <i class="fa fa-users"></i>
           </div>
           <h3><a href="{{ site.baseurl }}/community">Community</a></h3>
-	  Finding like minds!
+	  Getting involved in the <a href="http://greenbuttonalliance.org" target="_blank">Green Button Alliance</a>!
         </li>
         <li>
           <div class="icon">
@@ -64,6 +64,48 @@ title: Home
     <div class="section-content">
       <h2 class="section-title">Who's offering Green Button?</h2>
       <p class="lede">Today, more than 60 million households and businesses can use Green Button to access their own energy usage data from their electric utility, and a growing set of companies are offering products, services, and apps that use Green Button data.</p>
+      <div class="lead">Green Button Ecosystem -- Green Button Alliance</div>
+      <div class="lead">Members</div>
+      <ul class="partner_list">
+        {% for partner in site.data.partners %}
+        {% if partner.status == "member" %}
+        {% if partner.featured %}
+        <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="partner_list below-fold">
+        {% for partner in site.data.partners %}
+        {% if partner.status == "member" %}
+        {% if partner.featured %}
+        {% else %}
+          <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <div class="lead">Download My Data (DMD) Certified</div>
+      <ul class="partner_list">
+        {% for partner in site.data.partners %}
+        {% if partner.status == "DMD certified" %}
+        {% if partner.featured %}
+        <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="partner_list below-fold">
+        {% for partner in site.data.partners %}
+        {% if partner.status == "DMD certified" %}
+        {% if partner.featured %}
+        {% else %}
+          <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </ul>               
+      <div class="lead">Implemented Download My Data (DMD)</div>
       <ul class="partner_list">
         {% for partner in site.data.partners %}
         {% if partner.status == "implemented" %}

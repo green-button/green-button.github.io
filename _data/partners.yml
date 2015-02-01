@@ -2,8 +2,8 @@
   
 # - name: "Name of Partner"
 #   url: "http://partner.com"
-#   type: utility OR company
-#   status: implemented OR committed
+#   type: utility, company OR government
+#   status: implemented, committed, member, DMD Certified, OR CMD Certified
 #   featured: true (if item should be featured)
 
 - name: "Ameren Illinois"
@@ -47,6 +47,11 @@
   url: "http://www.cl-p.com/Home/SaveEnergy/Green_Button/"
   type: utility
   status: implemented
+- name: "Department of Energy"
+  url: "http://energy.gov/"
+  type: government
+  status: member
+  featured: true
 - name: "Hawaiian Electric Company"
   url: "http://www.hawaiianelectric.com/portal/site/heco"
   type: utility
@@ -69,7 +74,7 @@
 - name: "London Hydro"
   url: "https://www.londonhydro.com"
   type: utility
-  status: implemented
+  status: member
   featured: true
 - name: "Maui Electric Company"
   url: "http://www.mauielectric.com/portal/site/meco"
@@ -80,6 +85,11 @@
   url: "https://www.nationalgridus.com"
   type: utility
   status: implemented
+  featured: true
+- name: "National Institute of Standards and Technology"
+  url: "https://www.nist.gov"
+  type: government
+  status: member
   featured: true
 - name: "NSTAR"
   url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
@@ -300,7 +310,7 @@
 - name: "Schneider-Electric"
   url: "http://www.schneider-electric.com/"
   type: company
-  status: implemented
+  status: member
   featured: true
 - name: "Silver Spring Networks"
   url: "http://www.silverspringnet.com/"
