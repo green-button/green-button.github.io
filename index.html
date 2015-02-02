@@ -66,9 +66,16 @@ title: Home
       <p class="lede">Today, more than 60 million households and businesses can use Green Button to access their own energy usage data from their electric utility, and a growing set of companies are offering products, services, and apps that use Green Button data.</p>
       <ul class="partner_list">
         {% for partner in site.data.partners %}
-        {% if partner.status == "implemented" %}
+        {% if partner.status == "implemented" or partner.type == "government"%}
         {% if partner.featured %}
+        {% if partner.GBA %}
+        <li>
+          <img class="logo" src="{{ site.baseurl }}/assets/GBAlogo.png" width=30px height=30px>
+          <a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a>
+        </li>
+        {% else %}
         <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+        {% endif %}
         {% endif %}
         {% endif %}
         {% endfor %}
