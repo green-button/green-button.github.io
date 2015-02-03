@@ -2,16 +2,48 @@
   
 # - name: "Name of Partner"
 #   url: "http://partner.com"
-#   type: utility OR company
-#   status: implemented OR committed
+#   type: utility, company OR government
+#   status: implemented, committed
+#   certified: DMD, CMD or DMD/CMD
+#   GBA: true (if entry represents a Green Button Alliance member)
 #   featured: true (if item should be featured)
 
+- name: "London Hydro"
+  url: "https://www.londonhydro.com"
+  type: utility
+  status: implemented
+  GBA: true
+  featured: true
+- name: "Schneider-Electric"
+  url: "http://www.schneider-electric.com/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
+- name: "UL (Underwriters Laboratories)"
+  url: "http://ul.com/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
+- name: "National Institute of Standards and Technology"
+  url: "http://www.nist.gov"
+  type: government
+  status:
+  GBA: true
+  featured: true
+- name: "Department of Energy"
+  url: "http://energy.gov/"
+  type: government
+  status:
+  GBA: true
+  featured: true
 - name: "Ameren Illinois"
-  url: "http://www.amerenillinois.com"
+  url: "http://www.ameren.com/illinois"
   type: utility
   status: implemented
 - name: "Ameren Missouri"
-  url: "http://www.amerenmissouri.com/"
+  url: "http://www.ameren.com/missouri"
   type: utility
   status: implemented
 - name: "American Electric Power"
@@ -36,7 +68,7 @@
   type: utility
   status: implemented
 - name: "Commonwealth Edison"
-  url: "http://www.comed.com"
+  url: "https://www.comed.com/Pages/default.aspx"
   type: utility
   status: implemented
 - name: "Consolidated Edison"
@@ -66,11 +98,6 @@
   url: "https://www.jea.com/"
   type: utility
   status: implemented
-- name: "London Hydro"
-  url: "https://www.londonhydro.com"
-  type: utility
-  status: implemented
-  featured: true
 - name: "Maui Electric Company"
   url: "http://www.mauielectric.com/portal/site/meco"
   type: utility
@@ -95,11 +122,11 @@
   status: implemented
   featured: true
 - name: "PacifiCorp"
-  url: "http://www.pacificorp.com"
+  url: "http://www.pacificorp.com/index.html"
   type: utility
   status: implemented
 - name: "Pacific Power"
-  url: "https://www.pacificpower.net"
+  url: "https://www.pacificpower.net/index.html"
   type: utility
   status: implemented
 - name: "Pepco Holdings"
@@ -124,7 +151,7 @@
   type: utility
   status: implemented
 - name: "Rocky Mountain Power"
-  url: "https://www.rockymountainpower.net"
+  url: "https://www.rockymountainpower.net/index.html"
   type: utility
   status: implemented
 - name: "SDG&E"
@@ -132,7 +159,7 @@
   type: utility
   status: implemented
 - name: "Seattle City Light"
-  url: "http://www.seattle.gov/light"
+  url: "http://www.seattle.gov/light/"
   type: utility
   status: implemented
   featured: true
@@ -198,7 +225,7 @@
   type: utility
   status: committed
 - name: "Virginia Dominion Power"
-  url: "https://www.dom.com/dominion-virginia-power/"
+  url: "https://www.dom.com/residential/dominion-virginia-power/"
   type: utility
   status: committed
 - name: "Apogee Interactive, Inc."
@@ -206,7 +233,7 @@
   type: company
   status: committed
 - name: "Belkin"
-  url: "http://www.belkin.com/"
+  url: "http://www.belkin.com/us/"
   type: company
   status: committed
 - name: "BuildingIQ"
@@ -236,7 +263,7 @@
   type: company
   status: committed
 - name: "Efergy USA, Inc."
-  url: "http://www.efergy.us/"
+  url: "http://www.efergy.com/us/"
   type: company
   status: committed
 - name: "Simple Energy"
@@ -248,7 +275,7 @@
   type: company
   status: committed
 - name: "EnergyDeck Ltd."
-  url: "http://www.energydeck.com"
+  url: "http://www.energydeck.com/home/"
   type: company
   status: committed
 - name: "EnergySavvy"
@@ -278,7 +305,7 @@
   type: company
   status: committed
 - name: myBenchmarx
-  url: "http://mybenchmarx.com/"
+  url: "http://www.mybenchmarx.com/"
   type: company
   status: committed
 - name: "Noesis Energy"
@@ -286,7 +313,7 @@
   type: company
   status: committed
 - name: "Oracle"
-  url: "http://www.oracle.com/"
+  url: "http://www.oracle.com/index.html"
   type: company
   status: committed
 - name: "PlotWatt"
@@ -297,11 +324,6 @@
   url: "https://power2switch.com/"
   type: company
   status: committed
-- name: "Schneider-Electric"
-  url: "http://www.schneider-electric.com/"
-  type: company
-  status: implemented
-  featured: true
 - name: "Silver Spring Networks"
   url: "http://www.silverspringnet.com/"
   type: company
@@ -311,11 +333,11 @@
   type: company
   status: committed
 - name: "Aclara"
-  url: "http://www.aclaratech.com/"
+  url: "http://www.aclara.com/"
   type: company
   status: implemented
 - name: "Alarm.com"
-  url: "http://www.alarm.com"
+  url: "https://www.alarm.com"
   type: company
   status: implemented
 - name: "Autodesk, Inc."
@@ -323,7 +345,7 @@
   type: company
   status: implemented
 - name: "Building Energy Inc."
-  url: "http://www.buildingenergy.com"
+  url: "https://www.buildingenergy.com"
   type: company
   status: implemented
 - name: "BuiltSpace Technologies Corp."
@@ -335,7 +357,7 @@
   type: company
   status: implemented
 - name: "Enact Systems Inc."
-  url: "http://www.enact-systems.com/"
+  url: "http://enact-systems.com/"
   type: company
   status: implemented
 - name: "EnergyAi"
@@ -393,7 +415,7 @@
   type: company
   status: implemented
 - name: "Planet Ecosystems"
-  url: "http://www.PlanetEcosystems.com/"
+  url: "http://PlanetEcosystems.com/"
   type: company
   status: implemented
 - name: "People Power"
@@ -406,7 +428,7 @@
   type: company
   status: implemented
 - name: "Power TakeOff"
-  url: "http://powertakeoff.com/services/green-button-energy-data-service"
+  url: "http://http://www.powertakeoff.com/solutions/green-button-energy-data-service/"
   type: company
   status: implemented
 - name: "Retroficiency"
