@@ -20,14 +20,20 @@
   status: implemented
   GBA: true
   featured: true
-- name: "Department of Energy"
-  url: "http://energy.gov/"
-  type: government
-  status:
+- name: "UL (Underwriters Laboratories)"
+  url: "http://ul.com/"
+  type: company
+  status: implemented
   GBA: true
   featured: true
 - name: "National Institute of Standards and Technology"
   url: "http://www.nist.gov"
+  type: government
+  status:
+  GBA: true
+  featured: true
+- name: "Department of Energy"
+  url: "http://energy.gov/"
   type: government
   status:
   GBA: true
