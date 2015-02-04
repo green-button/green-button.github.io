@@ -20,8 +20,15 @@
   status: implemented
   GBA: true
   featured: true
+  certified: DMD
 - name: "UL (Underwriters Laboratories)"
   url: "http://ul.com/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
+- name: "UCAIug"
+  url: "http://www.ucaiug.org/"
   type: company
   status: implemented
   GBA: true
@@ -163,6 +170,7 @@
   type: utility
   status: implemented
   featured: true
+  certified: DMD
 - name: "Southern California Edison"
   url: "https://www.sce.com"
   type: utility
@@ -188,6 +196,7 @@
   type: utility
   status: implemented
   featured: true
+  certified: DMD
 - name: "Xcel Energy"
   url: "http://www.xcelenergy.com"
   type: utility

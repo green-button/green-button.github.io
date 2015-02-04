@@ -64,54 +64,83 @@ title: Home
     <div class="section-content">
       <h2 class="section-title">Who's offering Green Button?</h2>
       <p class="lede">Today, more than 60 million households and businesses can use Green Button to access their own energy usage data from their electric utility, and a growing set of companies are offering products, services, and apps that use Green Button data.</p>
-      <ul class="partner_list">
-        {% for partner in site.data.partners %}
+
+	 <ul class="partner_list">
+		{% for partner in site.data.partners %}
         {% if partner.status == "implemented" or partner.type == "government"%}
-        {% if partner.featured %}
-        {% if partner.GBA %}
-        <li>
-          <img class="logo" src="{{ site.baseurl }}/assets/GBAlogo.png" width=30px height=30px>
-          <a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a>
-        </li>
-        {% else %}
-        <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-      </ul>
-      <ul class="partner_list below-fold">
-        {% for partner in site.data.partners %}
-        {% if partner.status == "implemented" %}
-        {% if partner.featured %}
-        {% else %}
-          <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-      </ul>      
-      <div class="lead">Future Commitments</div>
-      <ul class="partner_list commitments">
-        {% for partner in site.data.partners %}
-        {% if partner.status == "committed" %}
-        {% if partner.featured %}
-        <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-      </ul>
-      <ul class="partner_list commitments below-fold">
-        {% for partner in site.data.partners %}
-        {% if partner.status == "committed" %}
-        {% if partner.featured %}
-        {% else %}
-          <li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-      </ul>
+		{% if partner.featured %}
+		{% if partner.GBA %}
+        <li><img class="logo" src="{{ site.baseurl }}/assets/GBAlogo.png" width="30px" height="30px">
+			{% if partner.certified == "DMD" %}
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaDMD.png" width="30px" height="30px">
+			{% endif %}
+			{% if partner.certified == "CMD" %}
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaCMD.png" width="30px" height="30px">
+			{% endif %}
+			{% if partner.certified == "DMD/CMD" %}
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaDMD.png" width="30px" height="30px">
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaCMD.png" width="30px" height="30px">
+			{% endif %}
+		<a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+		{% for partner in site.data.partners %}
+        {% if partner.status == "implemented" or partner.type == "government"%}
+		{% if partner.featured %}
+		{% if partner.GBA %}
+		{% else %}
+        <li>{% if partner.certified == "DMD" %}
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaDMD.png" width="30px" height="30px">
+			{% endif %}
+			{% if partner.certified == "CMD" %}
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaCMD.png" width="30px" height="30px">
+			{% endif %}
+			{% if partner.certified == "DMD/CMD" %}
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaDMD.png" width="30px" height="30px">
+				<img class="logo" src="{{ site.baseurl }}/assets/gbaCMD.png" width="30px" height="30px">
+			{% endif %}
+		<a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</ul>
+	<ul class="partner_list below-fold">
+		{% for partner in site.data.partners %}
+		{% if partner.status == "implemented" %}
+		{% if partner.featured %}
+		{% else %}
+		<li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</ul>
+	<div class="lead">Future Commitments</div>
+	<ul class="partner_list commitments">
+		{% for partner in site.data.partners %}
+		{% if partner.status == "committed" %}
+		{% if partner.featured %}
+		<li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</ul>
+	<ul class="partner_list commitments below-fold">
+		{% for partner in site.data.partners %}
+		{% if partner.status == "committed" %}
+		{% if partner.featured %}
+		{% else %}
+		<li><a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a></li>
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</ul>
+
+
       <div class="lead end-cta">Don't see your company? &nbsp; <a class="buttonish" href=mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]>Join Green Button Today</a><br />
-	<a class="buttonish" href="organizations">Full List of Organizations that have implemented Green Button</a>
+<!--	<a class="buttonish" href="organizations">Full List of Organizations that have implemented Green Button</a>  -->
       </div>
       
     </div>
