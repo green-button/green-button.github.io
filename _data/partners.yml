@@ -14,14 +14,14 @@
   status: implemented
   GBA: true
   featured: true
-- name: "Schneider-Electric"
+- name: "Schneider"
   url: "http://www.schneider-electric.com/"
   type: company
   status: implemented
   GBA: true
   featured: true
   certified: DMD
-- name: "UL (Underwriters Laboratories)"
+- name: "UL"
   url: "http://ul.com/"
   type: company
   status: implemented
@@ -33,13 +33,13 @@
   status: implemented
   GBA: true
   featured: true
-- name: "National Institute of Standards and Technology"
+- name: "NIST"
   url: "http://www.nist.gov"
   type: government
   status:
   GBA: true
   featured: true
-- name: "Department of Energy"
+- name: "DOE"
   url: "http://energy.gov/"
   type: government
   status:
@@ -53,7 +53,7 @@
   url: "http://www.ameren.com/missouri"
   type: utility
   status: implemented
-- name: "American Electric Power"
+- name: "AEP"
   url: "http://www.aep.com"
   type: utility
   status: implemented
@@ -62,11 +62,11 @@
   type: utility
   status: implemented
   featured: true
-- name: "Baltimore Gas & Electric"
+- name: "BGE"
   url: "http://www.bge.com/"
   type: utility
   status: implemented
-- name: "Bangor Hydro Electric Company"
+- name: "Bangor Hydro"
   url: "http://www.emeramaine.com/"
   type: utility
   status: implemented
@@ -105,7 +105,12 @@
   url: "https://www.jea.com/"
   type: utility
   status: implemented
-- name: "Maui Electric Company"
+- name: "MACH Energy"
+  url: "http://www.machenergy.com"
+  type: company
+  status: implemented
+  featured: true
+- name: "Maui Electric"
   url: "http://www.mauielectric.com/portal/site/meco"
   type: utility
   status: committed
@@ -171,10 +176,12 @@
   status: implemented
   featured: true
   certified: DMD
-- name: "Southern California Edison"
+- name: "SCE"
   url: "https://www.sce.com"
   type: utility
   status: implemented
+  GBA: true
+  featured: true
 - name: "TXU Energy"
   url: "http://www.txu.com/"
   type: utility
