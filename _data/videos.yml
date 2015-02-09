@@ -6,6 +6,16 @@
 #   featured: true (if item should be featured)
 #	type: mp4 or use_embedded
 
+- name: "US CTO Megan Smith (.mov)"
+  url: "https://services.greenbuttondata.org/library/videos/Message_CTO_Megan_Smith_mediumres.mov"
+  description: "CTO Megan Smith welcoming the birth of the Green Button Ecosystem - 6 Feb 2015"
+  embedded: 'https://services.greenbuttondata.org/library/videos/MeganSmith_06Feb2015.png'
+  type: 'mp4'
+- name: "US CTO Megan Smith (.mp4)"
+  url: "https://services.greenbuttondata.org/library/videos/MeganSmith1.mp4"
+  description: "CTO Megan Smith welcoming the birth of the Green Button Ecosystem - 6 Feb 2015"
+  embedded: 'https://services.greenbuttondata.org/library/videos/MeganSmith_06Feb2015.png'
+  type: 'mp4'
 - name: "Green Button Initiative - An Overview (on vimeo.com)"
   url: "http://vimeo.com/105082253"
   description: "Inspired by the White House and led by Industry - providing resource usage information to consumers across the land"
