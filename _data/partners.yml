@@ -14,7 +14,7 @@
   status: implemented
   GBA: true
   featured: true
-- name: "Schneider"
+- name: "Schneider Electric"
   url: "http://www.schneider-electric.com/"
   type: company
   status: implemented
@@ -489,3 +489,10 @@
   url: "http://www.talgov.com/you/yourownutilitieshome.aspx/"
   type: utility
   status: implemented
+- name: "Village Power Finance"
+  url: "http://www.villagepower.com/"
+  type: company
+  status: committed
+  featured: true
+  
+  
