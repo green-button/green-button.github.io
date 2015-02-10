@@ -14,7 +14,7 @@
   status: implemented
   GBA: true
   featured: true
-- name: "Schneider"
+- name: "Schneider Electric"
   url: "http://www.schneider-electric.com/"
   type: company
   status: implemented
