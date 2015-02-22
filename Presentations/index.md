@@ -8,7 +8,7 @@ title: Green Button Presentations home
 {% for presentation in site.data.presentations %}
 
 <dt>
-	 <dt><a href="{{presentation.pdf}}" />{{presentation.name}}</a></dt>
+	 <dt><a href="{{presentation.pdf}}" target="_blank"/>{{presentation.name}}</a></dt>
 	 <dd>{{presentation.description}}</dd>
 </dt>
 
