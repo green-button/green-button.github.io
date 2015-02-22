@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Green Button Presentations home
+title: Green Button Events home
 ---
 
-<h2>Green Button Presentations</h2>
+<h2>2015 Birth of the Green Button Ecosystem Presentations</h2>
 <dl>
 {% for presentation in site.data.presentations %}
 
 <dt>
-	{% if (presentation.featured == false) %}
+	{% if presentation.featured %}
 	 	<dt><a href="{{presentation.pdf}}" target="_blank"/>{{presentation.name}}</a></dt>
 	 	<dd>{{presentation.description}}</dd>
 	{% endif %}

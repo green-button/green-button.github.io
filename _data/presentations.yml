@@ -34,51 +34,65 @@
   description: "California PUC Commissioner Sandoval's 'Green Button & the Future' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/CPUC -- Commissioner Sandoval.pdf"
+  featured: true
 - name: "Enernex -- Erich Gunther 'Birth of the Green Button Ecosystem' Presentation"
   description: "Enernex Chairman and CTO, Erich W. Gunther's 'Creating the Green Button Ecosystem' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/Enernex -- Erich Gunther.pdf"
+  featured: true
 - name: "Green Button Alliance -- Barry Haaser 'Birth of the Green Button Ecosystem' Presentation"
   description: "Green Button Alliance Executive Director, Barry Haaser's 'Green Button & the Future' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/Green Button Alliance -- Barry Haaser.pdf"
+  featured: true
 - name: "UCAIug -- Kay Clinard 'Birth of the Green Button Ecosystem' Presentation"
   description: "UCAIug President, Kay Clinard's 'UCA International Users Group' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/UCAIug -- Kay Clinard.pdf"
+  featured: true
 - name: "Schneider Electric -- Greg Thompson 'Birth of the Green Button Ecosystem' Presentation"
   description: "Schneider Electric General Manager, Utility DSM Solutions, Greg Thompson's 'Green Button Alliance Kickoff' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/Schneider Electric -- Greg Thompson.pdf"
+  featured: true
 - name: "London Hydro -- Syed Mir 'Birth of the Green Button Ecosystem' Presentation"
   description: "London Hydro Vice President Corporate Services and CIO, Syed Mir's  'Birth of the Green Button Ecosystem London Hydro Briefing' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/London Hydro -- Syed Mir.pdf"
+  featured: true
 - name: "PG&E -- Andrew Ay 'Birth of the Green Button Ecosystem' Presentation"
   description: "PG&E Andrew Au's 'Share My Data (Formerly Customer Data Access CDA' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/PGE -- Andrew Au.pdf"
+  featured: true
 - name: "SCE -- Natalie Martinez 'Birth of the Green Button Ecosystem' Presentation"
   description: "SCE Natalie Martinez's 'Green Button Connect My Data Phase 2' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/SCD -- Natalie Martinez.pdf"
+  featured: true
 - name: "SDG&E -- Stan Townsend 'Birth of the Green Button Ecosystem' Presentation"
   description: "SDG&E Stan Townsend's 'Green Button' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/SDGE -- Stan Townsend.pdf"
+  featured: true
 - name: "WeatherBug Home -- Dave Oberholzer 'Birth of the Green Button Ecosystem' Presentation"
   description: "WeatherBug Home Director WeatherBug Home Business Development, Dave Oberholzer's 'WeatherBug Home' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/WeatherBug Home -- Dave Oberholzer.pdf"
+  featured: true
 - name: "PowWow Energy -- Stan Knutson 'Birth of the Green Button Ecosystem' Presentation"
   description: "PowWow Energy VP Software Development, Stan Knutson's 'Pump Monitor' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/PowWow Energy -- Stan Knutson.pdf"
+  featured: true
 - name: "CSE -- John Horn 'Birth of the Green Button Ecosystem' Presentation"
   description: "Center for Sustainable Energy Research Analyst, John Horn's 'Residential Rate Analyzer' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/CSE -- John Horn.pdf"
+  featured: true
 - name: "People Power -- Stan Curtis 'Birth of the Green Button Ecosystem' Presentation"
   description: "People Power VP Business Development, Stan Curtis' 'Consumer Engagement & Real-time Feedback' presentation during the 'Birth of the Green Button Ecosystem' event held February 6, 2015 in San Diego, CA at the SDG&E Energy Innovation Center."
   category: overview
   pdf: "https://services.greenbuttondata.org/library/presentations/People Power -- Stan Curtis.pdf"
+  featured: true
+
