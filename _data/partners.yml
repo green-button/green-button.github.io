@@ -82,10 +82,6 @@
   url: "http://www.coned.com/"
   type: utility
   status: implemented
-- name: "Connecticut Light & Power"
-  url: "http://www.cl-p.com/Home/SaveEnergy/Green_Button/"
-  type: utility
-  status: implemented
 - name: "Hawaiian Electric Company"
   url: "http://www.hawaiianelectric.com/portal/site/heco"
   type: utility
@@ -120,10 +116,6 @@
   type: utility
   status: implemented
   featured: true
-- name: "NSTAR"
-  url: "http://www.nstar.com/residential/energy_efficiency/green_button/default.asp"
-  type: utility
-  status: implemented
 - name: "Oncor"
   url: "http://www.oncor.com/"
   type: utility
@@ -154,8 +146,8 @@
   url: "http://www.tnmp.com/"
   type: utility
   status: implemented
-- name: "Public Service of New Hampshire"
-  url: "https://www.psnh.com/"
+- name: "Eversource"
+  url: "https://www.eversource.com/Content/ema-e/"
   type: utility
   status: implemented
 - name: "Reliant"
@@ -188,14 +180,6 @@
   status: implemented
 - name: "United Illuminating Company"
   url: "https://www.uinet.com"
-  type: utility
-  status: implemented
-- name: "Western Mass Electric"
-  url: "https://www.wmeco.com/"
-  type: utility
-  status: implemented
-- name: "Yankee Gas"
-  url: "https://www.yankeegas.com/For_your_Home/SaveEnergyAndMoney/Green_Button/"
   type: utility
   status: implemented
 - name: "Wake Electric"
