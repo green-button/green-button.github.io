@@ -3,7 +3,7 @@ title: Green Button Documents Library
 layout: page
 ---
 <h2>Green Button Documents Library</h2>
-<p>The following documents provide background on the Green Button intitiative as well as providing Important reference documents for Green Button Implementers</p>
+<p>The following documents provide background on the Green Button initiative as well as providing Important reference documents for Green Button Implementers</p>
 <section>
 <a href="video/index.html">Videos</a> || <a href="/Presentations/index.html">Presentations</a> || <a href="#technical">Technical</a> || <a href="#testing">Certification</a> || <a href="#espidev">ESPI Development</a>
 <hr />

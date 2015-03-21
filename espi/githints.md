@@ -16,7 +16,7 @@ When git status notifies you that you have a detached head:
 	git pull
 
 ### **Force your fork to current upstream state**
-This will discard all changes from your current fork and resync to the upstream master
+This will discard all changes from your current fork and resynchronise to the upstream master
 
 	git fetch upstream
 	git checkout master

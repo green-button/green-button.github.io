@@ -111,7 +111,7 @@ related to a specific <em>UsagePoint</em>.
 <h3>Green Button Resources</h3>
 <p>A <em>DataCustodian</em> will, when authorized by a <em>RetailCustomer</em>, publish a GreenButton data stream. A <em>ThirdParty</em> may then subscribe to that stream. Green Button uses the <a href="http://oauth.net/"><span style="color:blue;">OAuth 2.0 Authorization Framework</span></a> protocol to provide secure authorization for accessing the published data stream.
 </p>
-<p>Green Button APIs are designed to support data flows that are both large and small. Many Utilities will schedule bulk transfers of hundreds of thousands of 24-hour data sets as a batch process. In this case, the Green Button APIs must be able to accomodate blocked transfers, recovery, and restarts. Other use-cases are driven more by frequent transmissions of smaller data sets, for example the hourly usage of a single outlet in your home. Green Button is designed to handle both!</p>
+<p>Green Button APIs are designed to support data flows that are both large and small. Many Utilities will schedule bulk transfers of hundreds of thousands of 24-hour data sets as a batch process. In this case, the Green Button APIs must be able to accommodate blocked transfers, recovery, and restarts. Other use-cases are driven more by frequent transmissions of smaller data sets, for example the hourly usage of a single outlet in your home. Green Button is designed to handle both!</p>
 
 <div id="accordion1">
   <h3><a href="/espi/application_information/">ApplicationInformation</a></h3>
@@ -133,7 +133,7 @@ related to a specific <em>UsagePoint</em>.
                   &lt;espi:client_secret&gt;secret&lt;/espi:client_secret&gt;
                   &lt;espi:redirect_uri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack&lt;/espi:redirect_uri&gt;
                   &lt;espi:client_id&gt;third_party&lt;/espi:client_id&gt;
-                  &lt;espi:contacts&gt;john.teeter@nist.gov,martin.burns@nist.gov,donald.coffin@reminetworks.com&lt;/espi:contacts&gt;
+                  &lt;espi:contacts&gt;john.teeter@energyos.org,martin.burns@nist.gov,donald.coffin@reminetworks.com&lt;/espi:contacts&gt;
                   &lt;espi:token_endpoint_auth_method&gt;client_secret_basic&lt;/espi:token_endpoint_auth_method&gt;
                   &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=900;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
                   &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
@@ -416,7 +416,7 @@ related to a specific <em>UsagePoint</em>.
   enable this operation. There are no assumptions made with respect to
   what the RetailCustomer might do with this XML file, although best
   practices would be to ensure the file is viewable using a minimal
-  stylesheet.
+  style sheet.
 <ul>
 <li>Examples of <a href="http://services.greenbuttondata.org/sample-data.html">Download My Data files may be found on the Green Button Sandbox</a>.</li>
 </ul>
