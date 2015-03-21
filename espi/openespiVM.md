@@ -46,11 +46,11 @@ Download the appropriate VMware Player for your computing environment
 1. Select **Close**   
 1. Select **Finish**  
   
-VMware Easy Install will now install the Ubuntu 14.04 LTS operating system.  When the installation is complete Ubuntu 14.04 LTS will be loaded and the Ubuntu graphic sign-on screen will appear.  To signon to the system **depress Ctl + g** and **enter your selected password**.
+VMware Easy Install will now install the Ubuntu 14.04 LTS operating system.  When the installation is complete Ubuntu 14.04 LTS will be loaded and the Ubuntu graphic sign-on screen will appear.  To sign-on to the system **depress Ctl + g** and **enter your selected password**.
 
 **VMware Tools for Linux - version 9.6.2 Upgrade**
 
-If a Software Update dialog box appears during the installation process, do the following to upgrade the Windows VMWare Player:   
+If a Software Update dialogue box appears during the installation process, do the following to upgrade the Windows VMWare Player:   
 1. Select **Download and Install**
 ***
 **Add VMWare Tools**
@@ -125,7 +125,7 @@ To install MySQL Server enter the following commands:
 
 	sudo apt-get install mysql-server    
 
-During the installation process a dialog appears:    
+During the installation process a dialogue appears:    
 
 1. Fill in **New password for the MySQL "root" user:** [enter bitnami]    
 1. Depress the **Enter** key    
@@ -177,7 +177,7 @@ The following instructions create the OAuth2 Token Store database:
 1. Click the left mouse button    
 1. Scroll the cursor over **tar.gz** beneath the **GTK,64BIT** column title    
 1. Click the left mouse button    
-1. Select the **Save File** button when the dialog box appears    
+1. Select the **Save File** button when the dialogue box appears    
 1. Open the Downloads folder    
 1. Open the **spring-tool-suite-3.6.0.RELEASE-e4.4-linux-gtk-x86_64.tar.gz** file    
 1. Click the Extract icon at the top of the window    
@@ -256,7 +256,7 @@ Download **SOAPUI 5.0.0**
 (http://sourceforge.net/projects/soapui/files/soapui/5.0.0/SoapUI-x64-5.0.0.sh/download
  "http://sourceforge.net/projects/soapui/files/soapui/5.0.0/SoapUI-x64-5.0.0.sh/download") 
 
-1. Select the **Save File** button when the download dialog appears    
+1. Select the **Save File** button when the download dialogue appears    
 1. Navigate to the **Downloads** folder    
 1. Hover over the **SoapUI-x64-5.0.0.sh** folder and click the right mouse button    
 1. Select the **Properties** menu item    
@@ -268,7 +268,7 @@ Download **SOAPUI 5.0.0**
 
         /home/bitnami/Downloads/SoapUI-x64-5.0.0.sh    
 
-1. Select the **Next** button when the **SoapUI 5.0.0 Setup Wizard** dialog appears     
+1. Select the **Next** button when the **SoapUI 5.0.0 Setup Wizard** dialogue appears     
 1. Select the **I accept the agreement** button     
 1. Select the **Next** button     
 1. Select the **Next** button    
@@ -293,7 +293,7 @@ Download **Selenium Server 2.42.2**
 (http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar
  "http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar") 
 
-1. Select the **Save File** button when the download dialog appears    
+1. Select the **Save File** button when the download dialogue appears    
 1. Navigate to the **Downloads** folder    
 1. Move the cursor over the **selenium-server-standalone-2.42.2.jar** file    
 1. Click the **right** mouse button    
@@ -312,7 +312,7 @@ Download **Groovy HTTP Library**
 (http://repository.codehaus.org/org/codehaus/groovy/modules/http-builder/http-builder/0.7/http-builder-0.7-all.zip
  "http://repository.codehaus.org/org/codehaus/groovy/modules/http-builder/http-builder/0.7/http-builder-0.7-all.zip") 
 
-1. Select the **Save File** button when the download dialog appears    
+1. Select the **Save File** button when the download dialogue appears    
 1. Navigate to the **Downloads** folder    
 1. Move the cursor over the **http-builder-0.7-all.zip** file    
 1. Click the **left** mouse button twice    
@@ -334,7 +334,7 @@ Download **Groovy HTTP Library**
 **Update Installed Software Packages**    
 
 1. Select **Software Updater** on **Ubuntu Launcher**
-1. Select **Install Now** button in dialog that appears    
+1. Select **Install Now** button in dialogue that appears    
 
 ***
 **To shrink VM before zip and exchange**

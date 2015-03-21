@@ -335,7 +335,7 @@ Legend: "TP" = ThirdParty; "DC" = DataCustodian
 <p class="MsoNormal"><span style="font-size:10.0pt">redirect_uri<u></u><u></u></span></p>
 </td>
 <td width="31%" valign="top" style="width:31.6%;border-top:none;border-left:none;border-bottom:solid #4CBA6F 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
-<p class="MsoNormal"><span style="font-size:10.0pt">The default redirect back to the application after authorization grant (OAuth redirect uri).<u></u><u></u></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">The default redirect back to the application after authorization grant (OAuth redirect URI).<u></u><u></u></span></p>
 </td>
 <td width="29%" valign="top" style="width:29.16%;border-top:none;border-left:none;border-bottom:solid #4CBA6F 1.0pt;border-right:solid #4CBA6F 1.0pt;padding:0in 5.4pt 0in 5.4pt">
 <p class="MsoNormal"><span style="font-size:10.0pt"><a href="https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack" target="_blank">https://services.<wbr>greenbuttondata.org/<wbr>ThirdParty/espi/1_1/<wbr>OAuthCallBack</a><u></u><u></u></span></p>
@@ -592,7 +592,7 @@ Third party doesn’t need to know the value for this field.<u></u><u></u></span
 <p class="MsoNormal"><span style="font-size:10.0pt">dataCustodianScopeSelectionScr<wbr>eenURI<u></u><u></u></span></p>
 </td>
 <td width="31%" valign="top" style="width:31.6%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
-<p class="MsoNormal"><span style="font-size:10.0pt">The URI used by the Third Party to redirect the Retail Customer to the Data Custodian Scope Selection Screen (note that this will likely involve a dialog with the Retail Customer
+<p class="MsoNormal"><span style="font-size:10.0pt">The URI used by the Third Party to redirect the Retail Customer to the Data Custodian Scope Selection Screen (note that this will likely involve a dialogue with the Retail Customer
 including a log in authentication process). <u></u><u></u></span></p>
 </td>
 <td width="29%" valign="top" style="width:29.16%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">

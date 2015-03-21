@@ -1,5 +1,5 @@
 ---
-title: Connect My Data Authoriztion
+title: Connect My Data Authorization
 layout: page
 ---
 

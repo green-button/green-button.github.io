@@ -19,9 +19,9 @@ layout: page
 	      greatly enhances the quality of the audit. But the ability to review that data remotely without the need to physically visit the property, and to do it more
 	      frequently  adds further value to the audit process.</dd>
 	    <dt>Usage Reconciliation</dt>
-	    <dd>It is often difficult to reconcile usage and billing data for commercial properties. Often the billing data is not coorelated well so the actual usage on a day-to-day basis. The availability of Green Button interval data greatly enhances the reconciliation process!</dd>
+	    <dd>It is often difficult to reconcile usage and billing data for commercial properties. Often the billing data is not correlated well so the actual usage on a day-to-day basis. The availability of Green Button interval data greatly enhances the reconciliation process!</dd>
 	    <dt>Benchmarking Resource Usage</dt>
-	    <dd>Benchmarking for certification and for management purposes provides a way to prove your energy efficency. The integration of Green Button into the EPA Portfolio Manager benchmarking and certification scoring platform makes the entire process less arduous.</dd>
+	    <dd>Benchmarking for certification and for management purposes provides a way to prove your energy efficiency. The integration of Green Button into the EPA Portfolio Manager benchmarking and certification scoring platform makes the entire process less arduous.</dd>
 	    <dt>Validating Efficiency Goals</dt>
 	    <dd>Green Button allows you to use real data to prove you are achieving your energy efficiency goals. </dd>
 	    </dl>
@@ -35,9 +35,9 @@ layout: page
 	    <dt>Efficiency Programs</dt>
 	    <dd>Residential energy efficiency programs have proven to provide significant impact on our ability to achieve an sustainable energy future. Green Button
 	      provides the feed-back loop necessary to fully engage the consumer and achieve the final element of efficiency moving forward.</dd>
-	    <dt>Virtural Energy Audits</dt>
+	    <dt>Virtual Energy Audits</dt>
 	    <dd>As with commercial facilities, the 130 million residential services in North America will greatly benefit from know where they stand with respect to
-	      their energy efficiency. The availabilty of granular interval data for a growing number of residential meters greatly expands the reach of the virtual
+	      their energy efficiency. The availability of granular interval data for a growing number of residential meters greatly expands the reach of the virtual
 	      energy audit.</dd>
 	    <dt>Fact Based Service Deployment</dt>
 	    <dd>
@@ -54,8 +54,8 @@ layout: page
 	  <dl>
 	    <dt>Management Policy Validation</dt>
 	    <dd>
-	      Accessability and transparency of actual data provides new ways to both prove the value of current management policies as well as to enable innovation in
-	      the develelopment of new policy refinements.
+	      Accessibility and transparency of actual data provides new ways to both prove the value of current management policies as well as to enable innovation in
+	      the development of new policy refinements.
 	    </dd>
 	    <dt>Quality of Service Analysis</dt>
 	    <dd>
@@ -65,11 +65,11 @@ layout: page
 	    <dt>Operational Management</dt>
 	    <dd>
 	      Internal sub-metering and energy management systems are beginning to support Green Button data formats to enable uniform management processes, based
-	      upon near real-time interval data, to provide interoperabilty across multiple vendor sub-systems.
+	      upon near real-time interval data, to provide interoperability across multiple vendor sub-systems.
 	    </dd>
 	    <dt>Benchmarking</dt>
 	    <dd>
-	      The coming inclusion of Green Button as an input format for the EPA Portfolio Manager API will further enhance the abilty to benchmark and certify your
+	      The coming inclusion of Green Button as an input format for the EPA Portfolio Manager API will further enhance the ability to benchmark and certify your
 	      portfolio of buildings.
 	    </dd>
 	    </dl>
@@ -81,7 +81,7 @@ layout: page
 	  <h3>Utilities and Energy Service Providers</h3>
 	  <dl>
 	    <dt>Customer Engagement</dt>
-	    <dd>Using real data to engage your customers may be used in efficency programs that focus on behavior and direct customer action.</dd>
+	    <dd>Using real data to engage your customers may be used in efficiency programs that focus on behavior and direct customer action.</dd>
 	    <dt>Service Analytics</dt>
 	    <dd></dd>	    
 	    <dt>Efficiency Programs</dt>
@@ -100,13 +100,13 @@ layout: page
 	    <dd>
 	      Green Button allows you to integrate your solution with Data Custodians without excessive custom technology integration efforts.
 	    </dd>
-	    <dt>Market Accessability</dt>
+	    <dt>Market Accessibility</dt>
 	    <dd>
 	      Know where your services may be marketed based upon the knowledge that utilities are Green Button Certified.
 	    </dd>
 	    <dt>Interoperable Services Delivery</dt>	
 	    <dd>
-	      Develope and participate in an vibrant ecosystem of service providers to leverage your offering into new markets.
+	      Develop and participate in an vibrant ecosystem of service providers to leverage your offering into new markets.
 	    </dd>
 	    </dl>
 	  </li>
@@ -118,7 +118,7 @@ layout: page
 	  <dl>
 	    <dt>Stakeholder Engagement</dt>
 	    <dd>
-	      Work with your stakeholders to leverage the transparency and interoperabilty of Green Button data.
+	      Work with your stakeholders to leverage the transparency and interoperability of Green Button data.
 	    </dd>
 	    <dt>Efficiency Program Development</dt>
 	    <dd>
@@ -126,7 +126,7 @@ layout: page
 	    </dd>
 	    <dt>Efficiency Analytics</dt>
 	    <dd>
-	      Analyze the effectiveness of your efficiency programs by obtaining real data reflecting effiniency gains.
+	      Analyze the effectiveness of your efficiency programs by obtaining real data reflecting efficiency gains.
 	    </dd>
 	    <dt>Services Development</dt>
 	    <dd>

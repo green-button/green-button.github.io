@@ -3,19 +3,19 @@ layout: page
 title: Page/Post Title
 ---
 
-The OpenESPI Development Virtual Machine is a Linux Ubuntu desktop environment that may be used to jumpstart your OpenESPI development efforts. 
+The OpenESPI Development Virtual Machine is a Linux Ubuntu desktop environment that may be used to jump start your OpenESPI development efforts. 
 
-The following instructions should be followed to configure the Spring Tool Suite development IDE
+The following instructions should be followed to configure the Pivotal Spring Tool Suite development IDE
 
 #Download the VM and VMware Player
 
-You will need to download and install VMware Player or Fusion to run the virtual machine on your PC.
+You will need to download and install VMware Player (Windows/Linux) or Fusion (Mac) to run the virtual machine on your PC.
 
 * VM Ware Player for Linux and Windows:	[http://www.vmware.com/products/player/overview.html](http://www.vmware.com/products/player/overview.html)
 
 * VM Ware Fusion for Mac OSx: [http://www.vmware.com/products/fusion/overview.html](http://www.vmware.com/products/fusion/overview.html)
 
-Next, download the virual machine: [http://openespi.s3-website-us-east-1.amazonaws.com/virtualmachines/OpenESPI-Greenbutton-javaVM.zip](http://openespi.s3-website-us-east-1.amazonaws.com/virtualmachines/OpenESPI-Greenbutton-javaVM.zip)
+Next, download the virtual machine: [http://openespi.s3-website-us-east-1.amazonaws.com/virtualmachines/OpenESPI-Greenbutton-javaVM.zip](http://openespi.s3-website-us-east-1.amazonaws.com/virtualmachines/OpenESPI-Greenbutton-javaVM.zip)
 
 
 #VM Configuration Instructions
@@ -41,12 +41,12 @@ Next, download the virual machine: [http://openespi.s3-website-us-east-1.amazona
 <li>Note: You might want to save these keys for use on other computers/platforms if desired</li>
 </ol>
 <ol>
-<li>Use firefox and go to: https://github.com/</li>
+<li>Use Firefox and go to: https://github.com/</li>
 <li>login to GitHub using your github.com credentials {<b><i>gitUserName</i></b> : <b><i>pw</i></b>}</li>
 <li>navigate to the https://github.com/energyos/OpenESPI repository</li>
 <li>On GitHub, <b>fork</b> the master branch of the OpenESPI repository</li>
 </ol>
-<li>Now Configure your local git repository: from a local VM Terminal, do git commands to configure the git workspace</li>
+<li>Configure your local git repository: from a local VM Terminal, do git commands to configure the git workspace</li>
 <ol>
 <li><b>git config --global user.name "Firstname Lastname"</b></li>
 <li><b>git config --global user.email "your_email@youremail.com"</b></li>
@@ -54,7 +54,7 @@ Next, download the virual machine: [http://openespi.s3-website-us-east-1.amazona
 </ol>
 <ol>
 <h2>Run STS</h2>
-<li>Run STS from VM shortcut in home/desktop folder (choose Workspace OpenESPIWorkspace)</li>
+<li>Run STS from the shortcut on the VM Desktop (choose Workspace OpenESPIWorkspace)</li>
 <li>When you first start your development, you should pull the current repository versions down to your VM. This is easily accomplished by:
 <ol>
 <li>Right-Click on the repository.</li>

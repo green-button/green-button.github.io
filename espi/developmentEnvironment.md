@@ -116,7 +116,7 @@ Use this procedure to configure STS once the source code from github in on your 
 ### Run under STS
 
 1. 	Right click on DataCustodian and select Run/Run on Server
-1. 	Click next on the dialog and add ThirdParty to Configured resources
+1. 	Click next on the dialogue and add ThirdParty to Configured resources
 1. 	Click finish
  
 ### To change the profile being built
@@ -229,7 +229,7 @@ This script will download from github, compile, and deploy to a remote tomcat se
 4.  removed <activation>…</activation> from devmysql
 5.  changed "hsql" -> "mysql"
 6.  put the devmysql profile in the project/properties/maven configuration of both DC and TP
-7.  buildproject for DC and TP
+7.  build project for DC and TP
 8.  validate that mysql and localhost:8080 are being used for both services.
 
 

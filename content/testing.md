@@ -32,7 +32,7 @@ Use this test to evaluate and analyze the inner structure of a Green Button data
 
  Allow file to be saved on website
 
-4) Enable download of test results after test execustion:
+4) Enable download of test results after test execution:
 
  Download test results
 
