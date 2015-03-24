@@ -487,3 +487,19 @@
   url: "http://www.retscreen.net"
   type: company
   status: committed
+- name: "LA Department of Water & Power"
+  url: "https://www.ladwp.com"
+  type: utility
+  status: committed
+- name: "eMeter - A Siemens business"
+  url: "http://www.emeter.com"
+  type: company
+  status: implemented
+- name: "Sun Run"
+  url: "http://www.sunrun.com"
+  type: company
+  status: implemented
+- name: "Green Mountain Power"
+  url: "http://www.greenmountainpower.com"
+  type: utility
+  status: implemented
