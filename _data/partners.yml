@@ -82,6 +82,12 @@
   url: "http://www.coned.com/"
   type: utility
   status: implemented
+- name: "Silver Spring Networks"
+  url: "http://www.silverspringnet.com/"
+  type: company
+  status: committed
+  GBA: true
+  featured: true
 - name: "Hawaiian Electric Company"
   url: "http://www.hawaiianelectric.com/portal/site/heco"
   type: utility
@@ -124,6 +130,7 @@
   url: "http://www.pge.com"
   type: utility
   status: implemented
+  GBA: true
   featured: true
 - name: "PacifiCorp"
   url: "http://www.pacificorp.com/index.html"
@@ -162,6 +169,8 @@
   url: "http://www.sdge.com/"
   type: utility
   status: implemented
+  GBA: true
+  featured: true
 - name: "Seattle City Light"
   url: "http://www.seattle.gov/light/"
   type: utility
@@ -324,10 +333,6 @@
   url: "https://power2switch.com/"
   type: company
   status: committed
-- name: "Silver Spring Networks"
-  url: "http://www.silverspringnet.com/"
-  type: company
-  status: committed
 - Name: "SunRun"
   url: "http://www.sunrun.com/"
   type: company
@@ -478,5 +483,7 @@
   type: company
   status: committed
   featured: true
-  
-  
+- name: "RETScreen International"
+  url: "http://www.retscreen.net"
+  type: company
+  status: committed
