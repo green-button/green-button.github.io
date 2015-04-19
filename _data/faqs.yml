@@ -43,20 +43,15 @@
   category: initiative
   audience: all
 
-- question: "How do I find out if my utility supports Green Button Connect My Data?"
-  answer: "A list of utilities that currently support Green Button may be <a href=\"http://www.greenbuttondata.org/\">found here.</a><br />Don't see your utility?  <a class=\"buttonish\" href=\"mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]\">Request Utility Green Button Information.</a>"
-  category: initiative
-  audience: "fed"
-
 - question: "Is a Smart (AMI) meter required for Green Button Support?"
   answer: "An Advanced Metering Infrastructure (AMI) meter is not required for Green Button data, but is the most common meter used for Green Button Connect My Data deployments. Keep in mind that Green Button data does not normally come directly from the meter itself. Green Button data normally comes from your utility's Meter Data Management (MDM) system or a utility maintained data warehouse. Some utilities are supporting Green Button data on a monthly cycle using old style meters. Larger facilities are supporting Green Button data from energy management platforms within the building"
   category: initiative
-  audience: "fed"
+  audience: "all"
 
 - question: "How do I determine when in Facility Metering is justified?"
   answer: "This is generally a cost trade off with respect to the size of the utility and it's operating characteristics. Larger, more modern or more complex facilities may justify the cost of an energy management platform with sub-meters within the facility itself. In this case, make sure your facilities energy management platform support Green Button Connect My Data.  Smaller facilities, or those with minimal operational footprint, may be cost effectively included into your agency energy management strategy by using the utilities Green Button services. In most cases, there is no cost for the utility Green Button data. In either case, your portfolio energy management system can use both sources"
   category: initiative
-  audience: "fed"
+  audience: "all"
 
 - question: "Is there a roadmap for agency support of Green Button in their energy management processes?"
   answer: "Each agency is encouraged to develop and energy management roadmap that is consistent with their mission and goals. The overall industry roadmap for Green Button deployment may serve to guide you in development of this roadmap. In general, 2015 is going to be the year of Green Button Connect My Data roll-out in major electricity markets"
@@ -82,7 +77,7 @@
 - question: "How are larger facilities such as campuses or bases to approach the Green Button opportunity"
   answer: "Green Button may be made available from building meters, sub-meters within buildings, area meters, or whole campus meters. It is up to the needs of the energy managers to determine where it is most applicable for a given site.  Green Button provides a means by which facilities energy managers might deploy interoperable energy management platforms. The composition of data received from the various portions of the deployment that may be related to the benchmarking and management needs of that facility, or a portfolio of such facilities opportunity, will define how the meter data is to flow. Green Button provides the means by which these needs might be met."
   category: initiative
-  audience: "fed"
+  audience: "all"
 
 - question: "NASA, like DoD has a number of sites that are master metered at the fence line (the meters inside the gate belong to NASA, not the utility). Therefore, the only Green Button data we can get from the utility is from that master meter. I assume they won’t be able to access and extract the data from the NASA owned meters – is that correct?"
   answer: " That is correct. The NASA owned meters are producing data that must be transformed into Green Button format. This is generally accomplished through an energy management system that receives the raw meter data, may store it locally, and also may provide local facilities or energy management capabilities to the site administrator. In the case of GSA, the Schneider Electric ION EEM product provided that energy management service. The GSA activity demonstrated using the at the fence line master meter data from the Utility AND the GSA owned meters within the buildings in the same way."
@@ -92,17 +87,12 @@
 - question: "Where can you obtain a copy of the data standard?"
   answer: "The data standard may be obtained from the North American Energy Standards Board at the contacts below. The cost is currently $250.<ul><li>Use this <a href=\"http://www.naesb.org/misc/naesb_matl_order_espi_standards.pdf\">(order form)</a>  and fill out the \"Retail\" Version 2.1 row.</li><li>Or call  (713) 356-0060 and request the \"ESPI REQ.21\" Standard</li></ul>Current best practices to work from the basic standard and achieve a fully interoperable solution is to follow the development community in their implementation agreements. The primary information needed in this \"current state of the world\" is available <a href=\"/library/\">in the Green Button Library</a>"
   category: initiative
-  audience: "fed"
+  audience: "all"
 
 - question: "Will Green Button data  currently auto-upload into portfolio manager or is the EPA still working on that feature – if so when would they expect to have it up and running?"
   answer: " EPA is still working on the auto-upload feature. A completion date has not yet been announced"
   category: initiative
-  audience: "fed"
-
-- question: "People in the meeting were eluding to the fact that analyzing the Green Button data might qualify as a EISA Section 432 Audit – is that correct?"
-  answer: "There are numerous elements of the EISA Section 432 Audit. Those dealing with energy evaluations and verification of energy and water savings may apply. A answer is pending"
-  category: initiative
-  audience: "fed"
+  audience: "all"
 
 - question: "What is the current number of utilities in CONUS that currently offer Green Button data to their customers (in terms of percentage, ie 5%, 10%…)?"
   answer: "in terms of % of customers, there are @130M utility customers in CONUS. @49M currently have assess to Green Button Download My Data (so @37% of the retail customers). In terms of % of Utiltities, there are @3200 utilities in CONUS (@200 Investor owned; @900 Rural Cooperatives; @2100 Public) of these @150 have implemented Green button (@35 IOUs; 100 Coops; @15 Public) with a percentage overall of 4.5% of the CONUS utilities"
