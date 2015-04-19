@@ -9,7 +9,7 @@
 - question: "How do I find out if my utility supports Green Button?"
   type: initiative
   audience: all
-  url: "http://www.greenbuttondata.org/utilities/index.html"
+  url: "http://www.greenbuttondata.org"
   answer: "A list of utilities that currently support Green Button may be <a href=\"http://www.greenbuttondata.org/utitities\">found here.</a><br /> Don't see your utility?  <a class=\"buttonish\" href=\"mailto:info@greenbuttondata.org?subject=Getting%20started%20with%20Green%20Button&#038;body=Hi!%0A%0AI’d%20like%20to%20get%20started%20with%20Green%20Button.%20Could%20you%20send%20me%20more%20information?%0A%0AThanks,%0A%0A[Your%20name]%0A[Your%20organization]%0A[Your%20contact%20information]\">Request Utility Green Button Information.</a>"
 
 - question: "If a third party offers multiple applications that require data subscriptions, is it important for the data custodian to be able to distinguish which application the data is being transmitted for?"
