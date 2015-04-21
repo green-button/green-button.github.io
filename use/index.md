@@ -131,7 +131,7 @@ layout: page
 	    <dt>Services Development</dt>
 	    <dd>
 	      Provide new services to your stakeholders by insuring they are able to readily access and share their usage data.
-	    </dd>	    
+	    </dd>
 	  </dl>
 	  </li>
 	</ul>
