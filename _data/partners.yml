@@ -63,6 +63,12 @@
   status:
   GBA: true
   featured: true
+- name: "UtilityAPI"
+  url: "https://utilityapi.com/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
 - name: "Aclara"
   url: "http://www.aclara.com/"
   type: company
