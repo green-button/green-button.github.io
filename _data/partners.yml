@@ -39,6 +39,12 @@
   status: implemented
   GBA: true
   featured: true		
+- name: "UtilityAPI"
+  url: "https://utilityapi.com/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
 - name: "UL"
   url: "http://ul.com/"
   type: company
@@ -61,12 +67,6 @@
   url: "http://www.nist.gov"
   type: government
   status:
-  GBA: true
-  featured: true
-- name: "UtilityAPI"
-  url: "https://utilityapi.com/"
-  type: company
-  status: implemented
   GBA: true
   featured: true
 - name: "Aclara"
