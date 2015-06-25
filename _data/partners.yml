@@ -45,6 +45,12 @@
   status: implemented
   GBA: true
   featured: true
+- name: "Chai Energy"
+  url: "https://chaienergy.com/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
 - name: "UL"
   url: "http://ul.com/"
   type: company
