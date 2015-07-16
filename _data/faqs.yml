@@ -92,3 +92,18 @@
   answer: "In terms of % of customers, there are @130M utility customers in CONUS. @49M currently have access to Green Button Download My Data (so @37% of the retail customers). In terms of % of Utiltities, there are @3200 utilities in CONUS (@200 Investor owned; @900 Rural Cooperatives; @2100 Public) of these @150 have implemented Green button (@35 IOUs; 100 Coops; @15 Public) with a percentage overall of 4.5% of the CONUS utilities."
   category: initiative
   audience: "fed"
+
+- question: "How do I interpret currency and cost values?"
+  answer: "The currency element is the international standard numeric code for a currency -- e.g. 840 is for USD, 978 is for EUR"
+  category: detail
+  audience: "developer"
+  
+- question: "What is the purpose of IntervalBlock grouping of Interval data?"
+  answer: "IntervalBlocks group intervals logically according to typical update frequency -- e.g. monthly, daily, hourly, etc.... The IntervalBlock.interval.duration will identify the size of the block."
+  category: detail
+  audience: "developer"  
+  
+- question: "How do I interpret currency and cost values?"
+  answer: "The currency element is the international standard numeric code for a currency -- e.g. 840 is for USD, 978 is for EUR"
+  category: detail
+  audience: "developer"  
