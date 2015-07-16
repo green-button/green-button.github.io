@@ -103,7 +103,3 @@
   category: detail
   audience: "developer"  
   
-- question: "How do I interpret currency and cost values?"
-  answer: "The currency element is the international standard numeric code for a currency -- e.g. 840 is for USD, 978 is for EUR"
-  category: detail
-  audience: "developer"  
