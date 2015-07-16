@@ -168,6 +168,10 @@
   url: "https://www.eversource.com/Content/ema-e/"
   type: utility
   status: implemented
+- name: "Festival Hydro"
+  url: "http://www.festivalhydro.com"
+  type: utility
+  status: implemented
 - name: "Gas and Power Technologies"
   url: "http://www.gasandpower.com"
   type: company
@@ -185,6 +189,27 @@
   url: "http://mygreensuite.com/products/green-button-provider/"
   type: company
   status: implemented
+- name: "Guelph Hydro"
+  url: "http://www.guelphhydro.com"
+  type: utility
+  status: implemented
+- name: "Hawai'i Electric Light Company"
+  url: "http://www.hawaiielectriclight.com/portal/site/helco/"
+  type: utility
+  status: implemented
+  featured: true
+- name: "Hawaiian Electric Company"
+  url: "http://www.hawaiianelectric.com/portal/site/heco"
+  type: utility
+  status: implemented
+- name: "Hydro One"
+  url: "http://www.hydroone.com/Pages/Default.aspx"
+  type: utility
+  status: implemented
+- name: "Hydro Ottawa"
+  url: "https://hydroottawa.com"
+  type: utility
+  status: implemented	
 - name: "Itron"
   url: "https://www.itron.com"
   type: company
@@ -203,6 +228,11 @@
   type: company
   status: implemented
   featured: true
+- name: "Maui Electric"
+  url: "http://www.mauielectric.com/portal/site/meco"
+  type: utility
+  status: implemented
+  featured: true
 - name: "myMeter"
   url: "http://mymeter.co/"
   type: company
@@ -212,6 +242,10 @@
   type: utility
   status: implemented
   featured: true
+- name: "North Bay Hydro"
+  url: "http://www.northbayhydro.com"
+  type: utility
+  status: implemented
 - name: "Oncor"
   url: "http://www.oncor.com/"
   type: utility
@@ -242,6 +276,10 @@
   url: "http://psdconsulting.com/"
   type: company
   status: implemented
+- name: "Peterborough Utilities Group"
+  url: "http://www.peterboroughutilities.ca"
+  type: utility
+  status: implemented
 - name: "Planet Ecosystems"
   url: "http://PlanetEcosystems.com/"
   type: company
@@ -252,6 +290,10 @@
   status: implemented
 - name: "Portland General Electric"
   url: "http://www.portlandgeneral.com"
+  type: utility
+  status: implemented
+- name: "PowerStream"
+  url: "http://www.powerstream.ca/app/pages/HOME.jsp"
   type: utility
   status: implemented
 - name: "Power TakeOff"
@@ -305,6 +347,10 @@
   url: "http://www.tnmp.com/"
   type: utility
   status: implemented
+- name: "Toronto Hydro"
+  url: "http://www.torontohydro.com/sites/electricsystem/Pages/foryourhome.aspx"
+  type: utility
+  status: implemented
 - name: "TXU Energy"
   url: "http://www.txu.com/"
   type: utility
@@ -316,6 +362,10 @@
 - name: "UnPlug Stuff: High Energy Audits"
   url: "http://www.unplugstuff.com/"
   type: company
+  status: implemented
+- name: "Utilities Kingston"
+  url: "http://www.utilitieskingston.com"
+  type: utility
   status: implemented
 - name: "Virginia Dominion Power"
   url: "https://www.dom.com/residential/dominion-virginia-power/"
@@ -421,18 +471,8 @@
   url: "http://www.glendaleca.gov/government/departments/glendale-water-and-power"
   type: utility
   status: committed
-- name: "Hawai'i Electric Light Company"
-  url: "http://www.hawaiielectriclight.com/portal/site/helco/"
-  type: utility
-  status: committed
-  featured: true	
 - name: "Hawaii Energy"
   url: "http://www.hawaiienergy.com/"
-  type: utility
-  status: committed
-  featured: true
-- name: "Hawaiian Electric Company"
-  url: "http://www.hawaiianelectric.com/portal/site/heco"
   type: utility
   status: committed
   featured: true
@@ -461,11 +501,6 @@
   featured: true
   type: company
   status: committed
-- name: "Maui Electric"
-  url: "http://www.mauielectric.com/portal/site/meco"
-  type: utility
-  status: committed
-  featured: true	
 - name: "myBenchmarx"
   url: "http://www.mybenchmarx.com/"
   type: company
