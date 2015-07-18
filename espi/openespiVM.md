@@ -345,3 +345,28 @@ Use this procedure to shrink the VM for exchange
 	sudo ./vmware-toolbox-cmd disk shrinkonly
 
 when it finishes, shutdown, zip up folder
+
+***
+**Install sftp-server **
+
+To install the ssh server functionality:
+
+	sudo apt-get install openssh-server
+
+To start / stop server
+
+	sudo start ssh
+	sudo stop ssh
+
+***
+**Give VM host name over the network**
+
+	sudo gedit /etc/hostname
+	enter: openespivm
+	save and exit
+	sudo gedit /etc/hosts
+	add entry:
+		127.0.1.1	openespivm
+	save and exit
+	retboot
+
