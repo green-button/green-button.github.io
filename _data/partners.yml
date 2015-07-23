@@ -339,6 +339,10 @@
   url: "http://www.sunrun.com"
   type: company
   status: implemented	
+- name: "Switch Automation"
+  url: "https://www.switchautomation.com"
+  type: company
+  status: implemented	
 - name: "Tendril"
   url: "http://www.tendrilinc.com/"
   type: company
