@@ -99,7 +99,6 @@
   url: "http://www.agentisenergy.com"
   type: company
   status: implemented
-  certified: DMD
 - name: "Austin Energy"
   url: "http://www.austinenergy.com"
   type: utility
