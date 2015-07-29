@@ -42,13 +42,14 @@ The references in this section represent the principle technical documents that 
 {% endfor %}
 </dl>
 
+###Testing &amp; Certification Library
 
+Testing and Certification of implementations of Green Button Download My Data and Connect My Data are administered by the [Green Button Alliance](http://greenbuttonalliance.org/). The references in this section are the basis of the testing and certification program. The Test Steps Spreadsheet contains the 'source code' of the testing program. The Test Plan and Test Data Sheet are generated from the spreadsheet programmaticaly.
 
-###Technical Development Library
 <dl>
 {% for document in site.data.documents %}
 
-  {% if document.category == "development" %}
+  {% if document.category == "certification" %}
   <dt>
     {% if document.html %}
     <a href="{{document.html}}" >
@@ -74,11 +75,13 @@ The references in this section represent the principle technical documents that 
 {% endfor %}
 </dl>
 
-###Testing &amp; Certification Library
+
+
+###Technical Development Library
 <dl>
 {% for document in site.data.documents %}
 
-  {% if document.category == "certification" %}
+  {% if document.category == "development" %}
   <dt>
     {% if document.html %}
     <a href="{{document.html}}" >
