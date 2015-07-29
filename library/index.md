@@ -2,13 +2,49 @@
 title: Green Button Documents Library
 layout: page
 ---
-<h2>Green Button Documents Library</h2>
+##Green Button Documents Library
 <p>The following documents provide background on the Green Button initiative as well as providing Important reference documents for Green Button Implementers</p>
 <section>
 <a href="video/index.html">Videos</a> || <a href="/Presentations/index.html">Presentations</a> || <a href="#technical">Technical</a> || <a href="#testing">Certification</a> || <a href="#espidev">ESPI Development</a>
-<hr />
-<a id="technical">&nbsp;</a>
-<h3>Technical Development Library</h3>
+</section>
+<p/>
+
+###Key References
+
+The references in this section represent the principle technical documents that define and describe the Green Button technology. They begin with the base standard for Green Button. Published in 2011, this standard is ready for an update beginning late 2015. Corrections and enhancements to the standard have been developed under the auspices of the [UCAIug](http://www.ucaiug.org/default.aspx) OpenADE [Task Force](http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan). See the [Community](/community) for details on their meetings and process.
+  
+<dl>
+{% for document in site.data.documents %}
+
+  {% if document.category == "keyref" %}
+  <dt>
+    {% if document.html %}
+    <a href="{{document.html}}" >
+    {{document.name}} (Web Page)</a>
+    {% endif %}
+
+    {% if document.doc %}
+    <a href="{{document.doc}}" >
+    {{document.name}} (Document) </a>
+    {% endif %}
+
+    {% if document.pdf %}
+    <a href="{{document.pdf}}" >
+    {{document.name}} (.pdf) </a>
+    {% endif %}
+
+  </dt>
+
+
+  <dd>{{document.description}}</dd>
+
+{% endif %}
+{% endfor %}
+</dl>
+
+
+
+###Technical Development Library
 <dl>
 {% for document in site.data.documents %}
 
@@ -38,8 +74,7 @@ layout: page
 {% endfor %}
 </dl>
 
-<a id="testing">&nbsp;</a>
-<h3>Testing &amp; Certification Library</h3>
+###Testing &amp; Certification Library
 <dl>
 {% for document in site.data.documents %}
 
@@ -70,8 +105,7 @@ layout: page
 </dl>
 
 
-<a id="espidev">&nbsp;</a>
-<h3>OpenESPI Development</h3>
+###OpenESPI Development
 <dl>
 {% for document in site.data.documents %}
 

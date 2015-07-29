@@ -2,7 +2,7 @@
   
 # - name: "the title string of the presentation"
 #   description: "a discription"  
-#   category: ["development" | "espi" | "certification"]
+#   category: ["development" | "espi" | "certification" | "keyref"]
 #   pdf: "presentation .pdf location url"
 #   doc: "presentation .ppt(x) location url"
 #   html: "html location url"    
@@ -10,13 +10,21 @@
 #   embedded: "embeded html (if any)"
 #   featured: true (if item should be featured)
 
+- name: "NAESB REQ.21 - Energy Services Provider Interface (ESPI) "
+  description: "The base standard on which Green Button technology is built. This web site has introductory information and includes how to purchase the standard. Published October 2011"
+  category: keyref
+  html: "https://www.naesb.org//ESPI_Standards.asp"
 - name: "Green Button Data Exchange Schema (XML XSD)"
-  description: "The current working XML schema definition that represents the ESPI Resources used in Green Button data representation."
-  category: development
+  description: "The current working XML schema definition that represents the ESPI Resources used in Green Button data representation. This schema can be used to validate any Green Button data set. Note that in the schema most elements are optional. In the implementation agreements used for certification, corresponding elements become mandatory."
+  category: keyref
   doc: "https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd"
+- name: "OpenADE Task Force Issues List"
+  description: "This document contains the issues and their resolution that have been addressed since the publishing of the NAESB standard in October, 2011. Additionally, the implementation agreement document contains detailed elaboration of a subset of issues revolving around Green Button Connect My Data."
+  category: keyref
+  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/HelpDeskItems.docx"
 - name: "GreenButton Implementation Agreement"
-  description: "Details of interoperabilty implementation agreements for those deploying Connect My Data"
-  category: development
+  description: "Details of interoperabilty implementation agreements for those deploying Connect My Data. Key specifications included in this document are API definition, OAuth 2.0 protocol, and Cyber-security and privacy requirements."
+  category: keyref
   doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx"
 - name: "OAuth2 Access Tokens Used in CMD"
   description: "Definition of the access tokens used for the varioius CMD RESTful APIs"
