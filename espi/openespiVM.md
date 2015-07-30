@@ -358,6 +358,36 @@ To start / stop server
 	sudo start ssh
 	sudo stop ssh
 
+Create sftp file repository
+
+1. add user openespivmssh, no password
+2. create a working directory
+
+	cd /home/openespivmssh
+	mkdir .ssh
+	chmod 700 .ssh
+	cd .ssh
+	touch authorized_keys
+	chmod 600 authorized_keys
+
+3. You must add acceptable certificates to this authorized_keys file if they are to be able to connect
+
+	cp /etc/stunnel/openespi.pem /home/openespivmssh/authorized_keys
+
+4.   Restart ssh server
+
+	sudo restart ssh
+
+5. Test 
+
+	ssh openespivmssh@openespivm 
+	ls
+	exit
+
+6. This should result in a directory listing of what is in /home/openespivmssh
+
+
+
 ***
 **Give VM host name over the network**
 

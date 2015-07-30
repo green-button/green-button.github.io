@@ -6,6 +6,13 @@
 	-webkit-text-size-adjust:100%
 }
 
+.anchor{
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
+}
+
 body{
 	margin:0
 }
