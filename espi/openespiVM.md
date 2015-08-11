@@ -347,6 +347,10 @@ Use this procedure to shrink the VM for exchange
 when it finishes, shutdown, zip up folder
 
 ***
+### Install Stunnel
+[Follow instructions](https://github.com/energyos/OpenESPI-GreenButtonCMDTest/blob/master/SetUpStunnelProxy.md)
+***
+
 **Install sftp-server **
 
 To install the ssh server functionality:
@@ -360,31 +364,37 @@ To start / stop server
 
 Create sftp file repository
 
-1. add user openespivmssh, no password
-2. create a working directory
+* add user openespivmssh, no password
+* create a working directory
 
-	cd /home/openespivmssh
-	mkdir .ssh
-	chmod 700 .ssh
-	cd .ssh
-	touch authorized_keys
-	chmod 600 authorized_keys
 
-3. You must add acceptable certificates to this authorized_keys file if they are to be able to connect
+    cd /home/openespivmssh
+    mkdir .ssh
+    chmod 700 .ssh
+    cd .ssh
+    touch authorized_keys
+    chmod 600 authorized_keys
+    
+* You must add acceptable certificates to this authorized_keys file if they are to be able to connect
+
 
 	cp /etc/stunnel/openespi.pem /home/openespivmssh/authorized_keys
 
-4.   Restart ssh server
+
+* Restart ssh server
+
 
 	sudo restart ssh
 
-5. Test 
+
+* Test 
+
 
 	ssh openespivmssh@openespivm 
 	ls
 	exit
 
-6. This should result in a directory listing of what is in /home/openespivmssh
+* This should result in a directory listing of what is in /home/openespivmssh
 
 
 
