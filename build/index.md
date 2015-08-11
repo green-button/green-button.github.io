@@ -6,7 +6,7 @@ layout: page
 #How to Build Green Button Applications
 
 
-Many technical resources available to you, the developer of Green Button applications. The [library of technical documents]({{ site.baseurl }}/library) and presentations provides links to the standards and implementation guides you will want to review before starting your implementations. Most of these materials are directed to developers of DataCustodians, as the requirements of custodians are much more complex than those of a third party application.  Both may find the [Green Button Developers Guide]({{ site.baseurl }}/developers) useful.
+Many technical resources are available to you, the developer of Green Button applications. The [library of technical documents]({{ site.baseurl }}/library) and presentations provides links to the standards and implementation guides you will want to review before starting your implementations. Most of these materials are directed to developers of DataCustodians, as the requirements of custodians are much more complex than those of a third party application.  Both may find the [Green Button Developers Guide]({{ site.baseurl }}/developers) useful.
 
 Below find a simple progression of links to aid you in developing and testing a Green Button Application.
 
