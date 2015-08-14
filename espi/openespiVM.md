@@ -2,7 +2,7 @@
 layout: page
 title: Page/Post Title
 ---
-# Working with OpenESPI VM
+# Create the OpenESPI VM
 
 ## **Build VM**
 
@@ -249,16 +249,12 @@ Enter the following command to install curl:
     sudo apt-get install nautilus-open-terminal
     
 **Install SOAPUI**
+We are currently using SOAPUI 5.1.3: Download **SOAPUI 5.1.3**
 
-Download **SOAPUI 5.0.0**
-
-[http://sourceforge.net/projects/soapui/files/soapui/5.0.0/SoapUI-x64-5.0.0.sh/download]
-(http://sourceforge.net/projects/soapui/files/soapui/5.0.0/SoapUI-x64-5.0.0.sh/download
- "http://sourceforge.net/projects/soapui/files/soapui/5.0.0/SoapUI-x64-5.0.0.sh/download") 
-
+[SOAPUI 5.1.3 Linux Download](http://cdn01.downloads.smartbear.com/soapui/5.1.3/SoapUI-x64-5.1.3.sh) 
 1. Select the **Save File** button when the download dialogue appears    
 1. Navigate to the **Downloads** folder    
-1. Hover over the **SoapUI-x64-5.0.0.sh** folder and click the right mouse button    
+1. Hover over the **SoapUI-x64-x.x.x.sh** file and click the right mouse button    
 1. Select the **Properties** menu item    
 1. Click on the Permissions tab    
 1. Click on the **Allow executing file as program** box at the bottom of the display   
@@ -266,9 +262,9 @@ Download **SOAPUI 5.0.0**
 1. Open a terminal window     
 1. Enter the following command:
 
-        /home/bitnami/Downloads/SoapUI-x64-5.0.0.sh    
+        ./home/bitnami/Downloads/SoapUI-x64-5.x.x.sh    
 
-1. Select the **Next** button when the **SoapUI 5.0.0 Setup Wizard** dialogue appears     
+1. Select the **Next** button when the **Setup Wizard** dialogue appears     
 1. Select the **I accept the agreement** button     
 1. Select the **Next** button     
 1. Select the **Next** button    
@@ -282,53 +278,11 @@ Download **SOAPUI 5.0.0**
 1. Select the **Finish** button    
 1. Right click on **SoapUI** in **Launcher** and select “**Lock to Launcher**”    
 
-
 ***
+**Install external jar files into SOAPUI**
 
-**Install Selenium Server**
-
-Download **Selenium Server 2.42.2**
-
-[http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar]
-(http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar
- "http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar") 
-
-1. Select the **Save File** button when the download dialogue appears    
-1. Navigate to the **Downloads** folder    
-1. Move the cursor over the **selenium-server-standalone-2.42.2.jar** file    
-1. Click the **right** mouse button    
-1. Select the **Copy** menu option    
-1. Navigate to the **/home/bitnami/SmartBear/SoapUI-5.0.0/bin/ext** directory    
-1. Click the **right** mouse button       
-1. Select the **Paste** menu option    
-
-***
-
-**Install Groovy HTTP Library**
-
-Download **Groovy HTTP Library**
-
-[http://repository.codehaus.org/org/codehaus/groovy/modules/http-builder/http-builder/0.7/http-builder-0.7-all.zip]
-(http://repository.codehaus.org/org/codehaus/groovy/modules/http-builder/http-builder/0.7/http-builder-0.7-all.zip
- "http://repository.codehaus.org/org/codehaus/groovy/modules/http-builder/http-builder/0.7/http-builder-0.7-all.zip") 
-
-1. Select the **Save File** button when the download dialogue appears    
-1. Navigate to the **Downloads** folder    
-1. Move the cursor over the **http-builder-0.7-all.zip** file    
-1. Click the **left** mouse button twice    
-1. Move the cursor over the **http-builder-0.7** folder    
-1. Click the **right** mouse button  
-1. Select the **Open** menu option 
-1. Move the cursor over the **dependencies** folder    
-1. Click the **right** mouse button  
-1. Select the **Open** menu option 
-1. Depress **Ctrl + A** to select all files in the folder
-1. Click the **right** mouse button  
-1. Select the **Copy** menu option 
-1. Navigate to the **/home/bitnami/SmartBear/SoapUI-5.0.0/bin/ext** directory    
-1. Click the **right** mouse button       
-1. Select the **Paste** menu option    
-
+1. Fetch from GitHub the files in https://github.com/energyos/OpenESPI-GreenButtonCMDTest/tree/master/SOAPUI/projectDependencies
+2. Place all jar files in the {SOAPUI Install Directory}/bin/ext -- note that some files are in the zip file and should be extracted so there is a flat list of jars in the ext folder.
 ***
 
 **Update Installed Software Packages**    
