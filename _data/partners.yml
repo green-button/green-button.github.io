@@ -8,6 +8,12 @@
 #   GBA: true (if entry represents a Green Button Alliance member)
 #   featured: true (if item should be featured)
 
+- name: "Chai Energy"
+  url: "https://chaienergy.com/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
 - name: "London Hydro"
   url: "https://www.londonhydro.com"
   type: utility
@@ -26,13 +32,6 @@
   status: implemented
   GBA: true
   featured: true	
-- name: "Schneider Electric"
-  url: "http://www.schneider-electric.com/"
-  type: company
-  status: implemented
-  GBA: true
-  featured: true
-  certified: DMD
 - name: "SDG&E"
   url: "http://www.sdge.com/"
   type: utility
@@ -41,12 +40,6 @@
   featured: true		
 - name: "UtilityAPI"
   url: "https://utilityapi.com/"
-  type: company
-  status: implemented
-  GBA: true
-  featured: true
-- name: "Chai Energy"
-  url: "https://chaienergy.com/"
   type: company
   status: implemented
   GBA: true
@@ -65,6 +58,12 @@
   featured: true
 - name: "DOE"
   url: "http://energy.gov/"
+  type: government
+  status:
+  GBA: true
+  featured: true
+- name: "MaRs Discovery District's Advanced Energy Centre (AEC)"
+  url: "http://www.marsdd.com/systems-change/advanced-energy-centre/"
   type: government
   status:
   GBA: true
@@ -317,6 +316,12 @@
   url: "https://www.rockymountainpower.net/index.html"
   type: utility
   status: implemented
+- name: "Schneider Electric"
+  url: "http://www.schneider-electric.com/"
+  type: company
+  status: implemented
+  featured: true
+  certified: DMD
 - name: "Seattle City Light"
   url: "http://www.seattle.gov/light/"
   type: utility
@@ -402,6 +407,18 @@
   url: "http://www.xcelenergy.com"
   type: utility
   status: implemented
+- name: "Enel Group"
+  url: "https://www.enel.com"
+  type: company
+  status: committed
+  GBA: true
+  featured: true
+- name: "Energyworx"
+  url: "http://www.energyworx.com/"
+  type: company
+  status: committed
+  GBA: true
+  featured: true
 - name: "Silver Spring Networks"
   url: "http://www.silverspringnet.com/"
   type: company
