@@ -82,6 +82,10 @@
   url: "http://www.aep.com"
   type: utility
   status: implemented	
+- name: "Agentis Energy"
+  url: "http://www.agentisenergy.com"
+  type: company
+  status: implemented
 - name: "Alarm.com"
   url: "https://www.alarm.com"
   type: company
@@ -93,10 +97,6 @@
 - name: "Ameren Missouri"
   url: "http://www.ameren.com/missouri"
   type: utility
-  status: implemented
-- name: "Agentis Energy"
-  url: "http://www.agentisenergy.com"
-  type: company
   status: implemented
 - name: "Austin Energy"
   url: "http://www.austinenergy.com"
