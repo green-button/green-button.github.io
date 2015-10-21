@@ -299,6 +299,10 @@
   url: "https://www.pacificpower.net/index.html"
   type: utility
   status: implemented
+- name: "Pedernales Electric Cooperative"
+  url: "http://www.pec.coop"
+  type: utility
+  status: implemented
 - name: "People Power"
   url: "http://www.peoplepowerco.com/"
   type: company
