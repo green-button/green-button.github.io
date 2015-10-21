@@ -8,10 +8,25 @@
 #   GBA: true (if entry represents a Green Button Alliance member)
 #   featured: true (if item should be featured)
 
+#
+# Green Button Alliance Members
+#
 - name: "Chai Energy"
   url: "https://chaienergy.com/"
   type: company
   status: implemented
+  GBA: true
+  featured: true
+- name: "Enel Group"
+  url: "https://www.enel.com"
+  type: company
+  status: committed
+  GBA: true
+  featured: true
+- name: "Energyworx"
+  url: "http://www.energyworx.com/"
+  type: company
+  status: committed
   GBA: true
   featured: true
 - name: "London Hydro"
@@ -38,6 +53,12 @@
   status: implemented
   GBA: true
   featured: true		
+- name: "Silver Spring Networks"
+  url: "http://www.silverspringnet.com/"
+  type: company
+  status: committed
+  GBA: true
+  featured: true
 - name: "UtilityAPI"
   url: "https://utilityapi.com/"
   type: company
@@ -74,6 +95,9 @@
   status:
   GBA: true
   featured: true
+
+#
+# 
 - name: "Aclara"
   url: "http://www.aclara.com/"
   type: company
@@ -204,6 +228,10 @@
 - name: "Hawaiian Electric Company"
   url: "http://www.hawaiianelectric.com/portal/site/heco"
   type: utility
+  status: implemented
+- name: "Home Energy Analytics"
+  url: "http://corp.hea.com/"
+  type: company
   status: implemented
 - name: "Hydro One"
   url: "http://www.hydroone.com/Pages/Default.aspx"
@@ -407,24 +435,6 @@
   url: "http://www.xcelenergy.com"
   type: utility
   status: implemented
-- name: "Enel Group"
-  url: "https://www.enel.com"
-  type: company
-  status: committed
-  GBA: true
-  featured: true
-- name: "Energyworx"
-  url: "http://www.energyworx.com/"
-  type: company
-  status: committed
-  GBA: true
-  featured: true
-- name: "Silver Spring Networks"
-  url: "http://www.silverspringnet.com/"
-  type: company
-  status: committed
-  GBA: true
-  featured: true
 - name: "Apogee Interactive, Inc."
   url: "http://www.Apogee.net"
   type: company
