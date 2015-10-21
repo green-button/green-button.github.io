@@ -17,6 +17,12 @@
   status: implemented
   GBA: true
   featured: true
+- name: "Cielo WiGle Inc."
+  url: "httphttp://www.cielowigle.com/index.html"
+  type: company
+  status: committed
+  GBA: true
+  featured: true
 - name: "Enel Group"
   url: "https://www.enel.com"
   type: company
