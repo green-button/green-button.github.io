@@ -103,6 +103,7 @@
   featured: true
 
 #
+# NOT Green Button Alliance Members
 # 
 - name: "Aclara"
   url: "http://www.aclara.com/"
@@ -145,12 +146,16 @@
   url: "http://www.bge.com/"
   type: utility
   status: implemented
+- name: "Bidgely"
+  url: "http://www.bidgely.com/"
+  type: company
+  status: implemented
 - name: "Building Energy Inc."
   url: "https://www.buildingenergy.com"
   type: company
   status: implemented
-- name: "BuiltSpace Technologies Corp."
-  url: "https://www.builtspace.com/HowItWorks/Pages/Green-Button.aspx"
+- name: "BuiltSpace Technologies"
+  url: "http://www.builtspace.com/Pages/default.aspx"
   type: company
   status: implemented
 - name: "Candi Controls LLC"
@@ -181,12 +186,20 @@
   url: "http://enact-systems.com/"
   type: company
   status: implemented
+- name: "Energent"
+  url: "http://www.energent.com/"
+  type: company
+  status: implemented
 - name: "EnergyAi"
   url: "http://www.energyai.com/"
   type: company
   status: implemented
 - name: "EnergyHub"
   url: "http://www.energyhub.com/"
+  type: company
+  status: implemented
+- name: "Energy Profiles Limited"
+  url: "http://energyprofiles.com/"
   type: company
   status: implemented	
 - name: "EnerNex:"
@@ -201,6 +214,10 @@
   url: "https://www.eversource.com/Content/ema-e/"
   type: utility
   status: implemented
+- name: "Eyedro"
+  url: "http://eyedro.com/"
+  type: company
+  status: implemented
 - name: "Festival Hydro"
   url: "http://www.festivalhydro.com"
   type: utility
@@ -214,6 +231,10 @@
   type: company
   status: implemented
   featured: true
+- name: "GOODCoins by Zerofootprint"
+  url: "https://www.goodcoins.ca/portal/rewards?"
+  type: company
+  status: implemented
 - name: "Green Mountain Power"
   url: "http://www.greenmountainpower.com"
   type: utility
@@ -428,6 +449,10 @@
   status: implemented
   featured: true
   certified: DMD
+- name: "Wattsly"
+  url: "http://www.wattsly.com/"
+  type: company
+  status: implemented
 - name: "Wattvision"
   url: "http://www.wattvision.com/"
   type: company
