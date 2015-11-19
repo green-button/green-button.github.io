@@ -466,6 +466,10 @@
   url: "https://www.wegowise.com"
   type: company
   status: implemented	
+- name: "Whitby Hydro"
+  url: "https://www.whitbyhydro.on.ca/"
+  type: utility
+  status: implemented	
 - name: "Xcel Energy"
   url: "http://www.xcelenergy.com"
   type: utility
@@ -615,4 +619,4 @@
   url: "http://www.villagepower.com/"
   type: company
   status: committed
-  featured: true	
+  featured: true
