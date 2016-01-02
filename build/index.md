@@ -29,6 +29,8 @@ Below find a simple progression of links to aid you in developing and testing a 
 ###Build Access to Green Button Data via Connect My Data
 
 1. [CMD Using OpenESPI open source Data Custodian](https://github.com/energyos/OpenESPI-DataCustodian-java)
+1. [Understand OAuth Scope for DMD]({{ site.baseurl }}/espi/scope)
+1. [Understand ESPI APIs]({{ site.baseurl }}/espi/api_specification)
 
 ###Build a Green Button Third Party Client
 1. [Implement Third Party Client using OpenESPI open source Third Party](https://github.com/energyos/OpenESPI-ThirdParty-java)
