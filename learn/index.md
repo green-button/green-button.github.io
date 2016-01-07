@@ -5,7 +5,7 @@ layout: page
 <section class="home home-about" id="#home-about">
   <div class="section-container">
     <div class="section-content">
-      <h2 style="text-align:left;">An Overview of the TechFAR Hub</h2>
+      <h2 style="text-align:left;">Discover Digital Service Acquisitions</h2>
       <br />
 	<ul class="gb-list">
 	  <li>
