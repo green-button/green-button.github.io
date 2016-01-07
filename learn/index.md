@@ -59,7 +59,26 @@ layout: page
 	  <h3>Listen to a Podcast</h3>
 	  <dl>
 	    <dt>Behind the Buy</dt>
-	    <dd>@TODO Behind the Buy description and podcasts
+	    <dd>The "Behind the Buy" podcast features audio stories told by members of the Federal acquisition workforce who have successfully executed best practice IT contracting strategies from the TechFAR and Digital Services Playbook to help their agency meet its mission.
+Behind the Buy Podcast #1: Mark Naggar Interview
+https://www.fai.gov/drupal/sites/default/files/audio/030815Podcast.mp3
+
+Behind the Buy #2: Driving Agile IT Procurement
+ https://www.fai.gov/drupal/sites/default/files/audio/041615Podcast.mp3
+
+Behind the Buy #3: A Simple and Intuitive Approach for IT Procurement
+https://www.whitehouse.gov/sites/default/files/audio/behind_the_buy_may2015.mp3
+
+Behind the Buy #4: Leveraging an Agile and Iterative Approach to Help Save American Lives
+https://www.fai.gov/drupal/sites/default/files/audio/2015behind_the_buy_podcast4.mp3
+
+Behind the Buy #5: Managing and Delivering Digital Services for Agile Software Development
+https://www.whitehouse.gov/sites/default/files/audio/mp3/behind_the_buy_podcast5.mp3
+
+Behind the Buy #6: Managing and Delivering Digital Services for Agile Software Development
+https://www.whitehouse.gov/sites/default/files/audio/mp3/behind_the_buy_podcast6.mp3
+
+@TODO Create Links
 	    </dd>
 	  </dl>
 	</li>
