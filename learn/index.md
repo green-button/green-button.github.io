@@ -5,40 +5,40 @@ layout: page
 <section class="home home-about" id="#home-about">
   <div class="section-container">
     <div class="section-content">
-      <h2 style="text-align:left;">An Overview of the Green Button Initiative</h2>
+      <h2 style="text-align:left;">An Overview of the TechFAR Hub</h2>
       <br />
 	<ul class="gb-list">
 	  <li>
 	  <div class="icon">
 	    <i class="fa fa-question"></i>
 	  </div>
-	  <h3>What is Green Button All About?</h3>
+	  <h3>What is TechFAR Hub About?</h3>
 	  <dl>
-	    <dt>Making metered data available to consumers</dt>
-	    <dd>All electric users have meters that are used to measure how much energy they use.&nbsp; This metered data is used by energy service  providers to calculate how much that energy will cost you, the consumer.&nbsp; Green Button is all about making that data available to you - for planning - for analysis - for your benefit!
+	    <dt>Supporting Acquistion Professionals Executing Digital Services</dt>
+	    <dd>@todoDescription
 	    </dd>
-	    <dt>Green Button data contains no Personal Identifiable Information (PII)</dt>
-	    <dd>Green Button guarantees the consumer's privacy!&nbsp; The Green Button standard requires there is no PII contained within the data, only measured interval usage information.&nbsp; The National Institute of Standards and Technology (NIST) cyber-security team has reviewed the content of Green Button data to ensure it meets this requirement.&nbsp; You should ensure your energy provider is a certified Green Button provider.
+	    <dt></dt>
+	    <dd>
 	  </dl>
 	  </li>
 	  <li>
 	  <div class="icon">
 	    <i class="fa fa-tachometer"></i>
 	  </div>
-	  <h3>Metered Data Represented In Standard Format</h3>
+	  <h3>Find Training</h3>
 	  <dl>
-	    <dt>Interoperable Standards</dt>
-	    <dd>Green Button data implements the North American Energy Standards Board's (NAESB) REQ 21 -- Energy Service Provider Interface (ESPI) energy usage information exchange standard.&nbsp; This standard ensures energy information can easily be exchanged without requiring developers to invest time and money to support proprietary metered data conversion technologies.&nbsp; This enables application developers to create applications that provide services to consumers enabling them to analyze and plan their energy consumption, potentially saving them money.</dd>
+	    <dt>Digital IT Acquisition Profesional (DITAP)</dt>
+	    <dd>@TODO Descritption</dd>
 	    </dl>
 	  </li>
 	  <li>
 	  <div class="icon">
 	    <i class="fa fa-bolt"></i>
 	  </div>
-	  <h3>Green Button Certified Service Providers</h3>
+	  <h3>Find Events</h3>
 	  <dl>
-	    <dt>Validation of Green Button Data Files</dt>
-	    <dd>Early Green Button implementations were not consistent in their application of the Green Button standard.&nbsp; This resulted in various interoperability issues and identifiied a clear need for a Green Button certification program.&nbsp; The Green Button Alliance is currently working on the deployment of Green Button certification programs resulting in the issuance of Green Button certification marks.&nbsp; The  presence of a Green Button certification mark on an energy provider's website enables consumers and application developers to confidently rely on the data they receive being Green Button standard compliant. 
+	    <dt>@TODO Events</dt>
+	    <dd>@TODO EVENT Description 
 	    </dd>
 	   </dl>
 	  </li>
