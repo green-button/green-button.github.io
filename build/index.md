@@ -6,12 +6,12 @@ layout: page
 #How to Create A Digital Service Acquisition
 
 
-Looks like you are ready to start building your Digital Service Acquisition, that's great! Click on the ReqGen Requirments button below to get started. This is still a beta version so it is limited to recomended Fixed Price per Iteration model. This tool includes the best practices from the <p><a href="https://playbook.cio.gov/">Digital Service Play Book</a></p>
+<strong>Looks like you are ready to start building your Digital Service Acquisition, that's great!</strong> Click on the ReqGen Requirments button below to get started. This is still a beta version so it is limited to recomended Fixed Price per Iteration model. This tool includes the best practices from the <p><a href="https://playbook.cio.gov/">Digital Service Play Book</a></p>
 .
 
-<h6>Big Button</h6>
-  <div class="button_wrapper">
-    <button class="https://acquisition-planning-beta.herokuapp.com" type="button">ReqGen</button>
+<h6>ReqGen</h6>
+   <div class="button_wrapper">
+    <button class="https://acquisition-planning-beta.herokuapp.com" type="button">Default</button>
   </div>
 
 
