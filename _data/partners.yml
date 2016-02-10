@@ -39,6 +39,7 @@
   url: "https://www.londonhydro.com"
   type: utility
   status: implemented
+  certified: DMD
   GBA: true
   featured: true
 - name: "PG&E"
@@ -544,6 +545,10 @@
 - name: "Glendale Water and Power"
   url: "http://www.glendaleca.gov/government/departments/glendale-water-and-power"
   type: utility
+  status: committed
+- name: "Going Green Today"
+  url: "http://www.goinggreentoday.com"
+  type: company
   status: committed
 - name: "Hawaii Energy"
   url: "http://www.hawaiienergy.com/"

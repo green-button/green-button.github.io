@@ -28,7 +28,7 @@ There are 5 active communities that are moving Green Button forward. They are li
   <dt>The OpenESPI Development Group</dt>
   <dd> The OpenESPI Open Source effort has resulted in the development numerous tools and services that are freely available for your use. All meetings are open, with code managed through <a href="http://github.com/energyos">Github facilities</a>. You are welcome to join the effort or follow the discussions through the associated list serve. 
     <dl>
-      <dt><a href="https://www1.gotomeeting.com/join/807543384" target="_blank">EnergyOS OpenESPI GoToMeeting</a> -Monday's 12:00 Eastern - Phone: 213-493-0603;807543384#</dt>
+      <dt><a href="https://www1.gotomeeting.com/join/807543384" target="_blank">EnergyOS OpenESPI GoToMeeting</a> - First Monday of the Month 12:00 Eastern - Phone: 213-493-0603;807543384#</dt>
       <dt><a href="https://groups.google.com/forum/#!forum/energyos_espi">EnergyOS OpenESPI Group</a> - <a href="http://groups.google.com/group/energyos_espi/subscribe?hl=en">(Join)</dt>
       <dt><a href="https://groups.google.com/forum/#!forum/greenbutton-dev">GreenButton-dev Group</a> -  <a href="http://groups.google.com/group/greenbutton-dev/subscribe?hl=en">(Join)</a></dt>
     </dl>
