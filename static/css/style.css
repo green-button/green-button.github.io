@@ -6842,6 +6842,198 @@ section.home.home-about .gb-list .icon{
 	text-decoration:none
 }
 
+.api-specification{
+	position:relative;
+	float:left;
+	width:100%;
+	min-height:1px;
+	padding-left:15px;
+	padding-right:15px
+}
+
+.api-specification table{
+	width: 100%;
+	border-collapse:collapse;
+	border: 2px solid black;
+}
+
+.api-specification tr{
+	height: 12.75pt;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.api-specification td{
+	
+}
+
+.apiSpecHdrColFB{
+	vertical-align:bottom;
+	background: #FABF8F;
+	width: 500;
+	padding: 0 5.4pt 0 5.4pt;
+}
+
+.apiSpecHdrColFB p{
+	margin: 0in;
+	margin-bottom: .0001pt;
+	text-align: center;
+	line-height:normal;
+}
+
+.apiSpecHdrColFB span{
+	font-size: 14.0pt;
+}
+
+.apiSpecHdrColCat{
+	vertical-align:bottom;
+	background: #FABF8F;
+	width: 182.25pt;
+	padding: 0 5.4pt 0 5.4pt;
+}
+
+.apiSpecHdrColCat p{
+	margin: 0in;
+	margin-bottom: .0001pt;
+	text-align: center;
+	line-height:normal
+}
+
+.apiSpecHdrColCat span{
+	font-size: 14.0pt;
+}
+
+.apiSpecHdrColCRUD{
+	vertical-align:bottom;
+	background: #FABF8F;
+	width: 0.75in;
+	padding: 0 5.4pt 0 5.4pt;
+}
+
+.apiSpecHdrColCRUD p{
+	margin: 0in;
+	margin-bottom: .0001pt;
+	text-align: center;
+	line-height:normal
+}
+
+.apiSpecHdrColCRUD span{
+	font-size: 14.0pt;
+}
+
+.apiSpecHdrColURI{
+	vertical-align:bottom;
+	background: #FABF8F;
+	width: 1119.85pt;
+	padding: 0 5.4pt 0 5.4pt;
+}
+
+.apiSpecHdrColURI p{
+	margin: 0in;
+	margin-bottom: .0001pt;
+	text-align: center;
+	line-height:normal
+}
+
+.apiSpecHdrColURI span{
+	font-size: 14.0pt;
+}
+
+.apiSpecHdrColToken{
+	vertical-align:bottom;
+	background: #FABF8F;
+	width: 41.7pt;
+	padding: 0 5.4pt 0 5.4pt;
+}
+
+.apiSpecHdrColToken p{
+	margin: 0in;
+	margin-bottom: .0001pt;
+	text-align: center;
+	line-height:normal
+}
+
+.apiSpecHdrColToken span{
+	font-size: 14.0pt;
+}
+
+.apiSpecColFB {
+	width: 186.2pt;
+	padding: 0 5.4pt 0 5.4pt;
+}
+
+.apiSpecColFB p{
+	margin: 0in;
+	margin-bottom: 0.0001pt;
+	line-height:normal;
+}
+
+.apiSpecColFB span{
+	font-family: "Arial",sans-serif;
+}
+
+.apiSpecColCat {
+	width: 182.25pt;
+	padding:0in 5.4pt 0in 5.4pt;
+}
+
+.apiSpecColCat p{
+	margin: 0in;
+	margin-bottom: 0.0001pt;
+	line-height:normal;
+}
+
+.apiSpecColCat span{
+	font-family: "Arial",sans-serif;
+}
+
+.apiSpecColCRUD {
+	width: 0.75in;
+	padding:0in 5.4pt 0in 5.4pt;
+}
+
+.apiSpecColCRUD p{
+	margin: 0in;
+	margin-bottom: 0.0001pt;
+	text-align:center;
+	line-height:normal;
+}
+
+.apiSpecColCRUD span{
+	font-family: "Arial",sans-serif;
+}
+
+.apiSpecColURI {
+	width: 1119.85pt;
+	padding:0in 5.4pt 0in 5.4pt;
+}
+
+.apiSpecColURI p{
+	margin: 0in;
+	margin-bottom: 0.0001pt;
+	line-height:normal;
+}
+
+.apiSpecColURI span{
+	font-family: "Arial",sans-serif;
+}
+
+.apiSpecColToken {
+	width: 41.7pt;
+	padding:0in 5.4pt 0in 5.4pt;
+}
+
+.apiSpecColToken p{
+	margin: 0in;
+	margin-bottom: 0.0001pt;
+	line-height:normal;
+}
+
+.apiSpecColToken span{
+	font-family: "Arial",sans-serif;
+}
+
+
 table.GBDataTable{
 	background:white;
 	border:1px;

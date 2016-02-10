@@ -56,7 +56,7 @@ Also find a sample XSLT that will transform Green Button Data to human-readable 
 
 **<a href="https://github.com/energyos/OpenESPI-GreenButtonCMDTest">Green Button Connect My Data Test Harness</a>**
 
-The Connect My Data test services are currently being developed with support of NIST in collaboration with the OpenADE task group. This effort uses the <a href="http://www.soapui.org/">SOAPui automated testing platform</a> as well as the <a href="http://groovy.codehaus.org/">Groovy scripting environment</a>.  You may download, install, and run the test suits from the <a href="https://github.com/energyos/OpenESPI-GreenButtonCMDTest">github repository</a>.
+The Connect My Data test services are currently being developed with support of NIST in collaboration with the OpenADE task group. This effort uses the <a href="http://www.soapui.org/">SOAPui automated testing platform</a> as well as the <a href="http://www.groovy-lang.org/">Groovy scripting environment</a>.  You may download, install, and run the test suits from the <a href="https://github.com/energyos/OpenESPI-GreenButtonCMDTest">github repository</a>.
 
 ## RESTful API Developers Page
 
