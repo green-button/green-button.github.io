@@ -179,6 +179,10 @@
   url: "http://www.coned.com/"
   type: utility
   status: implemented
+- name: "Duquesne Light"
+  url: "https://www.duquesnelight.com"
+  type: company
+  status: implemented
 - name: "eMeter - A Siemens business"
   url: "http://www.emeter.com"
   type: company
