@@ -179,7 +179,7 @@
   url: "http://www.coned.com/"
   type: utility
   status: implemented
-- name: "Duquesne Light"
+- name: "Duquesne Light Company"
   url: "https://www.duquesnelight.com"
   type: company
   status: implemented
