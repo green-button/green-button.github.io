@@ -508,6 +508,10 @@
 - name: "Chattanooga EPB"
   url: "https://www.epb.net/"
   type: utility
+  status: committed
+- name: "Choose Energy"
+  url: "https://www.chooseenergy.com/"
+  type: company
   status: committed	
 - name: "ComparePower"
   url: "https://comparepower.com"
@@ -602,10 +606,6 @@
   status: committed	
 - name: "PlotWatt"
   url: "https://plotwatt.com/"
-  type: company
-  status: committed
-- name: "Power2Switch"
-  url: "https://power2switch.com/"
   type: company
   status: committed
 - name: "PPL Electric Utilities"
