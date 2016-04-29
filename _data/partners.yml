@@ -541,6 +541,10 @@
   url: "http://www.energydeck.com/home/"
   type: company
   status: committed
+- name: "Energy Hippo"
+  url: "http://energyhippo.com"
+  type: company
+  status: committed
 - name: "EnergySavvy"
   url: "http://www.energysavvy.com/"
   type: company
