@@ -199,6 +199,10 @@
   url: "http://www.energyai.com/"
   type: company
   status: implemented
+- name: "Energy Hippo"
+  url: "http://energyhippo.com"
+  type: company
+  status: implemented
 - name: "EnergyHub"
   url: "http://www.energyhub.com/"
   type: company
@@ -539,10 +543,6 @@
   status: committed
 - name: "EnergyDeck Ltd."
   url: "http://www.energydeck.com/home/"
-  type: company
-  status: committed
-- name: "Energy Hippo"
-  url: "http://energyhippo.com"
   type: company
   status: committed
 - name: "EnergySavvy"
