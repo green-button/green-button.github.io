@@ -32,7 +32,7 @@
 - name: "Energyworx"
   url: "http://www.energyworx.com/"
   type: company
-  status: committed
+  status: implemented
   GBA: true
   featured: true
 - name: "London Hydro"
@@ -626,6 +626,10 @@
   status: committed
 - name: "Simple Energy"
   url: "http://simpleenergy.com"
+  type: company
+  status: committed
+- name: "Think Energy"
+  url: "https://www.mythinkenergy.com/"
   type: company
   status: committed
 - name: "Village Power Finance"
