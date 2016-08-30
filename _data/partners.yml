@@ -537,6 +537,10 @@
   url: "https://www.efficiencyvermont.com"
   type: utility
   status: committed
+- name: "Energy Elephant"
+  url: "https://energyelephant.com"
+  type: company
+  status: committed
 - name: "EnergyDataMetrics LLC."
   url: "http://www.energydatametrics.com/index.php?option=com_content&view=article&id=87&Itemid=214"
   type: company
