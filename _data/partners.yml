@@ -11,6 +11,12 @@
 #
 # Green Button Alliance Members
 #
+- name: "BGE (Exelon)"
+  url: "https://www.bge.com/"
+  type: utility
+  status: implemented
+  GBA: true
+  featured: true
 - name: "Chai Energy"
   url: "https://chaienergy.com/"
   type: company
@@ -23,10 +29,22 @@
   status: committed
   GBA: true
   featured: true
+- name: "ComEd (Exelon)"
+  url: "http://www.exeloncorp.com/companies/comed"
+  type: utility
+  status: implemented
+  GBA: true
+  featured: true
 - name: "Enel Group"
   url: "https://www.enel.com"
-  type: company
+  type: utility
   status: committed
+  GBA: true
+  featured: true
+- name: "Energy Toolbase"
+  url: "https://www.energytoolbase.com/"
+  type: company
+  status: implemented
   GBA: true
   featured: true
 - name: "Energyworx"
@@ -35,11 +53,35 @@
   status: implemented
   GBA: true
   featured: true
+- name: "Exelon Corporation"
+  url: "http://www.exeloncorp.com/companies"
+  type: utility
+  status: implemented
+  GBA: true
+  featured: true
 - name: "London Hydro"
   url: "https://www.londonhydro.com"
   type: utility
   status: implemented
   certified: DMD
+  GBA: true
+  featured: true
+- name: "PECO (Exelon)"
+  url: "https://www.peco.com/Pages/default.aspx"
+  type: utility
+  status: implemented
+  GBA: true
+  featured: true
+- name: "Pepco (Exelon)"
+  url: "http://www.pepco.com/"
+  type: utility
+  status: implemented
+  GBA: true
+  featured: true
+- name: "Personal BlackBox"
+  url: "http://pbb.me"
+  type: company
+  status: committed
   GBA: true
   featured: true
 - name: "PG&E"
@@ -66,6 +108,18 @@
   status: committed
   GBA: true
   featured: true
+- name: "Solar Analytics"
+  url: "https://www.solaranalytics.com.au/"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
+- name: "Think Energy (ENGIE)"
+  url: "https://www.mythinkenergy.com/"
+  type: company
+  status: committed
+  GBA: true
+  featured: true
 - name: "UtilityAPI"
   url: "https://utilityapi.com/"
   type: company
@@ -78,10 +132,40 @@
   status: implemented
   GBA: true
   featured: true
-- name: "UCAIug"
-  url: "http://www.ucaiug.org/"
+- name: "WattzOn"
+  url: "http://www.wattzon.com//"
   type: company
   status: implemented
+  GBA: true
+  featured: true
+- name: "Continental Automated Buildings Association (CABA)"
+  url: "http://www.caba.org/"
+  type: association
+  status:
+  GBA: true
+  featured: true
+- name: "North America Energy Standards Board (NAESB)"
+  url: "https://www.naesb.org/"
+  type: association
+  status:
+  GBA: true
+  featured: true
+- name: "Real Estate Standards Organization (RESO)"
+  url: "http://www.reso.org/"
+  type: association
+  status:
+  GBA: true
+  featured: true
+- name: "Smart Grid Consumer Collaborative (SGCC)"
+  url: "http://www.smartgridcc.org/"
+  type: association
+  status:
+  GBA: true
+  featured: true
+- name: "UCAIug"
+  url: "http://www.ucaiug.org/"
+  type: association
+  status:
   GBA: true
   featured: true
 - name: "DOE"
@@ -98,6 +182,12 @@
   featured: true
 - name: "NIST"
   url: "http://www.nist.gov"
+  type: government
+  status:
+  GBA: true
+  featured: true
+- name: "Ontario Ministry of Energy"
+  url: "http://www.energy.gov.on.ca"
   type: government
   status:
   GBA: true
@@ -143,10 +233,6 @@
   url: "http://www.emeramaine.com/"
   type: utility
   status: implemented
-- name: "BGE"
-  url: "http://www.bge.com/"
-  type: utility
-  status: implemented
 - name: "Bidgely"
   url: "http://www.bidgely.com/"
   type: company
@@ -171,10 +257,6 @@
   url: "http://www.talgov.com/you/yourownutilitieshome.aspx/"
   type: utility
   status: implemented	
-- name: "Commonwealth Edison"
-  url: "https://www.comed.com/Pages/default.aspx"
-  type: utility
-  status: implemented
 - name: "Consolidated Edison"
   url: "http://www.coned.com/"
   type: utility
@@ -317,7 +399,7 @@
   url: "http://www.oncor.com/"
   type: utility
   status: implemented
-- name: "OPower"
+- name: "OPower (Oracle)"
   url: "http://opower.com/"
   type: company
   status: implemented
@@ -338,11 +420,6 @@
   type: company
   status: implemented
   featured: true	
-- name: "Pepco Holdings"
-  url: "http://www.pepcoholdings.com"
-  type: utility
-  status: implemented
-  featured: true
 - name: "Performance Systems Development"
   url: "http://psdconsulting.com/"
   type: company
@@ -448,6 +525,10 @@
   url: "http://www.utilitieskingston.com"
   type: utility
   status: implemented
+- name: "UtilityScore"
+  url: "https://www.myutilityscore.com/"
+  type: company
+  status: implemented	
 - name: "Virginia Dominion Power"
   url: "https://www.dom.com/residential/dominion-virginia-power/"
   type: utility
@@ -496,6 +577,11 @@
   featured: true
   type: company
   status: committed
+- name: "BusinessEnergy"
+  url: "http://www.businessenergy.com"
+  featured: true
+  type: company
+  status: committed
 - name: "C3"
   url: "http://www.c3energy.com/"
   featured: true
@@ -525,7 +611,7 @@
   url: "http://www.dexmatech.com"
   type: company
   status: committed
-- name: "Ecova"
+- name: "Ecova (ENGIE)"
   url: "http://www.ecova.com/news-media/press-releases/ecova-joins-white-house-inspired-green-button-initiative.aspx"
   type: company
   status: committed
@@ -591,11 +677,6 @@
   url: "https://www.ladwp.com"
   type: utility
   status: committed
-- name: "LinkCycle"
-  url: "http://www.linkcycle.com"
-  featured: true
-  type: company
-  status: committed
 - name: "myBenchmarx"
   url: "http://www.mybenchmarx.com/"
   type: company
@@ -608,10 +689,6 @@
   url: "http://www.oracle.com/index.html"
   type: company
   status: committed
-- name: "PECO"
-  url: "https://www.peco.com"
-  type: utility
-  status: committed	
 - name: "PlotWatt"
   url: "https://plotwatt.com/"
   type: company
@@ -630,10 +707,6 @@
   status: committed
 - name: "Simple Energy"
   url: "http://simpleenergy.com"
-  type: company
-  status: committed
-- name: "Think Energy"
-  url: "https://www.mythinkenergy.com/"
   type: company
   status: committed
 - name: "Village Power Finance"
