@@ -418,7 +418,7 @@ related to a specific <em>UsagePoint</em>.
   practices would be to ensure the file is viewable using a minimal
   style sheet.
 <ul>
-<li>Examples of <a href="http://services.greenbuttondata.org/sample-data.html">Download My Data files may be found on the Green Button Sandbox</a>.</li>
+<li>Examples of <a href="https://services.greenbuttondata.org/sample-data.html">Download My Data files may be found on the Green Button Sandbox</a>.</li>
 </ul>
 </dd>
   <dt>Connect My Data</dt>
