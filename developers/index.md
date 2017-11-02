@@ -13,7 +13,7 @@ electricity, gas, and water. These interfaces may be used to access and
 manage the metered data by using atom+xml based streams of Energy
 Usage Information (EUI) encapsulated within an Atom Feed.</p>
 
-<h3></span></a>RetailCustomer, DataCustodian &amp; ThirdParty Actors</h3>
+<h3>RetailCustomer, DataCustodian &amp; ThirdParty Actors</h3>
 <p>Green Button allows data to be exchanged between Utilities, Customers, and Third Party Services Providers. It uses standard (http) based messaging to accomplish these exchanges. So, starting with the Green Button Actors:
 <dl>
 <dt>RetailCustomer</dt>
