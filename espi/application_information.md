@@ -4,7 +4,7 @@ layout: page
 ---
 <div>
 <h1> ApplicationInformation Resource Details</h2>
-<h4>Ref: <a href="http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx">Authorization.docx Appendix D</a>; <a href="https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd">espiDerived.xsd</h4>
+<h4>Ref: <a href="https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/ReferenceMaterial/GreenButtonAuthorization.docx">Authorization.docx Appendix D</a>; <a href="https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/usage.xsd">usage.xsd</>
 
 Legend: "TP" = ThirdParty; "DC" = DataCustodian
 

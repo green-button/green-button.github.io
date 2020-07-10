@@ -25,35 +25,35 @@
 - name: "OpenADE Task Force Issues List"
   description: "This document contains the issues and their resolution that have been addressed since the publishing of the NAESB standard in October, 2011. Additionally, the implementation agreement document contains detailed elaboration of a subset of issues revolving around Green Button Connect My Data."
   category: keyref
-  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/HelpDeskItems.docx"
+  doc: "https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/HelpDeskItems.docx"
 - name: "GreenButton Implementation Agreement"
   description: "Details of interoperability implementation agreements for those deploying Connect My Data. Key specifications included in this document are API definition, OAuth 2.0 protocol, and Cyber-security and privacy requirements."
   category: keyref
-  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAuthorization.docx"
+  doc: "https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/ReferenceMaterial/GreenButtonAuthorization.docx"
 - name: "OAuth2 Access Tokens Used in CMD"
   description: "Definition of the access tokens used for the various CMD APIs"
   category: development
-  html: "http://www.greenbuttondata.org/espi/access_tokens/"
+  html: "http://archive.greenbuttondata.org/espi/access_tokens/"
 - name: "The ApplicationInformation Resource"
   description: "The details of the ESPI ApplicationInformation Resource. This resource describes the relationship between a DataCustodian and it's registered ThirdParty service providers"
   category: development
-  html: "http://www.greenbuttondata.org/espi/application_information/"
+  html: "http://archive.greenbuttondata.org/espi/application_information/"
 - name: "The Authorization Scope"
   description: "The scope string used during the OAuth2 authorization process is detailed here in BNF form. The scope string allows for determination of the services provided, duration of the authorization, and many additional details of the data exchanged authorized by the retail customer"
   category: development
-  html: "http://www.greenbuttondata.org/espi/authorization_scope/"
+  html: "http://archive.greenbuttondata.org/espi/authorization_scope/"
 - name: "Building UUIDs"
   description: "Green Button resources each have globally unique identifiers, or UUIDs. This document provides guidance on how to create these UUIDs."
   category: development
-  html: "http://www.greenbuttondata.org/espi/uuid_guidance/"
+  html: "http://archive.greenbuttondata.org/espi/uuid_guidance/"
 - name: "Green Button Atom Links"
   description: "Best Practices for ESPI resource URL design"
   category: development
-  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/referenceMaterial/GreenButtonAtomLinks.docx"
+  doc: "https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/ReferenceMaterial/GreenButtonAtomLinks.docx"
 - name: "Green Button Connect My Data API Spreadsheet"
   description: "A summary of the REST APIs available in Green Button Connect My Data"
   category: development
-  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/OpenADE%20Task%20Force%20Meeting%20Notes/GBCMD_APIS_FBS.xlsx"
+  doc: "https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/OpenADE+Task+Force+Meeting+Notes/GBCMD_APIS_FBS.xlsx"
 - name: "Green Button SDK Users Guide"
   description: "The Users guide to the SDK Took Kit - for analyzing and creating Green Button Data Files"
   category: development
@@ -61,37 +61,37 @@
 - name: "Green Button DMD Test Plan"
   description: "The test plan document describing all the details of Download My Data Testing and Certification"
   category: certification
-  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestPlan.docx"
+  doc: "https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/GreenButtonTestPlan.docx"
 - name: "Green Button DownloadMyDataTest Data Sheet"
   description: "Derived from the Test Plan, this contains the actual certification test steps"
   category: certification
-  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonTestDataSheet.docx"
+  doc: "https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/GreenButtonTestDataSheet.docx"
 - name: "Green Button Certification Function Blocks"
   description: "Detail of the features and facilities of Green Button categorized by Function Block containers"
   category: certification
-  doc: "http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan/GreenButtonConformanceBlocks.xlsx"
+  doc: "https://s3-us-west-2.amazonaws.com/technical.greenbuttonalliance.org/OpenADE/Shared+Documents/Testing+and+Certification/GreenButtonTestPlan/GreenButtonConformanceBlocks.xlsx"
 - name: "Green Button Connect My Data Certification Test Steps Spreadsheet"
   description: "The detailed specification of CMD test steps that will be used in CMD Certification"
   category: certification
   doc: "https://github.com/energyos/OpenESPI-GreenbuttonDataSDK/blob/master/GreenButtonTestingRequirements/GreenButtonTestCases.xlsm?raw=true"
 - name: "Green Button On-Line Validator"
-  description: "A web accessable tool to allow you to validate Green Button data files you may have received from your Utility."
+  description: "A web accessible tool to allow you to validate Green Button data files you may have received from your Utility."
   category: development
-  html: "http://www.greenbuttondata.org/greentest.aspx"
+  html: "http://dmdvalidator.greenbuttonalliance.org"
 - name: "OpenESPI Development Environment"
   description: "Notes on how to set up an OpenESPI development environment."
   category: espi
-  html: "http://www.greenbuttondata.org/espi/developmentEnvironment"
+  html: "http://archive.greenbuttondata.org/espi/developmentEnvironment"
 - name: "GitHub and Git Hints"
   description: "Useful recipes for working with git and GitHub."
   category: espi
-  html: "http://www.greenbuttondata.org/espi/githints"
+  html: "http://archive.greenbuttondata.org/espi/githints"
 - name: "Download the OpenESPI Virtual Machine"
   description: "How to retrieve and get virtual machine running"
   category: espi
-  html: "http://www.greenbuttondata.org/espi/VM"
+  html: "http://archive.greenbuttondata.org/espi/VM"
 - name: "Working with the OpenESPI Virtual Machine"
   description: "How work with the OpenESPI VM" 
   category: espi
-  html: "http://www.greenbuttondata.org/espi/openespiVM"
+  html: "http://archive.greenbuttondata.org/espi/openespiVM"
   
