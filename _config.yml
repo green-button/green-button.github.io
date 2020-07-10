@@ -1,14 +1,14 @@
 # Site settings
 title: Green Button
 description: "To improve the electric grid, we must empower consumers. Join the effort to give all Americans the information they need to become active participants in their own power usage."
-#baseurl: "http://www.greenbuttondata.org"
-#rooturl: "http://www.greenbuttondata.org"
+baseurl: "http://archive.greenbuttondata.org"
+rooturl: "http://archive.greenbuttondata.org"
 
 #baseurl: "http://green-button.github.io/"
 #rooturl: "http://green-button.github.io/"
 
-baseurl: ""
-rooturl: ""
+#baseurl: ""
+#rooturl: ""
 
 # Build settings
 markdown: kramdown

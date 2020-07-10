@@ -15,25 +15,26 @@ Below find a simple progression of links to aid you in developing and testing a 
 ## Build or Parse Green Button Data
 
 1. [Understand Green Button Data](/developers)
-1. [Green Button Data XML Schema](https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd)
-1. [Test file generation Video - Green Button Tools: Introduction (Part 6/10)](/library/video)
-1. [Test file generation spreadsheet utility - GreenButtonDataSetGenerator](https://github.com/energyos/OpenESPI-GreenbuttonDataSDK/tree/master/SampleDataGenerator)
-1. [Test File Online Validator](http://www.greenbuttondata.org/greentest.aspx)
-2. [Review the Green Button Sandbox](/developers/sandbox)
+2. [Green Button Energy Usage Data XML Schema](https://github.com/greenbuttonalliance/OpenESPI-Common-java/blob/master/etc/usage.xsd)
+3. [Green Button Personal Identifiable Information XML Schema](https://github.com/greenbuttonalliance/OpenESPI-Common-java/blob/master/etc/retailcustomer.xsd)
+4. [Test file generation Video - Green Button Tools: Introduction (Part 6/10)](/library/video)
+5. [Test file generation spreadsheet utility - GreenButtonDataSetGenerator](https://github.com/greenbuttonalliance/OpenESPI-GreenbuttonDataSDK/tree/master/SampleDataGenerator)
+6. [Test File Online Validator](http://dmdvalidator.greenbuttonalliance.org)
+7. [Review the Green Button Sandbox](/developers/sandbox)
 
 ### Build Access to Green Button Data via Download My Data
 
-1. [XML Parsing jscript in Graphing Demo App](https://github.com/energyos/OpenESPI-GreenbuttonDataSDK/tree/master/GreenButtonDemoPage)
-2. [DMD Using OpenESPI open source Data Custodian](https://github.com/energyos/OpenESPI-Common-java)
+1. [XML Parsing jscript in Graphing Demo App](https://github.com/greenbuttonalliance/OpenESPI-GreenbuttonDataSDK/tree/master/GreenButtonDemoPage)
+2. [DMD Using OpenESPI open source Data Custodian](https://github.com/greenbuttonalliance/OpenESPI-Common-java)
 
 ### Build Access to Green Button Data via Connect My Data
 
-1. [CMD Using OpenESPI open source Data Custodian](https://github.com/energyos/OpenESPI-DataCustodian-java)
+1. [CMD Using OpenESPI open source Data Custodian](https://github.com/greenbuttonalliance/OpenESPI-DataCustodian-java)
 1. [Understand OAuth Scope for DMD]({{ site.baseurl }}/espi/scope)
 1. [Understand ESPI APIs]({{ site.baseurl }}/espi/api_specification)
 
 ### Build a Green Button Third Party Client
-1. [Implement Third Party Client using OpenESPI open source Third Party](https://github.com/energyos/OpenESPI-ThirdParty-java)
+1. [Implement Third Party Client using OpenESPI open source Third Party](https://github.com/greenbuttonalliance/OpenESPI-ThirdParty-java)
 2. [Simple Ruby Client](https://github.com/cew821/greenbutton)
 3. Python sample snippet - tbd
 
@@ -42,10 +43,10 @@ Below find a simple progression of links to aid you in developing and testing a 
 ### For Download My Data
 
 1. [Use the data analyzer](http://www.greenbuttondata.org/greentest.aspx)
-2. [Use the batch data analyzer](https://github.com/energyos/OpenESPI-GreenbuttonDataSDK/tree/master/GreenButtonBatchTest)
+2. [Use the batch data analyzer](https://github.com/greenbuttonalliance/OpenESPI-GreenbuttonDataSDK/tree/master/GreenButtonBatchTest)
 
 ### For Connect My Data
 
-1. [Use the Certification Test Suite SOAPUI Project](https://github.com/energyos/OpenESPI-GreenButtonCMDTest) 
+1. [Use the Certification Test Suite SoapUI Project](https://github.com/greenbuttonalliance/OpenESPI-GreenButtonCMDTest)
 
 

@@ -11,7 +11,7 @@ layout: page
 
 ### Key References
 
-The references in this section represent the principle technical documents that define and describe the Green Button technology. They begin with the base standard for Green Button. Published in 2011, this standard is ready for an update beginning late 2015. Corrections and enhancements to the standard have been developed under the auspices of the [UCAIug](http://www.ucaiug.org/default.aspx) OpenADE [Task Force](http://osgug.ucaiug.org/sgsystems/OpenADE/Shared%20Documents/Testing%20and%20Certification/GreenButtonTestPlan). See the [Community](/community) for details on their meetings and process.
+The references in this section represent the principle technical documents that define and describe the Green Button technology. They begin with the base standard for Green Button. Published in 2011, this standard has been updated in January 2020. Corrections and enhancements to the standard have been developed under the auspices of the [GBA](http://www.greenbuttonalliance.org) OpenADE Task Force. See the [Community](/community) for details on their meetings and process.
   
 <dl>
 {% for document in site.data.documents %}

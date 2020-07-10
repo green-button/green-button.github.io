@@ -17,33 +17,9 @@
   status: implemented
   GBA: true
   featured: true
-- name: "Chai Energy"
-  url: "https://chaienergy.com/"
-  type: company
-  status: implemented
-  GBA: true
-  featured: true
-- name: "Cielo WiGle Inc."
-  url: "http://www.cielowigle.com/index.html"
-  type: company
-  status: committed
-  GBA: true
-  featured: true
 - name: "ComEd (Exelon)"
   url: "http://www.exeloncorp.com/companies/comed"
   type: utility
-  status: implemented
-  GBA: true
-  featured: true
-- name: "Enel Group"
-  url: "https://www.enel.com"
-  type: utility
-  status: committed
-  GBA: true
-  featured: true
-- name: "Energy Toolbase"
-  url: "https://www.energytoolbase.com/"
-  type: company
   status: implemented
   GBA: true
   featured: true
@@ -59,12 +35,18 @@
   status: implemented
   GBA: true
   featured: true
+- name: "GLYNT.AI"
+  url: "http://www.glynt.ai//"
+  type: company
+  status: implemented
+  GBA: true
+  featured: true
 - name: "London Hydro"
   url: "https://www.londonhydro.com"
   type: utility
   status: implemented
-  certified: DMD
   GBA: true
+  certified: DMD/CMD
   featured: true
 - name: "PECO (Exelon)"
   url: "https://www.peco.com/Pages/default.aspx"
@@ -101,12 +83,6 @@
   type: utility
   status: implemented
   GBA: true
-  featured: true		
-- name: "Silver Spring Networks"
-  url: "http://www.silverspringnet.com/"
-  type: company
-  status: committed
-  GBA: true
   featured: true
 - name: "Solar Analytics"
   url: "https://www.solaranalytics.com.au/"
@@ -125,18 +101,7 @@
   type: company
   status: implemented
   GBA: true
-  featured: true
-- name: "UL"
-  url: "http://ul.com/"
-  type: company
-  status: implemented
-  GBA: true
-  featured: true
-- name: "WattzOn"
-  url: "http://www.wattzon.com//"
-  type: company
-  status: implemented
-  GBA: true
+  certified: DMD/CMD
   featured: true
 - name: "Continental Automated Buildings Association (CABA)"
   url: "http://www.caba.org/"
@@ -162,20 +127,8 @@
   status:
   GBA: true
   featured: true
-- name: "UCAIug"
-  url: "http://www.ucaiug.org/"
-  type: association
-  status:
-  GBA: true
-  featured: true
 - name: "DOE"
   url: "http://energy.gov/"
-  type: government
-  status:
-  GBA: true
-  featured: true
-- name: "MaRs Discovery District's Advanced Energy Centre (AEC)"
-  url: "http://www.marsdd.com/systems-change/advanced-energy-centre/"
   type: government
   status:
   GBA: true
@@ -224,7 +177,6 @@
   url: "http://www.austinenergy.com"
   type: utility
   status: implemented
-  featured: true
 - name: "Autodesk, Inc."
   url: "http://www.autodesk.com"
   type: company
@@ -253,6 +205,14 @@
   url: "http://www.centerpointenergy.com/"
   type: utility
   status: implemented
+- name: "Chai Energy"
+  url: "https://chaienergy.com/"
+  type: company
+  status: implemented
+- name: "Cielo WiGle Inc."
+  url: "http://www.cielowigle.com/index.html"
+  type: company
+  status: committed
 - name: "City of Tallahassee Utilities"
   url: "http://www.talgov.com/you/yourownutilitieshome.aspx/"
   type: utility
@@ -273,6 +233,10 @@
   url: "http://enact-systems.com/"
   type: company
   status: implemented
+- name: "Enel Group"
+  url: "https://www.enel.com"
+  type: utility
+  status: committed
 - name: "Energent"
   url: "http://www.energent.com/"
   type: company
@@ -293,6 +257,10 @@
   url: "http://energyprofiles.com/"
   type: company
   status: implemented	
+- name: "Energy Toolbase"
+  url: "https://www.energytoolbase.com/"
+  type: company
+  status: implemented
 - name: "EnerNex:"
   url: "http://www.enernex.com/"
   type: company
@@ -300,7 +268,12 @@
 - name: "EnerNOC"
   url: "http://open.enernoc.com/data/"
   type: company
-  status: implemented	
+  status: implemented
+- name: "Entergy"
+  url: "https://entergy.com"
+  type: utility
+  status: implemented
+  featured: true
 - name: "Eversource"
   url: "https://www.eversource.com/Content/ema-e/"
   type: utility
@@ -574,19 +547,19 @@
   status: committed
 - name: "BuildingIQ"
   url: "https://www.buildingiq.com/"
-  featured: true
   type: company
   status: committed
+  featured: true
 - name: "BusinessEnergy"
   url: "http://www.businessenergy.com"
-  featured: true
   type: company
   status: committed
+  featured: true
 - name: "C3"
   url: "http://www.c3energy.com/"
-  featured: true
   type: company
-  status: committed	
+  status: committed
+  featured: true
 - name: "Calico Energy Services"
   url: "http://www.calicoenergy.com/"
   type: company
@@ -641,9 +614,9 @@
   status: committed
 - name: "FirstFuel"
   url: "http://www.firstfuel.com/"
-  featured: true
   type: company
   status: committed
+  featured: true
 - name: "Glendale Water and Power"
   url: "http://www.glendaleca.gov/government/departments/glendale-water-and-power"
   type: utility
@@ -713,4 +686,3 @@
   url: "http://www.villagepower.com/"
   type: company
   status: committed
-  featured: true

@@ -5,75 +5,97 @@ layout: page
 
 ## Developers
 
-The Green Button API provides flexible access to Energy Usage Information through a set of RESTful interfaces.
+The Green Button API provides flexible access to Energy Usage Information (EUI) and Personal Identifiable Information 
+(PII) through a set of REST interfaces.
 
-<p>Green Button represents energy usage information as a set of resources as defined in the ESPI standard and uses <a href="http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API">RESTful APIs</a> to provide
-standard access to information for metered resources such as
-electricity, gas, and water. These interfaces may be used to access and
-manage the metered data by using atom+xml based streams of Energy
-Usage Information (EUI) encapsulated within an Atom Feed.</p>
+<p>Green Button represents energy usage and personal identifiable information as a set of resources, as 
+defined in the NAESB REQ.21 ESPI standard and uses 
+<a href="http://greenbuttonalliance.github.io/OpenESPI-GreenButton-API-Documentation/API">REST APIs</a> to provide
+standard access to information for metered resources, such as electricity, gas, and water. These interfaces may be used
+to access and manage the metered data by using atom+xml based streams of Energy Usage Information (EUI) and
+Personal Identifiable Information (PII) encapsulated within an Atom Feed.</p>
 
 <h3>RetailCustomer, DataCustodian &amp; ThirdParty Actors</h3>
-<p>Green Button allows data to be exchanged between Utilities, Customers, and Third Party Services Providers. It uses standard (http) based messaging to accomplish these exchanges. So, starting with the Green Button Actors:
+<p>Green Button allows data to be exchanged between Utilities, Customers, and Third Party Services Providers. 
+It uses standard Secured HTTP based messaging to accomplish these exchanges. So, starting with the Green Button Actors:
 <dl>
 <dt>RetailCustomer</dt>
 
-<dd>Any person or enterprise that is provided services such as
-electricity, water, or gas from a resource service provider.
-RetailCustomers may be residential, commercial, or industrial.</dd>
+<dd>Any person or enterprise that is provided services such as electricity, water, or gas from a resource 
+service provider. RetailCustomers may be residential, commercial, or industrial.</dd>
 
 <dt>DataCustodian</dt>
 
-<dd>Any enterprise that is holding metered data obtained during the
-course of providing resources to a <em>RetailCustomer</em>. A <em>DataCustodian</em>
-holds that data as part of the service they provide and may, with the authorization of the
-RetailCustomer, allow that data to be shared with a third party.</dd>
-
+<dd>Any enterprise that is holding metered data obtained during the course of providing resources to a 
+<em>RetailCustomer</em>. A <em>DataCustodian</em> holds that data as part of the service they provide and may, with 
+the authorization of the RetailCustomer, allow that data to be shared with a third party.</dd>
 
 <dt>ThirdParty</dt>
-<dd>Any person or enterprise that is authorized to have access to metered data held by a <em>DataCustodian</em>.  A <em>ThirdParty</em>, when authorized, may <em>subscribe</em> to a <em>RetailCustomer's</em> data and provide additional services as desired.</dd>
+<dd>Any person or enterprise that is authorized to have access to metered data held by a <em>DataCustodian</em>.  
+A <em>ThirdParty</em>, when authorized, may <em>subscribe</em> to a <em>RetailCustomer's</em> data and provide 
+additional services as desired.</dd>
 </dl>
 
-<img class="img-responsive" src="{{ site.baseurl }}/assets/GreenButton_Actors_transparent.png" />
+<img class="img-responsive" src="/assets/GreenButton_Actors_transparent.png" />
 
 <h3>Relationships between the Actors</h3>
-<p>The Actors enter into relationships as depicted in the diagram above. The simplest relationship is the one that exists between the DataCustodian (i.e. the Utility) and their customer (the <em>RetailCustomer</em>). This relationship allows the <em>RetailCustomer</em> to download a file that contains their resource usage information. This simple relationship is the basis for the <a href="#download-my-data">Green Button Download My Data</a> operation.
+<p>The Actors enter into relationships as depicted in the diagram above. The simplest relationship is the one that 
+exists between the DataCustodian (i.e. the Utility) and their customer (the <em>RetailCustomer</em>). This relationship
+allows the <em>RetailCustomer</em> to download a file that contains their resource usage information. This simple 
+relationship is the basis for the <a href="#download-my-data">Green Button Download My Data</a> operation.</p>
 
-</div>
 <!-- end .home -->
 
 <div id="concepts">
 <h3>Concepts</h3>
-<p>Green Button uses the <a href="http://tools.ietf.org/html/rfc4287">Atom Syndication Format Standard</a> to represent structured energy usage information in an XML format that may be exchanged on the internet. Both Google (GData) and Microsoft (OData) independently recognized the power of the Atom Syndication Format to encode complex data for exchange over RESTful web services. Green Button adopted these concepts in the construction of ESPI.</p>
+<p>Green Button uses the <b><a href="http://tools.ietf.org/html/rfc4287">Atom Syndication Format Standard</a></b> to 
+represent structured energy usage information and retail customer data in an XML format. The power of the Atom 
+Syndication Format to encode complex data for exchange over REST web services, were independently recognized by both 
+the GData (Google) and OData (Microsoft) standards. Based on this fact, the Green Button Alliance OpenADE Task Force, 
+previously the UCAIug OpenADE Task Force, adopted this construct in the development of the Energy Service Provide
+Interface (ESPI).</p>
 
-<p>The resources defined within Green Button, UsagePoints, MeterReadings, etc, are expressed, in XML format, within the Atom feed's <a href="#entry">Entry</a> tags. This results in a uniform way to expose full-featured data APIs that reference a Retail Customer's encapsulated Energy Usage Information.</p>
+<p>The high-level structure of an Atom Syndication Format data stream/file is shown below:</p>
 
-<p>Green Button works by placing data within the <em>&lt;entry&gt;</em> tags
-of the Atom stream. Data records are placed within the
-<em>&lt;entry&gt; ... &lt;content&gt;</em> tags, and relationships
-between tables are represented in the
-<em>&lt;link&gt;</em>tags.</p>
-<p>
-The second thing to note is that in the Atom representation, a feed will always represent a collection of 1 or more Green Button resources:
 <pre>
 &lt;feed&gt;
-  ...
+  <id>urn:uuid:....</id>
+  <title>Green Button Usage Feed</title>
+  <updated>yyyy-MM-ddTHH:mm:ssZ</updated>
+  <link> rel="self" href="https://..."</link>
   &lt;entry&gt;
-    ...
+    <id>urn:uuid:....</id>
+    <link> rel="up" href="https://..."</link>
+    <link> rel="self" href="https://..."</link>
+    <link> rel="related" href="https://..."</link>
+    <link> rel="related" href="https://..."</link>            
     &lt;content&gt;
       &lt;espi-resource /&gt;
     &lt;/content&gt;
+    <published>yyyy-MM-ddTHH:mm:ssZ</published>
+    <updated>yyyy-MM-ddTHH:mm:ssZ</updated>    
   &lt;/entry&gt;
   ...
 &lt;/feed&gt;
 </pre>
+
+<p>An Atom data stream/file contains &lt;feed&gt;, &lt;entry&gt;, &lt;id&gt;, &lt;link&gt;, &lt;content&gt;, 
+&lt;published&gt; and &lt;updated&gt; tags.  The &lt;feed&gt;, &lt;entry&gt; and &lt;content&gt; tags create containers 
+of information.  Green Button resources (UsagePoints, MeterReadings, CustomerAccount, etc) are expressed in XML format 
+within the Atom feed's <em>&lt;entry&gt; ... </em> tags. Data records are placed within the <em>&lt;entry&gt; ... &lt;content&gt;</em> 
+tags, and relationships between tables are represented in the <em>&lt;link&gt;</em>tags. The result is a uniform way to 
+express full-featured data API responses that reference a Retail Customer's encapsulated Energy Usage and Retail 
+Customer information.  Atom feeds always represent a collection of one or more Green Button resources.</p>
+
+<p>
+Green Button resources:
 
 <div id="accordion2" class="accordion">
 <h3>Relationships</h3>
 <div>
 
 <p>So all the <a
- href="https://github.com/energyos/OpenESPI-Common-java/blob/master/etc/espiDerived.xsd">espiDerived.xsd</a>
+ href="https://github.com/greenbuttonalliance/OpenESPI-Common-java/blob/master/etc/usage.xsd">usage.xsd</a>
 entities may be contained in a feed and the entry/contents describe the ESPI entity itself. In
 addition, you need to construct (during the parse if possible for you) the associations that need to
 exist between the ESPI entities.  The <em>&lt;link&gt;</em> tags are quite important for use during
@@ -81,14 +103,14 @@ parsing of the Green Button data. These links allow you to know which <em>MeterR
 related to a specific <em>UsagePoint</em>.
 
 <p>Within an
-<em>&lt;entry&gt;</em>, the <em>"related"</em> links point to a collection, for example:
+<em>&lt;entry&gt;</em>, the <em>"related"</em> links point to a collection, for example:</p>
 <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:c8c34b3a-d175-447b-bd00-176f60194de0&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1" rel="self"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="related"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/ElectricPowerUsageSummary" rel="related"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/ElectricPowerUsageSummary" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="related"/&gt;
       &lt;title&gt;Green Button Sample Data File&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:UsagePoint&gt;
@@ -99,12 +121,8 @@ related to a specific <em>UsagePoint</em>.
       &lt;/content&gt;
       &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
       &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
+&lt;entry&gt;</code></pre>
 
-    </code></pre>
-
-  </div>
-</div>
 <!-- end .concepts -->
 
 <div id="data-elements">
@@ -119,19 +137,19 @@ related to a specific <em>UsagePoint</em>.
     <p></p>
     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:af6e8b03-0299-467e-972a-a883ecdcc575&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ApplicationInformation/2" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/ApplicationInformation/2" rel="self"/&gt;
       &lt;title&gt;GreenButtonData.org  ThirdParty Application&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:ApplicationInformation&gt;
                   &lt;espi:dataCustodianId&gt;data_custodian&lt;/espi:dataCustodianId&gt;
                   &lt;espi:dataCustodianApplicationStatus&gt;1&lt;/espi:dataCustodianApplicationStatus&gt;
-                  &lt;espi:thirdPartyNotifyUri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/Notification&lt;/espi:thirdPartyNotifyUri&gt;
+                  &lt;espi:thirdPartyNotifyUri&gt;https://sandbox.greenbuttonalliance.org:8443/ThirdParty/espi/1_1/Notification&lt;/espi:thirdPartyNotifyUri&gt;
                   &lt;espi:dataCustodianBulkRequestURI&gt;&lt;/espi:dataCustodianBulkRequestURI&gt;
-                  &lt;espi:dataCustodianResourceEndpoint&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource&lt;/espi:dataCustodianResourceEndpoint&gt;
-                  &lt;espi:thirdPartyScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/ThirdParty/RetailCustomer/ScopeSelection&lt;/espi:thirdPartyScopeSelectionScreenURI&gt;
+                  &lt;espi:dataCustodianResourceEndpoint&gt;https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource&lt;/espi:dataCustodianResourceEndpoint&gt;
+                  &lt;espi:thirdPartyScopeSelectionScreenURI&gt;https://sandbox.greenbuttonalliance.org:8443/ThirdParty/RetailCustomer/ScopeSelection&lt;/espi:thirdPartyScopeSelectionScreenURI&gt;
                   &lt;espi:client_secret&gt;secret&lt;/espi:client_secret&gt;
-                  &lt;espi:redirect_uri&gt;https://services.greenbuttondata.org/ThirdParty/espi/1_1/OAuthCallBack&lt;/espi:redirect_uri&gt;
+                  &lt;espi:redirect_uri&gt;https://sandbox.greenbuttonalliance.org:8443/ThirdParty/espi/1_1/OAuthCallBack&lt;/espi:redirect_uri&gt;
                   &lt;espi:client_id&gt;third_party&lt;/espi:client_id&gt;
                   &lt;espi:contacts&gt;john.teeter@energyos.org,martin.burns@nist.gov,donald.coffin@reminetworks.com&lt;/espi:contacts&gt;
                   &lt;espi:token_endpoint_auth_method&gt;client_secret_basic&lt;/espi:token_endpoint_auth_method&gt;
@@ -140,16 +158,13 @@ related to a specific <em>UsagePoint</em>.
                   &lt;espi:scope&gt;FB=4_5_12_15_16;IntervalDuration=3600;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
                   &lt;espi:grant_types&gt;refresh_token&lt;/espi:grant_types&gt;
                   &lt;espi:grant_types&gt;authorization_code&lt;/espi:grant_types&gt;
-                  &lt;espi:dataCustodianScopeSelectionScreenURI&gt;https://services.greenbuttondata.org/DataCustodian/RetailCustomer/ScopeSelectionList&lt;/espi:dataCustodianScopeSelectionScreenURI&gt;
+                  &lt;espi:dataCustodianScopeSelectionScreenURI&gt;https://sandbox.greenbuttonalliance.org:8443/DataCustodian/RetailCustomer/ScopeSelectionList&lt;/espi:dataCustodianScopeSelectionScreenURI&gt;
             &lt;/espi:ApplicationInformation&gt;
       &lt;/content&gt;
       &lt;published&gt;2014-01-02T10:00:00Z&lt;/published&gt;
       &lt;updated&gt;2014-01-02T10:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
     </div>
-  </div>
 
 <div id="accordion">
   <h3><a href="/espi/authorization/">Authorization</a></h3>
@@ -157,8 +172,8 @@ related to a specific <em>UsagePoint</em>.
     <p></p>
     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:bdcb34c0-7afd-4812-b30c-0d90fbeab936&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/5" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Authorization" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Authorization/5" rel="self"/&gt;
       &lt;content&gt;
             &lt;espi:Authorization&gt;
                   &lt;espi:authorizedPeriod&gt;
@@ -173,17 +188,15 @@ related to a specific <em>UsagePoint</em>.
                   &lt;espi:expires_at&gt;31535999&lt;/espi:expires_at&gt;
                   &lt;espi:scope&gt;FB=4_5_15;IntervalDuration=900;BlockDuration=monthly;HistoryLength=13&lt;/espi:scope&gt;
                   &lt;espi:token_type&gt;Bearer&lt;/espi:token_type&gt;
-                  &lt;espi:resourceURI&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/5&lt;/espi:resourceURI&gt;
-                  &lt;espi:authorizationURI&gt;https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Authorization/5&lt;/espi:authorizationURI&gt;
+                  &lt;espi:resourceURI&gt;https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Batch/Subscription/5&lt;/espi:resourceURI&gt;
+                  &lt;espi:authorizationURI&gt;https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Authorization/5&lt;/espi:authorizationURI&gt;
+                  &lt;espi:retailCustomerURI&gt;https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/5&lt;/espi:retailCustomerURI&gt;
             &lt;/espi:Authorization&gt;
       &lt;/content&gt;
       &lt;published&gt;2014-09-03T06:39:45Z&lt;/published&gt;
       &lt;updated&gt;2014-09-03T06:39:45Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
     </div>
-  </div>
 
 <div id="accordion">
   <h3>UsagePoint</h3>
@@ -191,11 +204,11 @@ related to a specific <em>UsagePoint</em>.
     <p>A <em>UsagePoint</em> is where a resource is measured. Typically, it is your Utility Smart Meter, but it could be the outlet on the wall as well. UsagePoints provide the reference for all meter readings that are contained within the Green Button data. UsagePoints have a <em>ServiceCategory</em> that defines what <em>kind</em> of resource &mdash; such as an electricity, gas, or water measurement &mdash; is being reported. </p>
     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:c8c34b3a-d175-447b-bd00-176f60194de0&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1" rel="self"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="related"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/ElectricPowerUsageSummary" rel="related"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/ElectricPowerUsageSummary" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="related"/&gt;
       &lt;title&gt;Green Button Sample Data File&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:UsagePoint&gt;
@@ -206,36 +219,32 @@ related to a specific <em>UsagePoint</em>.
       &lt;/content&gt;
       &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
       &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
   </div>
   <h3>MeterReading</h3>
   <div>
     <p>A MeterReading is a container for all of the measured <em>IntervalBlocks</em> within the Green Button data captured at a <em>UsagePoint</em>.</p>
     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:4234ae39-fb6d-48ca-8856-ac9f41fb3d34&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1" rel="self"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="related"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/1" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="related"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/ReadingType/1" rel="related"/&gt;
       &lt;title&gt;Monthly Electricity Consumption&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:MeterReading/&gt;
       &lt;/content&gt;
       &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
       &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
   </div>
   <h3>ReadingType</h3>
   <div>
     <p>A <em>ReadingType</em> provides detail as to the specifics of the reading data that is being obtained. Green Button follows international standards and has the ability to represent large industrial resources as well as those used in a residence.</p>
      <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:99b292fc-55f7-4f27-a3b9-cddab97cca90&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/1" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/ReadingType" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/ReadingType/1" rel="self"/&gt;
       &lt;title&gt;Type of Meter Reading Data&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:ReadingType&gt;
@@ -254,9 +263,7 @@ related to a specific <em>UsagePoint</em>.
       &lt;/content&gt;
       &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
       &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
   </div>
   <h3>IntervalBlock</h3>
   <div>
@@ -264,8 +271,8 @@ related to a specific <em>UsagePoint</em>.
 
     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:e0383570-16b1-4ab9-8642-fdb7e89660db&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock/1" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/MeterReading/1/IntervalBlock/1" rel="self"/&gt;
       &lt;title&gt;&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:IntervalBlock&gt;
@@ -302,17 +309,15 @@ related to a specific <em>UsagePoint</em>.
       &lt;/content&gt;
       &lt;published&gt;2013-02-01T05:00:00Z&lt;/published&gt;
       &lt;updated&gt;2013-02-01T05:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
   </div>
   <h3>LocalTimeParameters</h3>
   <div>
     <p>The <em>LocalTimeParameters</em> provide a flexible manner to enable <em>Energy Usage Information (EUI)</em> to be provided with a reference to local time, without including any <em>Personally Identifiable Information</em>.  </p>
     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:e30ce77d-ec22-4da5-83c2-991ba34c97d6&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/LocalTimeParameters" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/LocalTimeParameters/1" rel="self"/&gt;
       &lt;title&gt;DST For North America&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:LocalTimeParameters&gt;
@@ -324,17 +329,15 @@ related to a specific <em>UsagePoint</em>.
       &lt;/content&gt;
       &lt;published&gt;2013-09-19T04:00:00Z&lt;/published&gt;
       &lt;updated&gt;2013-09-19T04:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
   </div>
   <h3>UsageSummary</h3>
   <div>
     <p></p>
     <pre><code>&lt;entry xmlns:espi="http://naesb.org/espi" xmlns="http://www.w3.org/2005/Atom"&gt;
       &lt;id&gt;urn:uuid:923a7143-263e-421b-bea2-e41b7e240013&lt;/id&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/UsageSummary" rel="up"/&gt;
-      &lt;link href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/UsageSummary/1" rel="self"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/UsageSummary" rel="up"/&gt;
+      &lt;link href="https://sandbox.greenbuttonalliance.org:8443/DataCustodian/espi/1_1/resource/Subscription/1/UsagePoint/1/UsageSummary/1" rel="self"/&gt;
       &lt;title&gt;Usage Summary&lt;/title&gt;
       &lt;content&gt;
             &lt;espi:UsageSummary&gt;
@@ -363,9 +366,7 @@ related to a specific <em>UsagePoint</em>.
       &lt;/content&gt;
       &lt;published&gt;2014-03-01T05:00:00Z&lt;/published&gt;
       &lt;updated&gt;2014-03-01T05:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-
-    </code></pre>
+&lt;/entry&gt;</code></pre>
   </div>
   <h3>ElectricPowerQualitySummary</h3>
   <div>
@@ -399,8 +400,7 @@ related to a specific <em>UsagePoint</em>.
   &lt;/content&gt;
   &lt;published&gt;2012-10-24T00:00:00Z&lt;/published&gt;
   &lt;updated&gt;2012-10-24T00:00:00Z&lt;/updated&gt;
-&lt;/entry&gt;
-    </code></pre>
+&lt;/entry&gt;</code></pre>
   </div>
 </div>
 
@@ -412,13 +412,13 @@ related to a specific <em>UsagePoint</em>.
 <dl>
   <dt>Download My Data</dt>
   <dd>A RetailCustomer may download an XML file from either a Data
-  Custodian or a Third Party. RESTful interfaces are provided to
+  Custodian or a Third Party. REST interfaces are provided to
   enable this operation. There are no assumptions made with respect to
   what the RetailCustomer might do with this XML file, although best
   practices would be to ensure the file is viewable using a minimal
   style sheet.
 <ul>
-<li>Examples of <a href="https://services.greenbuttondata.org/sample-data.html">Download My Data files may be found on the Green Button Sandbox</a>.</li>
+<li>Examples of <a href="{{ site.baseurl }}/samples">Download My Data</a> files are available.</li>
 </ul>
 </dd>
   <dt>Connect My Data</dt>
@@ -431,8 +431,9 @@ related to a specific <em>UsagePoint</em>.
   a single transfer of information, or transfers on a predefined
   schedule.
 <ul>
-<li>Connect My Data <a href="http://energyos.github.io/OpenESPI-GreenButton-API-Documentation/API/">RESTful APIs may be experimented with at the API Sandbox</a>.</li>
+<li>Connect My Data <a href="http://greenbuttonalliance.github.io/OpenESPI-GreenButton-API-Documentation/API/">REST APIs may be experimented with at the API Sandbox</a>.</li>
 </ul>
 </dd>
 </dl>
 </div>
+

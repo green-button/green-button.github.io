@@ -6,9 +6,9 @@ title: Page/Post Title
 
 ## **Build VM**
 
-The OpenESPI Virtual Machine (VM) is built using the Ubuntu 14.04 LTS Linux distribution running on VMware's Player (6.0.3) application.
+The OpenESPI Virtual Machine (VM) is built using the Ubuntu 18.04 LTS Linux distribution running on VMware's Player (6.0.3) application.
 
-**Download Ubuntu 14.04 LTS**
+**Download Ubuntu 18.04 LTS**
 
 [http://www.ubuntu.com/download/desktop]
 (http://www.ubuntu.com/download/desktop
