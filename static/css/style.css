@@ -8,8 +8,8 @@
 
 .anchor{
   display: block;
-  height: 80px; /*same height as header*/
-  margin-top: -80px; /*same height as header*/
+  height: 100px; /*same height as header*/
+  margin-top: -100px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -6423,12 +6423,20 @@ h4{
 
 header.banner{
 	width:100%;
-	height:80px;
+	height:100px;
 	position:fixed;
 	border-bottom:1px solid #e6e6e6;
 	background:#fff;
 	z-index:9000;
 	margin-bottom:5px
+}
+
+header.banner .banner-archive{
+	text-align: center;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: #c6db77;
 }
 
 header.banner .banner-title{
@@ -6555,6 +6563,13 @@ section.home{
 	padding-top:40px;
 	padding-bottom:40px;
 	margin-bottom:0px
+}
+
+.home-archive{
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: #ffffff;
 }
 
 .home-title{
