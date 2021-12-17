@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "grunt-contrib-less": "^0.11.0",
-    "grunt-contrib-watch": "^0.4.4"
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
